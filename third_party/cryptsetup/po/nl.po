@@ -1,0 +1,4084 @@
+# Dutch translation of cryptsetup.
+# This file is distributed under the same license as the cryptsetup package.
+# Copyright (C) 2016 Free Software Foundation, Inc.
+# Koen <koen@drunkfelines.com>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cryptsetup-1.7.4\n"
+"Report-Msgid-Bugs-To: dm-crypt@saout.de\n"
+"POT-Creation-Date: 2019-11-01 09:04+0100\n"
+"PO-Revision-Date: 2017-03-03 23:04+0100\n"
+"Last-Translator: Koen <koen@drunkfelines.com>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.10\n"
+
+#: lib/libdevmapper.c:384
+#, fuzzy
+msgid "Cannot initialize device-mapper, running as non-root user."
+msgstr "Kan apparaatstoewijzer niet initialiseren, uitvoering als non-root gebruiker.\n"
+
+#: lib/libdevmapper.c:387
+#, fuzzy
+msgid "Cannot initialize device-mapper. Is dm_mod kernel module loaded?"
+msgstr "Kan apparaatstoewijzer niet initialiseren. Is kernelmodule dm_mod geladen?\n"
+
+#: lib/libdevmapper.c:1082
+#, fuzzy
+msgid "Requested deferred flag is not supported."
+msgstr "Aangevraagde LUKS-hash %s wordt niet ondersteund.\n"
+
+#: lib/libdevmapper.c:1149
+#, fuzzy, c-format
+msgid "DM-UUID for device %s was truncated."
+msgstr "DM-UUID voor apparaat %s werd afgekapt.\n"
+
+#: lib/libdevmapper.c:1463
+msgid "Unknown dm target type."
+msgstr ""
+
+#: lib/libdevmapper.c:1565 lib/libdevmapper.c:1617
+#, fuzzy
+msgid "Requested dm-crypt performance options are not supported."
+msgstr "Aangevraagde prestatie-opties voor dm-crypt worden niet ondersteund.\n"
+
+#: lib/libdevmapper.c:1572
+#, fuzzy
+msgid "Requested dm-verity data corruption handling options are not supported."
+msgstr "Aangevraagde opties voor behandeling van datacorruptie van dm-verity worden niet ondersteund.\n"
+
+#: lib/libdevmapper.c:1576
+#, fuzzy
+msgid "Requested dm-verity FEC options are not supported."
+msgstr "Aangevraagde prestatie-opties voor dm-crypt worden niet ondersteund.\n"
+
+#: lib/libdevmapper.c:1580
+#, fuzzy
+msgid "Requested data integrity options are not supported."
+msgstr "Aangevraagde prestatie-opties voor dm-crypt worden niet ondersteund.\n"
+
+#: lib/libdevmapper.c:1582
+#, fuzzy
+msgid "Requested sector_size option is not supported."
+msgstr "Aangevraagde prestatie-opties voor dm-crypt worden niet ondersteund.\n"
+
+#: lib/libdevmapper.c:1587
+#, fuzzy
+msgid "Requested automatic recalculation of integrity tags is not supported."
+msgstr "Aangevraagde opties voor behandeling van datacorruptie van dm-verity worden niet ondersteund.\n"
+
+#: lib/libdevmapper.c:1591
+#, fuzzy
+msgid "Requested dm-integrity bitmap mode is not supported."
+msgstr "Aangevraagde opties voor behandeling van datacorruptie van dm-verity worden niet ondersteund.\n"
+
+#: lib/libdevmapper.c:1620
+#, fuzzy
+msgid "Discard/TRIM is not supported."
+msgstr "Aangevraagd hash-algoritme %s wordt niet ondersteund.\n"
+
+#: lib/libdevmapper.c:2511
+#, c-format
+msgid "Failed to query dm-%s segment."
+msgstr ""
+
+#: lib/random.c:80
+msgid ""
+"System is out of entropy while generating volume key.\n"
+"Please move mouse or type some text in another window to gather some random events.\n"
+msgstr ""
+"Systeem heeft niet genoeg willekeurige gegevens om de sleutel tot het opslagmedium verder te genereren.\n"
+"Beweeg de muis of typ wat tekst in een nieuw venster om enkele willekeurige evenementen te verzamelen.\n"
+
+#: lib/random.c:84
+#, c-format
+msgid "Generating key (%d%% done).\n"
+msgstr "Sleutel wordt gegenereerd (%d%% afgewerkt).\n"
+
+#: lib/random.c:170
+#, fuzzy
+msgid "Running in FIPS mode."
+msgstr "Uitvoering in FIPS-modus.\n"
+
+#: lib/random.c:176
+#, fuzzy
+msgid "Fatal error during RNG initialisation."
+msgstr "Fatale fout bij initialisatie van RNG.\n"
+
+#: lib/random.c:213
+#, fuzzy
+msgid "Unknown RNG quality requested."
+msgstr "Onbekende RNG-kwaliteit aangevraagd.\n"
+
+#: lib/random.c:218
+#, fuzzy
+msgid "Error reading from RNG."
+msgstr "Fout %d bij lezen uit RNG: %s\n"
+
+#: lib/setup.c:223
+#, fuzzy
+msgid "Cannot initialize crypto RNG backend."
+msgstr "Kan RNG versleutelings-backend niet initialiseren.\n"
+
+#: lib/setup.c:229
+#, fuzzy
+msgid "Cannot initialize crypto backend."
+msgstr "Kan versleutelings-backend niet initialiseren.\n"
+
+#: lib/setup.c:260 lib/setup.c:1990 lib/verity/verity.c:120
+#, fuzzy, c-format
+msgid "Hash algorithm %s not supported."
+msgstr "Aangevraagd hash-algoritme %s wordt niet ondersteund.\n"
+
+#: lib/setup.c:263 lib/loopaes/loopaes.c:90
+#, fuzzy, c-format
+msgid "Key processing error (using hash %s)."
+msgstr "Sleutelbehandelingsfout (met hash %s in gebruik).\n"
+
+#: lib/setup.c:324 lib/setup.c:351
+#, fuzzy
+msgid "Cannot determine device type. Incompatible activation of device?"
+msgstr "Apparaatstype kan niet bepaald worden. Incompatibele apparaatsactivering?\n"
+
+#: lib/setup.c:330 lib/setup.c:2985
+#, fuzzy
+msgid "This operation is supported only for LUKS device."
+msgstr "Deze operatie wordt enkel ondersteund voor LUKS-apparaten.\n"
+
+#: lib/setup.c:357
+#, fuzzy
+msgid "This operation is supported only for LUKS2 device."
+msgstr "Deze operatie wordt enkel ondersteund voor LUKS-apparaten.\n"
+
+#: lib/setup.c:412 lib/luks2/luks2_reencrypt.c:2345
+#, fuzzy
+msgid "All key slots full."
+msgstr "Alle sleutelplaatsen zijn vol.\n"
+
+#: lib/setup.c:423
+#, fuzzy, c-format
+msgid "Key slot %d is invalid, please select between 0 and %d."
+msgstr "Sleutelplaats %d is ongeldig, selecteer een plaats tussen 0 en %d.\n"
+
+#: lib/setup.c:429
+#, fuzzy, c-format
+msgid "Key slot %d is full, please select another one."
+msgstr "Sleutelplaats %d is vol, selecteer een andere.\n"
+
+#: lib/setup.c:514 lib/setup.c:2759
+#, fuzzy
+msgid "Device size is not aligned to device logical block size."
+msgstr "Apparaat %s is geen geldig LUKS-apparaat.\n"
+
+#: lib/setup.c:610
+#, fuzzy, c-format
+msgid "Header detected but device %s is too small."
+msgstr "Koptekst gevonden maar apparaat %s is te klein.\n"
+
+#: lib/setup.c:647
+#, fuzzy
+msgid "This operation is not supported for this device type."
+msgstr "Deze operatie wordt niet ondersteund voor dit apparaatstype.\n"
+
+#: lib/setup.c:652
+msgid "Illegal operation with reencryption in-progress."
+msgstr ""
+
+#: lib/setup.c:821 lib/luks1/keymanage.c:476
+#, fuzzy, c-format
+msgid "Unsupported LUKS version %d."
+msgstr "Niet-ondersteunde LUKS-versie %d.\n"
+
+#: lib/setup.c:838 lib/setup.c:1483 lib/setup.c:1903
+#, fuzzy
+msgid "Detached metadata device is not supported for this crypt type."
+msgstr "UUID wordt niet ondersteund voor dit encryptietype.\n"
+
+#: lib/setup.c:1373 lib/setup.c:2479 lib/setup.c:2551 lib/setup.c:2563
+#: lib/setup.c:2712 lib/setup.c:4310
+#, fuzzy, c-format
+msgid "Device %s is not active."
+msgstr "Apparaat %s is niet actief.\n"
+
+#: lib/setup.c:1390
+#, fuzzy, c-format
+msgid "Underlying device for crypt device %s disappeared."
+msgstr "Onderliggend apparaat van versleutelingsapparaat %s is verdwenen.\n"
+
+#: lib/setup.c:1468
+#, fuzzy
+msgid "Invalid plain crypt parameters."
+msgstr "Ongeldige normale versleutelingsparameters.\n"
+
+#: lib/setup.c:1473 lib/setup.c:1893 src/integritysetup.c:73
+#, fuzzy
+msgid "Invalid key size."
+msgstr "Ongeldige sleutelgrootte.\n"
+
+#: lib/setup.c:1478 lib/setup.c:1898 lib/setup.c:2100
+#, fuzzy
+msgid "UUID is not supported for this crypt type."
+msgstr "UUID wordt niet ondersteund voor dit encryptietype.\n"
+
+#: lib/setup.c:1493 lib/setup.c:1683 lib/luks2/luks2_reencrypt.c:2308
+#: src/cryptsetup.c:1169
+#, fuzzy
+msgid "Unsupported encryption sector size."
+msgstr "Kan herencryptie-logbestand niet lezen.\n"
+
+#: lib/setup.c:1501 lib/setup.c:1808 lib/setup.c:2753
+#, fuzzy
+msgid "Device size is not aligned to requested sector size."
+msgstr "Apparaat %s is geen geldig LUKS-apparaat.\n"
+
+#: lib/setup.c:1552 lib/setup.c:1671
+#, fuzzy
+msgid "Can't format LUKS without device."
+msgstr "Kan LUKS niet formatteren zonder apparaat.\n"
+
+#: lib/setup.c:1558 lib/setup.c:1677
+msgid "Requested data alignment is not compatible with data offset."
+msgstr ""
+
+#: lib/setup.c:1626 lib/setup.c:1795
+msgid "WARNING: Data offset is outside of currently available data device.\n"
+msgstr ""
+
+#: lib/setup.c:1636 lib/setup.c:1823 lib/setup.c:1844 lib/setup.c:2112
+#, fuzzy, c-format
+msgid "Cannot wipe header on device %s."
+msgstr "Kan koptekst op apparaat %s niet wissen.\n"
+
+#: lib/setup.c:1688
+msgid "WARNING: The device activation will fail, dm-crypt is missing support for requested encryption sector size.\n"
+msgstr ""
+
+#: lib/setup.c:1710
+msgid "Volume key is too small for encryption with integrity extensions."
+msgstr ""
+
+#: lib/setup.c:1765
+#, fuzzy, c-format
+msgid "Cipher %s-%s (key size %zd bits) is not available."
+msgstr "Versleutelalgoritme %s is niet beschikbaar.\n"
+
+#: lib/setup.c:1798
+#, c-format
+msgid "WARNING: LUKS2 metadata size changed to %<PRIu64> bytes.\n"
+msgstr ""
+
+#: lib/setup.c:1802
+#, c-format
+msgid "WARNING: LUKS2 keyslots area size changed to %<PRIu64> bytes.\n"
+msgstr ""
+
+#: lib/setup.c:1826 lib/utils_device.c:829 lib/luks1/keyencryption.c:256
+#: lib/luks2/luks2_reencrypt.c:2356 lib/luks2/luks2_reencrypt.c:3348
+#, fuzzy, c-format
+msgid "Device %s is too small."
+msgstr "Apparaat %s is te klein.\n"
+
+#: lib/setup.c:1837 lib/setup.c:1863
+#, fuzzy, c-format
+msgid "Cannot format device %s in use."
+msgstr "Kan apparaat %s niet formatteren; het is nog steeds actief.\n"
+
+#: lib/setup.c:1840 lib/setup.c:1866
+#, fuzzy, c-format
+msgid "Cannot format device %s, permission denied."
+msgstr "Kan apparaat %s niet formatteren: toestemming geweigerd.\n"
+
+#: lib/setup.c:1852 lib/setup.c:2164
+#, fuzzy, c-format
+msgid "Cannot format integrity for device %s."
+msgstr "Kan apparaat %s niet beschrijven.\n"
+
+#: lib/setup.c:1870
+#, fuzzy, c-format
+msgid "Cannot format device %s."
+msgstr "Kan apparaat niet lezen: %s.\n"
+
+#: lib/setup.c:1888
+#, fuzzy
+msgid "Can't format LOOPAES without device."
+msgstr "Kan LOOPAES niet formatteren zonder apparaat.\n"
+
+#: lib/setup.c:1933
+#, fuzzy
+msgid "Can't format VERITY without device."
+msgstr "Kan VERITY niet formatteren zonder apparaat.\n"
+
+#: lib/setup.c:1944 lib/verity/verity.c:103
+#, fuzzy, c-format
+msgid "Unsupported VERITY hash type %d."
+msgstr "Niet-ondersteund VERITY-hashtype %d.\n"
+
+#: lib/setup.c:1950 lib/verity/verity.c:111
+#, fuzzy
+msgid "Unsupported VERITY block size."
+msgstr "Niet-ondersteunde VERITY-blokgrootte.\n"
+
+#: lib/setup.c:1955 lib/verity/verity.c:75
+#, fuzzy
+msgid "Unsupported VERITY hash offset."
+msgstr "Niet-ondersteunde VERITY-hashgegevenspositie.\n"
+
+#: lib/setup.c:1960
+#, fuzzy
+msgid "Unsupported VERITY FEC offset."
+msgstr "Niet-ondersteunde VERITY-hashgegevenspositie.\n"
+
+#: lib/setup.c:1984
+#, fuzzy
+msgid "Data area overlaps with hash area."
+msgstr "Overlapping tussen datagedeelte en hashgedeelte.\n"
+
+#: lib/setup.c:2009
+#, fuzzy
+msgid "Hash area overlaps with FEC area."
+msgstr "Overlapping tussen datagedeelte en hashgedeelte.\n"
+
+#: lib/setup.c:2016
+#, fuzzy
+msgid "Data area overlaps with FEC area."
+msgstr "Overlapping tussen datagedeelte en hashgedeelte.\n"
+
+#: lib/setup.c:2221
+#, fuzzy, c-format
+msgid "Unknown crypt device type %s requested."
+msgstr "Onbekend versleutelingsapparaattype %s aangevraagd.\n"
+
+#: lib/setup.c:2485 lib/setup.c:2557 lib/setup.c:2570
+#, fuzzy, c-format
+msgid "Unsupported parameters on device %s."
+msgstr "Kan koptekst op apparaat %s niet wissen.\n"
+
+#: lib/setup.c:2491 lib/setup.c:2576 lib/luks2/luks2_reencrypt.c:2408
+#: lib/luks2/luks2_reencrypt.c:2718
+#, fuzzy, c-format
+msgid "Mismatching parameters on device %s."
+msgstr "Kan koptekst op apparaat %s niet wissen.\n"
+
+#: lib/setup.c:2596
+msgid "Crypt devices mismatch."
+msgstr ""
+
+#: lib/setup.c:2633 lib/setup.c:2638 lib/luks2/luks2_reencrypt.c:2054
+#: lib/luks2/luks2_reencrypt.c:3126
+#, fuzzy, c-format
+msgid "Failed to reload device %s."
+msgstr "Kan apparaat niet lezen: %s.\n"
+
+#: lib/setup.c:2643 lib/setup.c:2648 lib/luks2/luks2_reencrypt.c:2025
+#: lib/luks2/luks2_reencrypt.c:2032
+#, fuzzy, c-format
+msgid "Failed to suspend device %s."
+msgstr "Openen van sleutelbestand is mislukt.\n"
+
+#: lib/setup.c:2653 lib/luks2/luks2_reencrypt.c:2039
+#: lib/luks2/luks2_reencrypt.c:3061 lib/luks2/luks2_reencrypt.c:3130
+#, fuzzy, c-format
+msgid "Failed to resume device %s."
+msgstr "Kan apparaat niet lezen: %s.\n"
+
+#: lib/setup.c:2667
+#, c-format
+msgid "Fatal error while reloading device %s (on top of device %s)."
+msgstr ""
+
+#: lib/setup.c:2670 lib/setup.c:2672
+#, fuzzy, c-format
+msgid "Failed to switch device %s to dm-error."
+msgstr "Kan geen map voor de apparaatstoewijzer verkrijgen."
+
+#: lib/setup.c:2744
+#, fuzzy
+msgid "Cannot resize loop device."
+msgstr "Kan grootte van loopback-apparaat niet aanpassen.\n"
+
+#: lib/setup.c:2817
+msgid "Do you really want to change UUID of device?"
+msgstr "Bent u zeker dat u het UUID van het apparaat wilt wijzigen?"
+
+#: lib/setup.c:2893
+#, fuzzy
+msgid "Header backup file does not contain compatible LUKS header."
+msgstr "Reservekopiebestand bevat geen geldige LUKS-koptekst.\n"
+
+#: lib/setup.c:2993
+#, fuzzy, c-format
+msgid "Volume %s is not active."
+msgstr "Opslagmedium %s is niet actief.\n"
+
+#: lib/setup.c:3004
+#, fuzzy, c-format
+msgid "Volume %s is already suspended."
+msgstr "Opslagmedium %s is reeds geschorst.\n"
+
+#: lib/setup.c:3017
+#, fuzzy, c-format
+msgid "Suspend is not supported for device %s."
+msgstr "Opschorten wordt niet ondersteund voor apparaat %s.\n"
+
+#: lib/setup.c:3019
+#, fuzzy, c-format
+msgid "Error during suspending device %s."
+msgstr "Fout bij het opschorten van apparaat %s.\n"
+
+#: lib/setup.c:3052 lib/setup.c:3119
+#, fuzzy, c-format
+msgid "Volume %s is not suspended."
+msgstr "Opslagmedium %s is niet geschorst.\n"
+
+#: lib/setup.c:3081
+#, fuzzy, c-format
+msgid "Resume is not supported for device %s."
+msgstr "Hervatting wordt niet ondersteund voor apparaat %s.\n"
+
+#: lib/setup.c:3083 lib/setup.c:3151
+#, fuzzy, c-format
+msgid "Error during resuming device %s."
+msgstr "Fout bij het hervatten van apparaat %s.\n"
+
+#: lib/setup.c:3219 lib/setup.c:3407
+#, fuzzy
+msgid "Cannot add key slot, all slots disabled and no volume key provided."
+msgstr "Kan geen sleutelplaats toevoegen, alle plaatsen zijn uitgeschakeld en er is geen sleutel tot het opslagmedium voorzien.\n"
+
+#: lib/setup.c:3359
+#, fuzzy
+msgid "Failed to swap new key slot."
+msgstr "Kan nieuwe sleutelplaats niet verwisselen.\n"
+
+#: lib/setup.c:3524 lib/setup.c:4161 lib/setup.c:4174 lib/setup.c:4182
+#: lib/setup.c:4195 lib/setup.c:4480 lib/setup.c:5593
+#, fuzzy
+msgid "Volume key does not match the volume."
+msgstr "Sleutel tot opslagmedium komt niet overeen met het opslagmedium.\n"
+
+#: lib/setup.c:3545
+#, fuzzy, c-format
+msgid "Key slot %d is invalid."
+msgstr "Sleutelplaats %d is ongeldig.\n"
+
+#: lib/setup.c:3551 src/cryptsetup.c:1511 src/cryptsetup.c:1856
+#, fuzzy, c-format
+msgid "Keyslot %d is not active."
+msgstr "Sleutelplaats %d is niet in gebruik.\n"
+
+#: lib/setup.c:3570
+#, fuzzy
+msgid "Device header overlaps with data area."
+msgstr "Overlapping tussen datagedeelte en hashgedeelte.\n"
+
+#: lib/setup.c:3836
+msgid "Reencryption in-progress. Cannot activate device."
+msgstr ""
+
+#: lib/setup.c:3838 lib/luks2/luks2_json_metadata.c:2244
+#: lib/luks2/luks2_reencrypt.c:2817
+#, fuzzy
+msgid "Failed to get reencryption lock."
+msgstr "Kan herencryptie-logbestand niet lezen.\n"
+
+#: lib/setup.c:3851 lib/luks2/luks2_reencrypt.c:2836
+#, fuzzy
+msgid "LUKS2 reencryption recovery failed."
+msgstr "Kan herencryptie-logbestand niet openen.\n"
+
+#: lib/setup.c:3978 lib/setup.c:4248
+#, fuzzy
+msgid "Device type is not properly initialised."
+msgstr "Apparaatstype is niet behoorlijk geïnitialiseerd.\n"
+
+#: lib/setup.c:4022
+#, fuzzy, c-format
+msgid "Cannot use device %s, name is invalid or still in use."
+msgstr "Kan apparaat %s niet formatteren; het is nog steeds actief.\n"
+
+#: lib/setup.c:4025
+#, fuzzy, c-format
+msgid "Device %s already exists."
+msgstr "Apparaat %s bestaat reeds.\n"
+
+#: lib/setup.c:4148
+#, fuzzy
+msgid "Incorrect volume key specified for plain device."
+msgstr "Incorrecte sleutel tot het opslagmedium voor normaal apparaat verschaft.\n"
+
+#: lib/setup.c:4214
+#, fuzzy
+msgid "Incorrect root hash specified for verity device."
+msgstr "Incorrecte root-hash voor het VERITY-apparaat opgegeven.\n"
+
+#: lib/setup.c:4289 lib/setup.c:4305 lib/luks2/luks2_json_metadata.c:2297
+#: src/cryptsetup.c:2527
+#, fuzzy, c-format
+msgid "Device %s is still in use."
+msgstr "Apparaat %s is nog in gebruik.\n"
+
+#: lib/setup.c:4314
+#, fuzzy, c-format
+msgid "Invalid device %s."
+msgstr "Ongeldig apparaat %s.\n"
+
+#: lib/setup.c:4430
+#, fuzzy
+msgid "Volume key buffer too small."
+msgstr "Sleutelbuffer van het opslagmedium is te klein.\n"
+
+#: lib/setup.c:4438
+#, fuzzy
+msgid "Cannot retrieve volume key for plain device."
+msgstr "Kan sleutel tot het opslagmedium voor normaal apparaat niet ophalen.\n"
+
+#: lib/setup.c:4449
+#, fuzzy, c-format
+msgid "This operation is not supported for %s crypt device."
+msgstr "Deze operatie wordt niet ondersteund voor versleutelapparaat %s.\n"
+
+#: lib/setup.c:4636
+#, fuzzy
+msgid "Dump operation is not supported for this device type."
+msgstr "Dump-operatie wordt niet ondersteund voor dit apparaatstype.\n"
+
+#: lib/setup.c:4947
+#, c-format
+msgid "Data offset is not multiple of %u bytes."
+msgstr ""
+
+#: lib/setup.c:5229
+#, fuzzy, c-format
+msgid "Cannot convert device %s which is still in use."
+msgstr "Kan apparaat %s niet formatteren; het is nog steeds actief.\n"
+
+#: lib/setup.c:5526
+#, c-format
+msgid "Failed to assign keyslot %u as the new volume key."
+msgstr ""
+
+#: lib/setup.c:5599
+msgid "Failed to initialise default LUKS2 keyslot parameters."
+msgstr ""
+
+#: lib/setup.c:5605
+#, fuzzy, c-format
+msgid "Failed to assign keyslot %d to digest."
+msgstr "Kan nieuwe sleutelplaats niet verwisselen.\n"
+
+#: lib/setup.c:5690
+#, fuzzy
+msgid "Failed to load key in kernel keyring."
+msgstr "Openen van sleutelbestand is mislukt.\n"
+
+#: lib/setup.c:5757
+#, fuzzy
+msgid "Kernel keyring is not supported by the kernel."
+msgstr "Deze operatie wordt niet ondersteund voor dit apparaatstype.\n"
+
+#: lib/setup.c:5767 lib/luks2/luks2_reencrypt.c:2933
+#, fuzzy, c-format
+msgid "Failed to read passphrase from keyring (error %d)."
+msgstr "Lezen uit sleutelopslag is mislukt.\n"
+
+#: lib/setup.c:5791
+msgid "Failed to acquire global memory-hard access serialization lock."
+msgstr ""
+
+#: lib/utils.c:81
+#, fuzzy
+msgid "Cannot get process priority."
+msgstr "Kan geen procesprioriteit verkrijgen.\n"
+
+#: lib/utils.c:95
+#, fuzzy
+msgid "Cannot unlock memory."
+msgstr "Kan geheugen niet ontgrendelen.\n"
+
+#: lib/utils.c:169 lib/tcrypt/tcrypt.c:498
+#, fuzzy
+msgid "Failed to open key file."
+msgstr "Openen van sleutelbestand is mislukt.\n"
+
+#: lib/utils.c:174
+#, fuzzy
+msgid "Cannot read keyfile from a terminal."
+msgstr "Kan sleutelbestand %s niet lezen.\n"
+
+#: lib/utils.c:191
+#, fuzzy
+msgid "Failed to stat key file."
+msgstr "Kan status van sleutelbestand niet opvragen.\n"
+
+#: lib/utils.c:199 lib/utils.c:220
+#, fuzzy
+msgid "Cannot seek to requested keyfile offset."
+msgstr "Kan niet zoeken tot aan het aangevraagde sleutelbestand.\n"
+
+#: lib/utils.c:214 lib/utils.c:229 src/utils_password.c:188
+#: src/utils_password.c:201
+#, fuzzy
+msgid "Out of memory while reading passphrase."
+msgstr "Geen geheugen meer beschikbaar bij lezen van wachtwoord.\n"
+
+#: lib/utils.c:249
+#, fuzzy
+msgid "Error reading passphrase."
+msgstr "Fout bij lezen van wachtwoord.\n"
+
+#: lib/utils.c:266
+msgid "Nothing to read on input."
+msgstr ""
+
+#: lib/utils.c:273
+#, fuzzy
+msgid "Maximum keyfile size exceeded."
+msgstr "Maximum sleutelbestandsgrootte overschreden.\n"
+
+#: lib/utils.c:278
+#, fuzzy
+msgid "Cannot read requested amount of data."
+msgstr "Kan aangevraagde hoeveelheid data niet lezen.\n"
+
+#: lib/utils_device.c:188 lib/utils_storage_wrappers.c:111
+#: lib/luks1/keyencryption.c:92
+#, fuzzy, c-format
+msgid "Device %s doesn't exist or access denied."
+msgstr "Apparaat %s bestaat niet of toegang is geweigerd.\n"
+
+#: lib/utils_device.c:198
+#, fuzzy, c-format
+msgid "Device %s is not compatible."
+msgstr "Apparaat %s is niet actief.\n"
+
+#: lib/utils_device.c:643
+#, fuzzy, c-format
+msgid "Device %s is too small. Need at least %<PRIu64> bytes."
+msgstr "Apparaat %s is te klein. (LUKS vereist minstens %<PRIu64> bytes.)\n"
+
+#: lib/utils_device.c:724
+#, fuzzy, c-format
+msgid "Cannot use device %s which is in use (already mapped or mounted)."
+msgstr "Kan apparaat %s niet gebruiken; het is nog actief (reeds toegewezen of aangekoppeld).\n"
+
+#: lib/utils_device.c:728
+#, fuzzy, c-format
+msgid "Cannot use device %s, permission denied."
+msgstr "Kan apparaat %s niet beschrijven: toestemming geweigerd.\n"
+
+#: lib/utils_device.c:731
+#, fuzzy, c-format
+msgid "Cannot get info about device %s."
+msgstr "Kan geen informatie verkrijgen over apparaat %s.\n"
+
+#: lib/utils_device.c:754
+#, fuzzy
+msgid "Cannot use a loopback device, running as non-root user."
+msgstr "Kan geen loopback-apparaat gebruiken, uitvoering als non-root gebruiker.\n"
+
+#: lib/utils_device.c:764
+#, fuzzy
+msgid "Attaching loopback device failed (loop device with autoclear flag is required)."
+msgstr "Vastmaken loopback-apparaat gefaald (loop-apparaat met autoclear-vlag is vereist).\n"
+
+#: lib/utils_device.c:810
+#, fuzzy, c-format
+msgid "Requested offset is beyond real size of device %s."
+msgstr "De aangevraagde gegevenspositie valt buiten de werkelijke grootte van apparaat %s.\n"
+
+#: lib/utils_device.c:818
+#, fuzzy, c-format
+msgid "Device %s has zero size."
+msgstr "Apparaat %s heeft grootte nul.\n"
+
+#: lib/utils_pbkdf.c:100
+msgid "Requested PBKDF target time cannot be zero."
+msgstr ""
+
+#: lib/utils_pbkdf.c:106
+#, c-format
+msgid "Unknown PBKDF type %s."
+msgstr ""
+
+#: lib/utils_pbkdf.c:111
+#, fuzzy, c-format
+msgid "Requested hash %s is not supported."
+msgstr "Aangevraagde LUKS-hash %s wordt niet ondersteund.\n"
+
+#: lib/utils_pbkdf.c:122
+#, fuzzy
+msgid "Requested PBKDF type is not supported for LUKS1."
+msgstr "Aangevraagde LUKS-hash %s wordt niet ondersteund.\n"
+
+#: lib/utils_pbkdf.c:128
+msgid "PBKDF max memory or parallel threads must not be set with pbkdf2."
+msgstr ""
+
+#: lib/utils_pbkdf.c:133 lib/utils_pbkdf.c:143
+#, c-format
+msgid "Forced iteration count is too low for %s (minimum is %u)."
+msgstr ""
+
+#: lib/utils_pbkdf.c:148
+#, c-format
+msgid "Forced memory cost is too low for %s (minimum is %u kilobytes)."
+msgstr ""
+
+#: lib/utils_pbkdf.c:155
+#, c-format
+msgid "Requested maximum PBKDF memory cost is too high (maximum is %d kilobytes)."
+msgstr ""
+
+#: lib/utils_pbkdf.c:160
+msgid "Requested maximum PBKDF memory cannot be zero."
+msgstr ""
+
+#: lib/utils_pbkdf.c:164
+msgid "Requested PBKDF parallel threads cannot be zero."
+msgstr ""
+
+#: lib/utils_pbkdf.c:184
+msgid "Only PBKDF2 is supported in FIPS mode."
+msgstr ""
+
+#: lib/utils_benchmark.c:166
+msgid "PBKDF benchmark disabled but iterations not set."
+msgstr ""
+
+#: lib/utils_benchmark.c:185
+#, fuzzy, c-format
+msgid "Not compatible PBKDF2 options (using hash algorithm %s)."
+msgstr "Niet-compatibele PBKDF2-opties (met hash-algoritme %s in gebruik).\n"
+
+#: lib/utils_benchmark.c:205
+#, fuzzy
+msgid "Not compatible PBKDF options."
+msgstr "Niet-compatibele PBKDF2-opties (met hash-algoritme %s in gebruik).\n"
+
+#: lib/utils_device_locking.c:103
+#, c-format
+msgid "Locking aborted. The locking path %s/%s is unusable (not a directory or missing)."
+msgstr ""
+
+#: lib/utils_device_locking.c:110
+#, c-format
+msgid "WARNING: Locking directory %s/%s is missing!\n"
+msgstr ""
+
+#: lib/utils_device_locking.c:120
+#, c-format
+msgid "Locking aborted. The locking path %s/%s is unusable (%s is not a directory)."
+msgstr ""
+
+#: lib/utils_wipe.c:185 src/cryptsetup_reencrypt.c:933
+#: src/cryptsetup_reencrypt.c:1017
+#, fuzzy
+msgid "Cannot seek to device offset."
+msgstr "Onmogelijk te zoeken tot startplaats van apparaat.\n"
+
+#: lib/utils_wipe.c:209
+#, c-format
+msgid "Device wipe error, offset %<PRIu64>."
+msgstr ""
+
+#: lib/luks1/keyencryption.c:40
+#, fuzzy, c-format
+msgid ""
+"Failed to setup dm-crypt key mapping for device %s.\n"
+"Check that kernel supports %s cipher (check syslog for more info)."
+msgstr ""
+"Kan dm-crypt sleuteltoewijzing niet instellen voor apparaat %s.\n"
+"Kijk na of de kernel versleutelalgoritme %s ondersteunt (bekijk syslog voor meer informatie).\n"
+
+#: lib/luks1/keyencryption.c:45
+#, fuzzy
+msgid "Key size in XTS mode must be 256 or 512 bits."
+msgstr "In XTS-modus moet de sleutelgrootte 256 of 512 bits zijn.\n"
+
+#: lib/luks1/keyencryption.c:47
+msgid "Cipher specification should be in [cipher]-[mode]-[iv] format."
+msgstr ""
+
+#: lib/luks1/keyencryption.c:98 lib/luks1/keymanage.c:345
+#: lib/luks1/keymanage.c:636 lib/luks1/keymanage.c:1074
+#: lib/luks2/luks2_json_metadata.c:1253 lib/luks2/luks2_keyslot.c:739
+#, fuzzy, c-format
+msgid "Cannot write to device %s, permission denied."
+msgstr "Kan apparaat %s niet beschrijven: toestemming geweigerd.\n"
+
+#: lib/luks1/keyencryption.c:121
+#, fuzzy
+msgid "Failed to open temporary keystore device."
+msgstr "Openen van het tijdelijke sleutelopslagapparaat is mislukt.\n"
+
+#: lib/luks1/keyencryption.c:128
+#, fuzzy
+msgid "Failed to access temporary keystore device."
+msgstr "Kan geen toegang verkrijgen tot tijdelijk sleutelopslagapparaat.\n"
+
+#: lib/luks1/keyencryption.c:201 lib/luks2/luks2_keyslot_luks2.c:60
+#: lib/luks2/luks2_keyslot_luks2.c:78 lib/luks2/luks2_keyslot_reenc.c:134
+#, fuzzy
+msgid "IO error while encrypting keyslot."
+msgstr "Invoer/uitvoerfout tijdens het versleutelen van de sleutelplaats.\n"
+
+#: lib/luks1/keyencryption.c:247 lib/luks1/keymanage.c:348
+#: lib/luks1/keymanage.c:589 lib/luks1/keymanage.c:639 lib/tcrypt/tcrypt.c:661
+#: lib/verity/verity.c:81 lib/verity/verity.c:179 lib/verity/verity_hash.c:308
+#: lib/verity/verity_hash.c:319 lib/verity/verity_hash.c:339
+#: lib/verity/verity_fec.c:242 lib/verity/verity_fec.c:254
+#: lib/verity/verity_fec.c:259 lib/luks2/luks2_json_metadata.c:1256
+#: src/cryptsetup_reencrypt.c:205
+#, fuzzy, c-format
+msgid "Cannot open device %s."
+msgstr "Kan apparaat %s niet openen.\n"
+
+#: lib/luks1/keyencryption.c:258 lib/luks2/luks2_keyslot_luks2.c:137
+#, fuzzy
+msgid "IO error while decrypting keyslot."
+msgstr "Invoer/uitvoerfout tijdens het ontsleutelen van de sleutelplaats.\n"
+
+#: lib/luks1/keymanage.c:111
+#, fuzzy, c-format
+msgid "Device %s is too small. (LUKS1 requires at least %<PRIu64> bytes.)"
+msgstr "Apparaat %s is te klein. (LUKS vereist minstens %<PRIu64> bytes.)\n"
+
+#: lib/luks1/keymanage.c:132 lib/luks1/keymanage.c:140
+#: lib/luks1/keymanage.c:152 lib/luks1/keymanage.c:163
+#: lib/luks1/keymanage.c:175
+#, fuzzy, c-format
+msgid "LUKS keyslot %u is invalid."
+msgstr "LUKS-sleutelplaats %u is ongeldig.\n"
+
+#: lib/luks1/keymanage.c:229 lib/luks1/keymanage.c:473
+#: lib/luks2/luks2_json_metadata.c:1084 src/cryptsetup.c:1372
+#: src/cryptsetup.c:1498 src/cryptsetup.c:1555 src/cryptsetup.c:1611
+#: src/cryptsetup.c:1678 src/cryptsetup.c:1781 src/cryptsetup.c:1845
+#: src/cryptsetup.c:2005 src/cryptsetup.c:2194 src/cryptsetup.c:2254
+#: src/cryptsetup.c:2320 src/cryptsetup.c:2484 src/cryptsetup.c:3137
+#: src/cryptsetup.c:3146 src/cryptsetup_reencrypt.c:1372
+#, fuzzy, c-format
+msgid "Device %s is not a valid LUKS device."
+msgstr "Apparaat %s is geen geldig LUKS-apparaat.\n"
+
+#: lib/luks1/keymanage.c:247 lib/luks2/luks2_json_metadata.c:1101
+#, fuzzy, c-format
+msgid "Requested header backup file %s already exists."
+msgstr "Aangevraagd reservekopiebestand %s van koptekst bestaat reeds.\n"
+
+#: lib/luks1/keymanage.c:249 lib/luks2/luks2_json_metadata.c:1103
+#, fuzzy, c-format
+msgid "Cannot create header backup file %s."
+msgstr "Kan reservekopiebestand %s van koptekst niet aanmaken.\n"
+
+#: lib/luks1/keymanage.c:256 lib/luks2/luks2_json_metadata.c:1110
+#, fuzzy, c-format
+msgid "Cannot write header backup file %s."
+msgstr "Kan reservekopiebestand %s van koptekst niet schrijven.\n"
+
+#: lib/luks1/keymanage.c:287 lib/luks2/luks2_json_metadata.c:1162
+#, fuzzy
+msgid "Backup file doesn't contain valid LUKS header."
+msgstr "Reservekopiebestand bevat geen geldige LUKS-koptekst.\n"
+
+#: lib/luks1/keymanage.c:300 lib/luks1/keymanage.c:550
+#: lib/luks2/luks2_json_metadata.c:1183
+#, fuzzy, c-format
+msgid "Cannot open header backup file %s."
+msgstr "Kan reservekopiebestand %s van koptekst niet openen.\n"
+
+#: lib/luks1/keymanage.c:308 lib/luks2/luks2_json_metadata.c:1191
+#, fuzzy, c-format
+msgid "Cannot read header backup file %s."
+msgstr "Kan reservekopiebestand %s van koptekst niet lezen.\n"
+
+#: lib/luks1/keymanage.c:318
+#, fuzzy
+msgid "Data offset or key size differs on device and backup, restore failed."
+msgstr "Verschillende gegevenspositie of sleutelgrootte in apparaat en reservekopie; herstelling is mislukt.\n"
+
+#: lib/luks1/keymanage.c:326
+#, c-format
+msgid "Device %s %s%s"
+msgstr "Apparaat %s %s%s"
+
+#: lib/luks1/keymanage.c:327
+msgid "does not contain LUKS header. Replacing header can destroy data on that device."
+msgstr "bevat geen LUKS-koptekst. Het vervangen van de koptekst kan gegevens op het apparaat vernietigen."
+
+#: lib/luks1/keymanage.c:328
+msgid "already contains LUKS header. Replacing header will destroy existing keyslots."
+msgstr "bevat reeds een LUKS-koptekst. Het vervangen van de koptekst zal bestaande sleutelplaatsen vernietigen."
+
+#: lib/luks1/keymanage.c:329 lib/luks2/luks2_json_metadata.c:1225
+msgid ""
+"\n"
+"WARNING: real device header has different UUID than backup!"
+msgstr ""
+"\n"
+"WAARSCHUWING: originele apparaatkoptekst heeft een ander UUID dan de reservekopie!"
+
+#: lib/luks1/keymanage.c:376
+#, fuzzy
+msgid "Non standard key size, manual repair required."
+msgstr "Niet-standaard sleutelgrootte, handmatige herstelling is vereist.\n"
+
+#: lib/luks1/keymanage.c:381
+#, fuzzy
+msgid "Non standard keyslots alignment, manual repair required."
+msgstr "Niet-standaard sleutelplaatsuitlijning, handmatige herstelling is vereist.\n"
+
+#: lib/luks1/keymanage.c:391
+#, fuzzy
+msgid "Repairing keyslots."
+msgstr "Sleutelplaatsen worden hersteld.\n"
+
+#: lib/luks1/keymanage.c:410
+#, fuzzy, c-format
+msgid "Keyslot %i: offset repaired (%u -> %u)."
+msgstr "Sleutelplaats %i: gegevenspositie hersteld (%u -> %u).\n"
+
+#: lib/luks1/keymanage.c:418
+#, fuzzy, c-format
+msgid "Keyslot %i: stripes repaired (%u -> %u)."
+msgstr "Sleutelplaats %i: fragmenten hersteld (%u -> %u).\n"
+
+#: lib/luks1/keymanage.c:427
+#, fuzzy, c-format
+msgid "Keyslot %i: bogus partition signature."
+msgstr "Sleutelplaats %i: valse partitiehandtekening.\n"
+
+#: lib/luks1/keymanage.c:432
+#, fuzzy, c-format
+msgid "Keyslot %i: salt wiped."
+msgstr "Sleutelplaats %i: salt uitgewist.\n"
+
+#: lib/luks1/keymanage.c:449
+#, fuzzy
+msgid "Writing LUKS header to disk."
+msgstr "LUKS-koptekst wordt naar schijf geschreven.\n"
+
+#: lib/luks1/keymanage.c:454
+msgid "Repair failed."
+msgstr "Herstelling is mislukt."
+
+#: lib/luks1/keymanage.c:482 lib/luks1/keymanage.c:751
+#, fuzzy, c-format
+msgid "Requested LUKS hash %s is not supported."
+msgstr "Aangevraagde LUKS-hash %s wordt niet ondersteund.\n"
+
+#: lib/luks1/keymanage.c:510 src/cryptsetup.c:1081
+#, fuzzy
+msgid "No known problems detected for LUKS header."
+msgstr "Geen gekende problemen gevonden bij LUKS-koptekst.\n"
+
+#: lib/luks1/keymanage.c:661
+#, fuzzy, c-format
+msgid "Error during update of LUKS header on device %s."
+msgstr "Fout bij het bijwerken van LUKS-koptekst op apparaat %s.\n"
+
+#: lib/luks1/keymanage.c:669
+#, fuzzy, c-format
+msgid "Error re-reading LUKS header after update on device %s."
+msgstr "Fout bij het herlezen van LUKS-koptekst na bijwerken van apparaat %s.\n"
+
+#: lib/luks1/keymanage.c:745
+#, fuzzy
+msgid "Data offset for LUKS header must be either 0 or higher than header size."
+msgstr "De datagegevenspositie voor een aparte LUKS-koptekst moet of 0 zijn, of hoger liggen dan de koptekstgrootte (%d sectoren).\n"
+
+#: lib/luks1/keymanage.c:756 lib/luks1/keymanage.c:821
+#: lib/luks2/luks2_json_format.c:283 lib/luks2/luks2_json_metadata.c:1002
+#: src/cryptsetup.c:2647
+#, fuzzy
+msgid "Wrong LUKS UUID format provided."
+msgstr "Verkeerd LUKS UUID-formaat verschaft.\n"
+
+#: lib/luks1/keymanage.c:779
+#, fuzzy
+msgid "Cannot create LUKS header: reading random salt failed."
+msgstr "Kan LUKS-koptekst niet aanmaken: lezen van random salt is mislukt.\n"
+
+#: lib/luks1/keymanage.c:800
+#, fuzzy, c-format
+msgid "Cannot create LUKS header: header digest failed (using hash %s)."
+msgstr "Kan LUKS-koptekst niet aanmaken: koptekst-extract is mislukt (met %s-hash).\n"
+
+#: lib/luks1/keymanage.c:844
+#, fuzzy, c-format
+msgid "Key slot %d active, purge first."
+msgstr "Sleutelplaats %d is actief; ruim eerst op.\n"
+
+#: lib/luks1/keymanage.c:850
+#, fuzzy, c-format
+msgid "Key slot %d material includes too few stripes. Header manipulation?"
+msgstr "Inhoud van sleutelplaats %d bevat te weinig fragmenten. Koptekstmanipulatie?\n"
+
+#: lib/luks1/keymanage.c:1060
+#, fuzzy, c-format
+msgid "Key slot %d is invalid, please select keyslot between 0 and %d."
+msgstr "Sleutelplaats %d is ongeldig, selecteer een sleutelplaats tussen 0 en %d.\n"
+
+#: lib/luks1/keymanage.c:1078 lib/luks2/luks2_keyslot.c:743
+#, fuzzy, c-format
+msgid "Cannot wipe device %s."
+msgstr "Kan apparaat %s niet wissen.\n"
+
+#: lib/loopaes/loopaes.c:146
+#, fuzzy
+msgid "Detected not yet supported GPG encrypted keyfile."
+msgstr "Nog niet ondersteund GPG-versleuteld sleutelbestand gevonden.\n"
+
+#: lib/loopaes/loopaes.c:147
+msgid "Please use gpg --decrypt <KEYFILE> | cryptsetup --keyfile=- ...\n"
+msgstr "Gebruik gpg --decrypt <KEYFILE> | cryptsetup --keyfile=- ...\n"
+
+#: lib/loopaes/loopaes.c:168 lib/loopaes/loopaes.c:188
+#, fuzzy
+msgid "Incompatible loop-AES keyfile detected."
+msgstr "Onverenigbaar loop-AES-sleutelbestand gevonden.\n"
+
+#: lib/loopaes/loopaes.c:245
+#, fuzzy
+msgid "Kernel doesn't support loop-AES compatible mapping."
+msgstr "Toewijzingen compatibel met loop-AES worden niet ondersteund door de kernel.\n"
+
+#: lib/tcrypt/tcrypt.c:505
+#, fuzzy, c-format
+msgid "Error reading keyfile %s."
+msgstr "Fout bij het lezen van sleutelbestand %s.\n"
+
+#: lib/tcrypt/tcrypt.c:545
+#, fuzzy, c-format
+msgid "Maximum TCRYPT passphrase length (%d) exceeded."
+msgstr "Maximum TCRYPT-wachtwoorlengte (%d) overschreden.\n"
+
+#: lib/tcrypt/tcrypt.c:586
+#, fuzzy, c-format
+msgid "PBKDF2 hash algorithm %s not available, skipping."
+msgstr "PBKDF2 hash-algoritme %s is niet beschikbaar, wordt overgeslaan.\n"
+
+#: lib/tcrypt/tcrypt.c:602 src/cryptsetup.c:959
+#, fuzzy
+msgid "Required kernel crypto interface not available."
+msgstr "Benodigde kernel cryptografie-interface is niet beschikbaar.\n"
+
+#: lib/tcrypt/tcrypt.c:604 src/cryptsetup.c:961
+#, fuzzy
+msgid "Ensure you have algif_skcipher kernel module loaded."
+msgstr "Kijk na of kernelmodule algif_skcipher geladen is.\n"
+
+#: lib/tcrypt/tcrypt.c:744
+#, fuzzy, c-format
+msgid "Activation is not supported for %d sector size."
+msgstr "Activatie wordt niet ondersteund voor %d sectorgrootte.\n"
+
+#: lib/tcrypt/tcrypt.c:750
+#, fuzzy
+msgid "Kernel doesn't support activation for this TCRYPT legacy mode."
+msgstr "Activatie voor deze TCRYPT-legacymodus wordt niet ondersteund door de kernel.\n"
+
+#: lib/tcrypt/tcrypt.c:784
+#, fuzzy, c-format
+msgid "Activating TCRYPT system encryption for partition %s."
+msgstr "TCRYPT-systeemversleuteling voor partitie %s wordt geactiveerd.\n"
+
+#: lib/tcrypt/tcrypt.c:862
+#, fuzzy
+msgid "Kernel doesn't support TCRYPT compatible mapping."
+msgstr "Toewijzingen compatibel met TCRYPT worden niet ondersteund door de kernel.\n"
+
+#: lib/tcrypt/tcrypt.c:1084
+msgid "This function is not supported without TCRYPT header load."
+msgstr "Deze functie wordt niet ondersteund zonder TCRYPT-koptekst."
+
+#: lib/verity/verity.c:69 lib/verity/verity.c:172
+#, fuzzy, c-format
+msgid "Verity device %s doesn't use on-disk header."
+msgstr "VERITY-apparaat %s gebruikt geen on-disk koptekst.\n"
+
+#: lib/verity/verity.c:91
+#, fuzzy, c-format
+msgid "Device %s is not a valid VERITY device."
+msgstr "Apparaat %s is geen geldig VERITY-apparaat.\n"
+
+#: lib/verity/verity.c:98
+#, fuzzy, c-format
+msgid "Unsupported VERITY version %d."
+msgstr "Niet-ondersteunde VERITY-versie %d.\n"
+
+#: lib/verity/verity.c:129
+#, fuzzy
+msgid "VERITY header corrupted."
+msgstr "VERITY-koptekst beschadigd.\n"
+
+#: lib/verity/verity.c:166
+#, fuzzy, c-format
+msgid "Wrong VERITY UUID format provided on device %s."
+msgstr "Verkeerd VERITY UUID-formaat verschaft op apparaat %s.\n"
+
+#: lib/verity/verity.c:199
+#, fuzzy, c-format
+msgid "Error during update of verity header on device %s."
+msgstr "Fout bij het bijwerken van VERITY-koptekst op apparaat %s.\n"
+
+#: lib/verity/verity.c:262
+msgid "Errors cannot be repaired with FEC device."
+msgstr ""
+
+#: lib/verity/verity.c:264
+#, c-format
+msgid "Found %u repairable errors with FEC device."
+msgstr ""
+
+#: lib/verity/verity.c:302
+#, fuzzy
+msgid "Kernel doesn't support dm-verity mapping."
+msgstr "dm-verity toewijzingen niet ondersteund door kernel.\n"
+
+#: lib/verity/verity.c:313
+#, fuzzy
+msgid "Verity device detected corruption after activation."
+msgstr "VERITY-apparaat ontdekte beschadiging na activatie.\n"
+
+#: lib/verity/verity_hash.c:59
+#, fuzzy, c-format
+msgid "Spare area is not zeroed at position %<PRIu64>."
+msgstr "Reservegebied is niet ingesteld op positie %<PRIu64>.\n"
+
+#: lib/verity/verity_hash.c:160 lib/verity/verity_hash.c:287
+#: lib/verity/verity_hash.c:300
+#, fuzzy
+msgid "Device offset overflow."
+msgstr "Overloop van apparaatsgegevenspositie.\n"
+
+#: lib/verity/verity_hash.c:200
+#, fuzzy, c-format
+msgid "Verification failed at position %<PRIu64>."
+msgstr "Controle gefaald op positie %<PRIu64>.\n"
+
+#: lib/verity/verity_hash.c:273
+#, fuzzy
+msgid "Invalid size parameters for verity device."
+msgstr "Ongeldige grootteparameters voor VERITY-apparaat.\n"
+
+#: lib/verity/verity_hash.c:293
+msgid "Hash area overflow."
+msgstr ""
+
+#: lib/verity/verity_hash.c:370
+#, fuzzy
+msgid "Verification of data area failed."
+msgstr "Controle van gegevensgebied gefaald.\n"
+
+#: lib/verity/verity_hash.c:375
+#, fuzzy
+msgid "Verification of root hash failed."
+msgstr "Controle van root-hash gefaald.\n"
+
+#: lib/verity/verity_hash.c:381
+#, fuzzy
+msgid "Input/output error while creating hash area."
+msgstr "Invoer/uitvoerfout bij het aanmaken van hash-gebied.\n"
+
+#: lib/verity/verity_hash.c:383
+#, fuzzy
+msgid "Creation of hash area failed."
+msgstr "Creatie hash-gebied gefaald.\n"
+
+#: lib/verity/verity_hash.c:430
+#, fuzzy, c-format
+msgid "WARNING: Kernel cannot activate device if data block size exceeds page size (%u)."
+msgstr "WAARSCHUWING: Kernel kan apparaat niet activeren als de gegevensblokgrootte groter is dan de paginagrootte (%u).\n"
+
+#: lib/verity/verity_fec.c:132
+msgid "Failed to allocate RS context."
+msgstr ""
+
+#: lib/verity/verity_fec.c:147
+#, fuzzy
+msgid "Failed to allocate buffer."
+msgstr "Kan status van sleutelbestand niet opvragen.\n"
+
+#: lib/verity/verity_fec.c:157
+#, c-format
+msgid "Failed to read RS block %<PRIu64> byte %d."
+msgstr ""
+
+#: lib/verity/verity_fec.c:170
+#, c-format
+msgid "Failed to read parity for RS block %<PRIu64>."
+msgstr ""
+
+#: lib/verity/verity_fec.c:178
+#, c-format
+msgid "Failed to repair parity for block %<PRIu64>."
+msgstr ""
+
+#: lib/verity/verity_fec.c:189
+#, c-format
+msgid "Failed to write parity for RS block %<PRIu64>."
+msgstr ""
+
+#: lib/verity/verity_fec.c:224
+msgid "Block sizes must match for FEC."
+msgstr ""
+
+#: lib/verity/verity_fec.c:230
+msgid "Invalid number of parity bytes."
+msgstr ""
+
+#: lib/verity/verity_fec.c:266
+#, fuzzy, c-format
+msgid "Failed to determine size for device %s."
+msgstr "Openen van het tijdelijke sleutelopslagapparaat is mislukt.\n"
+
+#: lib/integrity/integrity.c:241 lib/integrity/integrity.c:306
+#, fuzzy
+msgid "Kernel doesn't support dm-integrity mapping."
+msgstr "dm-verity toewijzingen niet ondersteund door kernel.\n"
+
+#: lib/luks2/luks2_disk_metadata.c:383 lib/luks2/luks2_json_metadata.c:959
+#: lib/luks2/luks2_json_metadata.c:1245
+#, fuzzy, c-format
+msgid "Failed to acquire write lock on device %s."
+msgstr "Kan geen toegang verkrijgen tot tijdelijk sleutelopslagapparaat.\n"
+
+#: lib/luks2/luks2_disk_metadata.c:392
+msgid "Detected attempt for concurrent LUKS2 metadata update. Aborting operation."
+msgstr ""
+
+#: lib/luks2/luks2_disk_metadata.c:691 lib/luks2/luks2_disk_metadata.c:712
+msgid ""
+"Device contains ambiguous signatures, cannot auto-recover LUKS2.\n"
+"Please run \"cryptsetup repair\" for recovery."
+msgstr ""
+
+#: lib/luks2/luks2_json_format.c:227
+#, fuzzy
+msgid "Requested data offset is too small."
+msgstr "Apparaat %s is te klein.\n"
+
+#: lib/luks2/luks2_json_format.c:271
+#, c-format
+msgid "WARNING: keyslots area (%<PRIu64> bytes) is very small, available LUKS2 keyslot count is very limited.\n"
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:946 lib/luks2/luks2_json_metadata.c:1075
+#: lib/luks2/luks2_json_metadata.c:1151 lib/luks2/luks2_keyslot_luks2.c:92
+#: lib/luks2/luks2_keyslot_luks2.c:114
+#, fuzzy, c-format
+msgid "Failed to acquire read lock on device %s."
+msgstr "Kan geen toegang verkrijgen tot tijdelijk sleutelopslagapparaat.\n"
+
+#: lib/luks2/luks2_json_metadata.c:1168
+#, c-format
+msgid "Forbidden LUKS2 requirements detected in backup %s."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:1209
+#, fuzzy
+msgid "Data offset differ on device and backup, restore failed."
+msgstr "Verschillende gegevenspositie of sleutelgrootte in apparaat en reservekopie; herstelling is mislukt.\n"
+
+#: lib/luks2/luks2_json_metadata.c:1215
+#, fuzzy
+msgid "Binary header with keyslot areas size differ on device and backup, restore failed."
+msgstr "Verschillende gegevenspositie of sleutelgrootte in apparaat en reservekopie; herstelling is mislukt.\n"
+
+#: lib/luks2/luks2_json_metadata.c:1222
+#, fuzzy, c-format
+msgid "Device %s %s%s%s%s"
+msgstr "Apparaat %s %s%s"
+
+#: lib/luks2/luks2_json_metadata.c:1223
+#, fuzzy
+msgid "does not contain LUKS2 header. Replacing header can destroy data on that device."
+msgstr "bevat geen LUKS-koptekst. Het vervangen van de koptekst kan gegevens op het apparaat vernietigen."
+
+#: lib/luks2/luks2_json_metadata.c:1224
+#, fuzzy
+msgid "already contains LUKS2 header. Replacing header will destroy existing keyslots."
+msgstr "bevat reeds een LUKS-koptekst. Het vervangen van de koptekst zal bestaande sleutelplaatsen vernietigen."
+
+#: lib/luks2/luks2_json_metadata.c:1226
+msgid ""
+"\n"
+"WARNING: unknown LUKS2 requirements detected in real device header!\n"
+"Replacing header with backup may corrupt the data on that device!"
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:1228
+msgid ""
+"\n"
+"WARNING: Unfinished offline reencryption detected on the device!\n"
+"Replacing header with backup may corrupt data."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:1324
+#, c-format
+msgid "Ignored unknown flag %s."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2011 lib/luks2/luks2_reencrypt.c:1746
+#, c-format
+msgid "Missing key for dm-crypt segment %u"
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2023 lib/luks2/luks2_reencrypt.c:1764
+#, fuzzy
+msgid "Failed to set dm-crypt segment."
+msgstr "Kan status van sleutelbestand niet opvragen.\n"
+
+#: lib/luks2/luks2_json_metadata.c:2029 lib/luks2/luks2_reencrypt.c:1770
+msgid "Failed to set dm-linear segment."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2156
+msgid "Unsupported device integrity configuration."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2242
+msgid "Reencryption in-progress. Cannot deactivate device."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2253 lib/luks2/luks2_reencrypt.c:3171
+#, c-format
+msgid "Failed to replace suspended device %s with dm-error target."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2333
+msgid "Failed to read LUKS2 requirements."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2340
+msgid "Unmet LUKS2 requirements detected."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2348
+msgid "Offline reencryption in progress. Aborting."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2350
+msgid "Online reencryption in progress. Aborting."
+msgstr ""
+
+#: lib/luks2/luks2_keyslot.c:552 lib/luks2/luks2_keyslot.c:589
+msgid "Not enough available memory to open a keyslot."
+msgstr ""
+
+#: lib/luks2/luks2_keyslot.c:554 lib/luks2/luks2_keyslot.c:591
+#, fuzzy
+msgid "Keyslot open failed."
+msgstr "Sleutelplaats %d is geverifieerd.\n"
+
+#: lib/luks2/luks2_keyslot_luks2.c:53 lib/luks2/luks2_keyslot_luks2.c:108
+#, c-format
+msgid "Cannot use %s-%s cipher for keyslot encryption."
+msgstr ""
+
+#: lib/luks2/luks2_keyslot_luks2.c:480
+#, fuzzy
+msgid "No space for new keyslot."
+msgstr "Kan nieuwe sleutelplaats niet verwisselen.\n"
+
+#: lib/luks2/luks2_luks1_convert.c:481
+#, fuzzy, c-format
+msgid "Cannot check status of device with uuid: %s."
+msgstr "Kan wachtwoordkwaliteit niet nakijken: %s\n"
+
+#: lib/luks2/luks2_luks1_convert.c:507
+msgid "Unable to convert header with LUKSMETA additional metadata."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:547
+msgid "Unable to move keyslot area. Not enough space."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:590 lib/luks2/luks2_luks1_convert.c:872
+#, fuzzy
+msgid "Unable to move keyslot area."
+msgstr "Openen van sleutelbestand is mislukt.\n"
+
+#: lib/luks2/luks2_luks1_convert.c:682
+msgid "Cannot convert to LUKS1 format - default segment encryption sector size is not 512 bytes."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:690
+msgid "Cannot convert to LUKS1 format - key slot digests are not LUKS1 compatible."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:702
+#, c-format
+msgid "Cannot convert to LUKS1 format - device uses wrapped key cipher %s."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:710
+#, c-format
+msgid "Cannot convert to LUKS1 format - LUKS2 header contains %u token(s)."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:724
+#, c-format
+msgid "Cannot convert to LUKS1 format - keyslot %u is in invalid state."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:729
+#, c-format
+msgid "Cannot convert to LUKS1 format - slot %u (over maximum slots) is still active."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:734
+#, c-format
+msgid "Cannot convert to LUKS1 format - keyslot %u is not LUKS1 compatible."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:892
+#, c-format
+msgid "Hotzone size must be multiple of calculated zone alignment (%zu bytes)."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:897
+#, fuzzy, c-format
+msgid "Device size must be multiple of calculated zone alignment (%zu bytes)."
+msgstr "Verkleiningsgrootte moet een meervoud zijn van de 512 bytes-grote sector."
+
+#: lib/luks2/luks2_reencrypt.c:941
+#, fuzzy, c-format
+msgid "Unsupported resilience mode %s"
+msgstr "Niet-ondersteunde LUKS-versie %d.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1158 lib/luks2/luks2_reencrypt.c:1313
+#: lib/luks2/luks2_reencrypt.c:1396 lib/luks2/luks2_reencrypt.c:1430
+#: lib/luks2/luks2_reencrypt.c:3011
+#, fuzzy
+msgid "Failed to initialize old segment storage wrapper."
+msgstr "Schrijven naar sleutelopslag is mislukt.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1172 lib/luks2/luks2_reencrypt.c:1291
+#, fuzzy
+msgid "Failed to initialize new segment storage wrapper."
+msgstr "Schrijven naar sleutelopslag is mislukt.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1340
+#, fuzzy
+msgid "Failed to read checksums for current hotzone."
+msgstr "Lezen uit sleutelopslag is mislukt.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1347 lib/luks2/luks2_reencrypt.c:3019
+#, fuzzy, c-format
+msgid "Failed to read hotzone area starting at %<PRIu64>."
+msgstr "Reservegebied is niet ingesteld op positie %<PRIu64>.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1366
+#, fuzzy, c-format
+msgid "Failed to decrypt sector %zu."
+msgstr "Lezen uit sleutelopslag is mislukt.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1372
+#, fuzzy, c-format
+msgid "Failed to recover sector %zu."
+msgstr "Schrijven naar sleutelopslag is mislukt.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1867
+#, c-format
+msgid "Source and target device sizes don't match. Source %<PRIu64>, target: %<PRIu64>."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:1965
+#, fuzzy, c-format
+msgid "Failed to activate hotzone device %s."
+msgstr "Kan geen toegang verkrijgen tot tijdelijk sleutelopslagapparaat.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1982
+#, c-format
+msgid "Failed to activate overlay device %s with actual origin table."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:1989
+#, fuzzy, c-format
+msgid "Failed to load new mapping for device %s."
+msgstr "Openen van het tijdelijke sleutelopslagapparaat is mislukt.\n"
+
+#: lib/luks2/luks2_reencrypt.c:2060
+msgid "Failed to refresh reencryption devices stack."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2216
+#, fuzzy
+msgid "Failed to set new keyslots area size."
+msgstr "Kan nieuwe sleutelplaats niet verwisselen.\n"
+
+#: lib/luks2/luks2_reencrypt.c:2318
+#, c-format
+msgid "Data shift is not aligned to requested encryption sector size (%<PRIu32> bytes)."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2339
+#, c-format
+msgid "Data device is not aligned to requested encryption sector size (%<PRIu32> bytes)."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2360
+#, c-format
+msgid "Data shift (%<PRIu64> sectors) is less than future data offset (%<PRIu64> sectors)."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2366 lib/luks2/luks2_reencrypt.c:2760
+#: lib/luks2/luks2_reencrypt.c:2781
+#, fuzzy, c-format
+msgid "Failed to open %s in exclusive mode (already mapped or mounted)."
+msgstr "Kan apparaat %s niet gebruiken; het is nog actief (reeds toegewezen of aangekoppeld).\n"
+
+#: lib/luks2/luks2_reencrypt.c:2534
+#, fuzzy
+msgid "No LUKS2 reencryption in progress."
+msgstr "Kan doorgegeven UUID niet gebruiken tenzij ontsleuteling al bezig is.\n"
+
+#: lib/luks2/luks2_reencrypt.c:2540 lib/luks2/luks2_reencrypt.c:3276
+msgid "Failed to load LUKS2 reencryption context."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2600
+#, fuzzy
+msgid "Failed to get reencryption state."
+msgstr "Schrijven naar sleutelopslag is mislukt.\n"
+
+#: lib/luks2/luks2_reencrypt.c:2604
+#, fuzzy
+msgid "Device is not in reencryption."
+msgstr "Apparaat %s is niet actief.\n"
+
+#: lib/luks2/luks2_reencrypt.c:2611
+msgid "Reencryption process is already running."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2613
+#, fuzzy
+msgid "Failed to acquire reencryption lock."
+msgstr "Kan herencryptie-logbestand niet lezen.\n"
+
+#: lib/luks2/luks2_reencrypt.c:2631
+msgid "Cannot proceed with reencryption. Run reencryption recovery first."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2731
+msgid "Active device size and requested reencryption size don't match."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2745
+msgid "Illegal device size requested in reencryption parameters."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2815
+msgid "Reencryption in-progress. Cannot perform recovery."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2887
+msgid "LUKS2 reencryption already initialized in metadata."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2894
+msgid "Failed to initialize LUKS2 reencryption in metadata."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2985
+msgid "Failed to set device segments for next reencryption hotzone."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3027
+#, fuzzy
+msgid "Failed to write reencryption resilience metadata."
+msgstr "Kan herencryptie-logbestand niet schrijven.\n"
+
+#: lib/luks2/luks2_reencrypt.c:3034
+#, fuzzy
+msgid "Decryption failed."
+msgstr "Herstelling is mislukt."
+
+#: lib/luks2/luks2_reencrypt.c:3039
+#, fuzzy, c-format
+msgid "Failed to write hotzone area starting at %<PRIu64>."
+msgstr "Schrijven naar sleutelopslag is mislukt.\n"
+
+#: lib/luks2/luks2_reencrypt.c:3044
+#, fuzzy
+msgid "Failed to sync data."
+msgstr "Kan status van sleutelbestand niet opvragen.\n"
+
+#: lib/luks2/luks2_reencrypt.c:3052
+msgid "Failed to update metadata after current reencryption hotzone completed."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3119
+#, fuzzy
+msgid "Failed to write LUKS2 metadata."
+msgstr "Schrijven naar sleutelopslag is mislukt.\n"
+
+#: lib/luks2/luks2_reencrypt.c:3142
+msgid "Failed to wipe backup segment data."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3155
+msgid "Failed to disable reencryption requirement flag."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3163
+#, c-format
+msgid "Fatal error while reencrypting chunk starting at %<PRIu64>, %<PRIu64> sectors long."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3172
+msgid "Do not resume the device unless replaced with error target manually."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3221
+msgid "Cannot proceed with reencryption. Unexpected reencryption status."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3227
+msgid "Missing or invalid reencrypt context."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3234
+#, fuzzy
+msgid "Failed to initialize reencryption device stack."
+msgstr "Kan versleutelings-backend niet initialiseren.\n"
+
+#: lib/luks2/luks2_reencrypt.c:3253 lib/luks2/luks2_reencrypt.c:3289
+#, fuzzy
+msgid "Failed to update reencryption context."
+msgstr "Kan herencryptie-logbestand niet openen.\n"
+
+#: lib/luks2/luks2_token.c:262
+msgid "No free token slot."
+msgstr ""
+
+#: lib/luks2/luks2_token.c:269
+#, fuzzy, c-format
+msgid "Failed to create builtin token %s."
+msgstr "Schrijven naar sleutelopslag is mislukt.\n"
+
+#: src/cryptsetup.c:162
+#, fuzzy
+msgid "Can't do passphrase verification on non-tty inputs."
+msgstr "Kan geen wachtwoordverificatie uitvoeren op invoer van buiten de terminal.\n"
+
+#: src/cryptsetup.c:215
+#, fuzzy
+msgid "Keyslot encryption parameters can be set only for LUKS2 device."
+msgstr "Deze operatie wordt enkel ondersteund voor LUKS-apparaten.\n"
+
+#: src/cryptsetup.c:245 src/cryptsetup.c:893 src/cryptsetup.c:1212
+#: src/cryptsetup.c:3011 src/cryptsetup_reencrypt.c:715
+#: src/cryptsetup_reencrypt.c:785
+#, fuzzy
+msgid "No known cipher specification pattern detected."
+msgstr "Geen bekend specificatiepatroon voor het sleutelalgoritme gevonden.\n"
+
+#: src/cryptsetup.c:253
+msgid "WARNING: The --hash parameter is being ignored in plain mode with keyfile specified.\n"
+msgstr "WAARSCHUWING: In normale modus met opgegeven sleutelbestand wordt de --hash-parameter genegeerd.\n"
+
+#: src/cryptsetup.c:261
+msgid "WARNING: The --keyfile-size option is being ignored, the read size is the same as the encryption key size.\n"
+msgstr "WAARSCHUWING: De optie --keyfile-size wordt genegeerd, de leesgrootte is gelijk aan de encryptiesleutelgrootte.\n"
+
+#: src/cryptsetup.c:301
+#, c-format
+msgid "Detected device signature(s) on %s. Proceeding further may damage existing data."
+msgstr ""
+
+#: src/cryptsetup.c:307 src/cryptsetup.c:1038 src/cryptsetup.c:1090
+#: src/cryptsetup.c:1189 src/cryptsetup.c:1262 src/cryptsetup.c:1913
+#: src/cryptsetup.c:2545 src/cryptsetup.c:2668 src/integritysetup.c:232
+msgid "Operation aborted.\n"
+msgstr ""
+
+#: src/cryptsetup.c:375
+#, fuzzy
+msgid "Option --key-file is required."
+msgstr "Optie --key-file is vereist.\n"
+
+#: src/cryptsetup.c:428
+msgid "Enter VeraCrypt PIM: "
+msgstr ""
+
+#: src/cryptsetup.c:437
+msgid "Invalid PIM value: parse error."
+msgstr ""
+
+#: src/cryptsetup.c:440
+#, fuzzy
+msgid "Invalid PIM value: 0."
+msgstr "Ongeldig apparaat %s.\n"
+
+#: src/cryptsetup.c:443
+msgid "Invalid PIM value: outside of range."
+msgstr ""
+
+#: src/cryptsetup.c:466
+#, fuzzy
+msgid "No device header detected with this passphrase."
+msgstr "Geen apparaatkoptekst beschikbaar met dit wachtwoord.\n"
+
+#: src/cryptsetup.c:528 src/cryptsetup.c:1940
+msgid ""
+"Header dump with volume key is sensitive information\n"
+"which allows access to encrypted partition without passphrase.\n"
+"This dump should be always stored encrypted on safe place."
+msgstr ""
+"Dump van koptekst met sleutel tot het opslagmedium bevat gevoelige informatie\n"
+"die zonder wachtwoord toegang verschaft tot versleutelde partities.\n"
+"De dump zou steeds versleuteld en op een veilige plaats bewaard moeten worden."
+
+#: src/cryptsetup.c:607
+#, c-format
+msgid "Device %s is still active and scheduled for deferred removal.\n"
+msgstr ""
+
+#: src/cryptsetup.c:635
+msgid "Resize of active device requires volume key in keyring but --disable-keyring option is set."
+msgstr ""
+
+#: src/cryptsetup.c:771
+#, fuzzy
+msgid "Benchmark interrupted."
+msgstr "versleutelalgoritme benchmarken"
+
+#: src/cryptsetup.c:792
+#, c-format
+msgid "PBKDF2-%-9s     N/A\n"
+msgstr ""
+
+#: src/cryptsetup.c:794
+#, c-format
+msgid "PBKDF2-%-9s %7u iterations per second for %zu-bit key\n"
+msgstr ""
+
+#: src/cryptsetup.c:808
+#, c-format
+msgid "%-10s N/A\n"
+msgstr ""
+
+#: src/cryptsetup.c:810
+#, c-format
+msgid "%-10s %4u iterations, %5u memory, %1u parallel threads (CPUs) for %zu-bit key (requested %u ms time)\n"
+msgstr ""
+
+#: src/cryptsetup.c:834
+#, fuzzy
+msgid "Result of benchmark is not reliable."
+msgstr "Benchmarkresultaat is niet betrouwbaar.\n"
+
+#: src/cryptsetup.c:885
+msgid "# Tests are approximate using memory only (no storage IO).\n"
+msgstr "# Tests zijn bij benadering met enkel geheugen in gebruik (geen opslag-IO).\n"
+
+#. TRANSLATORS: The string is header of a table and must be exactly (right side) aligned.
+#: src/cryptsetup.c:919
+#, fuzzy, c-format
+msgid "#%*s Algorithm |       Key |      Encryption |      Decryption\n"
+msgstr "#  Algoritme | Sleutel |  Versleuteling |  Ontsleuteling\n"
+
+#: src/cryptsetup.c:923
+#, fuzzy, c-format
+msgid "Cipher %s is not available."
+msgstr "Versleutelalgoritme %s is niet beschikbaar.\n"
+
+#. TRANSLATORS: The string is header of a table and must be exactly (right side) aligned.
+#: src/cryptsetup.c:943
+#, fuzzy
+msgid "#     Algorithm |       Key |      Encryption |      Decryption\n"
+msgstr "#  Algoritme | Sleutel |  Versleuteling |  Ontsleuteling\n"
+
+#: src/cryptsetup.c:952
+msgid "N/A"
+msgstr "N/A"
+
+#: src/cryptsetup.c:1031
+msgid ""
+"Seems device does not require reencryption recovery.\n"
+"Do you want to proceed anyway?"
+msgstr ""
+
+#: src/cryptsetup.c:1037
+msgid "Really proceed with LUKS2 reencryption recovery?"
+msgstr ""
+
+#: src/cryptsetup.c:1046
+#, fuzzy
+msgid "Enter passphrase for reencryption recovery: "
+msgstr "Voer wachtwoord voor sleutelplaats %u in: "
+
+#: src/cryptsetup.c:1089
+msgid "Really try to repair LUKS device header?"
+msgstr "Bent u zeker de LUKS-apparaatkoptekst te willen herstellen?"
+
+#: src/cryptsetup.c:1108 src/integritysetup.c:145
+msgid ""
+"Wiping device to initialize integrity checksum.\n"
+"You can interrupt this by pressing CTRL+c (rest of not wiped device will contain invalid checksum).\n"
+msgstr ""
+
+#: src/cryptsetup.c:1130 src/integritysetup.c:167
+#, fuzzy, c-format
+msgid "Cannot deactivate temporary device %s."
+msgstr "Kan tijdelijk LUKS-apparaat niet openen.\n"
+
+#: src/cryptsetup.c:1174
+msgid "Integrity option can be used only for LUKS2 format."
+msgstr ""
+
+#: src/cryptsetup.c:1179 src/cryptsetup.c:1239
+#, fuzzy
+msgid "Unsupported LUKS2 metadata size options."
+msgstr "Niet-ondersteunde LUKS-versie %d.\n"
+
+#: src/cryptsetup.c:1196
+#, fuzzy, c-format
+msgid "Cannot create header file %s."
+msgstr "Kan reservekopiebestand %s van koptekst niet aanmaken.\n"
+
+#: src/cryptsetup.c:1219 src/integritysetup.c:194 src/integritysetup.c:203
+#: src/integritysetup.c:212 src/integritysetup.c:279 src/integritysetup.c:288
+#: src/integritysetup.c:298
+#, fuzzy
+msgid "No known integrity specification pattern detected."
+msgstr "Geen bekend specificatiepatroon voor het sleutelalgoritme gevonden.\n"
+
+#: src/cryptsetup.c:1232
+#, fuzzy, c-format
+msgid "Cannot use %s as on-disk header."
+msgstr "Kan %s niet als on-diskkoptekst gebruiken.\n"
+
+#: src/cryptsetup.c:1256 src/integritysetup.c:226
+#, c-format
+msgid "This will overwrite data on %s irrevocably."
+msgstr "Dit zal data op %s onherroepelijk overschrijven."
+
+#: src/cryptsetup.c:1297 src/cryptsetup.c:1627 src/cryptsetup.c:1694
+#: src/cryptsetup.c:1796 src/cryptsetup.c:1862 src/cryptsetup_reencrypt.c:545
+#, fuzzy
+msgid "Failed to set pbkdf parameters."
+msgstr "Kan status van sleutelbestand niet opvragen.\n"
+
+#: src/cryptsetup.c:1378
+#, fuzzy
+msgid "Reduced data offset is allowed only for detached LUKS header."
+msgstr "Een verlaagde datagegevenspositie wordt enkel toegestaan voor een vrijstaande LUKS-koptekst.\n"
+
+#: src/cryptsetup.c:1389 src/cryptsetup.c:1700
+msgid "Cannot determine volume key size for LUKS without keyslots, please use --key-size option."
+msgstr ""
+
+#: src/cryptsetup.c:1427
+msgid "Device activated but cannot make flags persistent."
+msgstr ""
+
+#: src/cryptsetup.c:1508 src/cryptsetup.c:1578
+#, fuzzy, c-format
+msgid "Keyslot %d is selected for deletion."
+msgstr "Sleutelplaats %d geselecteerd voor verwijdering.\n"
+
+#: src/cryptsetup.c:1520 src/cryptsetup.c:1581
+msgid "This is the last keyslot. Device will become unusable after purging this key."
+msgstr "Dit is de laatste sleutelplaats. Apparaat zal onbruikbaar worden na het verwijderen van deze sleutel."
+
+#: src/cryptsetup.c:1521
+msgid "Enter any remaining passphrase: "
+msgstr "Voer enig overblijvend wachtwoord in: "
+
+#: src/cryptsetup.c:1522 src/cryptsetup.c:1583
+msgid "Operation aborted, the keyslot was NOT wiped.\n"
+msgstr ""
+
+#: src/cryptsetup.c:1560
+msgid "Enter passphrase to be deleted: "
+msgstr "Voer het te verwijderen wachtwoord in: "
+
+#: src/cryptsetup.c:1641 src/cryptsetup.c:1715 src/cryptsetup.c:1749
+msgid "Enter new passphrase for key slot: "
+msgstr "Voer een nieuw wachtwoord in voor de sleutelplaats: "
+
+#: src/cryptsetup.c:1732 src/cryptsetup_reencrypt.c:1327
+#, c-format
+msgid "Enter any existing passphrase: "
+msgstr "Voer een bestaand wachtwoord in: "
+
+#: src/cryptsetup.c:1800
+msgid "Enter passphrase to be changed: "
+msgstr "Voer het te wijzigen wachtwoord in: "
+
+#: src/cryptsetup.c:1816 src/cryptsetup_reencrypt.c:1313
+msgid "Enter new passphrase: "
+msgstr "Voer nieuw wachtwoord in: "
+
+#: src/cryptsetup.c:1866
+#, fuzzy
+msgid "Enter passphrase for keyslot to be converted: "
+msgstr "Voer wachtwoord voor sleutelplaats %u in: "
+
+#: src/cryptsetup.c:1890
+#, fuzzy
+msgid "Only one device argument for isLuks operation is supported."
+msgstr "Voor de isLuks-operatie wordt slechts één apparaatsargument ondersteund.\n"
+
+#: src/cryptsetup.c:2074 src/cryptsetup.c:2095
+#, fuzzy
+msgid "Option --header-backup-file is required."
+msgstr "Optie --header-backup-file is vereist.\n"
+
+#: src/cryptsetup.c:2125
+#, fuzzy, c-format
+msgid "%s is not cryptsetup managed device."
+msgstr "%s is geen LUKS-apparaat."
+
+#: src/cryptsetup.c:2136
+#, fuzzy, c-format
+msgid "Refresh is not supported for device type %s"
+msgstr "Hervatting wordt niet ondersteund voor apparaat %s.\n"
+
+#: src/cryptsetup.c:2174
+#, fuzzy, c-format
+msgid "Unrecognized metadata device type %s."
+msgstr "Niet-herkende metadata bij apparaatstype %s.\n"
+
+#: src/cryptsetup.c:2177
+#, fuzzy
+msgid "Command requires device and mapped name as arguments."
+msgstr "Opdracht vereist apparaat en toewijzingsnaam als argumenten.\n"
+
+#: src/cryptsetup.c:2199
+#, c-format
+msgid ""
+"This operation will erase all keyslots on device %s.\n"
+"Device will become unusable after this operation."
+msgstr ""
+"Deze operatie zal alle sleutelplaatsen op apparaat %s wissen.\n"
+"Na deze operatie wordt het apparaat onbruikbaar."
+
+#: src/cryptsetup.c:2206
+msgid "Operation aborted, keyslots were NOT wiped.\n"
+msgstr ""
+
+#: src/cryptsetup.c:2243
+msgid "Invalid LUKS type, only luks1 and luks2 are supported."
+msgstr ""
+
+#: src/cryptsetup.c:2261
+#, fuzzy, c-format
+msgid "Device is already %s type."
+msgstr "Apparaat %s bestaat reeds.\n"
+
+#: src/cryptsetup.c:2266
+#, fuzzy, c-format
+msgid "This operation will convert %s to %s format.\n"
+msgstr "Deze operatie wordt niet ondersteund voor versleutelapparaat %s.\n"
+
+#: src/cryptsetup.c:2272
+msgid "Operation aborted, device was NOT converted.\n"
+msgstr ""
+
+#: src/cryptsetup.c:2312
+msgid "Option --priority, --label or --subsystem is missing."
+msgstr ""
+
+#: src/cryptsetup.c:2346 src/cryptsetup.c:2379 src/cryptsetup.c:2402
+#, fuzzy, c-format
+msgid "Token %d is invalid."
+msgstr "Sleutelplaats %d is ongeldig.\n"
+
+#: src/cryptsetup.c:2349 src/cryptsetup.c:2405
+#, c-format
+msgid "Token %d in use."
+msgstr ""
+
+#: src/cryptsetup.c:2356
+#, fuzzy, c-format
+msgid "Failed to add luks2-keyring token %d."
+msgstr "Lezen uit sleutelopslag is mislukt.\n"
+
+#: src/cryptsetup.c:2365 src/cryptsetup.c:2427
+#, fuzzy, c-format
+msgid "Failed to assign token %d to keyslot %d."
+msgstr "Schrijven naar sleutelopslag is mislukt.\n"
+
+#: src/cryptsetup.c:2382
+#, fuzzy, c-format
+msgid "Token %d is not in use."
+msgstr "Sleutelplaats %d is niet in gebruik.\n"
+
+#: src/cryptsetup.c:2417
+#, fuzzy
+msgid "Failed to import token from file."
+msgstr "Openen van sleutelbestand is mislukt.\n"
+
+#: src/cryptsetup.c:2442
+#, fuzzy, c-format
+msgid "Failed to get token %d for export."
+msgstr "Schrijven naar sleutelopslag is mislukt.\n"
+
+#: src/cryptsetup.c:2457
+msgid "--key-description parameter is mandatory for token add action."
+msgstr ""
+
+#: src/cryptsetup.c:2463 src/cryptsetup.c:2471
+msgid "Action requires specific token. Use --token-id parameter."
+msgstr ""
+
+#: src/cryptsetup.c:2476
+#, fuzzy, c-format
+msgid "Invalid token operation %s."
+msgstr "Ongeldige sleutelgrootte %d.\n"
+
+#: src/cryptsetup.c:2531
+#, c-format
+msgid "Auto-detected active dm device '%s' for data device %s.\n"
+msgstr ""
+
+#: src/cryptsetup.c:2535
+#, fuzzy, c-format
+msgid "Device %s is not a block device.\n"
+msgstr "Apparaat %s is geen geldig LUKS-apparaat.\n"
+
+#: src/cryptsetup.c:2537
+#, fuzzy, c-format
+msgid "Failed to auto-detect device %s holders."
+msgstr "Kan geen map voor de apparaatstoewijzer verkrijgen."
+
+#: src/cryptsetup.c:2539
+#, c-format
+msgid ""
+"Unable to decide if device %s is activated or not.\n"
+"Are you sure you want to proceed with reencryption in offline mode?\n"
+"It may lead to data corruption if the device is actually activated.\n"
+"To run reencryption in online mode, use --active-name parameter instead.\n"
+msgstr ""
+
+#: src/cryptsetup.c:2619
+#, fuzzy
+msgid "Invalid LUKS device type."
+msgstr "Ongeldig apparaat %s.\n"
+
+#: src/cryptsetup.c:2624
+msgid "Encryption without detached header (--header) is not possible without data device size reduction (--reduce-device-size)."
+msgstr ""
+
+#: src/cryptsetup.c:2629
+msgid "Requested data offset must be less than or equal to half of --reduce-device-size parameter."
+msgstr ""
+
+#: src/cryptsetup.c:2638
+#, c-format
+msgid "Adjusting --reduce-device-size value to twice the --offset %<PRIu64> (sectors).\n"
+msgstr ""
+
+#: src/cryptsetup.c:2642
+#, fuzzy
+msgid "Encryption is supported only for LUKS2 format."
+msgstr "Deze operatie wordt enkel ondersteund voor LUKS-apparaten.\n"
+
+#: src/cryptsetup.c:2664
+#, c-format
+msgid "Detected LUKS device on %s. Do you want to encrypt that LUKS device again?"
+msgstr ""
+
+#: src/cryptsetup.c:2679
+#, fuzzy, c-format
+msgid "Temporary header file %s already exists. Aborting."
+msgstr "Aangevraagd reservekopiebestand %s van koptekst bestaat reeds.\n"
+
+#: src/cryptsetup.c:2681 src/cryptsetup.c:2688
+#, fuzzy, c-format
+msgid "Cannot create temporary header file %s."
+msgstr "Kan reservekopiebestand %s van koptekst niet aanmaken.\n"
+
+#: src/cryptsetup.c:2752
+#, c-format
+msgid "%s/%s is now active and ready for online encryption."
+msgstr ""
+
+#: src/cryptsetup.c:2919 src/cryptsetup.c:2925
+#, fuzzy
+msgid "Not enough free keyslots for reencryption."
+msgstr "Sleutel niet wijzigen; gegevensgebied wordt niet opnieuw versleuteld."
+
+#: src/cryptsetup.c:2945 src/cryptsetup_reencrypt.c:1284
+#, fuzzy
+msgid "Key file can be used only with --key-slot or with exactly one key slot active."
+msgstr "Sleutelbestand kan enkel gebruikt worden met optie --key-slot of met enkel één actieve sleutelplaats.\n"
+
+#: src/cryptsetup.c:2954 src/cryptsetup_reencrypt.c:1325
+#: src/cryptsetup_reencrypt.c:1336
+#, fuzzy, c-format
+msgid "Enter passphrase for key slot %d: "
+msgstr "Voer wachtwoord voor sleutelplaats %u in: "
+
+#: src/cryptsetup.c:2962
+#, c-format
+msgid "Enter passphrase for key slot %u: "
+msgstr "Voer wachtwoord voor sleutelplaats %u in: "
+
+#: src/cryptsetup.c:3129
+#, fuzzy
+msgid "Command requires device as argument."
+msgstr "Opdracht vereist apparaat en toewijzingsnaam als argumenten.\n"
+
+#: src/cryptsetup.c:3151
+msgid "Only LUKS2 format is currently supported. Please use cryptsetup-reencrypt tool for LUKS1."
+msgstr ""
+
+#: src/cryptsetup.c:3163
+msgid "Legacy offline reencryption already in-progress. Use cryptsetup-reencrypt utility."
+msgstr ""
+
+#: src/cryptsetup.c:3173 src/cryptsetup_reencrypt.c:178
+msgid "Reencryption of device with integrity profile is not supported."
+msgstr ""
+
+#: src/cryptsetup.c:3181
+msgid "LUKS2 reencryption already initialized. Aborting operation."
+msgstr ""
+
+#: src/cryptsetup.c:3185
+#, fuzzy
+msgid "LUKS2 device is not in reencryption."
+msgstr "Logbestand %s bestaat reeds, herencryptie wordt herstart.\n"
+
+#: src/cryptsetup.c:3212
+msgid "<device> [--type <type>] [<name>]"
+msgstr "<apparaat> [--type <type>] [<naam>]"
+
+#: src/cryptsetup.c:3212 src/veritysetup.c:358 src/integritysetup.c:470
+#, fuzzy
+msgid "open device as <name>"
+msgstr "apparaat als toewijzing <naam> openen"
+
+#: src/cryptsetup.c:3213 src/cryptsetup.c:3214 src/cryptsetup.c:3215
+#: src/veritysetup.c:359 src/veritysetup.c:360 src/integritysetup.c:471
+#: src/integritysetup.c:472
+msgid "<name>"
+msgstr "<naam>"
+
+#: src/cryptsetup.c:3213 src/veritysetup.c:359 src/integritysetup.c:471
+msgid "close device (remove mapping)"
+msgstr "apparaat sluiten (toewijzingen verwijderen)"
+
+#: src/cryptsetup.c:3214
+msgid "resize active device"
+msgstr "actief apparaat vergroten of verkleinen"
+
+#: src/cryptsetup.c:3215
+msgid "show device status"
+msgstr "apparaatstatus tonen"
+
+#: src/cryptsetup.c:3216
+msgid "[--cipher <cipher>]"
+msgstr "[--cipher <versleutelalgoritme>]"
+
+#: src/cryptsetup.c:3216
+msgid "benchmark cipher"
+msgstr "versleutelalgoritme benchmarken"
+
+#: src/cryptsetup.c:3217 src/cryptsetup.c:3218 src/cryptsetup.c:3219
+#: src/cryptsetup.c:3220 src/cryptsetup.c:3221 src/cryptsetup.c:3228
+#: src/cryptsetup.c:3229 src/cryptsetup.c:3230 src/cryptsetup.c:3231
+#: src/cryptsetup.c:3232 src/cryptsetup.c:3233 src/cryptsetup.c:3234
+#: src/cryptsetup.c:3235
+msgid "<device>"
+msgstr "<apparaat>"
+
+#: src/cryptsetup.c:3217
+msgid "try to repair on-disk metadata"
+msgstr "on-disk metadata proberen te herstellen"
+
+#: src/cryptsetup.c:3218
+#, fuzzy
+msgid "reencrypt LUKS2 device"
+msgstr "sleutel aan LUKS-apparaat toevoegen"
+
+#: src/cryptsetup.c:3219
+msgid "erase all keyslots (remove encryption key)"
+msgstr "alle sleutelplaatsen wissen (encryptiesleutel verwijderen)"
+
+#: src/cryptsetup.c:3220
+msgid "convert LUKS from/to LUKS2 format"
+msgstr ""
+
+#: src/cryptsetup.c:3221
+msgid "set permanent configuration options for LUKS2"
+msgstr ""
+
+#: src/cryptsetup.c:3222 src/cryptsetup.c:3223
+msgid "<device> [<new key file>]"
+msgstr "<apparaat> [<nieuw sleutelbestand>]"
+
+#: src/cryptsetup.c:3222
+msgid "formats a LUKS device"
+msgstr "een LUKS-apparaat formatteren"
+
+#: src/cryptsetup.c:3223
+msgid "add key to LUKS device"
+msgstr "sleutel aan LUKS-apparaat toevoegen"
+
+#: src/cryptsetup.c:3224 src/cryptsetup.c:3225 src/cryptsetup.c:3226
+msgid "<device> [<key file>]"
+msgstr "<apparaat> [<sleutelbestand>]"
+
+#: src/cryptsetup.c:3224
+msgid "removes supplied key or key file from LUKS device"
+msgstr "verschafte sleutel of sleutelbestand van LUKS-apparaat verwijderen"
+
+#: src/cryptsetup.c:3225
+msgid "changes supplied key or key file of LUKS device"
+msgstr "wijzigt verschafte sleutel of sleutelbestand van LUKS-apparaat"
+
+#: src/cryptsetup.c:3226
+msgid "converts a key to new pbkdf parameters"
+msgstr ""
+
+#: src/cryptsetup.c:3227
+msgid "<device> <key slot>"
+msgstr "<apparaat> <sleutelplaats>"
+
+#: src/cryptsetup.c:3227
+msgid "wipes key with number <key slot> from LUKS device"
+msgstr "sleutel met nummer <sleutelplaats> van LUKS-apparaat verwijderen"
+
+#: src/cryptsetup.c:3228
+msgid "print UUID of LUKS device"
+msgstr "UUID van LUKS-apparaat tonen"
+
+#: src/cryptsetup.c:3229
+msgid "tests <device> for LUKS partition header"
+msgstr "<apparaat> op een LUKS-partitiekoptekst testen"
+
+#: src/cryptsetup.c:3230
+msgid "dump LUKS partition information"
+msgstr "LUKS-partitie-informatie dumpen"
+
+#: src/cryptsetup.c:3231
+msgid "dump TCRYPT device information"
+msgstr "TCRYPT-apparaatsinformatie dumpen"
+
+#: src/cryptsetup.c:3232
+#, fuzzy
+msgid "Suspend LUKS device and wipe key (all IOs are frozen)"
+msgstr "LUKS-apparaat schorsen en sleutel wissen (alle in-/uitvoer wordt bevroren)."
+
+#: src/cryptsetup.c:3233
+#, fuzzy
+msgid "Resume suspended LUKS device"
+msgstr "Geschorst LUKS-apparaat hervatten."
+
+#: src/cryptsetup.c:3234
+msgid "Backup LUKS device header and keyslots"
+msgstr "Reservekopie van LUKS-apparaatkoptekst en -sleutelplaatsen maken"
+
+#: src/cryptsetup.c:3235
+msgid "Restore LUKS device header and keyslots"
+msgstr "LUKS-apparaatkoptekst en -sleutelplaatsen herstellen"
+
+#: src/cryptsetup.c:3236
+msgid "<add|remove|import|export> <device>"
+msgstr ""
+
+#: src/cryptsetup.c:3236
+msgid "Manipulate LUKS2 tokens"
+msgstr ""
+
+#: src/cryptsetup.c:3254 src/veritysetup.c:376 src/integritysetup.c:488
+msgid ""
+"\n"
+"<action> is one of:\n"
+msgstr ""
+"\n"
+"<actie> is één van:\n"
+
+#: src/cryptsetup.c:3260
+msgid ""
+"\n"
+"You can also use old <action> syntax aliases:\n"
+"\topen: create (plainOpen), luksOpen, loopaesOpen, tcryptOpen\n"
+"\tclose: remove (plainClose), luksClose, loopaesClose, tcryptClose\n"
+msgstr ""
+"\n"
+"U kan ook oude <actie>-syntax aliasen gebruiken:\n"
+"\topen: (plainOpen), luksOpen, loopaesOpen, tcryptOpen aanmaken\n"
+"\tclose: (plainClose), luksClose, loopaesClose, tryptClose verwijderen\n"
+
+#: src/cryptsetup.c:3264
+#, c-format
+msgid ""
+"\n"
+"<name> is the device to create under %s\n"
+"<device> is the encrypted device\n"
+"<key slot> is the LUKS key slot number to modify\n"
+"<key file> optional key file for the new key for luksAddKey action\n"
+msgstr ""
+"\n"
+"<naam> is het onder %s aan te maken apparaat\n"
+"<apparaat> is het versleutelde apparaat\n"
+"<sleutelplaats> is het nummer van de te wijzigen LUKS-sleutelplaats\n"
+"<sleutelbestand> optioneel sleutelbestand voor de nieuwe sleutel voor de luksAddKey-actie\n"
+
+#: src/cryptsetup.c:3271
+#, c-format
+msgid ""
+"\n"
+"Default compiled-in metadata format is %s (for luksFormat action).\n"
+msgstr ""
+
+#: src/cryptsetup.c:3276
+#, fuzzy, c-format
+msgid ""
+"\n"
+"Default compiled-in key and passphrase parameters:\n"
+"\tMaximum keyfile size: %dkB, Maximum interactive passphrase length %d (characters)\n"
+"Default PBKDF for LUKS1: %s, iteration time: %d (ms)\n"
+"Default PBKDF for LUKS2: %s\n"
+"\tIteration time: %d, Memory required: %dkB, Parallel threads: %d\n"
+msgstr ""
+"\n"
+"Standaard meegecompileerde sleutel- en wachtwoordparameters:\n"
+"\tMaximum sleutelplaatsgrootte: %dkB, maximum lengte interactief wachtwoord %d (karakters)\n"
+"Standaard PBKDF2-herhalingstijd voor LUKS: %d (ms)\n"
+
+#: src/cryptsetup.c:3287
+#, fuzzy, c-format
+msgid ""
+"\n"
+"Default compiled-in device cipher parameters:\n"
+"\tloop-AES: %s, Key %d bits\n"
+"\tplain: %s, Key: %d bits, Password hashing: %s\n"
+"\tLUKS: %s, Key: %d bits, LUKS header hashing: %s, RNG: %s\n"
+msgstr ""
+"\n"
+"Standaard meegecompileerde parameters van het apparaatsversleutelingsalgoritme:\n"
+"\tloop-AES: %s, Sleutel: %d bits\n"
+"\tplain: %s, Sleutel: %d bits, Wachtwoordhashing: %s\n"
+"\tLUKS1: %s, Sleutel: %d bits, LUKS-kopteksthashing: %s, RNG: %s\n"
+
+#: src/cryptsetup.c:3296
+msgid "\tLUKS: Default keysize with XTS mode (two internal keys) will be doubled.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3312 src/veritysetup.c:532 src/integritysetup.c:630
+#, c-format
+msgid "%s: requires %s as arguments"
+msgstr "%s: vereist %s als argumenten"
+
+#: src/cryptsetup.c:3350 src/veritysetup.c:421 src/integritysetup.c:527
+#: src/cryptsetup_reencrypt.c:1591
+msgid "Show this help message"
+msgstr "Deze hulptekst tonen"
+
+#: src/cryptsetup.c:3351 src/veritysetup.c:422 src/integritysetup.c:528
+#: src/cryptsetup_reencrypt.c:1592
+msgid "Display brief usage"
+msgstr "Korte gebruikssamenvatting tonen"
+
+#: src/cryptsetup.c:3352 src/veritysetup.c:423 src/integritysetup.c:529
+#: src/cryptsetup_reencrypt.c:1593
+msgid "Print package version"
+msgstr "Pakketversie tonen"
+
+#: src/cryptsetup.c:3356 src/veritysetup.c:427 src/integritysetup.c:533
+#: src/cryptsetup_reencrypt.c:1597
+msgid "Help options:"
+msgstr "Hulpopties:"
+
+#: src/cryptsetup.c:3357 src/veritysetup.c:428 src/integritysetup.c:534
+#: src/cryptsetup_reencrypt.c:1598
+msgid "Shows more detailed error messages"
+msgstr "Gedetailleerdere foutboodschappen tonen"
+
+#: src/cryptsetup.c:3358 src/veritysetup.c:429 src/integritysetup.c:535
+#: src/cryptsetup_reencrypt.c:1599
+msgid "Show debug messages"
+msgstr "Debug-boodschappen tonen"
+
+#: src/cryptsetup.c:3359
+#, fuzzy
+msgid "Show debug messages including JSON metadata"
+msgstr "Debug-boodschappen tonen"
+
+#: src/cryptsetup.c:3360 src/cryptsetup_reencrypt.c:1601
+msgid "The cipher used to encrypt the disk (see /proc/crypto)"
+msgstr "Het gebruikte versleutelalgoritme om de schijf te versleutelen (zie /proc/crypto)"
+
+#: src/cryptsetup.c:3361 src/cryptsetup_reencrypt.c:1603
+msgid "The hash used to create the encryption key from the passphrase"
+msgstr "De gebruikte hash om de encryptiesleutel uit het wachtwoord aan te maken"
+
+#: src/cryptsetup.c:3362
+msgid "Verifies the passphrase by asking for it twice"
+msgstr "Het wachtwoord controleren door het twee keer te vragen"
+
+#: src/cryptsetup.c:3363 src/cryptsetup_reencrypt.c:1605
+#, fuzzy
+msgid "Read the key from a file"
+msgstr "De sleutel uit een bestand lezen."
+
+#: src/cryptsetup.c:3364
+msgid "Read the volume (master) key from file."
+msgstr "De (hoofd)sleutel tot het opslagmedium uit een bestand lezen."
+
+#: src/cryptsetup.c:3365
+#, fuzzy
+msgid "Dump volume (master) key instead of keyslots info"
+msgstr "Dump (hoofd)sleutel tot het opslagmedium in plaats van de sleutelplaatsinformatie."
+
+#: src/cryptsetup.c:3366 src/cryptsetup_reencrypt.c:1602
+msgid "The size of the encryption key"
+msgstr "De grootte van de encryptiesleutel"
+
+#: src/cryptsetup.c:3366 src/cryptsetup.c:3425 src/integritysetup.c:553
+#: src/integritysetup.c:557 src/integritysetup.c:561
+#: src/cryptsetup_reencrypt.c:1602
+msgid "BITS"
+msgstr "BITS"
+
+#: src/cryptsetup.c:3367 src/cryptsetup_reencrypt.c:1618
+msgid "Limits the read from keyfile"
+msgstr "Beperkt de lezing uit sleutelbestand"
+
+#: src/cryptsetup.c:3367 src/cryptsetup.c:3368 src/cryptsetup.c:3369
+#: src/cryptsetup.c:3370 src/cryptsetup.c:3373 src/cryptsetup.c:3422
+#: src/cryptsetup.c:3423 src/cryptsetup.c:3431 src/cryptsetup.c:3432
+#: src/veritysetup.c:432 src/veritysetup.c:433 src/veritysetup.c:434
+#: src/veritysetup.c:437 src/veritysetup.c:438 src/integritysetup.c:542
+#: src/integritysetup.c:548 src/integritysetup.c:549
+#: src/cryptsetup_reencrypt.c:1617 src/cryptsetup_reencrypt.c:1618
+#: src/cryptsetup_reencrypt.c:1619 src/cryptsetup_reencrypt.c:1620
+msgid "bytes"
+msgstr "bytes"
+
+#: src/cryptsetup.c:3368 src/cryptsetup_reencrypt.c:1617
+msgid "Number of bytes to skip in keyfile"
+msgstr "Aantal bytes over te slaan in sleutelbestand"
+
+#: src/cryptsetup.c:3369
+msgid "Limits the read from newly added keyfile"
+msgstr "Beperkt de lezing uit een nieuw toegevoegd sleutelbestand"
+
+#: src/cryptsetup.c:3370
+msgid "Number of bytes to skip in newly added keyfile"
+msgstr "Aantal bytes over te slaan in nieuwste toegevoegde sleutelbestand"
+
+#: src/cryptsetup.c:3371
+msgid "Slot number for new key (default is first free)"
+msgstr "Plaatsnummer voor nieuwe sleutel (standaard is de eerste open plaats)"
+
+#: src/cryptsetup.c:3372
+msgid "The size of the device"
+msgstr "De grootte van het apparaat"
+
+#: src/cryptsetup.c:3372 src/cryptsetup.c:3374 src/cryptsetup.c:3375
+#: src/cryptsetup.c:3381 src/integritysetup.c:543 src/integritysetup.c:550
+msgid "SECTORS"
+msgstr "SECTOREN"
+
+#: src/cryptsetup.c:3373 src/cryptsetup_reencrypt.c:1620
+msgid "Use only specified device size (ignore rest of device). DANGEROUS!"
+msgstr "Enkel ingegeven apparaatsgrootte gebruiken (rest van apparaat wordt genegeerd). GEVAARLIJK!"
+
+#: src/cryptsetup.c:3374
+msgid "The start offset in the backend device"
+msgstr "De startplaats in het backend-apparaat"
+
+#: src/cryptsetup.c:3375
+msgid "How many sectors of the encrypted data to skip at the beginning"
+msgstr "Hoeveel sectoren van de versleutelde gegevens aan het begin over te slaan"
+
+#: src/cryptsetup.c:3376
+msgid "Create a readonly mapping"
+msgstr "Een alleen-lezen toewijzing aanmaken"
+
+#: src/cryptsetup.c:3377 src/integritysetup.c:536
+#: src/cryptsetup_reencrypt.c:1608
+msgid "Do not ask for confirmation"
+msgstr "Niet om bevestiging vragen"
+
+#: src/cryptsetup.c:3378
+msgid "Timeout for interactive passphrase prompt (in seconds)"
+msgstr "Timeout voor interactieve wachtwoordprompt (in seconden)"
+
+#: src/cryptsetup.c:3378 src/cryptsetup.c:3379 src/integritysetup.c:537
+#: src/cryptsetup_reencrypt.c:1609
+msgid "secs"
+msgstr "seconden"
+
+#: src/cryptsetup.c:3379 src/integritysetup.c:537
+#: src/cryptsetup_reencrypt.c:1609
+msgid "Progress line update (in seconds)"
+msgstr ""
+
+#: src/cryptsetup.c:3380 src/cryptsetup_reencrypt.c:1610
+msgid "How often the input of the passphrase can be retried"
+msgstr "Hoe vaak de invoering van het wachtwoord opnieuw geprobeerd kan worden"
+
+#: src/cryptsetup.c:3381
+msgid "Align payload at <n> sector boundaries - for luksFormat"
+msgstr "Payload uitlijnen op meervouden van <n> sectoren – voor luksFormat"
+
+#: src/cryptsetup.c:3382
+#, fuzzy
+msgid "File with LUKS header and keyslots backup"
+msgstr "Bestand met reservekopie van LUKS-koptekst en -sleutelplaatsen."
+
+#: src/cryptsetup.c:3383 src/cryptsetup_reencrypt.c:1611
+#, fuzzy
+msgid "Use /dev/random for generating volume key"
+msgstr "Gebruik /dev/random om de sleutel tot het opslagmedium te genereren."
+
+#: src/cryptsetup.c:3384 src/cryptsetup_reencrypt.c:1612
+#, fuzzy
+msgid "Use /dev/urandom for generating volume key"
+msgstr "Gebruik /dev/urandom om de sleutel tot het opslagmedium te genereren."
+
+#: src/cryptsetup.c:3385
+#, fuzzy
+msgid "Share device with another non-overlapping crypt segment"
+msgstr "Apparaat met een ander, niet-overlappend cryptsegment delen."
+
+#: src/cryptsetup.c:3386 src/veritysetup.c:441
+#, fuzzy
+msgid "UUID for device to use"
+msgstr "UUID van het te gebruiken apparaat."
+
+#: src/cryptsetup.c:3387
+#, fuzzy
+msgid "Allow discards (aka TRIM) requests for device"
+msgstr "Discardaanvragen (alias TRIM) op dit apparaat toelaten."
+
+#: src/cryptsetup.c:3388 src/cryptsetup_reencrypt.c:1629
+#, fuzzy
+msgid "Device or file with separated LUKS header"
+msgstr "Apparaat of bestand met verschillende LUKS-koptekst."
+
+#: src/cryptsetup.c:3389
+#, fuzzy
+msgid "Do not activate device, just check passphrase"
+msgstr "Apparaat niet activeren, enkel wachtwoord controleren."
+
+#: src/cryptsetup.c:3390
+#, fuzzy
+msgid "Use hidden header (hidden TCRYPT device)"
+msgstr "Verborgen koptekst gebruiken (verborgen TCRYPT-apparaat)."
+
+#: src/cryptsetup.c:3391
+#, fuzzy
+msgid "Device is system TCRYPT drive (with bootloader)"
+msgstr "Apparaat is TCRYPT-systeemschijf (met bootloader)."
+
+#: src/cryptsetup.c:3392
+#, fuzzy
+msgid "Use backup (secondary) TCRYPT header"
+msgstr "Reserve (secundaire) TCRYPT-koptekst gebruiken."
+
+#: src/cryptsetup.c:3393
+#, fuzzy
+msgid "Scan also for VeraCrypt compatible device"
+msgstr "Eveneens naar VeraCrypt-compatibel apparaat scannen."
+
+#: src/cryptsetup.c:3394
+#, fuzzy
+msgid "Personal Iteration Multiplier for VeraCrypt compatible device"
+msgstr "Eveneens naar VeraCrypt-compatibel apparaat scannen."
+
+#: src/cryptsetup.c:3395
+#, fuzzy
+msgid "Query Personal Iteration Multiplier for VeraCrypt compatible device"
+msgstr "Eveneens naar VeraCrypt-compatibel apparaat scannen."
+
+#: src/cryptsetup.c:3396
+#, fuzzy
+msgid "Type of device metadata: luks, luks1, luks2, plain, loopaes, tcrypt"
+msgstr "Soorten apparaat-metadata: luks, plain, loopaes, tcrypt."
+
+#: src/cryptsetup.c:3397
+#, fuzzy
+msgid "Disable password quality check (if enabled)"
+msgstr "Wachtwoordkwaliteitscontrole uitschakelen (indien ingeschakeld)."
+
+#: src/cryptsetup.c:3398
+#, fuzzy
+msgid "Use dm-crypt same_cpu_crypt performance compatibility option"
+msgstr "dm-crypt same_cpu_crypt prestatie-compatibiliteitsoptie gebruiken."
+
+#: src/cryptsetup.c:3399
+#, fuzzy
+msgid "Use dm-crypt submit_from_crypt_cpus performance compatibility option"
+msgstr "dm-crypt submit_from_crypt_cpus prestatie-compatibiliteitsoptie gebruiken."
+
+#: src/cryptsetup.c:3400
+msgid "Device removal is deferred until the last user closes it"
+msgstr ""
+
+#: src/cryptsetup.c:3401
+msgid "Use global lock to serialize memory hard PBKDF (OOM workaround)"
+msgstr ""
+
+#: src/cryptsetup.c:3402
+#, fuzzy
+msgid "PBKDF iteration time for LUKS (in ms)"
+msgstr "PBKDF2 herhalingstijd voor LUKS (in ms)"
+
+#: src/cryptsetup.c:3402 src/cryptsetup_reencrypt.c:1607
+msgid "msecs"
+msgstr "milliseconden"
+
+#: src/cryptsetup.c:3403 src/cryptsetup_reencrypt.c:1625
+msgid "PBKDF algorithm (for LUKS2): argon2i, argon2id, pbkdf2"
+msgstr ""
+
+#: src/cryptsetup.c:3404 src/cryptsetup_reencrypt.c:1626
+msgid "PBKDF memory cost limit"
+msgstr ""
+
+#: src/cryptsetup.c:3404 src/cryptsetup_reencrypt.c:1626
+#, fuzzy
+msgid "kilobytes"
+msgstr "bytes"
+
+#: src/cryptsetup.c:3405 src/cryptsetup_reencrypt.c:1627
+msgid "PBKDF parallel cost"
+msgstr ""
+
+#: src/cryptsetup.c:3405 src/cryptsetup_reencrypt.c:1627
+msgid "threads"
+msgstr ""
+
+#: src/cryptsetup.c:3406 src/cryptsetup_reencrypt.c:1628
+msgid "PBKDF iterations cost (forced, disables benchmark)"
+msgstr ""
+
+#: src/cryptsetup.c:3407
+msgid "Keyslot priority: ignore, normal, prefer"
+msgstr ""
+
+#: src/cryptsetup.c:3408
+#, fuzzy
+msgid "Disable locking of on-disk metadata"
+msgstr "on-disk metadata proberen te herstellen"
+
+#: src/cryptsetup.c:3409
+msgid "Disable loading volume keys via kernel keyring"
+msgstr ""
+
+#: src/cryptsetup.c:3410
+msgid "Data integrity algorithm (LUKS2 only)"
+msgstr ""
+
+#: src/cryptsetup.c:3411 src/integritysetup.c:564
+msgid "Disable journal for integrity device"
+msgstr ""
+
+#: src/cryptsetup.c:3412 src/integritysetup.c:538
+msgid "Do not wipe device after format"
+msgstr ""
+
+#: src/cryptsetup.c:3413
+msgid "Do not ask for passphrase if activation by token fails"
+msgstr ""
+
+#: src/cryptsetup.c:3414
+msgid "Token number (default: any)"
+msgstr ""
+
+#: src/cryptsetup.c:3415
+msgid "Key description"
+msgstr ""
+
+#: src/cryptsetup.c:3416
+msgid "Encryption sector size (default: 512 bytes)"
+msgstr ""
+
+#: src/cryptsetup.c:3417
+msgid "Set activation flags persistent for device"
+msgstr ""
+
+#: src/cryptsetup.c:3418
+#, fuzzy
+msgid "Set label for the LUKS2 device"
+msgstr "een LUKS-apparaat formatteren"
+
+#: src/cryptsetup.c:3419
+msgid "Set subsystem label for the LUKS2 device"
+msgstr ""
+
+#: src/cryptsetup.c:3420
+msgid "Create unbound (no assigned data segment) LUKS2 keyslot"
+msgstr ""
+
+#: src/cryptsetup.c:3421
+#, fuzzy
+msgid "Read or write the json from or to a file"
+msgstr "De sleutel uit een bestand lezen."
+
+#: src/cryptsetup.c:3422
+msgid "LUKS2 header metadata area size"
+msgstr ""
+
+#: src/cryptsetup.c:3423
+#, fuzzy
+msgid "LUKS2 header keyslots area size"
+msgstr "Bestand met reservekopie van LUKS-koptekst en -sleutelplaatsen."
+
+#: src/cryptsetup.c:3424
+msgid "Refresh (reactivate) device with new parameters"
+msgstr ""
+
+#: src/cryptsetup.c:3425
+#, fuzzy
+msgid "LUKS2 keyslot: The size of the encryption key"
+msgstr "De grootte van de encryptiesleutel"
+
+#: src/cryptsetup.c:3426
+msgid "LUKS2 keyslot: The cipher used for keyslot encryption"
+msgstr ""
+
+#: src/cryptsetup.c:3427
+#, fuzzy
+msgid "Encrypt LUKS2 device (in-place encryption)."
+msgstr "Apparaat permanent ontsleutelen (encryptie verwijderen)."
+
+#: src/cryptsetup.c:3428
+#, fuzzy
+msgid "Decrypt LUKS2 device (remove encryption)."
+msgstr "Apparaat permanent ontsleutelen (encryptie verwijderen)."
+
+#: src/cryptsetup.c:3429
+msgid "Initialize LUKS2 reencryption in metadata only."
+msgstr ""
+
+#: src/cryptsetup.c:3430
+msgid "Resume initialized LUKS2 reencryption only."
+msgstr ""
+
+#: src/cryptsetup.c:3431 src/cryptsetup_reencrypt.c:1619
+msgid "Reduce data device size (move data offset). DANGEROUS!"
+msgstr "Grootte van gegevensapparaat wijzigen (gegevenspositie wijzigen). GEVAARLIJK!"
+
+#: src/cryptsetup.c:3432
+#, fuzzy
+msgid "Maximal reencryption hotzone size."
+msgstr "Blokgrootte herencryptie"
+
+#: src/cryptsetup.c:3433
+msgid "Reencryption hotzone resilience type (checksum,journal,none)"
+msgstr ""
+
+#: src/cryptsetup.c:3434
+#, fuzzy
+msgid "Reencryption hotzone checksums hash"
+msgstr "Blokgrootte herencryptie"
+
+#: src/cryptsetup.c:3435
+msgid "Override device autodetection of dm device to be reencrypted"
+msgstr ""
+
+#: src/cryptsetup.c:3451 src/veritysetup.c:462 src/integritysetup.c:583
+msgid "[OPTION...] <action> <action-specific>"
+msgstr "[OPTIE…] <actie> <actie-specifiek>"
+
+#: src/cryptsetup.c:3502 src/veritysetup.c:496 src/integritysetup.c:594
+msgid "Argument <action> missing."
+msgstr "Argument <actie> ontbreekt."
+
+#: src/cryptsetup.c:3565 src/veritysetup.c:527 src/integritysetup.c:625
+msgid "Unknown action."
+msgstr "Onbekende actie."
+
+#: src/cryptsetup.c:3575
+msgid "Parameter --refresh is only allowed with open or refresh commands.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3580
+msgid "Options --refresh and --test-passphrase are mutually exclusive.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3585
+#, fuzzy
+msgid "Option --deferred is allowed only for close command.\n"
+msgstr "Optie --shared wordt enkel toegestaan voor open-opdracht op plain-apparaat.\n"
+
+#: src/cryptsetup.c:3590
+msgid "Option --shared is allowed only for open of plain device.\n"
+msgstr "Optie --shared wordt enkel toegestaan voor open-opdracht op plain-apparaat.\n"
+
+#: src/cryptsetup.c:3595
+msgid "Option --allow-discards is allowed only for open operation.\n"
+msgstr "Optie --allow-discards wordt enkel toegestaan voor de open-operatie.\n"
+
+#: src/cryptsetup.c:3600
+#, fuzzy
+msgid "Option --persistent is allowed only for open operation.\n"
+msgstr "Optie --allow-discards wordt enkel toegestaan voor de open-operatie.\n"
+
+#: src/cryptsetup.c:3605
+#, fuzzy
+msgid "Option --serialize-memory-hard-pbkdf is allowed only for open operation.\n"
+msgstr "Optie --allow-discards wordt enkel toegestaan voor de open-operatie.\n"
+
+#: src/cryptsetup.c:3610
+msgid "Option --persistent is not allowed with --test-passphrase.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3620
+#, fuzzy
+msgid ""
+"Option --key-size is allowed only for luksFormat, luksAddKey,\n"
+"open and benchmark actions. To limit read from keyfile use --keyfile-size=(bytes)."
+msgstr ""
+"Optie --key-size is enkel toegestaan bij luksFormat, open en benchmark.\n"
+"Om de lezing uit een sleutelbestand te beperken, gebruik --keyfile-size=(bytes)."
+
+#: src/cryptsetup.c:3626
+#, fuzzy
+msgid "Option --integrity is allowed only for luksFormat (LUKS2).\n"
+msgstr "Optie --align-payload is enkel toegestaan voor luksFormat."
+
+#: src/cryptsetup.c:3631
+msgid "Option --integrity-no-wipe can be used only for format action with integrity extension.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3637
+#, fuzzy
+msgid "Options --label and --subsystem are allowed only for luksFormat and config LUKS2 operations.\n"
+msgstr "Optie --allow-discards wordt enkel ondersteund voor de luksOpen-, loopaesOpen- en create-opdrachten.\n"
+
+#: src/cryptsetup.c:3643
+msgid "Option --test-passphrase is allowed only for open of LUKS and TCRYPT devices.\n"
+msgstr "Optie --test-passphrase is enkel toegestaan bij open van LUKS- en TCRYPT-apparaten.\n"
+
+#: src/cryptsetup.c:3648 src/cryptsetup_reencrypt.c:1692
+msgid "Key size must be a multiple of 8 bits"
+msgstr "Sleutelgrootte moet een meervoud zijn van 8 bits"
+
+#: src/cryptsetup.c:3654 src/cryptsetup_reencrypt.c:1378
+#: src/cryptsetup_reencrypt.c:1697
+msgid "Key slot is invalid."
+msgstr "Sleutelplaats is ongeldig."
+
+#: src/cryptsetup.c:3661
+#, fuzzy
+msgid "Option --key-file takes precedence over specified key file argument."
+msgstr "Optie --key-file krijgt voorrang over het gespecificeerde sleutelbestandsargument.\n"
+
+#: src/cryptsetup.c:3668 src/veritysetup.c:539 src/integritysetup.c:649
+#: src/cryptsetup_reencrypt.c:1671
+msgid "Negative number for option not permitted."
+msgstr "Een negatief getal wordt niet toegestaan voor deze optie."
+
+#: src/cryptsetup.c:3672
+msgid "Only one --key-file argument is allowed."
+msgstr "Slechts een enkel gebruik van het --key-file argument is toegestaan."
+
+#: src/cryptsetup.c:3676 src/cryptsetup_reencrypt.c:1663
+#: src/cryptsetup_reencrypt.c:1701
+msgid "Only one of --use-[u]random options is allowed."
+msgstr "Slechts een enkel gebruik van de opties --use-[u]random is toegestaan."
+
+#: src/cryptsetup.c:3680
+msgid "Option --use-[u]random is allowed only for luksFormat."
+msgstr "OPtie --use-[u]random is enkel toegestaan bij luksFormat."
+
+#: src/cryptsetup.c:3684
+msgid "Option --uuid is allowed only for luksFormat and luksUUID."
+msgstr "Optie --uuid is enkel toegestaan bij luksFormat en luksUUID."
+
+#: src/cryptsetup.c:3688
+msgid "Option --align-payload is allowed only for luksFormat."
+msgstr "Optie --align-payload is enkel toegestaan voor luksFormat."
+
+#: src/cryptsetup.c:3692
+msgid "Options --luks2-metadata-size and --opt-luks2-keyslots-size are allowed only for luksFormat with LUKS2."
+msgstr ""
+
+#: src/cryptsetup.c:3697
+#, fuzzy
+msgid "Invalid LUKS2 metadata size specification."
+msgstr "Ongeldig apparaatsgrootte ingegeven."
+
+#: src/cryptsetup.c:3701
+#, fuzzy
+msgid "Invalid LUKS2 keyslots size specification."
+msgstr "Ongeldig apparaatsgrootte ingegeven."
+
+#: src/cryptsetup.c:3705
+#, fuzzy
+msgid "Options --align-payload and --offset cannot be combined."
+msgstr "Optie --align-payload is enkel toegestaan voor luksFormat."
+
+#: src/cryptsetup.c:3711
+msgid "Option --skip is supported only for open of plain and loopaes devices.\n"
+msgstr "Optie --skip wordt enkel ondersteund voor open-opdracht op plain- en loopaes-apparaten.\n"
+
+#: src/cryptsetup.c:3718
+#, fuzzy
+msgid "Option --offset is supported only for open of plain and loopaes devices, luksFormat and device reencryption.\n"
+msgstr "Optie --offset wordt enkel ondersteund voor open-opdracht op plain- en loopaes-apparaten.\n"
+
+#: src/cryptsetup.c:3724
+msgid "Option --tcrypt-hidden, --tcrypt-system or --tcrypt-backup is supported only for TCRYPT device.\n"
+msgstr "Optie --tcrypt-hidden, --tcrypt-system of --tcrypt-backup wordt enkel ondersteund voor TCRYPT-apparaten.\n"
+
+#: src/cryptsetup.c:3729
+msgid "Option --tcrypt-hidden cannot be combined with --allow-discards.\n"
+msgstr "Optie --tcrypt-hidden kan niet met --allow-discards gecombineerd worden.\n"
+
+#: src/cryptsetup.c:3734
+msgid "Option --veracrypt is supported only for TCRYPT device type.\n"
+msgstr "Optie --veracrypt wordt enkel ondersteund voor TCRYPT-apparaatstype.\n"
+
+#: src/cryptsetup.c:3740
+msgid "Invalid argument for parameter --veracrypt-pim supplied.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3744
+#, fuzzy
+msgid "Option --veracrypt-pim is supported only for VeraCrypt compatible devices.\n"
+msgstr "Optie --veracrypt wordt enkel ondersteund voor TCRYPT-apparaatstype.\n"
+
+#: src/cryptsetup.c:3752
+#, fuzzy
+msgid "Option --veracrypt-query-pim is supported only for VeraCrypt compatible devices.\n"
+msgstr "Optie --veracrypt wordt enkel ondersteund voor TCRYPT-apparaatstype.\n"
+
+#: src/cryptsetup.c:3756
+msgid "The options --veracrypt-pim and --veracrypt-query-pim are mutually exclusive.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3763
+msgid "Option --priority can be only ignore/normal/prefer.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3768
+msgid "Keyslot specification is required.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3773 src/cryptsetup_reencrypt.c:1677
+msgid "Password-based key derivation function (PBKDF) can be only pbkdf2 or argon2i/argon2id.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3778 src/cryptsetup_reencrypt.c:1682
+msgid "PBKDF forced iterations cannot be combined with iteration time option.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3784
+#, fuzzy
+msgid "Sector size option is not supported for this command.\n"
+msgstr "Deze operatie wordt niet ondersteund voor dit apparaatstype.\n"
+
+#: src/cryptsetup.c:3790
+#, fuzzy
+msgid "Unsupported encryption sector size.\n"
+msgstr "Kan herencryptie-logbestand niet lezen.\n"
+
+#: src/cryptsetup.c:3795
+msgid "Key size is required with --unbound option.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3800
+#, fuzzy
+msgid "Option --unbound may be used only with luksAddKey action.\n"
+msgstr "Optie --new kan niet samen met --decrypt gebruikt worden."
+
+#: src/cryptsetup.c:3805
+#, fuzzy
+msgid "Option --refresh may be used only with open action.\n"
+msgstr "Optie -- keep-key kan enkel samen met --hash of --iter-time gebruikt worden."
+
+#: src/cryptsetup.c:3816
+msgid "Cannot disable metadata locking.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3826
+#, fuzzy
+msgid "Invalid max reencryption hotzone size specification."
+msgstr "Ongeldig apparaatsgrootte ingegeven."
+
+#: src/cryptsetup.c:3834 src/cryptsetup_reencrypt.c:1706
+#: src/cryptsetup_reencrypt.c:1711
+msgid "Invalid device size specification."
+msgstr "Ongeldig apparaatsgrootte ingegeven."
+
+#: src/cryptsetup.c:3837
+#, fuzzy
+msgid "Maximum device reduce size is 1 GiB."
+msgstr "Maximum apparaatsverkleiningsgrootte is 64 MB."
+
+#: src/cryptsetup.c:3840 src/cryptsetup_reencrypt.c:1717
+msgid "Reduce size must be multiple of 512 bytes sector."
+msgstr "Verkleiningsgrootte moet een meervoud zijn van de 512 bytes-grote sector."
+
+#: src/cryptsetup.c:3845
+#, fuzzy
+msgid "Invalid data size specification."
+msgstr "Ongeldig apparaatsgrootte ingegeven."
+
+#: src/cryptsetup.c:3850
+#, fuzzy
+msgid "Reduce size overflow."
+msgstr "Overloop van apparaatsgegevenspositie.\n"
+
+#: src/cryptsetup.c:3854
+msgid "LUKS2 decryption requires option --header."
+msgstr ""
+
+#: src/cryptsetup.c:3858
+#, fuzzy
+msgid "Device size must be multiple of 512 bytes sector."
+msgstr "Verkleiningsgrootte moet een meervoud zijn van de 512 bytes-grote sector."
+
+#: src/cryptsetup.c:3862
+msgid "Options --reduce-device-size and --data-size cannot be combined."
+msgstr ""
+
+#: src/cryptsetup.c:3866
+msgid "Options --device-size and --size cannot be combined."
+msgstr ""
+
+#: src/veritysetup.c:65
+#, fuzzy
+msgid "Invalid salt string specified."
+msgstr "Ongeldige salt-tekenreeks opgegeven.\n"
+
+#: src/veritysetup.c:96
+#, fuzzy, c-format
+msgid "Cannot create hash image %s for writing."
+msgstr "Kan hashafbeeling %s niet aanmaken voor beschrijving.\n"
+
+#: src/veritysetup.c:106
+#, fuzzy, c-format
+msgid "Cannot create FEC image %s for writing."
+msgstr "Kan hashafbeeling %s niet aanmaken voor beschrijving.\n"
+
+#: src/veritysetup.c:176
+#, fuzzy
+msgid "Invalid root hash string specified."
+msgstr "Ongeldige root-hash tekenreeks opgegeven.\n"
+
+#: src/veritysetup.c:356
+msgid "<data_device> <hash_device>"
+msgstr "<gegevensapparaat> <hash-apparaat>"
+
+#: src/veritysetup.c:356 src/integritysetup.c:469
+msgid "format device"
+msgstr "apparaat formateren"
+
+#: src/veritysetup.c:357
+msgid "<data_device> <hash_device> <root_hash>"
+msgstr "<gegevensapparaat> <hash-apparaat> <root-hash>"
+
+#: src/veritysetup.c:357
+msgid "verify device"
+msgstr "apparaat controleren"
+
+#: src/veritysetup.c:358
+#, fuzzy
+msgid "<data_device> <name> <hash_device> <root_hash>"
+msgstr "<gegevensapparaat> <hash-apparaat> <root-hash>"
+
+#: src/veritysetup.c:360 src/integritysetup.c:472
+msgid "show active device status"
+msgstr "status van actief apparaat tonen"
+
+#: src/veritysetup.c:361
+msgid "<hash_device>"
+msgstr "<hash-apparaat>"
+
+#: src/veritysetup.c:361 src/integritysetup.c:473
+msgid "show on-disk information"
+msgstr "on-disk informatie tonen"
+
+#: src/veritysetup.c:380
+#, c-format
+msgid ""
+"\n"
+"<name> is the device to create under %s\n"
+"<data_device> is the data device\n"
+"<hash_device> is the device containing verification data\n"
+"<root_hash> hash of the root node on <hash_device>\n"
+msgstr ""
+"\n"
+"<naam> is de naam van het onder %s te creëren apparaat\n"
+"<gegevensapparaat> is het de naam van het gegevensapparaat\n"
+"<hash-apparaat> is de naam van het apparaat dat de verificatiegegevens bevat\n"
+"<root-hash> is de hash van de rootnode op <hash-apparaat>\n"
+
+#: src/veritysetup.c:387
+#, c-format
+msgid ""
+"\n"
+"Default compiled-in dm-verity parameters:\n"
+"\tHash: %s, Data block (bytes): %u, Hash block (bytes): %u, Salt size: %u, Hash format: %u\n"
+msgstr ""
+"\n"
+"Standaard meegecompileerde dm-verity parameters:\n"
+"\tHash: %s, Datablok (bytes): %u, Hashblock (bytes): %u, Saltgrootte: %u, Hashformaat: %u\n"
+
+#: src/veritysetup.c:430
+msgid "Do not use verity superblock"
+msgstr "VERITY-superblok niet gebruiken"
+
+#: src/veritysetup.c:431
+msgid "Format type (1 - normal, 0 - original Chrome OS)"
+msgstr "Formaatstype (1 - normaal, 0 - origineel Chrome OS)"
+
+#: src/veritysetup.c:431
+msgid "number"
+msgstr "nummer"
+
+#: src/veritysetup.c:432
+msgid "Block size on the data device"
+msgstr "Blokgrootte op het gegevensapparaat"
+
+#: src/veritysetup.c:433
+msgid "Block size on the hash device"
+msgstr "Blokgrootte op het hash-apparaat"
+
+#: src/veritysetup.c:434
+msgid "FEC parity bytes"
+msgstr ""
+
+#: src/veritysetup.c:435
+msgid "The number of blocks in the data file"
+msgstr "Aantal blokken in het gegevensbestand"
+
+#: src/veritysetup.c:435
+msgid "blocks"
+msgstr "blokken"
+
+#: src/veritysetup.c:436
+msgid "Path to device with error correction data"
+msgstr ""
+
+#: src/veritysetup.c:436 src/integritysetup.c:540
+msgid "path"
+msgstr ""
+
+#: src/veritysetup.c:437
+msgid "Starting offset on the hash device"
+msgstr "De startplaats op het hash-apparaat"
+
+#: src/veritysetup.c:438
+#, fuzzy
+msgid "Starting offset on the FEC device"
+msgstr "De startplaats op het hash-apparaat"
+
+#: src/veritysetup.c:439
+msgid "Hash algorithm"
+msgstr "Hash-algoritme"
+
+#: src/veritysetup.c:439
+msgid "string"
+msgstr "tekenreeks"
+
+#: src/veritysetup.c:440
+msgid "Salt"
+msgstr "Salt"
+
+#: src/veritysetup.c:440
+msgid "hex string"
+msgstr "hex-tekenreeks"
+
+#: src/veritysetup.c:442
+msgid "Restart kernel if corruption is detected"
+msgstr "Kernel herstarten bij ontdekking van corruptie"
+
+#: src/veritysetup.c:443
+msgid "Ignore corruption, log it only"
+msgstr "Datacorruptie negeren, enkel loggen"
+
+#: src/veritysetup.c:444
+msgid "Do not verify zeroed blocks"
+msgstr "Op nul ingestelde blokken niet controleren"
+
+#: src/veritysetup.c:445
+msgid "Verify data block only the first time it is read"
+msgstr ""
+
+#: src/veritysetup.c:545
+#, fuzzy
+msgid "Option --ignore-corruption, --restart-on-corruption or --ignore-zero-blocks is allowed only for open operation.\n"
+msgstr "Opties --ignore-corruption, --restart-on-corruption of --ignore-zero-blocks kunnen enkel bij een create-operatie gebruikt worden.\n"
+
+#: src/veritysetup.c:550
+msgid "Option --ignore-corruption and --restart-on-corruption cannot be used together.\n"
+msgstr "Opties --ignore-corruption en --restart-on-corruption kunnen niet samen gebruikt worden.\n"
+
+#: src/integritysetup.c:83 src/utils_password.c:305
+#, fuzzy, c-format
+msgid "Cannot read keyfile %s."
+msgstr "Kan sleutelbestand %s niet lezen.\n"
+
+#: src/integritysetup.c:87 src/utils_password.c:310
+#, fuzzy, c-format
+msgid "Cannot read %d bytes from keyfile %s."
+msgstr "Kan %d bytes uit sleutelbestand %s niet lezen.\n"
+
+#: src/integritysetup.c:250
+#, c-format
+msgid "Formatted with tag size %u, internal integrity %s.\n"
+msgstr ""
+
+#: src/integritysetup.c:469 src/integritysetup.c:473
+#, fuzzy
+msgid "<integrity_device>"
+msgstr "apparaat controleren"
+
+#: src/integritysetup.c:470
+msgid "<integrity_device> <name>"
+msgstr ""
+
+#: src/integritysetup.c:492
+#, fuzzy, c-format
+msgid ""
+"\n"
+"<name> is the device to create under %s\n"
+"<integrity_device> is the device containing data with integrity tags\n"
+msgstr ""
+"\n"
+"<naam> is de naam van het onder %s te creëren apparaat\n"
+"<gegevensapparaat> is het de naam van het gegevensapparaat\n"
+"<hash-apparaat> is de naam van het apparaat dat de verificatiegegevens bevat\n"
+"<root-hash> is de hash van de rootnode op <hash-apparaat>\n"
+
+#: src/integritysetup.c:497
+#, fuzzy, c-format
+msgid ""
+"\n"
+"Default compiled-in dm-integrity parameters:\n"
+"\tTag size: %u bytes, Checksum algorithm: %s\n"
+msgstr ""
+"\n"
+"Standaard meegecompileerde dm-verity parameters:\n"
+"\tHash: %s, Datablok (bytes): %u, Hashblock (bytes): %u, Saltgrootte: %u, Hashformaat: %u\n"
+
+#: src/integritysetup.c:540
+msgid "Path to data device (if separated)"
+msgstr ""
+
+#: src/integritysetup.c:542
+msgid "Journal size"
+msgstr ""
+
+#: src/integritysetup.c:543
+msgid "Interleave sectors"
+msgstr ""
+
+#: src/integritysetup.c:544
+msgid "Journal watermark"
+msgstr ""
+
+#: src/integritysetup.c:544
+msgid "percent"
+msgstr ""
+
+#: src/integritysetup.c:545
+msgid "Journal commit time"
+msgstr ""
+
+#: src/integritysetup.c:545 src/integritysetup.c:547
+msgid "ms"
+msgstr ""
+
+#: src/integritysetup.c:546
+msgid "Number of 512-byte sectors per bit (bitmap mode)."
+msgstr ""
+
+#: src/integritysetup.c:547
+msgid "Bitmap mode flush time"
+msgstr ""
+
+#: src/integritysetup.c:548
+msgid "Tag size (per-sector)"
+msgstr ""
+
+#: src/integritysetup.c:549
+msgid "Sector size"
+msgstr ""
+
+#: src/integritysetup.c:550
+msgid "Buffers size"
+msgstr ""
+
+#: src/integritysetup.c:552
+msgid "Data integrity algorithm"
+msgstr ""
+
+#: src/integritysetup.c:553
+#, fuzzy
+msgid "The size of the data integrity key"
+msgstr "De grootte van de encryptiesleutel"
+
+#: src/integritysetup.c:554
+#, fuzzy
+msgid "Read the integrity key from a file"
+msgstr "De sleutel uit een bestand lezen."
+
+#: src/integritysetup.c:556
+msgid "Journal integrity algorithm"
+msgstr ""
+
+#: src/integritysetup.c:557
+#, fuzzy
+msgid "The size of the journal integrity key"
+msgstr "De grootte van de encryptiesleutel"
+
+#: src/integritysetup.c:558
+#, fuzzy
+msgid "Read the journal integrity key from a file"
+msgstr "De sleutel uit een bestand lezen."
+
+#: src/integritysetup.c:560
+msgid "Journal encryption algorithm"
+msgstr ""
+
+#: src/integritysetup.c:561
+#, fuzzy
+msgid "The size of the journal encryption key"
+msgstr "De grootte van de encryptiesleutel"
+
+#: src/integritysetup.c:562
+#, fuzzy
+msgid "Read the journal encryption key from a file"
+msgstr "De sleutel uit een bestand lezen."
+
+#: src/integritysetup.c:565
+msgid "Recovery mode (no journal, no tag checking)"
+msgstr ""
+
+#: src/integritysetup.c:566
+msgid "Use bitmap to track changes and disable journal for integrity device"
+msgstr ""
+
+#: src/integritysetup.c:567
+msgid "Recalculate initial tags automatically."
+msgstr ""
+
+#: src/integritysetup.c:640
+#, fuzzy
+msgid "Option --integrity-recalculate can be used only for open action."
+msgstr "Optie --allow-discards wordt enkel toegestaan voor de open-operatie.\n"
+
+#: src/integritysetup.c:655
+msgid "Options --journal-size, --interleave-sectors, --sector-size, --tag-size and --no-wipe can be used only for format action.\n"
+msgstr ""
+
+#: src/integritysetup.c:661
+#, fuzzy
+msgid "Invalid journal size specification."
+msgstr "Ongeldig apparaatsgrootte ingegeven."
+
+#: src/integritysetup.c:666
+msgid "Both key file and key size options must be specified."
+msgstr ""
+
+#: src/integritysetup.c:669
+msgid "Integrity algorithm must be specified if integrity key is used."
+msgstr ""
+
+#: src/integritysetup.c:674
+msgid "Both journal integrity key file and key size options must be specified."
+msgstr ""
+
+#: src/integritysetup.c:677
+msgid "Journal integrity algorithm must be specified if journal integrity key is used."
+msgstr ""
+
+#: src/integritysetup.c:682
+msgid "Both journal encryption key file and key size options must be specified."
+msgstr ""
+
+#: src/integritysetup.c:685
+msgid "Journal encryption algorithm must be specified if journal encryption key is used."
+msgstr ""
+
+#: src/integritysetup.c:689
+msgid "Recovery and bitmap mode options are mutually exclusive."
+msgstr ""
+
+#: src/integritysetup.c:693
+msgid "Journal options cannot be used in bitmap mode."
+msgstr ""
+
+#: src/integritysetup.c:697
+msgid "Bitmap options can be used only in bitmap mode."
+msgstr ""
+
+#: src/cryptsetup_reencrypt.c:172
+#, fuzzy
+msgid "Reencryption already in-progress."
+msgstr "Blokgrootte herencryptie"
+
+#: src/cryptsetup_reencrypt.c:201
+#, fuzzy, c-format
+msgid "Cannot exclusively open %s, device in use."
+msgstr "Kan %s niet exclusief openen, apparaat wordt gebruikt.\n"
+
+#: src/cryptsetup_reencrypt.c:215 src/cryptsetup_reencrypt.c:1127
+#, fuzzy
+msgid "Allocation of aligned memory failed."
+msgstr "Reservering van uitgelijnd geheugen gefaald.\n"
+
+#: src/cryptsetup_reencrypt.c:222
+#, fuzzy, c-format
+msgid "Cannot read device %s."
+msgstr "Kan apparaat niet lezen: %s.\n"
+
+#: src/cryptsetup_reencrypt.c:233
+#, fuzzy, c-format
+msgid "Marking LUKS1 device %s unusable."
+msgstr "LUKS-apparaat %s wordt als onbruikbaar gemarkeerd.\n"
+
+#: src/cryptsetup_reencrypt.c:237
+#, c-format
+msgid "Setting LUKS2 offline reencrypt flag on device %s."
+msgstr ""
+
+#: src/cryptsetup_reencrypt.c:254
+#, fuzzy, c-format
+msgid "Cannot write device %s."
+msgstr "Kan apparaat %s niet beschrijven.\n"
+
+#: src/cryptsetup_reencrypt.c:302
+#, fuzzy
+msgid "Cannot write reencryption log file."
+msgstr "Kan herencryptie-logbestand niet schrijven.\n"
+
+#: src/cryptsetup_reencrypt.c:358
+#, fuzzy
+msgid "Cannot read reencryption log file."
+msgstr "Kan herencryptie-logbestand niet lezen.\n"
+
+#: src/cryptsetup_reencrypt.c:396
+#, c-format
+msgid "Log file %s exists, resuming reencryption.\n"
+msgstr "Logbestand %s bestaat reeds, herencryptie wordt herstart.\n"
+
+#: src/cryptsetup_reencrypt.c:445
+#, fuzzy
+msgid "Activating temporary device using old LUKS header."
+msgstr "Activatie van tijdelijke apparaat met oude LUKS-koptekst.\n"
+
+#: src/cryptsetup_reencrypt.c:455
+#, fuzzy
+msgid "Activating temporary device using new LUKS header."
+msgstr "Activatie van tijdelijke apparaat met nieuwe LUKS-koptekst.\n"
+
+#: src/cryptsetup_reencrypt.c:465
+#, fuzzy
+msgid "Activation of temporary devices failed."
+msgstr "Activatie van tijdelijke apparaten gefaald.\n"
+
+#: src/cryptsetup_reencrypt.c:551
+#, fuzzy
+msgid "Failed to set data offset."
+msgstr "Kan status van sleutelbestand niet opvragen.\n"
+
+#: src/cryptsetup_reencrypt.c:557
+#, fuzzy
+msgid "Failed to set metadata size."
+msgstr "Kan status van sleutelbestand niet opvragen.\n"
+
+#: src/cryptsetup_reencrypt.c:565
+#, fuzzy, c-format
+msgid "New LUKS header for device %s created."
+msgstr "Nieuwe LUKS-koptekst voor apparaat %s aangemaakt.\n"
+
+#: src/cryptsetup_reencrypt.c:625
+#, c-format
+msgid "This version of cryptsetup-reencrypt can't handle new internal token type %s."
+msgstr ""
+
+#: src/cryptsetup_reencrypt.c:647
+msgid "Failed to read activation flags from backup header."
+msgstr ""
+
+#: src/cryptsetup_reencrypt.c:651
+#, fuzzy
+msgid "Failed to write activation flags to new header."
+msgstr "Schrijven naar sleutelopslag is mislukt.\n"
+
+#: src/cryptsetup_reencrypt.c:655 src/cryptsetup_reencrypt.c:659
+#, fuzzy
+msgid "Failed to read requirements from backup header."
+msgstr "Lezen uit sleutelopslag is mislukt.\n"
+
+#: src/cryptsetup_reencrypt.c:697
+#, fuzzy, c-format
+msgid "%s header backup of device %s created."
+msgstr "Reservekopie van LUKS-koptekst op apparaat %s aangemaakt .\n"
+
+#: src/cryptsetup_reencrypt.c:760
+#, fuzzy
+msgid "Creation of LUKS backup headers failed."
+msgstr "Creatie van LUKS-reservekopteksten gefaald.\n"
+
+#: src/cryptsetup_reencrypt.c:893
+#, fuzzy, c-format
+msgid "Cannot restore %s header on device %s."
+msgstr "Kan koptekst op apparaat %s niet herstellen.\n"
+
+#: src/cryptsetup_reencrypt.c:895
+#, fuzzy, c-format
+msgid "%s header on device %s restored."
+msgstr "LUKS-koptekst op apparaat %s hersteld.\n"
+
+#: src/cryptsetup_reencrypt.c:1099 src/cryptsetup_reencrypt.c:1105
+#, fuzzy
+msgid "Cannot open temporary LUKS device."
+msgstr "Kan tijdelijk LUKS-apparaat niet openen.\n"
+
+#: src/cryptsetup_reencrypt.c:1110 src/cryptsetup_reencrypt.c:1115
+#, fuzzy
+msgid "Cannot get device size."
+msgstr "Kan apparaatgrootte niet lezen.\n"
+
+#: src/cryptsetup_reencrypt.c:1150
+#, fuzzy
+msgid "IO error during reencryption."
+msgstr "Invoer/uitvoerfout tijdens herencryptie.\n"
+
+#: src/cryptsetup_reencrypt.c:1181
+#, fuzzy
+msgid "Provided UUID is invalid."
+msgstr "Opgegeven UUID is ongeldig.\n"
+
+#: src/cryptsetup_reencrypt.c:1407
+#, fuzzy
+msgid "Cannot open reencryption log file."
+msgstr "Kan herencryptie-logbestand niet openen.\n"
+
+#: src/cryptsetup_reencrypt.c:1413
+#, fuzzy
+msgid "No decryption in progress, provided UUID can be used only to resume suspended decryption process."
+msgstr "Er is geen ontsleutelingsproces aan de gang. Het opgegeven UUID kan enkel gebruikt worden om een geschorst ontsleutelingsproces opnieuw te starten.\n"
+
+#: src/cryptsetup_reencrypt.c:1488
+#, c-format
+msgid "Changed pbkdf parameters in keyslot %i."
+msgstr ""
+
+#: src/cryptsetup_reencrypt.c:1600
+msgid "Reencryption block size"
+msgstr "Blokgrootte herencryptie"
+
+#: src/cryptsetup_reencrypt.c:1600
+msgid "MiB"
+msgstr "MB"
+
+#: src/cryptsetup_reencrypt.c:1604
+#, fuzzy
+msgid "Do not change key, no data area reencryption"
+msgstr "Sleutel niet wijzigen; gegevensgebied wordt niet opnieuw versleuteld."
+
+#: src/cryptsetup_reencrypt.c:1606
+#, fuzzy
+msgid "Read new volume (master) key from file"
+msgstr "De (hoofd)sleutel tot het opslagmedium uit een bestand lezen."
+
+#: src/cryptsetup_reencrypt.c:1607
+msgid "PBKDF2 iteration time for LUKS (in ms)"
+msgstr "PBKDF2 herhalingstijd voor LUKS (in ms)"
+
+#: src/cryptsetup_reencrypt.c:1613
+#, fuzzy
+msgid "Use direct-io when accessing devices"
+msgstr "direct-io gebruiken bij het lezen van apparaten."
+
+#: src/cryptsetup_reencrypt.c:1614
+#, fuzzy
+msgid "Use fsync after each block"
+msgstr "fsync na elk blok gebruiken."
+
+#: src/cryptsetup_reencrypt.c:1615
+#, fuzzy
+msgid "Update log file after every block"
+msgstr "Na elk blok het logbestand bijwerken."
+
+#: src/cryptsetup_reencrypt.c:1616
+#, fuzzy
+msgid "Use only this slot (others will be disabled)"
+msgstr "Enkel deze plaats gebruiken (anderen worden uitgeschakeld)."
+
+#: src/cryptsetup_reencrypt.c:1621
+#, fuzzy
+msgid "Create new header on not encrypted device"
+msgstr "Nieuwe koptekst op niet-versleuteld apparaat invoeren."
+
+#: src/cryptsetup_reencrypt.c:1622
+#, fuzzy
+msgid "Permanently decrypt device (remove encryption)"
+msgstr "Apparaat permanent ontsleutelen (encryptie verwijderen)."
+
+#: src/cryptsetup_reencrypt.c:1623
+#, fuzzy
+msgid "The UUID used to resume decryption"
+msgstr "Het UUID om de ontsleuteling te hervatten."
+
+#: src/cryptsetup_reencrypt.c:1624
+#, fuzzy
+msgid "Type of LUKS metadata: luks1, luks2"
+msgstr "Soorten apparaat-metadata: luks, plain, loopaes, tcrypt."
+
+#: src/cryptsetup_reencrypt.c:1643
+msgid "[OPTION...] <device>"
+msgstr "[OPTIE...] <apparaat>"
+
+#: src/cryptsetup_reencrypt.c:1651
+#, fuzzy, c-format
+msgid "Reencryption will change: %s%s%s%s%s%s."
+msgstr "Herencryptie zal sleutel tot het opslagmedium %s%s%s%s wijzigen.\n"
+
+#: src/cryptsetup_reencrypt.c:1652
+msgid "volume key"
+msgstr ""
+
+#: src/cryptsetup_reencrypt.c:1654
+#, fuzzy
+msgid "set hash to "
+msgstr ", stel hash in op "
+
+#: src/cryptsetup_reencrypt.c:1655
+msgid ", set cipher to "
+msgstr ", stel sleutelalgoritme in op "
+
+#: src/cryptsetup_reencrypt.c:1659
+msgid "Argument required."
+msgstr "Argument is vereist."
+
+#: src/cryptsetup_reencrypt.c:1687
+msgid "Only values between 1 MiB and 64 MiB allowed for reencryption block size."
+msgstr "Enkel waarden tussen 1 MB en 64 MB zijn toegestaan als herencryptieblokgrootte."
+
+#: src/cryptsetup_reencrypt.c:1714
+msgid "Maximum device reduce size is 64 MiB."
+msgstr "Maximum apparaatsverkleiningsgrootte is 64 MB."
+
+#: src/cryptsetup_reencrypt.c:1721
+#, fuzzy
+msgid "Option --new must be used together with --reduce-device-size or --header."
+msgstr "Optie --new moet samen met --reduce-device-size gebruikt worden."
+
+#: src/cryptsetup_reencrypt.c:1725
+#, fuzzy
+msgid "Option --keep-key can be used only with --hash, --iter-time or --pbkdf-force-iterations."
+msgstr "Optie -- keep-key kan enkel samen met --hash of --iter-time gebruikt worden."
+
+#: src/cryptsetup_reencrypt.c:1729
+msgid "Option --new cannot be used together with --decrypt."
+msgstr "Optie --new kan niet samen met --decrypt gebruikt worden."
+
+#: src/cryptsetup_reencrypt.c:1733
+msgid "Option --decrypt is incompatible with specified parameters."
+msgstr "Optie --decrypt is niet verenigbaar met de verschafte parameters."
+
+#: src/cryptsetup_reencrypt.c:1737
+msgid "Option --uuid is allowed only together with --decrypt."
+msgstr "Optie --uuid kan enkel samen met --decrypt gebruikt worden."
+
+#: src/cryptsetup_reencrypt.c:1741
+msgid "Invalid luks type. Use one of these: 'luks', 'luks1' or 'luks2'."
+msgstr ""
+
+#: src/utils_tools.c:151
+#, fuzzy
+msgid "Error reading response from terminal."
+msgstr "Fout bij het lezen van antwoord uit de terminal.\n"
+
+#: src/utils_tools.c:186
+msgid "Command successful.\n"
+msgstr "Opdracht succesvol.\n"
+
+#: src/utils_tools.c:194
+msgid "wrong or missing parameters"
+msgstr ""
+
+#: src/utils_tools.c:196
+#, fuzzy
+msgid "no permission or bad passphrase"
+msgstr "Voer enig wachtwoord in: "
+
+#: src/utils_tools.c:198
+#, fuzzy
+msgid "out of memory"
+msgstr "Kan geheugen niet ontgrendelen.\n"
+
+#: src/utils_tools.c:200
+msgid "wrong device or file specified"
+msgstr ""
+
+#: src/utils_tools.c:202
+#, fuzzy
+msgid "device already exists or device is busy"
+msgstr "Apparaat %s bestaat reeds.\n"
+
+#: src/utils_tools.c:204
+msgid "unknown error"
+msgstr ""
+
+#: src/utils_tools.c:206
+#, fuzzy, c-format
+msgid "Command failed with code %i (%s).\n"
+msgstr "Opdracht is mislukt met code %i"
+
+#: src/utils_tools.c:283
+#, fuzzy, c-format
+msgid "Key slot %i created."
+msgstr "Sleutelplaats %d werd gewijzigd.\n"
+
+#: src/utils_tools.c:285
+#, fuzzy, c-format
+msgid "Key slot %i unlocked."
+msgstr "Sleutelplaats %d is ontgrendeld.\n"
+
+#: src/utils_tools.c:287
+#, fuzzy, c-format
+msgid "Key slot %i removed."
+msgstr "Sleutelplaats %d is ontgrendeld.\n"
+
+#: src/utils_tools.c:296
+#, c-format
+msgid "Token %i created."
+msgstr ""
+
+#: src/utils_tools.c:298
+#, c-format
+msgid "Token %i removed."
+msgstr ""
+
+#: src/utils_tools.c:464
+msgid ""
+"\n"
+"Wipe interrupted."
+msgstr ""
+
+#: src/utils_tools.c:475
+#, c-format
+msgid "WARNING: Device %s already contains a '%s' partition signature.\n"
+msgstr ""
+
+#: src/utils_tools.c:483
+#, c-format
+msgid "WARNING: Device %s already contains a '%s' superblock signature.\n"
+msgstr ""
+
+#: src/utils_tools.c:504 src/utils_tools.c:568
+#, fuzzy
+msgid "Failed to initialize device signature probes."
+msgstr "Kan geen map voor de apparaatstoewijzer verkrijgen."
+
+#: src/utils_tools.c:548
+#, fuzzy, c-format
+msgid "Failed to stat device %s."
+msgstr "Kan status van sleutelbestand niet opvragen.\n"
+
+#: src/utils_tools.c:561
+#, c-format
+msgid "Device %s is in use. Can not proceed with format operation."
+msgstr ""
+
+#: src/utils_tools.c:563
+#, c-format
+msgid "Failed to open file %s in read/write mode."
+msgstr ""
+
+#: src/utils_tools.c:577
+#, c-format
+msgid "Existing '%s' partition signature (offset: %<PRIi64> bytes) on device %s will be wiped."
+msgstr ""
+
+#: src/utils_tools.c:580
+#, c-format
+msgid "Existing '%s' superblock signature (offset: %<PRIi64> bytes) on device %s will be wiped."
+msgstr ""
+
+#: src/utils_tools.c:583
+#, fuzzy
+msgid "Failed to wipe device signature."
+msgstr "Schrijven naar sleutelopslag is mislukt.\n"
+
+#: src/utils_tools.c:590
+#, fuzzy, c-format
+msgid "Failed to probe device %s for a signature."
+msgstr "Kan geen map voor de apparaatstoewijzer verkrijgen."
+
+#: src/utils_tools.c:629
+#, fuzzy
+msgid ""
+"\n"
+"Reencryption interrupted."
+msgstr "Blokgrootte herencryptie"
+
+#: src/utils_password.c:43 src/utils_password.c:75
+#, fuzzy, c-format
+msgid "Cannot check password quality: %s"
+msgstr "Kan wachtwoordkwaliteit niet nakijken: %s\n"
+
+#: src/utils_password.c:51
+#, fuzzy, c-format
+msgid ""
+"Password quality check failed:\n"
+" %s"
+msgstr ""
+"Wachtwoordkwaliteitscontrole gefaald:\n"
+"%s\n"
+
+#: src/utils_password.c:83
+#, fuzzy, c-format
+msgid "Password quality check failed: Bad passphrase (%s)"
+msgstr "Wachtwoordkwaliteitscontrole gefaald: Wachtwoord is van slechte kwaliteit (%s)\n"
+
+#: src/utils_password.c:193 src/utils_password.c:208
+#, fuzzy
+msgid "Error reading passphrase from terminal."
+msgstr "Fout bij het lezen van het wachtwoord uit de terminal.\n"
+
+#: src/utils_password.c:206
+msgid "Verify passphrase: "
+msgstr "Voer wachtwoord nogmaals in: "
+
+#: src/utils_password.c:213
+#, fuzzy
+msgid "Passphrases do not match."
+msgstr "Wachtwoorden komen niet overeen.\n"
+
+#: src/utils_password.c:250
+#, fuzzy
+msgid "Cannot use offset with terminal input."
+msgstr "Kan de gegevenspositie niet via terminalinvoer gebruiken.\n"
+
+#: src/utils_password.c:253
+#, c-format
+msgid "Enter passphrase: "
+msgstr "Voer wachtwoord in: "
+
+#: src/utils_password.c:256
+#, c-format
+msgid "Enter passphrase for %s: "
+msgstr "Voer wachtwoord in voor %s: "
+
+#: src/utils_password.c:287
+#, fuzzy
+msgid "No key available with this passphrase."
+msgstr "Geen sleutel beschikbaar met dit wachtwoord.\n"
+
+#: src/utils_password.c:289
+msgid "No usable keyslot is available."
+msgstr ""
+
+#: src/utils_password.c:328
+#, fuzzy, c-format
+msgid "Cannot open keyfile %s for write."
+msgstr "Kan bestand %s niet openen.\n"
+
+#: src/utils_password.c:335
+#, fuzzy, c-format
+msgid "Cannot write to keyfile %s."
+msgstr "Kan sleutelbestand %s niet lezen.\n"
+
+#: src/utils_luks2.c:47
+#, fuzzy, c-format
+msgid "Failed to open file %s in read-only mode."
+msgstr "Openen van sleutelbestand is mislukt.\n"
+
+#: src/utils_luks2.c:60
+msgid "Provide valid LUKS2 token JSON:\n"
+msgstr ""
+
+#: src/utils_luks2.c:67
+#, fuzzy
+msgid "Failed to read JSON file."
+msgstr "Openen van sleutelbestand is mislukt.\n"
+
+#: src/utils_luks2.c:72
+#, fuzzy
+msgid ""
+"\n"
+"Read interrupted."
+msgstr "VERITY-koptekst beschadigd.\n"
+
+#: src/utils_luks2.c:113
+#, fuzzy, c-format
+msgid "Failed to open file %s in write mode."
+msgstr "Openen van sleutelbestand is mislukt.\n"
+
+#: src/utils_luks2.c:122
+msgid ""
+"\n"
+"Write interrupted."
+msgstr ""
+
+#: src/utils_luks2.c:126
+#, fuzzy
+msgid "Failed to write JSON file."
+msgstr "Openen van sleutelbestand is mislukt.\n"
+
+#~ msgid "Replaced with key slot %d.\n"
+#~ msgstr "Vervangen door sleutelplaats %d.\n"
+
+#~ msgid "Function not available in FIPS mode.\n"
+#~ msgstr "Functie niet beschikbaar in FIPS-modus.\n"
+
+#~ msgid "Too many tree levels for verity volume.\n"
+#~ msgstr "Te veel niveau's in de boomstructuur voor een VERITY-volume.\n"
+
+#~ msgid "memory allocation error in action_luksFormat"
+#~ msgstr "geheugentoewijzingsfout in action_luksFormat"
+
+#~ msgid "Key %d not active. Can't wipe.\n"
+#~ msgstr "Sleutel %d is niet actief. Kan niet wissen.\n"
+
+#~ msgid "<name> <data_device> <hash_device> <root_hash>"
+#~ msgstr "<naam> <gegevensapparaat> <hash-apparaat> <root-hash>"
+
+#~ msgid "create active device"
+#~ msgstr "actief apparaat aanmaken"
+
+#~ msgid "remove (deactivate) device"
+#~ msgstr "apparaat verwijderen (deactiveren)"
+
+#~ msgid "Activated keyslot %i.\n"
+#~ msgstr "Sleutelplaats %d geactiveerd.\n"
+
+#~ msgid "Progress: %5.1f%%, ETA %02llu:%02llu, %4llu MiB written, speed %5.1f MiB/s%s"
+#~ msgstr "Vooruitgang: %5.1f%%, geschatte voltooiïngstijd %02llu:%02llu, %4llu MB geschreven, snelheid %5.1f MiB/s%s"
+
+#~ msgid "Interrupted by a signal.\n"
+#~ msgstr "Onderbroken door een signaal.\n"
+
+#~ msgid "Cannot find a free loopback device.\n"
+#~ msgstr "Kan geen vrij loopback-apparaat vinden.\n"
+
+#~ msgid "Cannot open device %s\n"
+#~ msgstr "Kan apparaat %s niet openen.\n"
+
+#~ msgid "Marking LUKS device %s usable.\n"
+#~ msgstr "LUKS-apparaat %s wordt als bruikbaar gemarkeerd.\n"
+
+#~ msgid "WARNING: this is experimental code, it can completely break your data.\n"
+#~ msgstr "Waarschuwing: deze code is nog experimenteel, het kan al uw data volledig vernielen.\n"
+
+#~ msgid "FIPS checksum verification failed.\n"
+#~ msgstr "Verificatie van FIPS-controlesom gefaald.\n"
+
+#~ msgid "WARNING: device %s is a partition, for TCRYPT system encryption you usually need to use whole block device path.\n"
+#~ msgstr "WAARSCHUWING: apparaat %s is een partitie; bij TCRYPT-systeemversleuteling moet u doorgaans het volledige pad naar het blok-apparaat gebruiken.\n"
+
+#~ msgid "Kernel doesn't support plain64 IV.\n"
+#~ msgstr "Kernel ondersteunt plain64 IV niet.\n"
+
+#~ msgid "Enter LUKS passphrase: "
+#~ msgstr "Voer LUKS-wachtwoord in: "
+
+#~ msgid "Enter new LUKS passphrase: "
+#~ msgstr "Voer nieuw LUKS-wachtwoord in: "
+
+#~ msgid "Enter any LUKS passphrase: "
+#~ msgstr "Voer een LUKS-wachtwoord in: "
+
+#~ msgid "Cannot open device %s for %s%s access.\n"
+#~ msgstr "Kan apparaat %s niet openen voor %s%s-toegang.\n"
+
+#~ msgid "exclusive "
+#~ msgstr "exclusieve "
+
+#~ msgid "writable"
+#~ msgstr "schrijf"
+
+#~ msgid "read-only"
+#~ msgstr "alleen-lezen"
+
+#~ msgid "WARNING!!! Possibly insecure memory. Are you root?\n"
+#~ msgstr "WAARSCHUWING!!! Mogelijk onveilig geheugen. Bent u root?\n"
+
+#~ msgid "Unable to obtain sector size for %s"
+#~ msgstr "Kan sectorgrootte van %s niet verkrijgen"
+
+#~ msgid "Backup file %s doesn't exist.\n"
+#~ msgstr "Reservekopiebestand %s bestaat niet.\n"
+
+#~ msgid "<name> <device>"
+#~ msgstr "<naam> <apparaat>"
+
+#~ msgid "create device"
+#~ msgstr "apparaat aanmaken"
+
+#~ msgid "remove device"
+#~ msgstr "apparaat verwijderen"
+
+#~ msgid "remove LUKS mapping"
+#~ msgstr "LUKS-toewijzing verwijderen"
+
+#~ msgid "open loop-AES device as mapping <name>"
+#~ msgstr "loop-AES-apparaat als toewijzing <naam> openen"
+
+#~ msgid "remove loop-AES mapping"
+#~ msgstr "loop-AES-toewijzing verwijderen"
+
+#~ msgid "Cannot use device %s (crypt segments overlaps or in use by another device).\n"
+#~ msgstr "Kan apparaat %s niet gebruiken (cryptsegmenten overlappen of worden door een ander apparaat gebruikt).\n"
+
+#~ msgid "Block mode XTS is available since kernel 2.6.24.\n"
+#~ msgstr "Blokmodus XTS is beschikbaar vanaf kernelversie 2.6.24.\n"
+
+#~ msgid "Key size in LRW mode must be 256 or 512 bits.\n"
+#~ msgstr "In LRW-modus moet de sleutelgrootte 256 of 512 bits zijn.\n"
+
+#~ msgid "Block mode LRW is available since kernel 2.6.20.\n"
+#~ msgstr "Blokmodus LRW is beschikbaar vanaf kernelversie 2.6.20.\n"
+
+#~ msgid "Negative keyfile size not permitted.\n"
+#~ msgstr "Een negatieve sleutelbestandsgrootte is niet toegestaan.\n"
+
+#~ msgid "Warning: exhausting read requested, but key file is not a regular file, function might never return.\n"
+#~ msgstr "Waarschuwing: volledige lezing aangevraagd, maar sleutelbestand is geen regulier bestand, functie zal misschien nooit terugkeren.\n"
+
+#~ msgid "Cannot find compatible device-mapper kernel modules.\n"
+#~ msgstr "Kan geen compatibele kernelmodules voor apparaatstoewijzer vinden.\n"
+
+#~ msgid "Cannot open device: %s\n"
+#~ msgstr "Kan apparaat niet openen: %s\n"
+
+#~ msgid "BLKROGET failed on device %s.\n"
+#~ msgstr "BLKROGET() is mislukt op apparaat %s.\n"
+
+#~ msgid "BLKGETSIZE failed on device %s.\n"
+#~ msgstr "BLKGETSIZE() is mislukt op apparaat %s.\n"
+
+#~ msgid "identical to luksKillSlot - DEPRECATED - see man page"
+#~ msgstr "identiek aan luksKillSlot - VEROUDERD - zie man-pagina"
+
+#~ msgid "modify active device - DEPRECATED - see man page"
+#~ msgstr "actief apparaat wijzigen - VEROUDERD - zie man-pagina"
+
+#~ msgid ""
+#~ "The reload action is deprecated. Please use \"dmsetup reload\" in case you really need this functionality.\n"
+#~ "WARNING: do not use reload to touch LUKS devices. If that is the case, hit Ctrl-C now.\n"
+#~ msgstr ""
+#~ "De herlaadactie is verouderd. Gebruik “dmsetup reload” indien u deze functionaliteit echt nodig hebt.\n"
+#~ "WAARSCHUWING: gebruik de herlaadactie niet om LUKS-apparaten te “touchen”. Indien u dat wilt doen, typ nu Ctrl-C.\n"
+
+#~ msgid "Obsolete option --non-exclusive is ignored.\n"
+#~ msgstr "Verouderde optie --non-exclusive wordt genegeerd.\n"
+
+#~ msgid "Read the key from a file (can be /dev/random)"
+#~ msgstr "De sleutel uit een bestand lezen (mag /dev/random zijn)"
+
+#~ msgid "(Obsoleted, see man page.)"
+#~ msgstr "(Verouderd, zie man-pagina.)"
+
+#~ msgid "%s is not LUKS device.\n"
+#~ msgstr "%s is geen LUKS-apparaat.\n"

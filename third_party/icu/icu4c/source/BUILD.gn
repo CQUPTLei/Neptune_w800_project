@@ -1,0 +1,701 @@
+import("//build/ohos.gni")
+config("icu_config") {
+  visibility = [ ":*" ]
+  include_dirs = [
+    "//third_party/icu/icu4c/source/common",
+    "//third_party/icu/icu4c/source/i18n",
+    "//third_party/icu/icu4c/source",
+    "//third_party/icu/icu4c/source/tools/toolutil",
+    "//third_party/icu/icu4c/source/io",
+  ]
+}
+
+ohos_shared_library("shared_icuuc_host") {
+  configs = [
+    ":icu_config",
+    "//build/config/compiler:rtti",
+  ]
+
+  defines = [
+    "U_ATTRIBUTE_DEPRECATED=",
+    "U_COMMON_IMPLEMENTATION",
+    "UPRV_BLOCK_MACRO_BEGIN=",
+    "UPRV_BLOCK_MACRO_END=",
+    "UCONFIG_USE_WINDOWS_LCID_MAPPING_API=0",
+    "_REENTRANT",
+  ]
+  sources = [
+    "//third_party/icu/icu4c/source/common/appendable.cpp",
+    "//third_party/icu/icu4c/source/common/bmpset.cpp",
+    "//third_party/icu/icu4c/source/common/brkeng.cpp",
+    "//third_party/icu/icu4c/source/common/brkiter.cpp",
+    "//third_party/icu/icu4c/source/common/bytesinkutil.cpp",
+    "//third_party/icu/icu4c/source/common/bytestream.cpp",
+    "//third_party/icu/icu4c/source/common/bytestrie.cpp",
+    "//third_party/icu/icu4c/source/common/bytestriebuilder.cpp",
+    "//third_party/icu/icu4c/source/common/bytestrieiterator.cpp",
+    "//third_party/icu/icu4c/source/common/caniter.cpp",
+    "//third_party/icu/icu4c/source/common/characterproperties.cpp",
+    "//third_party/icu/icu4c/source/common/chariter.cpp",
+    "//third_party/icu/icu4c/source/common/charstr.cpp",
+    "//third_party/icu/icu4c/source/common/cmemory.cpp",
+    "//third_party/icu/icu4c/source/common/cstr.cpp",
+    "//third_party/icu/icu4c/source/common/cstring.cpp",
+    "//third_party/icu/icu4c/source/common/cwchar.cpp",
+    "//third_party/icu/icu4c/source/common/dictbe.cpp",
+    "//third_party/icu/icu4c/source/common/dictionarydata.cpp",
+    "//third_party/icu/icu4c/source/common/dtintrv.cpp",
+    "//third_party/icu/icu4c/source/common/edits.cpp",
+    "//third_party/icu/icu4c/source/common/errorcode.cpp",
+    "//third_party/icu/icu4c/source/common/filteredbrk.cpp",
+    "//third_party/icu/icu4c/source/common/filterednormalizer2.cpp",
+    "//third_party/icu/icu4c/source/common/icudataver.cpp",
+    "//third_party/icu/icu4c/source/common/icuplug.cpp",
+    "//third_party/icu/icu4c/source/common/loadednormalizer2impl.cpp",
+    "//third_party/icu/icu4c/source/common/localebuilder.cpp",
+    "//third_party/icu/icu4c/source/common/localematcher.cpp",
+    "//third_party/icu/icu4c/source/common/localeprioritylist.cpp",
+    "//third_party/icu/icu4c/source/common/locavailable.cpp",
+    "//third_party/icu/icu4c/source/common/locbased.cpp",
+    "//third_party/icu/icu4c/source/common/locdispnames.cpp",
+    "//third_party/icu/icu4c/source/common/locdistance.cpp",
+    "//third_party/icu/icu4c/source/common/locdspnm.cpp",
+    "//third_party/icu/icu4c/source/common/locid.cpp",
+    "//third_party/icu/icu4c/source/common/loclikely.cpp",
+    "//third_party/icu/icu4c/source/common/loclikelysubtags.cpp",
+    "//third_party/icu/icu4c/source/common/locmap.cpp",
+    "//third_party/icu/icu4c/source/common/locresdata.cpp",
+    "//third_party/icu/icu4c/source/common/locutil.cpp",
+    "//third_party/icu/icu4c/source/common/lsr.cpp",
+    "//third_party/icu/icu4c/source/common/messagepattern.cpp",
+    "//third_party/icu/icu4c/source/common/normalizer2.cpp",
+    "//third_party/icu/icu4c/source/common/normalizer2impl.cpp",
+    "//third_party/icu/icu4c/source/common/normlzr.cpp",
+    "//third_party/icu/icu4c/source/common/parsepos.cpp",
+    "//third_party/icu/icu4c/source/common/patternprops.cpp",
+    "//third_party/icu/icu4c/source/common/pluralmap.cpp",
+    "//third_party/icu/icu4c/source/common/propname.cpp",
+    "//third_party/icu/icu4c/source/common/propsvec.cpp",
+    "//third_party/icu/icu4c/source/common/punycode.cpp",
+    "//third_party/icu/icu4c/source/common/putil.cpp",
+    "//third_party/icu/icu4c/source/common/rbbi.cpp",
+    "//third_party/icu/icu4c/source/common/rbbi_cache.cpp",
+    "//third_party/icu/icu4c/source/common/rbbidata.cpp",
+    "//third_party/icu/icu4c/source/common/rbbinode.cpp",
+    "//third_party/icu/icu4c/source/common/rbbirb.cpp",
+    "//third_party/icu/icu4c/source/common/rbbiscan.cpp",
+    "//third_party/icu/icu4c/source/common/rbbisetb.cpp",
+    "//third_party/icu/icu4c/source/common/rbbistbl.cpp",
+    "//third_party/icu/icu4c/source/common/rbbitblb.cpp",
+    "//third_party/icu/icu4c/source/common/resbund.cpp",
+    "//third_party/icu/icu4c/source/common/resbund_cnv.cpp",
+    "//third_party/icu/icu4c/source/common/resource.cpp",
+    "//third_party/icu/icu4c/source/common/restrace.cpp",
+    "//third_party/icu/icu4c/source/common/ruleiter.cpp",
+    "//third_party/icu/icu4c/source/common/schriter.cpp",
+    "//third_party/icu/icu4c/source/common/serv.cpp",
+    "//third_party/icu/icu4c/source/common/servlk.cpp",
+    "//third_party/icu/icu4c/source/common/servlkf.cpp",
+    "//third_party/icu/icu4c/source/common/servls.cpp",
+    "//third_party/icu/icu4c/source/common/servnotf.cpp",
+    "//third_party/icu/icu4c/source/common/servrbf.cpp",
+    "//third_party/icu/icu4c/source/common/servslkf.cpp",
+    "//third_party/icu/icu4c/source/common/sharedobject.cpp",
+    "//third_party/icu/icu4c/source/common/simpleformatter.cpp",
+    "//third_party/icu/icu4c/source/common/static_unicode_sets.cpp",
+    "//third_party/icu/icu4c/source/common/stringpiece.cpp",
+    "//third_party/icu/icu4c/source/common/stringtriebuilder.cpp",
+    "//third_party/icu/icu4c/source/common/uarrsort.cpp",
+    "//third_party/icu/icu4c/source/common/ubidi.cpp",
+    "//third_party/icu/icu4c/source/common/ubidi_props.cpp",
+    "//third_party/icu/icu4c/source/common/ubidiln.cpp",
+    "//third_party/icu/icu4c/source/common/ubiditransform.cpp",
+    "//third_party/icu/icu4c/source/common/ubidiwrt.cpp",
+    "//third_party/icu/icu4c/source/common/ubrk.cpp",
+    "//third_party/icu/icu4c/source/common/ucase.cpp",
+    "//third_party/icu/icu4c/source/common/ucasemap.cpp",
+    "//third_party/icu/icu4c/source/common/ucasemap_titlecase_brkiter.cpp",
+    "//third_party/icu/icu4c/source/common/ucat.cpp",
+    "//third_party/icu/icu4c/source/common/uchar.cpp",
+    "//third_party/icu/icu4c/source/common/ucharstrie.cpp",
+    "//third_party/icu/icu4c/source/common/ucharstriebuilder.cpp",
+    "//third_party/icu/icu4c/source/common/ucharstrieiterator.cpp",
+    "//third_party/icu/icu4c/source/common/uchriter.cpp",
+    "//third_party/icu/icu4c/source/common/ucln_cmn.cpp",
+    "//third_party/icu/icu4c/source/common/ucmndata.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv2022.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_bld.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_cb.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_cnv.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_ct.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_err.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_ext.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_io.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_lmb.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_set.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_u16.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_u32.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_u7.cpp",
+    "//third_party/icu/icu4c/source/common/ucnv_u8.cpp",
+    "//third_party/icu/icu4c/source/common/ucnvbocu.cpp",
+    "//third_party/icu/icu4c/source/common/ucnvdisp.cpp",
+    "//third_party/icu/icu4c/source/common/ucnvhz.cpp",
+    "//third_party/icu/icu4c/source/common/ucnvisci.cpp",
+    "//third_party/icu/icu4c/source/common/ucnvlat1.cpp",
+    "//third_party/icu/icu4c/source/common/ucnvmbcs.cpp",
+    "//third_party/icu/icu4c/source/common/ucnvscsu.cpp",
+    "//third_party/icu/icu4c/source/common/ucnvsel.cpp",
+    "//third_party/icu/icu4c/source/common/ucol_swp.cpp",
+    "//third_party/icu/icu4c/source/common/ucptrie.cpp",
+    "//third_party/icu/icu4c/source/common/ucurr.cpp",
+    "//third_party/icu/icu4c/source/common/udata.cpp",
+    "//third_party/icu/icu4c/source/common/udatamem.cpp",
+    "//third_party/icu/icu4c/source/common/udataswp.cpp",
+    "//third_party/icu/icu4c/source/common/uenum.cpp",
+    "//third_party/icu/icu4c/source/common/uhash.cpp",
+    "//third_party/icu/icu4c/source/common/uhash_us.cpp",
+    "//third_party/icu/icu4c/source/common/uidna.cpp",
+    "//third_party/icu/icu4c/source/common/uinit.cpp",
+    "//third_party/icu/icu4c/source/common/uinvchar.cpp",
+    "//third_party/icu/icu4c/source/common/uiter.cpp",
+    "//third_party/icu/icu4c/source/common/ulist.cpp",
+    "//third_party/icu/icu4c/source/common/uloc.cpp",
+    "//third_party/icu/icu4c/source/common/uloc_keytype.cpp",
+    "//third_party/icu/icu4c/source/common/uloc_tag.cpp",
+    "//third_party/icu/icu4c/source/common/umapfile.cpp",
+    "//third_party/icu/icu4c/source/common/umath.cpp",
+    "//third_party/icu/icu4c/source/common/umutablecptrie.cpp",
+    "//third_party/icu/icu4c/source/common/umutex.cpp",
+    "//third_party/icu/icu4c/source/common/unames.cpp",
+    "//third_party/icu/icu4c/source/common/unifiedcache.cpp",
+    "//third_party/icu/icu4c/source/common/unifilt.cpp",
+    "//third_party/icu/icu4c/source/common/unifunct.cpp",
+    "//third_party/icu/icu4c/source/common/uniset.cpp",
+    "//third_party/icu/icu4c/source/common/uniset_closure.cpp",
+    "//third_party/icu/icu4c/source/common/uniset_props.cpp",
+    "//third_party/icu/icu4c/source/common/unisetspan.cpp",
+    "//third_party/icu/icu4c/source/common/unistr.cpp",
+    "//third_party/icu/icu4c/source/common/unistr_case.cpp",
+    "//third_party/icu/icu4c/source/common/unistr_case_locale.cpp",
+    "//third_party/icu/icu4c/source/common/unistr_cnv.cpp",
+    "//third_party/icu/icu4c/source/common/unistr_props.cpp",
+    "//third_party/icu/icu4c/source/common/unistr_titlecase_brkiter.cpp",
+    "//third_party/icu/icu4c/source/common/unorm.cpp",
+    "//third_party/icu/icu4c/source/common/unormcmp.cpp",
+    "//third_party/icu/icu4c/source/common/uobject.cpp",
+    "//third_party/icu/icu4c/source/common/uprops.cpp",
+    "//third_party/icu/icu4c/source/common/ures_cnv.cpp",
+    "//third_party/icu/icu4c/source/common/uresbund.cpp",
+    "//third_party/icu/icu4c/source/common/uresdata.cpp",
+    "//third_party/icu/icu4c/source/common/usc_impl.cpp",
+    "//third_party/icu/icu4c/source/common/uscript.cpp",
+    "//third_party/icu/icu4c/source/common/uscript_props.cpp",
+    "//third_party/icu/icu4c/source/common/uset.cpp",
+    "//third_party/icu/icu4c/source/common/uset_props.cpp",
+    "//third_party/icu/icu4c/source/common/usetiter.cpp",
+    "//third_party/icu/icu4c/source/common/ushape.cpp",
+    "//third_party/icu/icu4c/source/common/usprep.cpp",
+    "//third_party/icu/icu4c/source/common/ustack.cpp",
+    "//third_party/icu/icu4c/source/common/ustr_cnv.cpp",
+    "//third_party/icu/icu4c/source/common/ustr_titlecase_brkiter.cpp",
+    "//third_party/icu/icu4c/source/common/ustr_wcs.cpp",
+    "//third_party/icu/icu4c/source/common/ustrcase.cpp",
+    "//third_party/icu/icu4c/source/common/ustrcase_locale.cpp",
+    "//third_party/icu/icu4c/source/common/ustrenum.cpp",
+    "//third_party/icu/icu4c/source/common/ustrfmt.cpp",
+    "//third_party/icu/icu4c/source/common/ustring.cpp",
+    "//third_party/icu/icu4c/source/common/ustrtrns.cpp",
+    "//third_party/icu/icu4c/source/common/utext.cpp",
+    "//third_party/icu/icu4c/source/common/utf_impl.cpp",
+    "//third_party/icu/icu4c/source/common/util.cpp",
+    "//third_party/icu/icu4c/source/common/util_props.cpp",
+    "//third_party/icu/icu4c/source/common/utrace.cpp",
+    "//third_party/icu/icu4c/source/common/utrie.cpp",
+    "//third_party/icu/icu4c/source/common/utrie2.cpp",
+    "//third_party/icu/icu4c/source/common/utrie2_builder.cpp",
+    "//third_party/icu/icu4c/source/common/utrie_swap.cpp",
+    "//third_party/icu/icu4c/source/common/uts46.cpp",
+    "//third_party/icu/icu4c/source/common/utypes.cpp",
+    "//third_party/icu/icu4c/source/common/uvector.cpp",
+    "//third_party/icu/icu4c/source/common/uvectr32.cpp",
+    "//third_party/icu/icu4c/source/common/uvectr64.cpp",
+    "//third_party/icu/icu4c/source/common/wintz.cpp",
+    "//third_party/icu/icu4c/source/ohos/init_data.cpp",
+    "//third_party/icu/icu4c/source/stubdata/stubdata.cpp",
+  ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-Wno-error=unused-parameter",
+    "-Wno-error=unused-const-variable",
+    "-Wno-error=unneeded-internal-declaration",
+    "-Wignored-attributes",
+    "-std=c++11",
+    "-Wno-ignored-attributes",
+  ]
+  ldflags = [
+    "-shared",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "hmicuuchost"
+}
+
+group("icuuc_host") {
+  deps = [ ":shared_icuuc_host(${host_toolchain})" ]
+}
+
+group("icuuc_win") {
+  deps = [ ":shared_icuuc_host(//build/toolchain/mingw:mingw_x86_64)" ]
+}
+
+group("icui18n_host") {
+  deps = [ "//third_party/icu/icu4c:shared_icui18n(${host_toolchain})" ]
+}
+
+ohos_shared_library("shared_icutu") {
+  configs = [
+    ":icu_config",
+    "//build/config/compiler:rtti",
+  ]
+  deps = [
+    ":icui18n_host",
+    ":icuuc_host",
+  ]
+  defines = [
+    "U_ATTRIBUTE_DEPRECATED=",
+    "U_TOOLUTIL_IMPLEMENTATION",
+    "UPRV_BLOCK_MACRO_BEGIN=",
+    "UPRV_BLOCK_MACRO_END=",
+    "_REENTRANT",
+  ]
+  sources = [
+    "//third_party/icu/icu4c/source/tools/toolutil/collationinfo.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/dbgutil.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/denseranges.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/filestrm.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/filetools.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/flagparser.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/package.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/pkg_genc.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/pkg_gencmn.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/pkg_icu.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/pkgitems.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/ppucd.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/swapimpl.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/toolutil.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/ucbuf.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/ucln_tu.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/ucm.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/ucmstate.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/udbgutil.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/unewdata.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/uoptions.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/uparse.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/writesrc.cpp",
+    "//third_party/icu/icu4c/source/tools/toolutil/xmlparser.cpp",
+  ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-Wno-long-long",
+    "-Wno-error=unused-parameter",
+    "-D_REENTRANT",
+    "-DU_HAVE_ELF_H=1",
+    "-DU_HAVE_STRTOD_L=1",
+    "-DU_HAVE_XLOCALE_H=0",
+    "-DU_BUILD=\"x86_64-pc-linux-gnu\"",
+    "-DU_HOST=\"x86_64-pc-linux-gnu\"",
+    "-DU_CC=\"gcc\"",
+    "-DU_CXX=\"g++\"",
+    "-std=c++11",
+    "-DUNISTR_FROM_CHAR_EXPLICIT=explicit",
+    "-DUNISTR_FROM_STRING_EXPLICIT=explicit",
+    "-DU_ATTRIBUTE_DEPRECATED=",
+    "-Wno-ignored-attributes",
+  ]
+  ldflags = [
+    "-shared",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "hmicutuhost"
+}
+
+ohos_shared_library("shared_icuio") {
+  configs = [
+    ":icu_config",
+    "//build/config/compiler:rtti",
+  ]
+  deps = [
+    ":icui18n_host",
+    ":icuuc_host",
+  ]
+  defines = [
+    "U_ATTRIBUTE_DEPRECATED=",
+    "UPRV_BLOCK_MACRO_BEGIN=",
+    "UPRV_BLOCK_MACRO_END=",
+    "U_IO_IMPLEMENTATION",
+    "_REENTRANT",
+  ]
+  sources = [
+    "//third_party/icu/icu4c/source/io/locbund.cpp",
+    "//third_party/icu/icu4c/source/io/sprintf.cpp",
+    "//third_party/icu/icu4c/source/io/sscanf.cpp",
+    "//third_party/icu/icu4c/source/io/ucln_io.cpp",
+    "//third_party/icu/icu4c/source/io/ufile.cpp",
+    "//third_party/icu/icu4c/source/io/ufmt_cmn.cpp",
+    "//third_party/icu/icu4c/source/io/uprintf.cpp",
+    "//third_party/icu/icu4c/source/io/uprntf_p.cpp",
+    "//third_party/icu/icu4c/source/io/uscanf.cpp",
+    "//third_party/icu/icu4c/source/io/uscanf_p.cpp",
+    "//third_party/icu/icu4c/source/io/ustdio.cpp",
+    "//third_party/icu/icu4c/source/io/ustream.cpp",
+  ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-Wno-error=unused-parameter",
+    "-Wno-error=unused-const-variable",
+    "-Wno-error=unneeded-internal-declaration",
+    "-std=c++11",
+    "-Wno-ignored-attributes",
+  ]
+  ldflags = [
+    "-shared",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "hmicuio"
+}
+
+group("lib_host") {
+  deps = [
+    ":icui18n_host",
+    ":icuuc_host",
+    ":shared_icuio(${host_toolchain})",
+    ":shared_icutu(${host_toolchain})",
+  ]
+}
+
+ohos_executable("genbrk") {
+  configs = [ ":icu_config" ]
+  deps = [ ":lib_host" ]
+  sources = [ "//third_party/icu/icu4c/source/tools/genbrk/genbrk.cpp" ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-std=c++11",
+  ]
+  ldflags = [
+    "-ldl",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "genbrk"
+}
+
+ohos_executable("genccode") {
+  configs = [ ":icu_config" ]
+  deps = [ ":lib_host" ]
+  sources = [ "//third_party/icu/icu4c/source/tools/genccode/genccode.c" ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-std=c++11",
+  ]
+  ldflags = [
+    "-ldl",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "genccode"
+}
+
+ohos_executable("gencfu") {
+  configs = [ ":icu_config" ]
+  deps = [ ":lib_host" ]
+  sources = [ "//third_party/icu/icu4c/source/tools/gencfu/gencfu.cpp" ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-std=c++11",
+  ]
+  ldflags = [
+    "-ldl",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "gencfu"
+}
+
+ohos_executable("gencnval") {
+  configs = [ ":icu_config" ]
+  deps = [ ":lib_host" ]
+  sources = [ "//third_party/icu/icu4c/source/tools/gencnval/gencnval.c" ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-std=c++11",
+  ]
+  ldflags = [
+    "-ldl",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "gencnval"
+}
+
+ohos_executable("gendict") {
+  configs = [ ":icu_config" ]
+  deps = [ ":lib_host" ]
+  sources = [ "//third_party/icu/icu4c/source/tools/gendict/gendict.cpp" ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-std=c++11",
+  ]
+  ldflags = [
+    "-ldl",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "gendict"
+}
+
+ohos_static_library("genrb_c") {
+  configs = [ ":icu_config" ]
+  deps = [ ":lib_host" ]
+  sources = [
+    "//third_party/icu/icu4c/source/tools/genrb/errmsg.c",
+    "//third_party/icu/icu4c/source/tools/genrb/rbutil.c",
+    "//third_party/icu/icu4c/source/tools/genrb/read.c",
+    "//third_party/icu/icu4c/source/tools/genrb/rle.c",
+    "//third_party/icu/icu4c/source/tools/genrb/ustr.c",
+  ]
+  cflags_c = [
+    "-O3",
+    "-std=c11",
+    "-Wall",
+    "-pedantic",
+    "-Wshadow",
+    "-Wpointer-arith",
+    "-Wmissing-prototypes",
+    "-Wwrite-strings",
+    "-D_REENTRANT",
+    "-DUNISTR_FROM_CHAR_EXPLICIT=explicit",
+    "-DUNISTR_FROM_STRING_EXPLICIT=explicit",
+    "-DU_ATTRIBUTE_DEPRECATED=",
+    "-Wno-sign-compare",
+  ]
+  ldflags = [
+    "-ldl",
+    "-lm",
+  ]
+}
+ohos_executable("genrb") {
+  configs = [ ":icu_config" ]
+  deps = [
+    ":genrb_c(${host_toolchain})",
+    ":lib_host",
+  ]
+  sources = [
+    "//third_party/icu/icu4c/source/tools/genrb/filterrb.cpp",
+    "//third_party/icu/icu4c/source/tools/genrb/genrb.cpp",
+    "//third_party/icu/icu4c/source/tools/genrb/parse.cpp",
+    "//third_party/icu/icu4c/source/tools/genrb/prscmnts.cpp",
+    "//third_party/icu/icu4c/source/tools/genrb/reslist.cpp",
+    "//third_party/icu/icu4c/source/tools/genrb/wrtjava.cpp",
+    "//third_party/icu/icu4c/source/tools/genrb/wrtxml.cpp",
+  ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-Wno-long-long",
+    "-D_REENTRANT",
+    "-DU_HAVE_ELF_H=1",
+    "-DU_HAVE_XLOCALE_H=0",
+    "-std=c++11",
+    "-DUNISTR_FROM_CHAR_EXPLICIT=explicit",
+    "-DUNISTR_FROM_STRING_EXPLICIT=explicit",
+    "-DU_ATTRIBUTE_DEPRECATED=",
+  ]
+  ldflags = [
+    "-ldl",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "genrb"
+}
+
+ohos_executable("derb") {
+  configs = [ ":icu_config" ]
+  deps = [ ":lib_host" ]
+  sources = [ "//third_party/icu/icu4c/source/tools/genrb/derb.cpp" ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-std=c++11",
+  ]
+  ldflags = [
+    "-ldl",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "derb"
+}
+
+ohos_executable("makeconv") {
+  configs = [ ":icu_config" ]
+  deps = [ ":lib_host" ]
+  sources = [
+    "//third_party/icu/icu4c/source/tools/makeconv/gencnvex.c",
+    "//third_party/icu/icu4c/source/tools/makeconv/genmbcs.cpp",
+    "//third_party/icu/icu4c/source/tools/makeconv/makeconv.cpp",
+    "//third_party/icu/icu4c/source/tools/makeconv/ucnvstat.c",
+  ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-std=c++11",
+  ]
+  ldflags = [
+    "-ldl",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "makeconv"
+}
+
+ohos_executable("gensprep") {
+  configs = [ ":icu_config" ]
+  deps = [ ":lib_host" ]
+  sources = [
+    "//third_party/icu/icu4c/source/tools/gensprep/gensprep.c",
+    "//third_party/icu/icu4c/source/tools/gensprep/store.c",
+  ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-std=c++11",
+  ]
+  ldflags = [
+    "-ldl",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "gensprep"
+}
+
+ohos_executable("icupkg") {
+  configs = [ ":icu_config" ]
+  deps = [ ":lib_host" ]
+  sources = [ "//third_party/icu/icu4c/source/tools/icupkg/icupkg.cpp" ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-std=c++11",
+  ]
+  ldflags = [
+    "-ldl",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "icupkg"
+}
+
+ohos_executable("pkgdata") {
+  configs = [ ":icu_config" ]
+  deps = [
+    ":lib_host",
+    ":shared_icutu(${host_toolchain})",
+  ]
+  sources = [
+    "//third_party/icu/icu4c/source/tools/pkgdata/pkgdata.cpp",
+    "//third_party/icu/icu4c/source/tools/pkgdata/pkgtypes.c",
+  ]
+  cflags_cc = [
+    "-O3",
+    "-W",
+    "-Wall",
+    "-pedantic",
+    "-Wpointer-arith",
+    "-Wwrite-strings",
+    "-std=c++11",
+  ]
+  ldflags = [
+    "-ldl",
+    "-lm",
+  ]
+  subsystem_name = "global"
+  output_name = "pkgdata"
+}
+group("bin_host") {
+  deps = [
+    ":genbrk(${host_toolchain})",
+    ":genccode(${host_toolchain})",
+    ":gencfu(${host_toolchain})",
+    ":gencnval(${host_toolchain})",
+    ":gendict(${host_toolchain})",
+    ":genrb(${host_toolchain})",
+    ":gensprep(${host_toolchain})",
+    ":icupkg(${host_toolchain})",
+    ":icuuc_win",
+    ":makeconv(${host_toolchain})",
+    ":pkgdata(${host_toolchain})",
+  ]
+}

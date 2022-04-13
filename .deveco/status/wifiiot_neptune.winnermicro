@@ -1,0 +1,92 @@
+{
+    "all_valid": true,
+    "tools": {
+        "compiler": {
+            "csky-abiv2-elf-gcc": {
+                "valid": true,
+                "dest": "/home/jaychou/HarmonyOS_Tool/csky-elfabiv2-tools-x86_64-minilibc-20210423/bin",
+                "store": "/home/jaychou/HarmonyOS_Tool/csky-elfabiv2-tools-x86_64-minilibc-20210423/bin",
+                "custom": true
+            }
+        },
+        "upload": {},
+        "pip": {
+            "pycryptodome": {
+                "valid": true
+            },
+            "ecdsa": {
+                "valid": true
+            },
+            "prompt_toolkit": {
+                "version": "==1.0.14",
+                "valid": true
+            },
+            "scons": {
+                "valid": true
+            }
+        },
+        "deb": {
+            "ccache": {
+                "valid": true
+            },
+            "dosfstools": {
+                "valid": true
+            },
+            "mtools": {
+                "valid": true
+            },
+            "zip": {
+                "valid": true
+            },
+            "unzip": {
+                "valid": true
+            },
+            "mtd-utils": {
+                "valid": true
+            },
+            "libncurses5": {
+                "valid": true
+            }
+        },
+        "prebuilt": {
+            "clang": {
+                "searching_item": "clang",
+                "version": "9.0",
+                "url": "https://repo.huaweicloud.com/harmonyos/compiler/clang/9.0.0-36191/linux/llvm-linux-9.0.0-36191.tar",
+                "install_command": "tar xvf llvm-linux-9.0.0-36191.tar",
+                "environment_path": "llvm/bin",
+                "valid": true,
+                "dest": "/home/jaychou/HarmonyOS_Tool/llvm/bin"
+            },
+            "gn": {
+                "url": "https://repo.huaweicloud.com/harmonyos/compiler/gn/latest/linux/gn-linux-x86-1717.tar.gz",
+                "install_command": "mkdir -p gn && tar xvf gn-linux-x86-1717.tar.gz -C gn",
+                "environment_path": "gn",
+                "valid": true,
+                "dest": "/home/jaychou/HarmonyOS_Tool/toolchain/gn"
+            },
+            "ninja": {
+                "url": "https://repo.huaweicloud.com/harmonyos/compiler/ninja/1.10.1/linux/ninja-linux-x86-1.10.1.tar.gz",
+                "install_command": "mkdir -p ninja && tar xvf ninja-linux-x86-1.10.1.tar.gz -C ninja",
+                "environment_path": "ninja",
+                "valid": true,
+                "dest": "/home/jaychou/HarmonyOS_Tool/toolchain/ninja"
+            },
+            "hc-gen": {
+                "url": "https://repo.huaweicloud.com/harmonyos/compiler/hc-gen/0.65/linux/hc-gen-0.65-linux.tar",
+                "install_command": "tar xvf hc-gen-0.65-linux.tar",
+                "environment_path": "hc-gen",
+                "valid": true,
+                "dest": "/home/jaychou/.deveco-device-tool/tool_chains/building-tools/ohos_1.x/hc-gen/hc-gen",
+                "store": "/home/jaychou/.deveco-device-tool/tool_chains/building-tools/ohos_1.x/hc-gen"
+            }
+        },
+        "inner": {
+            "java": {
+                "path": "core/tool_openlogic_openjdk_jre/bin",
+                "valid": true,
+                "dest": "/home/jaychou/Huawei/DevEco-Device-Tool/core/tool_openlogic_openjdk_jre/bin"
+            }
+        }
+    }
+}

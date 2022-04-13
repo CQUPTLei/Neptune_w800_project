@@ -1,0 +1,29 @@
+# Copyright (c) Huawei Technologies Co., Ltd. 2019-2019. All rights reserved.
+
+import("//build/lite/config/component/lite_component.gni")
+
+config("icu_config") {
+  include_dirs = [ "//third_party/icu/icu4c/source/common" ]
+}
+
+icu_source = [
+  "//third_party/icu/icu4c/source/common/cmemory.cpp",
+  "//third_party/icu/icu4c/source/common/cstring.cpp",
+  "//third_party/icu/icu4c/source/common/ubidi.cpp",
+  "//third_party/icu/icu4c/source/common/ubidiln.cpp",
+  "//third_party/icu/icu4c/source/common/ubidiwrt.cpp",
+  "//third_party/icu/icu4c/source/common/ubidi_props.cpp",
+  "//third_party/icu/icu4c/source/common/uchar.cpp",
+  "//third_party/icu/icu4c/source/common/udataswp.cpp",
+  "//third_party/icu/icu4c/source/common/uinvchar.cpp",
+  "//third_party/icu/icu4c/source/common/ustring.cpp",
+  "//third_party/icu/icu4c/source/common/utf_impl.cpp",
+  "//third_party/icu/icu4c/source/common/utrie2.cpp",
+]
+
+lite_library("icu") {
+  target_type = "shared_library"
+  sources = icu_source
+
+  public_configs = [ ":icu_config" ]
+}

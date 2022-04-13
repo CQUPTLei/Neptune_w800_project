@@ -1,0 +1,256 @@
+ninja_required_version = 1.7.2
+
+rule gn
+  command = ../../../../HarmonyOS_Tool/toolchain/gn/gn --root=../../.. -q --dotfile=../../../build/lite/.gn --script-executable=python3 gen .
+  description = Regenerating ninja files
+
+build build.ninja: gn
+  generator = 1
+  depfile = build.ninja.d
+
+subninja toolchain.ninja
+
+build ConfigFiles: phony obj/foundation/distributedschedule/samgr_lite/ConfigFiles.stamp
+build app: phony obj/applications/sample/wifi-iot/app/app.stamp
+build arch: phony ./libs/libarch.a
+build backtrace: phony ./libs/libbacktrace.a
+build bootstrap: phony ./libs/libbootstrap.a
+build broadcast: phony ./libs/libbroadcast.a
+build build_wifiiot_sdk: phony obj/device/winnermicro/neptune/sdk_liteos/build_wifiiot_sdk.stamp
+build cmsis: phony ./libs/libcmsis.a
+build copy_blelibs: phony obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/copy_blelibs.stamp
+build copy_hal_file_staticlibs: phony obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/copy_hal_file_staticlibs.stamp
+build copy_hal_iothardwarelibs: phony obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/copy_hal_iothardwarelibs.stamp
+build copy_hal_update_staticlibs: phony obj/device/winnermicro/neptune/w800_adapter/hals/update/copy_hal_update_staticlibs.stamp
+build copy_wifiservicelibs: phony obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/copy_wifiservicelibs.stamp
+build dump_static: phony ./libs/libdump_static.a
+build file: phony obj/utils/native/lite/file/file.stamp
+build gen_rootfs: phony obj/build/lite/gen_rootfs.stamp
+build hal_file_static: phony obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/hal_file_static.stamp
+build hal_iothardware: phony obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/hal_iothardware.stamp
+build hal_sysparam: phony ./libs/libhal_sysparam.a
+build hal_token_static: phony ./libs/libhal_token_static.a
+build hal_update_static: phony obj/device/winnermicro/neptune/w800_adapter/hals/update/hal_update_static.stamp
+build hievent_lite: phony ./libs/libhievent_lite.a
+build hilog_lite: phony ./libs/libhilog_lite.a
+build hilog_lite_command: phony ./libs/libhilog_lite_command.a
+build hilog_lite_ndk: phony obj/base/hiviewdfx/hilog_lite/frameworks/mini/hilog_lite_ndk.stamp
+build hiview_lite: phony ./libs/libhiview_lite.a
+build hota: phony ./libs/libhota.a
+build huks: phony ./libs/libhuks.a
+build huks_sdk: phony obj/base/security/huks/frameworks/huks_lite/huks_sdk.stamp
+build iot: phony obj/domains/iot/link/iot.stamp
+build iothardware: phony obj/base/iot_hardware/peripheral/iothardware.stamp
+build iothardware_ndk: phony obj/base/iot_hardware/peripheral/iothardware_ndk.stamp
+build kernel: phony ./libs/libkernel.a
+build kv_store: phony obj/utils/native/lite/kv_store/kv_store.stamp
+build libsec_ndk: phony obj/third_party/bounds_checking_function/libsec_ndk.stamp
+build libsec_static: phony ./libs/libsec_static.a
+build link: phony obj/domains/iot/link/link.stamp
+build mbedtls: phony obj/third_party/mbedtls/mbedtls.stamp
+build mbedtls_gt: phony ./libs/libmbedtls_gt.a
+build mbedtls_ndk: phony obj/third_party/mbedtls/mbedtls_ndk.stamp
+build mbedtls_static: phony ./libs/libmbedtls.a
+build my_test_gn: phony ./libs/libmy_test_gn.a
+build native_file: phony ./libs/libnative_file.a
+build ndk: phony obj/build/lite/ndk.stamp
+build oem_auth_static: phony ./libs/liboem_auth_static.a
+build ohos: phony obj/build/lite/ohos.stamp
+build openssl_shared: phony obj/build/lite/config/component/openssl/openssl_shared.stamp
+build openssl_static: phony ./libs/libopenssl_static.a
+build ota_lite: phony obj/base/update/ota_lite/frameworks/ota_lite.stamp
+build parameter: phony obj/base/startup/syspara_lite/frameworks/parameter/parameter.stamp
+build parameter_notes: phony obj/base/startup/syspara_lite/frameworks/parameter/parameter_notes.stamp
+build samgr_adapter: phony ./libs/libsamgr_adapter.a
+build samgr_lite_ndk: phony obj/foundation/distributedschedule/samgr_lite/samgr_lite_ndk.stamp
+build samgr_source: phony ./libs/libsamgr_source.a
+build sdk: phony obj/device/winnermicro/neptune/sdk_liteos/sdk.stamp
+build sec_static: phony obj/third_party/bounds_checking_function/sec_static.stamp
+build sysparam: phony ./libs/libsysparam.a
+build test: phony obj/base/update/ota_lite/frameworks/test.stamp
+build token: phony obj/base/startup/syspara_lite/frameworks/token/token.stamp
+build token_notes: phony obj/base/startup/syspara_lite/frameworks/token/token_notes.stamp
+build token_static: phony ./libs/libtoken_static.a
+build update_api: phony obj/base/update/ota_lite/frameworks/update_api.stamp
+build utils: phony ./libs/libutils.a
+build utils_kv_store: phony ./libs/libutils_kv_store.a
+build utils_os_dump: phony obj/utils/native/lite/os_dump/utils_os_dump.stamp
+build wifi: phony obj/foundation/communication/wifi_lite/wifi.stamp
+build wifiiot_sdk: phony obj/device/winnermicro/neptune/sdk_liteos/wifiiot_sdk.stamp
+build wifiservice: phony obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/wifiservice.stamp
+build applications/sample/wifi-iot/app$:app: phony obj/applications/sample/wifi-iot/app/app.stamp
+build applications/sample/wifi-iot/app: phony obj/applications/sample/wifi-iot/app/app.stamp
+build applications/sample/wifi-iot/app/my_test_gn$:my_test_gn: phony ./libs/libmy_test_gn.a
+build applications/sample/wifi-iot/app/my_test_gn: phony ./libs/libmy_test_gn.a
+build base/hiviewdfx/hievent_lite$:hievent_lite: phony ./libs/libhievent_lite.a
+build base/hiviewdfx/hievent_lite: phony ./libs/libhievent_lite.a
+build base/hiviewdfx/hilog_lite/command$:hilog_lite_command: phony ./libs/libhilog_lite_command.a
+build base/hiviewdfx/hilog_lite/frameworks/mini$:hilog_lite: phony ./libs/libhilog_lite.a
+build base/hiviewdfx/hilog_lite/frameworks/mini$:hilog_lite_ndk: phony obj/base/hiviewdfx/hilog_lite/frameworks/mini/hilog_lite_ndk.stamp
+build base/hiviewdfx/hiview_lite$:hiview_lite: phony ./libs/libhiview_lite.a
+build base/hiviewdfx/hiview_lite: phony ./libs/libhiview_lite.a
+build base/iot_hardware/peripheral$:iothardware: phony obj/base/iot_hardware/peripheral/iothardware.stamp
+build base/iot_hardware/peripheral$:iothardware_ndk: phony obj/base/iot_hardware/peripheral/iothardware_ndk.stamp
+build base/security/deviceauth/frameworks/deviceauth_lite$:hichainsdk: phony obj/base/security/deviceauth/frameworks/deviceauth_lite/hichainsdk.stamp
+build base/security/deviceauth/frameworks/deviceauth_lite/source$:hichainsdk: phony ./libs/libhichainsdk.a
+build base/security/huks/frameworks/huks_lite$:huks_sdk: phony obj/base/security/huks/frameworks/huks_lite/huks_sdk.stamp
+build base/security/huks/frameworks/huks_lite/source$:huks: phony ./libs/libhuks.a
+build base/startup/bootstrap_lite/services/source$:bootstrap: phony ./libs/libbootstrap.a
+build base/startup/syspara_lite/frameworks/parameter$:parameter: phony obj/base/startup/syspara_lite/frameworks/parameter/parameter.stamp
+build base/startup/syspara_lite/frameworks/parameter: phony obj/base/startup/syspara_lite/frameworks/parameter/parameter.stamp
+build base/startup/syspara_lite/frameworks/parameter$:parameter_notes: phony obj/base/startup/syspara_lite/frameworks/parameter/parameter_notes.stamp
+build base/startup/syspara_lite/frameworks/parameter/src$:sysparam: phony ./libs/libsysparam.a
+build base/startup/syspara_lite/frameworks/token$:token: phony obj/base/startup/syspara_lite/frameworks/token/token.stamp
+build base/startup/syspara_lite/frameworks/token: phony obj/base/startup/syspara_lite/frameworks/token/token.stamp
+build base/startup/syspara_lite/frameworks/token$:token_notes: phony obj/base/startup/syspara_lite/frameworks/token/token_notes.stamp
+build base/startup/syspara_lite/frameworks/token$:token_static: phony ./libs/libtoken_static.a
+build base/update/ota_lite/frameworks$:ota_lite: phony obj/base/update/ota_lite/frameworks/ota_lite.stamp
+build base/update/ota_lite/frameworks$:test: phony obj/base/update/ota_lite/frameworks/test.stamp
+build base/update/ota_lite/frameworks$:update_api: phony obj/base/update/ota_lite/frameworks/update_api.stamp
+build base/update/ota_lite/frameworks/source$:hota: phony ./libs/libhota.a
+build build/lite$:gen_rootfs: phony obj/build/lite/gen_rootfs.stamp
+build build/lite$:ndk: phony obj/build/lite/ndk.stamp
+build build/lite$:ohos: phony obj/build/lite/ohos.stamp
+build build/lite/config/component/openssl$:openssl_shared: phony obj/build/lite/config/component/openssl/openssl_shared.stamp
+build build/lite/config/component/openssl$:openssl_static: phony ./libs/libopenssl_static.a
+build device/winnermicro/neptune/sdk_liteos$:build_wifiiot_sdk: phony obj/device/winnermicro/neptune/sdk_liteos/build_wifiiot_sdk.stamp
+build device/winnermicro/neptune/sdk_liteos$:sdk: phony obj/device/winnermicro/neptune/sdk_liteos/sdk.stamp
+build device/winnermicro/neptune/sdk_liteos$:wifiiot_sdk: phony obj/device/winnermicro/neptune/sdk_liteos/wifiiot_sdk.stamp
+build device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble$:ble: phony obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/ble.stamp
+build device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble: phony obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/ble.stamp
+build device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble$:copy_blelibs: phony obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/copy_blelibs.stamp
+build device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice$:copy_wifiservicelibs: phony obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/copy_wifiservicelibs.stamp
+build device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice$:wifiservice: phony obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/wifiservice.stamp
+build device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice: phony obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/wifiservice.stamp
+build device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite$:copy_hal_iothardwarelibs: phony obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/copy_hal_iothardwarelibs.stamp
+build device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite$:hal_iothardware: phony obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/hal_iothardware.stamp
+build device/winnermicro/neptune/w800_adapter/hals/update$:copy_hal_update_staticlibs: phony obj/device/winnermicro/neptune/w800_adapter/hals/update/copy_hal_update_staticlibs.stamp
+build device/winnermicro/neptune/w800_adapter/hals/update$:hal_update_static: phony obj/device/winnermicro/neptune/w800_adapter/hals/update/hal_update_static.stamp
+build device/winnermicro/neptune/w800_adapter/hals/utils/file$:copy_hal_file_staticlibs: phony obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/copy_hal_file_staticlibs.stamp
+build device/winnermicro/neptune/w800_adapter/hals/utils/file$:hal_file_static: phony obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/hal_file_static.stamp
+build domains/iot/link$:iot: phony obj/domains/iot/link/iot.stamp
+build domains/iot/link$:link: phony obj/domains/iot/link/link.stamp
+build domains/iot/link: phony obj/domains/iot/link/link.stamp
+build foundation/communication/bt_lite$:ble: phony obj/foundation/communication/bt_lite/ble.stamp
+build foundation/communication/wifi_lite$:wifi: phony obj/foundation/communication/wifi_lite/wifi.stamp
+build foundation/distributedschedule/samgr_lite$:ConfigFiles: phony obj/foundation/distributedschedule/samgr_lite/ConfigFiles.stamp
+build foundation/distributedschedule/samgr_lite$:samgr: phony obj/foundation/distributedschedule/samgr_lite/samgr.stamp
+build foundation/distributedschedule/samgr_lite$:samgr_lite_ndk: phony obj/foundation/distributedschedule/samgr_lite/samgr_lite_ndk.stamp
+build foundation/distributedschedule/samgr_lite/communication/broadcast$:broadcast: phony ./libs/libbroadcast.a
+build foundation/distributedschedule/samgr_lite/communication/broadcast: phony ./libs/libbroadcast.a
+build foundation/distributedschedule/samgr_lite/samgr$:samgr: phony ./libs/libsamgr.a
+build foundation/distributedschedule/samgr_lite/samgr: phony ./libs/libsamgr.a
+build foundation/distributedschedule/samgr_lite/samgr/adapter$:samgr_adapter: phony ./libs/libsamgr_adapter.a
+build foundation/distributedschedule/samgr_lite/samgr/source$:samgr_source: phony ./libs/libsamgr_source.a
+build kernel/liteos_m/components/backtrace$:backtrace: phony ./libs/libbacktrace.a
+build kernel/liteos_m/components/backtrace: phony ./libs/libbacktrace.a
+build kernel/liteos_m/kal/cmsis$:cmsis: phony ./libs/libcmsis.a
+build kernel/liteos_m/kal/cmsis: phony ./libs/libcmsis.a
+build kernel/liteos_m/kernel$:kernel: phony ./libs/libkernel.a
+build kernel/liteos_m/kernel: phony ./libs/libkernel.a
+build kernel/liteos_m/kernel/arch/csky/ck804ef/gcc$:arch: phony ./libs/libarch.a
+build kernel/liteos_m/utils$:utils: phony ./libs/libutils.a
+build kernel/liteos_m/utils: phony ./libs/libutils.a
+build third_party/bounds_checking_function$:libsec_ndk: phony obj/third_party/bounds_checking_function/libsec_ndk.stamp
+build third_party/bounds_checking_function$:libsec_static: phony ./libs/libsec_static.a
+build third_party/bounds_checking_function$:sec_static: phony obj/third_party/bounds_checking_function/sec_static.stamp
+build third_party/mbedtls$:mbedtls: phony obj/third_party/mbedtls/mbedtls.stamp
+build third_party/mbedtls: phony obj/third_party/mbedtls/mbedtls.stamp
+build third_party/mbedtls$:mbedtls_gt: phony ./libs/libmbedtls_gt.a
+build third_party/mbedtls$:mbedtls_ndk: phony obj/third_party/mbedtls/mbedtls_ndk.stamp
+build third_party/mbedtls$:mbedtls_static: phony ./libs/libmbedtls.a
+build utils/native/lite/file$:file: phony obj/utils/native/lite/file/file.stamp
+build utils/native/lite/file: phony obj/utils/native/lite/file/file.stamp
+build utils/native/lite/file$:native_file: phony ./libs/libnative_file.a
+build utils/native/lite/kv_store$:kv_store: phony obj/utils/native/lite/kv_store/kv_store.stamp
+build utils/native/lite/kv_store: phony obj/utils/native/lite/kv_store/kv_store.stamp
+build utils/native/lite/kv_store/src$:utils_kv_store: phony ./libs/libutils_kv_store.a
+build utils/native/lite/os_dump$:dump_static: phony ./libs/libdump_static.a
+build utils/native/lite/os_dump$:utils_os_dump: phony obj/utils/native/lite/os_dump/utils_os_dump.stamp
+build vendor/winnermicro/neptune/hals/utils/sys_param$:hal_sysparam: phony ./libs/libhal_sysparam.a
+build vendor/winnermicro/neptune/hals/utils/token$:hal_token_static: phony ./libs/libhal_token_static.a
+build vendor/winnermicro/neptune/hals/utils/token$:oem_auth_static: phony ./libs/liboem_auth_static.a
+build home/jaychou/neptune-harmony-os1.1-iot-master/device/winnermicro/neptune$:neptune: phony obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/device/winnermicro/neptune/neptune.stamp
+build home/jaychou/neptune-harmony-os1.1-iot-master/device/winnermicro/neptune: phony obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/device/winnermicro/neptune/neptune.stamp
+build home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune$:neptune: phony obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune/neptune.stamp
+build home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune: phony obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune/neptune.stamp
+
+build all: phony $
+    obj/applications/sample/wifi-iot/app/app.stamp $
+    ./libs/libmy_test_gn.a $
+    ./libs/libhievent_lite.a $
+    ./libs/libhilog_lite_command.a $
+    ./libs/libhilog_lite.a $
+    obj/base/hiviewdfx/hilog_lite/frameworks/mini/hilog_lite_ndk.stamp $
+    ./libs/libhiview_lite.a $
+    obj/base/iot_hardware/peripheral/iothardware.stamp $
+    obj/base/iot_hardware/peripheral/iothardware_ndk.stamp $
+    obj/base/security/deviceauth/frameworks/deviceauth_lite/hichainsdk.stamp $
+    ./libs/libhichainsdk.a $
+    obj/base/security/huks/frameworks/huks_lite/huks_sdk.stamp $
+    ./libs/libhuks.a $
+    ./libs/libbootstrap.a $
+    obj/base/startup/syspara_lite/frameworks/parameter/parameter.stamp $
+    obj/base/startup/syspara_lite/frameworks/parameter/parameter_notes.stamp $
+    ./libs/libsysparam.a $
+    obj/base/startup/syspara_lite/frameworks/token/token.stamp $
+    obj/base/startup/syspara_lite/frameworks/token/token_notes.stamp $
+    ./libs/libtoken_static.a $
+    obj/base/update/ota_lite/frameworks/ota_lite.stamp $
+    obj/base/update/ota_lite/frameworks/test.stamp $
+    obj/base/update/ota_lite/frameworks/update_api.stamp $
+    ./libs/libhota.a $
+    obj/build/lite/gen_rootfs.stamp $
+    obj/build/lite/ndk.stamp $
+    obj/build/lite/ohos.stamp $
+    obj/build/lite/config/component/openssl/openssl_shared.stamp $
+    ./libs/libopenssl_static.a $
+    obj/device/winnermicro/neptune/sdk_liteos/build_wifiiot_sdk.stamp $
+    obj/device/winnermicro/neptune/sdk_liteos/sdk.stamp $
+    obj/device/winnermicro/neptune/sdk_liteos/wifiiot_sdk.stamp $
+    obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/ble.stamp $
+    obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/copy_blelibs.stamp $
+    obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/copy_wifiservicelibs.stamp $
+    obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/wifiservice.stamp $
+    obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/copy_hal_iothardwarelibs.stamp $
+    obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/hal_iothardware.stamp $
+    obj/device/winnermicro/neptune/w800_adapter/hals/update/copy_hal_update_staticlibs.stamp $
+    obj/device/winnermicro/neptune/w800_adapter/hals/update/hal_update_static.stamp $
+    obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/copy_hal_file_staticlibs.stamp $
+    obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/hal_file_static.stamp $
+    obj/domains/iot/link/iot.stamp $
+    obj/domains/iot/link/link.stamp $
+    obj/foundation/communication/bt_lite/ble.stamp $
+    obj/foundation/communication/wifi_lite/wifi.stamp $
+    obj/foundation/distributedschedule/samgr_lite/ConfigFiles.stamp $
+    obj/foundation/distributedschedule/samgr_lite/samgr.stamp $
+    obj/foundation/distributedschedule/samgr_lite/samgr_lite_ndk.stamp $
+    ./libs/libbroadcast.a $
+    ./libs/libsamgr.a $
+    ./libs/libsamgr_adapter.a $
+    ./libs/libsamgr_source.a $
+    ./libs/libbacktrace.a $
+    ./libs/libcmsis.a $
+    ./libs/libkernel.a $
+    ./libs/libarch.a $
+    ./libs/libutils.a $
+    obj/third_party/bounds_checking_function/libsec_ndk.stamp $
+    ./libs/libsec_static.a $
+    obj/third_party/bounds_checking_function/sec_static.stamp $
+    obj/third_party/mbedtls/mbedtls.stamp $
+    ./libs/libmbedtls_gt.a $
+    obj/third_party/mbedtls/mbedtls_ndk.stamp $
+    ./libs/libmbedtls.a $
+    obj/utils/native/lite/file/file.stamp $
+    ./libs/libnative_file.a $
+    obj/utils/native/lite/kv_store/kv_store.stamp $
+    ./libs/libutils_kv_store.a $
+    ./libs/libdump_static.a $
+    obj/utils/native/lite/os_dump/utils_os_dump.stamp $
+    ./libs/libhal_sysparam.a $
+    ./libs/libhal_token_static.a $
+    ./libs/liboem_auth_static.a $
+    obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/device/winnermicro/neptune/neptune.stamp $
+    obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune/neptune.stamp
+
+default all

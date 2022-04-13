@@ -1,0 +1,11 @@
+[
+    {
+        "Name"                  : "optimized-routines",
+        "License"               : "MIT License",
+        "License File"          : "LICENSE",
+        "Version Number"        : "v20.05",
+        "Owner"                 : "zhaotianyu9@huawei.com",
+        "Upstream URL"          : "https://www.mirbsd./mksh.ht://www.arm.com/;https://github.com/ARM-software/optimized-routines",
+        "Description"           : "Optimized implementations of various library functions for ARM architecture processors"
+    }
+]

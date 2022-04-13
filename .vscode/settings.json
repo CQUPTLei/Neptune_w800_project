@@ -1,0 +1,9 @@
+{
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**"
+    ],
+    "C_Cpp.default.browse.path": [
+        "${workspaceFolder}/**"
+    ],
+    "debug.onTaskErrors": "debugAnyway"
+}

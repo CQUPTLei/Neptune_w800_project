@@ -1,0 +1,11 @@
+[
+    {
+        "Name"                  : "Popt",
+        "License"               : "X Consortium License",
+        "License File"          : "COPYING",
+        "Version Number"        : "1.16",
+        "Owner"                 : "jiangxiaofeng8@huawei.com",
+        "Upstream URL"          : "https://github.com/devzero2000/POPT",
+        "Description"           : "Popt is a C library for parsing command line parameters."
+    }
+]

@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "!!! WARNING !!! AUTO-GENERATED FILE, PLEASE DO NOT MODIFY IT"
+        },
+        {
+            "name": "Linux-debug",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "${workspaceFolder}/**"
+                ]
+            },
+            "defines": [
+                ""
+            ],
+            "intelliSenseMode": "clang-x64",
+            "compilerPath": "/usr/bin/cc",
+            "compilerArgs": [
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,25 @@
+{
+    "description": "Config for hcpptest demo test cases",
+    "environment": [
+        {
+            "type": "device",
+            "label": "ipcamera"
+        }
+    ],
+    "kits": [
+        {
+            "type": "MountKit",
+            "server": "NfsServer",
+            "mount": [
+                {
+                    "source": "testcases/multimedia",
+                    "target": "/testroot/multimedia"
+                }
+            ]
+        }
+    ],
+    "driver": {
+        "type": "CppTestLite",
+        "execute": "/testroot/multimedia/ActsMediaRecorderTest.bin"
+    }
+}

@@ -1,0 +1,90 @@
+# Copyright (c) 2020 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//build/config/ohos/rules.gni")
+
+java_library("base_test_framework_java") {
+  emma_never_instrument = true
+  java_files = [
+    "//test/developertest/libs/jtr/executor/java/src/ohos/unittest/runner/TestRunner.java",
+    "//test/developertest/libs/jtr/executor/java/src/ohos/unittest/runner/notification/MyRunListener.java",
+    "//test/developertest/libs/jtr/executor/java/src/ohos/unittest/runner/notification/MyCaseListener.java",
+    "//test/developertest/libs/jtr/executor/java/src/ohos/unittest/runner/record/ReportGenerater.java",
+    "//test/developertest/libs/jtr/executor/java/src/ohos/unittest/runner/record/TestCaseInfo.java",
+    "//test/developertest/libs/jtr/executor/java/src/ohos/unittest/runner/record/TestClassInfo.java",
+  ]
+  final_jar_path = "$root_out_dir/test_platform/libs/base_test_framework.jar"
+  deps = [
+    ":unittest_utils_parts_java",
+    "//third_party/easymock:easymock_java",
+    "//third_party/junit:junit_java",
+  ]
+  if (emma_coverage) {
+    deps += [ "//third_party/jacoco:jacocoagent_java" ]
+  }
+}
+
+java_library("test_executor_java") {
+  emma_never_instrument = true
+  java_files = [
+    "//test/developertest/libs/jtr/executor/java/src/ohos/unittest/App.java",
+    "//test/developertest/libs/jtr/executor/java/src/ohos/unittest/runner/UtTestRunner.java",
+  ]
+  final_jar_path = "$root_out_dir/test_platform/libs/test_executor.jar"
+  deps = [ ":base_test_framework_java" ]
+}
+
+java_library("unittest_utils_parts_java") {
+  emma_never_instrument = true
+  java_files = [
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/CaseLevel.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/Level.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/CaseType.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/TestTarget.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/Type.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/log/LogFile.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/log/Logger.java",
+
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/perf/BaseLine.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/perf/PerfVerify.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/perf/BaseLineParser.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/perf/VerifySingleton.java",
+  ]
+  final_jar_path = "$root_out_dir/test_platform/libs/unittest_utils_parts.jar"
+  deps = [ "//third_party/junit:junit_java" ]
+}
+
+java_library("perf_test_framework_java") {
+  emma_never_instrument = true
+  java_files = [
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/perf/BaseLine.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/perf/PerfVerify.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/perf/BaseLineParser.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/perf/VerifySingleton.java",
+  ]
+  final_jar_path = "$root_out_dir/test_platform/libs/perf_test_framework.jar"
+  deps = [
+    ":test_logger_java",
+    "//third_party/junit:junit_java",
+  ]
+}
+
+java_library("test_logger_java") {
+  emma_never_instrument = true
+  java_files = [
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/log/LogFile.java",
+    "//test/developertest/libs/jtr/common/java/src/ohos/unittest/log/Logger.java",
+  ]
+  final_jar_path = "$root_out_dir/test_platform/libs/test_logger.jar"
+  deps = []
+}

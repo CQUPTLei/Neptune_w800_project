@@ -1,0 +1,11 @@
+[
+    {
+        "Name"                  : "LVM2",
+        "License"               : "BSD 2-Clause License",
+        "License File"          : "COPYING.BSD",
+        "Version Number"        : "2.02.184",
+        "Owner"                 : "jiangxiaofeng8@huawei.com",
+        "Upstream URL"          : "https://sourceware.org/lvm2",
+        "Description"           : "LVM2 refers to the userspace toolset that provide logical volume management facilities on linux. It is reasonably backwards-compatible with the original LVM toolset."
+    }
+]

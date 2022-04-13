@@ -1,0 +1,10 @@
+[
+  {
+    "Name": "International Components for Unicode",
+    "License": "ICU License, BSD 3-Clause License",
+    "License File": "../LICENSE",
+    "Version Number": "67.1",
+    "Upstream URL": "https://github.com/unicode-org/icu/archive/release-67-1.tar.gz",
+    "Description": "ICU is a mature, widely used set of portable C/C++ and Java libraries for Unicode support, software internationalization and globalization (i18n/g11n). The packages are mirrors of the main website."
+  }
+]

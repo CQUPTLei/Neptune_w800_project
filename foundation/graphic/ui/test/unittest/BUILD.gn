@@ -1,0 +1,287 @@
+# Copyright (c) 2020-2021 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#     http://www.apache.org/licenses/LICENSE-2.0
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//build/lite/config/test.gni")
+
+group("lite_graphic_ui_test") {
+  if (ohos_build_type == "debug") {
+    deps = [
+      ":graphic_test_animator",
+      ":graphic_test_axis",
+      ":graphic_test_button",
+      ":graphic_test_canvas",
+      ":graphic_test_clock",
+      ":graphic_test_common",
+      ":graphic_test_dfx",
+      ":graphic_test_dialog",
+      ":graphic_test_events",
+      ":graphic_test_font",
+      ":graphic_test_image",
+      ":graphic_test_label",
+      ":graphic_test_layout",
+      ":graphic_test_picker",
+      ":graphic_test_progress",
+      ":graphic_test_qrcode",
+      ":graphic_test_render",
+      ":graphic_test_themes",
+      ":graphic_test_video",
+      ":graphic_test_view",
+    ]
+  }
+}
+
+config("graphic_test_config") {
+  include_dirs = [
+    "../framework/include",
+    "//foundation/graphic/ui/frameworks",
+    "//foundation/graphic/surface/interfaces/kits",
+    "//third_party/bounds_checking_function/include",
+    "//third_party/freetype/include",
+    "//kernel/liteos_a/kernel/include/",
+    "//kernel/liteos_a/kernel/common",
+    "//foundation/distributedschedule/samgr_lite/interfaces/kits/registry",
+    "//foundation/distributedschedule/samgr_lite/interfaces/kits/samgr",
+    "//foundation/distributedschedule/samgr_lite/interfaces/kits/communication/broadcast",
+    "//foundation/multimedia/media_lite/interfaces/kits/player_lite",
+    "//foundation/multimedia/utils/lite/include",
+  ]
+  ldflags = [
+    "-lstdc++",
+    "-Wl,-rpath-link=$ohos_root_path/$root_out_dir",
+  ]
+}
+
+if (ohos_build_type == "debug") {
+  commonDeps = [ "//foundation/graphic/ui:ui" ]
+  unittest("graphic_test_animator") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [
+      "animator/animator_unit_test.cpp",
+      "animator/easing_equation_unit_test.cpp",
+      "animator/interpolation_unit_test.cpp",
+    ]
+  }
+
+  unittest("graphic_test_common") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [
+      "common/hardware_acceleration_unit_test.cpp",
+      "common/screen_unit_test.cpp",
+      "common/text_unit_test.cpp",
+    ]
+  }
+
+  unittest("graphic_test_events") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [
+      "events/cancel_event_unit_test.cpp",
+      "events/click_event_unit_test.cpp",
+      "events/drag_event_unit_test.cpp",
+      "events/event_bubble_unit_test.cpp",
+      "events/event_unit_test.cpp",
+      "events/key_event_unit_test.cpp",
+      "events/long_press_event_unit_test.cpp",
+      "events/press_event_unit_test.cpp",
+      "events/release_event_unit_test.cpp",
+      "events/virtual_device_event_unit_test.cpp",
+    ]
+  }
+
+  unittest("graphic_test_layout") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [ "layout/list_layout_unit_test.cpp" ]
+  }
+
+  unittest("graphic_test_render") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [ "render/render_uni_test.cpp" ]
+  }
+
+  unittest("graphic_test_themes") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [ "themes/theme_manager_unit_test.cpp" ]
+  }
+
+  unittest("graphic_test_button") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [
+      "components/ui_button_unit_test.cpp",
+      "components/ui_checkbox_unit_test.cpp",
+      "components/ui_label_button_unit_test.cpp",
+      "components/ui_radio_button_unit_test.cpp",
+      "components/ui_repeat_button_unit_test.cpp",
+      "components/ui_toggle_button_unit_test.cpp",
+    ]
+  }
+
+  unittest("graphic_test_progress") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [
+      "components/ui_abstract_progress_unit_test.cpp",
+      "components/ui_box_progress_unit_test.cpp",
+      "components/ui_circle_progress_unit_test.cpp",
+    ]
+  }
+
+  unittest("graphic_test_clock") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [
+      "components/ui_analog_clock_unit_test.cpp",
+      "components/ui_digital_clock_unit_test.cpp",
+    ]
+  }
+
+  unittest("graphic_test_label") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [
+      "components/ui_arc_label_unit_test.cpp",
+      "components/ui_label_unit_test.cpp",
+    ]
+  }
+
+  unittest("graphic_test_axis") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [ "components/ui_axis_unit_test.cpp" ]
+  }
+
+  unittest("graphic_test_canvas") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [
+      "components/ui_canvas_unit_test.cpp",
+      "components/ui_chart_unit_test.cpp",
+      "components/ui_slider_unit_test.cpp",
+    ]
+  }
+
+  unittest("graphic_test_image") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [
+      "components/ui_image_animator_unit_test.cpp",
+      "components/ui_image_unit_test.cpp",
+      "image/image_load_unit_test.cpp",
+    ]
+  }
+
+  unittest("graphic_test_picker") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [
+      "components/ui_picker_unit_test.cpp",
+      "components/ui_time_picker_unit_test.cpp",
+    ]
+  }
+
+  unittest("graphic_test_qrcode") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [ "components/ui_qrcode_unit_test.cpp" ]
+  }
+
+  unittest("graphic_test_view") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [
+      "components/ui_scroll_view_unit_test.cpp",
+      "components/ui_surface_view_unit_test.cpp",
+      "components/ui_swipe_view_unit_test.cpp",
+      "components/ui_view_group_unit_test.cpp",
+      "components/ui_view_unit_test.cpp",
+    ]
+  }
+
+  unittest("graphic_test_video") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    sources = [ "components/ui_video_unit_test.cpp" ]
+    deps = commonDeps
+    deps += [
+      "//foundation/multimedia/media_lite/frameworks/player_lite:player_lite",
+    ]
+  }
+
+  unittest("graphic_test_dfx") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [ "dfx/event_injector_unit_test.cpp" ]
+  }
+
+  unittest("graphic_test_dialog") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [ "components/ui_dialog_unit_test.cpp" ]
+  }
+
+  unittest("graphic_test_font") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [ "font/ui_font_unit_test.cpp" ]
+  }
+
+  unittest("graphic_test_rotate") {
+    output_extension = "bin"
+    output_dir = "$root_out_dir/test/unittest/graphic"
+    configs = [ ":graphic_test_config" ]
+    deps = commonDeps
+    sources = [ "rotate/ui_rotate_input_unit_test.cpp" ]
+  }
+}

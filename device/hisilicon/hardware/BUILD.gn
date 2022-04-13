@@ -1,0 +1,16 @@
+# Copyright (c) Huawei Technologies Co., Ltd. 2020. All rights reserved.
+
+import("//build/lite/config/component/lite_component.gni")
+
+if (board_name == "hi3516dv300" || board_name == "hispark_taurus" ||
+    board_name == "aegis_hi3516dv300") {
+  board = "hi3516dv300"
+} else if (board_name == "hi3518ev300" || board_name == "hispark_aries") {
+  board = "hi3518ev300"
+}
+
+build_ext_component("hardware_media_sdk") {
+  exec_path = rebase_path(".", root_build_dir)
+  outdir = rebase_path("$root_out_dir")
+  command = "./build.sh ${outdir} ${board} ${ohos_kernel_type} ${ohos_build_compiler} ${storage_type}"
+}

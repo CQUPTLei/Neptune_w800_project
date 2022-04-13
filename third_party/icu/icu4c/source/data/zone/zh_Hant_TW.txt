@@ -1,0 +1,12 @@
+﻿// © 2016 and later: Unicode, Inc. and others.
+// License & terms of use: http://www.unicode.org/copyright.html#License
+/**
+ * generated alias target
+ */
+zh_Hant_TW{
+    zoneStrings{
+        "meta:Indochina"{
+            ls{"中印半島時間"}
+        }
+    }
+}

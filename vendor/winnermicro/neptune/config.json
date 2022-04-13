@@ -1,0 +1,102 @@
+{
+    "product_name": "wifiiot_neptune",
+    "ohos_version": "OpenHarmony 1.0",
+    "device_company": "winnermicro",
+    "board": "neptune",
+    "kernel_type": "liteos_m",
+    "kernel_version": "",
+    "subsystems": [
+      {
+        "subsystem": "applications",
+        "components": [
+          { "component": "wifi_iot_sample_app", "features":[] },
+          { "component": "mbedtls", "features": [] },
+          { "component": "bounds_checking_function", "features": [] }
+        ]
+      },
+      {
+        "subsystem": "iot_hardware",
+        "components": [
+          { "component": "iot_controller", "features":[] }
+        ]
+      },
+      {
+        "subsystem": "hiviewdfx",
+        "components": [
+          { "component": "hilog_lite", "features":[] },
+          { "component": "hievent_lite", "features":[] }
+        ]
+      },
+      {
+        "subsystem": "distributed_schedule",
+        "components": [
+          { "component": "system_ability_manager", "features":[] }
+        ]
+      },
+      {
+        "subsystem": "security",
+        "components": [
+          { "component": "hichainsdk", "features":[] },
+          { "component": "huks", "features":[] }
+        ]
+      },
+      {
+        "subsystem": "update",
+        "components": [
+          { "component": "hota", "features":[] }
+        ]
+      },
+      {
+        "subsystem": "startup",
+        "components": [
+          { "component": "bootstrap", "features":[] },
+          { "component": "syspara", "features":[] }
+        ]
+      },
+      {
+        "subsystem": "communication",
+        "components": [
+          { "component": "wlan", "features":[] },
+	   { "component": "ble", "features": [] }
+        ]
+      },
+      
+      {
+        "subsystem": "iot",
+        "components": [
+          { "component": "iot_link", "features":[] }
+        ]
+      },
+      {
+        "subsystem": "utils",
+        "components": [
+          { "component": "file", "features":[] },
+          { "component": "kv_store", "features":[] },
+          { "component": "os_dump", "features":[] }
+        ]
+      },
+      {
+        "subsystem": "vendor",
+        "components": [
+          { "component": "w800_sdk", "target": "//device/winnermicro/neptune/sdk_liteos:wifiiot_sdk", "features":[] },
+          { "component": "w800_adapter", "target": "//device/winnermicro/neptune/w800_adapter", "features":[] }
+        ]
+      }
+    ],
+    "vendor_adapter_dir": "//device/winnermicro/neptune/w800_adapter",
+    "third_party_dir": "",
+    "product_adapter_dir": "//vendor/winnermicro/neptune/hals",
+    "ohos_product_type": "",
+    "ohos_manufacture": "",
+    "ohos_brand": "",
+    "ohos_market_name": "",
+    "ohos_product_series": "",
+    "ohos_product_model": "",
+    "ohos_software_model": "",
+    "ohos_hardware_model": "",
+    "ohos_hardware_profile": "",
+    "ohos_serial": "",
+    "ohos_bootloader_version": "",
+    "ohos_secure_patch_level": "",
+    "ohos_abi_list": ""
+}

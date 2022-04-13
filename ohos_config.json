@@ -1,0 +1,8 @@
+{
+  "root_path": "/home/jaychou/Neptune_w800_project",
+  "product": "wifiiot_neptune",
+  "product_path": "/home/jaychou/Neptune_w800_project/vendor/winnermicro/neptune",
+  "board": "neptune",
+  "kernel": "liteos_m",
+  "device_path": "/home/jaychou/Neptune_w800_project/device/winnermicro/neptune/sdk_liteos"
+}

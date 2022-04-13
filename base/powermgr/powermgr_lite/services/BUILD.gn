@@ -1,0 +1,68 @@
+# Copyright (c) 2021 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+import("//build/lite/config/component/lite_component.gni")
+shared_library("pmslite") {
+  cflags = [ "-Wall" ]
+  cflags_cc = cflags
+  sources = [
+    "source/power_manage_feature.cpp",
+    "source/power_manage_service.cpp",
+  ]
+
+  include_dirs = [
+    "include",
+    "//drivers/peripheral/input/interfaces/include",
+    "//third_party/bounds_checking_function/include",
+    "//utils/native/lite/include",
+    "//foundation/distributedschedule/samgr_lite/samgr/adapter/",
+    "//foundation/distributedschedule/samgr_lite/interfaces/kits/samgr",
+    "//foundation/distributedschedule/samgr_lite/interfaces/kits/registry",
+    "//foundation/distributedschedule/samgr_lite/interfaces/kits/communication/broadcast",
+    "//foundation/distributedschedule/samgr_lite/samgr_endpoint/source",
+    "//foundation/distributedschedule/samgr_lite/interfaces/kits/registry",
+    "//foundation/distributedschedule/samgr_lite/interfaces/kits/samgr",
+    "//foundation/communication/ipc_lite/interfaces/kits",
+    "${aafwk_lite_path}/interfaces/kits/want_lite",
+    "${aafwk_lite_path}/interfaces/kits/ability_lite/include",
+    "${appexecfwk_lite_path}/interfaces/kits/bundle_lite",
+    "${aafwk_lite_path}/interfaces/kits/ability_lite",
+    "${aafwk_lite_path}/frameworks/ability_lite/include",
+    "${aafwk_lite_path}/interfaces/innerkits/abilitymgr_lite",
+    "${aafwk_lite_path}/interfaces/kits/ability_lite",
+    "${aafwk_lite_path}/interfaces/kits/want_lite",
+    "${appexecfwk_lite_path}/interfaces/kits/bundle_lite",
+    "${appexecfwk_lite_path}/interfaces/innerkits/bundlemgr_lite",
+    "//foundation/graphic/ui/interfaces/innerkits",
+    "//foundation/graphic/ui/interfaces/kits",
+  ]
+  defines = [
+    "ENABLE_WINDOW=1",
+    "ABILITY_WINDOW_SUPPORT",
+    "OHOS_APPEXECFWK_BMS_BUNDLEMANAGER",
+  ]
+
+  deps = [
+    "${aafwk_lite_path}/frameworks/ability_lite:aafwk_abilitykit_lite",
+    "${appexecfwk_lite_path}/frameworks/bundle_lite:bundle",
+    "//base/hiviewdfx/hilog_lite/frameworks/featured:hilog_shared",
+    "//foundation/communication/ipc_lite:liteipc_adapter",
+    "//foundation/distributedschedule/samgr_lite/samgr:samgr",
+    "//foundation/graphic/wms:lite_wms",
+    "//third_party/bounds_checking_function:libsec_shared",
+  ]
+}
+
+lite_component("power_manage_service") {
+  features = [ ":pmslite" ]
+}

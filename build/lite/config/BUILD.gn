@@ -1,0 +1,194 @@
+# Copyright (c) 2020 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+config("cpu_arch") {
+  cflags = []
+  if (board_arch != "") {
+    cflags += [ "-march=$board_arch" ]
+  }
+  if (board_cpu != "") {
+    cflags += [ "-mcpu=$board_cpu" ]
+  }
+  cflags_cc = cflags
+  ldflags = cflags
+}
+
+config("language_c") {
+  cflags_c = [ "-std=c99" ]
+}
+
+config("language_cpp") {
+  cflags_cc = [ "-std=c++11" ]
+}
+
+config("kernel_macros") {
+  if (ohos_kernel_type == "liteos_a") {
+    defines = [
+      "__LITEOS__",
+      "__LITEOS_A__",
+    ]
+  } else if (ohos_kernel_type == "liteos_m") {
+    defines = [
+      "__LITEOS__",
+      "__LITEOS_M__",
+    ]
+  } else if (ohos_kernel_type == "linux") {
+    defines = [ "__LINUX__" ]
+  }
+}
+
+config("werror") {
+  cflags = [ "-Werror" ]
+  cflags_cc = cflags
+}
+
+config("common") {
+  defines = [ "_XOPEN_SOURCE=700" ]
+  cflags = [
+    "-nostdlib",
+    "-fno-common",
+    "-fno-builtin",
+    "-fno-strict-aliasing",
+    "-Wall",
+  ]
+  cflags_cc = cflags
+  ldflags = [ "-lc" ]
+  cflags += [ "-fsigned-char" ]
+}
+
+config("security") {
+  defines = [ "_FORTIFY_SOURCE=2" ]
+
+  cflags = []
+
+  if (board_cpu != "ck804ef") {
+    cflags = [ "-fstack-protector-all" ]
+  }
+
+  cflags_cc = cflags
+
+  ldflags = [
+    "-Wl,-z,now",
+    "-Wl,-z,relro",
+    "-Wl,-z,noexecstack",
+  ]
+}
+
+config("exceptions") {
+  cflags_cc = [ "-fexceptions" ]
+  cflags_objcc = cflags_cc
+}
+
+config("no_exceptions") {
+  cflags_cc = [ "-fno-exceptions" ]
+  cflags_objcc = cflags_cc
+  ldflags = cflags_cc
+}
+
+config("stack_protector") {
+
+  cflags = []
+
+  if (board_cpu != "ck804ef") {
+    cflags = [ "-fstack-protector-all" ]
+  }
+  cflags_cc = cflags
+}
+
+config("static_pie_config") {
+  cflags = [ "-fPIE" ]
+  cflags_cc = cflags
+}
+
+config("shared_library_config") {
+  cflags = [ "-fPIC" ]
+  cflags_cc = cflags
+}
+
+config("pie_executable_config") {
+  ldflags = [ "-pie" ]
+}
+
+config("clang") {
+  clang_dir = ""
+  if (ohos_build_compiler_dir != "") {
+    clang_dir = rebase_path("${ohos_build_compiler_dir}")
+  }
+  include_dirs = [
+    "${clang_dir}/include/c++/v1",
+    "//prebuilts/lite/sysroot/usr/include/arm-liteos",
+  ]
+
+  cflags = [
+    "--target=arm-liteos",
+    "--sysroot=${ohos_root_path}prebuilts/lite/sysroot",
+  ]
+  cflags_cc = cflags
+  ldflags = cflags
+
+  ldflags += [
+    "-L${clang_dir}/lib/arm-liteos/c++",
+    "-L${ohos_root_path}prebuilts/lite/sysroot/usr/lib/arm-liteos",
+    "-L${clang_dir}/lib/clang/9.0.0/lib/arm-liteos",
+    "-lclang_rt.builtins",
+    "-lc",
+    "-lc++",
+    "-lc++abi",
+    "--sysroot=${ohos_root_path}prebuilts/lite/sysroot",
+  ]
+}
+
+config("release") {
+  defines = [ "OHOS_RELEASE" ]
+}
+
+config("debug") {
+  defines = [ "OHOS_DEBUG" ]
+}
+
+config("clang_opt") {
+  cflags = [
+    "-Oz",
+    "-flto",
+  ]
+  cflags_cc = cflags
+}
+
+config("gcc_opt") {
+  cflags = [ "-Os" ]
+  cflags_cc = cflags
+}
+
+config("default_link_path") {
+  out_dir = rebase_path(root_build_dir)
+  ldflags = [
+    "-L${out_dir}",
+    "-Wl,-rpath-link=${out_dir}",
+  ]
+}
+
+config("board_config") {
+  cflags = []
+  cflags_cc = []
+  ldflags = []
+  include_dirs = []
+  cflags += board_cflags
+  if (board_configed_sysroot != "") {
+    cflags += [ "--sysroot=${board_configed_sysroot}" ]
+    cflags_cc += [ "--sysroot=${board_configed_sysroot}" ]
+    ldflags += [ "--sysroot=${board_configed_sysroot}" ]
+  }
+  cflags_cc += board_cxx_flags
+  ldflags += board_ld_flags
+  include_dirs += board_include_dirs
+}

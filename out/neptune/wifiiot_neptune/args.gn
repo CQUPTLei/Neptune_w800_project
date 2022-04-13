@@ -1,0 +1,7 @@
+ohos_build_type = "debug"
+ohos_build_compiler_specified = "gcc"
+product_path =
+    "/home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune"
+device_path = "/home/jaychou/neptune-harmony-os1.1-iot-master/device/winnermicro/neptune/sdk_liteos"
+ohos_kernel_type = "liteos_m"
+ohos_full_compile = true

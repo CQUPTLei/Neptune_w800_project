@@ -1,0 +1,4073 @@
+# Vietnamese translation for CryptSetup.
+# Bản dịch tiếng Việt dành cho cryptsetup.
+# Copyright © 2016 Free Software Foundation, Inc.
+# This file is distributed under the same license as the cryptsetup package.
+# Clytie Siddall <clytie@riverland.net.au>, 2010.
+# Trần Ngọc Quân <vnwildman@gmail.com>, 2012-2014, 2015, 2016, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cryptsetup 1.7.4\n"
+"Report-Msgid-Bugs-To: dm-crypt@saout.de\n"
+"POT-Creation-Date: 2019-11-01 09:04+0100\n"
+"PO-Revision-Date: 2017-03-05 15:08+0700\n"
+"Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
+"Language-Team: Vietnamese <translation-team-vi@lists.sourceforge.net>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Gtranslator 2.91.7\n"
+
+#: lib/libdevmapper.c:384
+#, fuzzy
+msgid "Cannot initialize device-mapper, running as non-root user."
+msgstr "Không thể khởi tạo ánh-xạ-thiết-bị (device-mapper), do không chạy dưới quyền siêu người dùng.\n"
+
+#: lib/libdevmapper.c:387
+#, fuzzy
+msgid "Cannot initialize device-mapper. Is dm_mod kernel module loaded?"
+msgstr ""
+"Không thể khởi tạo tiến trình ánh xạ thiết bị.\n"
+"Mô-đun hạt nhân “dm_mod” được nạp chưa?\n"
+
+#: lib/libdevmapper.c:1082
+#, fuzzy
+msgid "Requested deferred flag is not supported."
+msgstr "Không hỗ trợ chuỗi duy nhất LUKS %s được yêu cầu.\n"
+
+#: lib/libdevmapper.c:1149
+#, fuzzy, c-format
+msgid "DM-UUID for device %s was truncated."
+msgstr "Mã số DM-UUID cho thiết bị %s bị cắt ngắn.\n"
+
+#: lib/libdevmapper.c:1463
+msgid "Unknown dm target type."
+msgstr ""
+
+#: lib/libdevmapper.c:1565 lib/libdevmapper.c:1617
+#, fuzzy
+msgid "Requested dm-crypt performance options are not supported."
+msgstr "Không hỗ trợ tùy chọn hiệu năng dm-crypt đã yêu cầu.\n"
+
+#: lib/libdevmapper.c:1572
+#, fuzzy
+msgid "Requested dm-verity data corruption handling options are not supported."
+msgstr "Không hỗ trợ tùy chọn xử lý dữ liệu sai hỏng dm-verity đã yêu cầu.\n"
+
+#: lib/libdevmapper.c:1576
+#, fuzzy
+msgid "Requested dm-verity FEC options are not supported."
+msgstr "Không hỗ trợ tùy chọn hiệu năng dm-crypt đã yêu cầu.\n"
+
+#: lib/libdevmapper.c:1580
+#, fuzzy
+msgid "Requested data integrity options are not supported."
+msgstr "Không hỗ trợ tùy chọn hiệu năng dm-crypt đã yêu cầu.\n"
+
+#: lib/libdevmapper.c:1582
+#, fuzzy
+msgid "Requested sector_size option is not supported."
+msgstr "Không hỗ trợ tùy chọn hiệu năng dm-crypt đã yêu cầu.\n"
+
+#: lib/libdevmapper.c:1587
+#, fuzzy
+msgid "Requested automatic recalculation of integrity tags is not supported."
+msgstr "Không hỗ trợ tùy chọn xử lý dữ liệu sai hỏng dm-verity đã yêu cầu.\n"
+
+#: lib/libdevmapper.c:1591
+#, fuzzy
+msgid "Requested dm-integrity bitmap mode is not supported."
+msgstr "Không hỗ trợ tùy chọn xử lý dữ liệu sai hỏng dm-verity đã yêu cầu.\n"
+
+#: lib/libdevmapper.c:1620
+#, fuzzy
+msgid "Discard/TRIM is not supported."
+msgstr "Thuật toán băm %s không được hỗ trợ.\n"
+
+#: lib/libdevmapper.c:2511
+#, c-format
+msgid "Failed to query dm-%s segment."
+msgstr ""
+
+#: lib/random.c:80
+msgid ""
+"System is out of entropy while generating volume key.\n"
+"Please move mouse or type some text in another window to gather some random events.\n"
+msgstr ""
+"Hệ thống bị nằm ngoài en-trô-pi trong khi tạo khóa vùng chứa.\n"
+"Xin hãy di chuyển con chuột hay gõ vài chữ trong cửa sổ khác để thu thập sự kiện ngẫu nhiên.\n"
+
+#: lib/random.c:84
+#, c-format
+msgid "Generating key (%d%% done).\n"
+msgstr "Đang tạo khóa (xong %d%%).\n"
+
+#: lib/random.c:170
+#, fuzzy
+msgid "Running in FIPS mode."
+msgstr "Đang chạy trong chế độ FIPS.\n"
+
+#: lib/random.c:176
+#, fuzzy
+msgid "Fatal error during RNG initialisation."
+msgstr "Gặp lỗi nghiêm trọng trong quá trình khởi tạo RNG.\n"
+
+#: lib/random.c:213
+#, fuzzy
+msgid "Unknown RNG quality requested."
+msgstr "Không hiểu chất lượng RNG đã yêu cầu.\n"
+
+#: lib/random.c:218
+#, fuzzy
+msgid "Error reading from RNG."
+msgstr "Lỗi %d khi đọc từ RNG: %s\n"
+
+#: lib/setup.c:223
+#, fuzzy
+msgid "Cannot initialize crypto RNG backend."
+msgstr "Không thể khởi tạo ứng dụng chạy ở phía sau (backend) mã hóa RNG.\n"
+
+#: lib/setup.c:229
+#, fuzzy
+msgid "Cannot initialize crypto backend."
+msgstr "Không thể khởi ứng dụng mã hóa chạy ở phía sau (backend).\n"
+
+#: lib/setup.c:260 lib/setup.c:1990 lib/verity/verity.c:120
+#, fuzzy, c-format
+msgid "Hash algorithm %s not supported."
+msgstr "Thuật toán băm %s không được hỗ trợ.\n"
+
+#: lib/setup.c:263 lib/loopaes/loopaes.c:90
+#, fuzzy, c-format
+msgid "Key processing error (using hash %s)."
+msgstr "Lỗi xử lý khóa (dùng mã băm %s).\n"
+
+#: lib/setup.c:324 lib/setup.c:351
+#, fuzzy
+msgid "Cannot determine device type. Incompatible activation of device?"
+msgstr "Không thể dò tìm kiểu thiết bị. Phần hoạt hóa của thiết bị không tương thích à?\n"
+
+#: lib/setup.c:330 lib/setup.c:2985
+#, fuzzy
+msgid "This operation is supported only for LUKS device."
+msgstr "Thao tác này được hỗ trợ chỉ cho thiết bị LUKS.\n"
+
+#: lib/setup.c:357
+#, fuzzy
+msgid "This operation is supported only for LUKS2 device."
+msgstr "Thao tác này được hỗ trợ chỉ cho thiết bị LUKS.\n"
+
+#: lib/setup.c:412 lib/luks2/luks2_reencrypt.c:2345
+#, fuzzy
+msgid "All key slots full."
+msgstr "Mọi khe khóa đều đã đầy.\n"
+
+#: lib/setup.c:423
+#, fuzzy, c-format
+msgid "Key slot %d is invalid, please select between 0 and %d."
+msgstr "Khe khóa %d không đúng, hãy chọn một giá trị trong phạm vi từ 0 đến %d.\n"
+
+#: lib/setup.c:429
+#, fuzzy, c-format
+msgid "Key slot %d is full, please select another one."
+msgstr "Khe khóa %d bị đầy, hãy chọn một khe khác.\n"
+
+#: lib/setup.c:514 lib/setup.c:2759
+#, fuzzy
+msgid "Device size is not aligned to device logical block size."
+msgstr "Thiết bị %s không phải là một thiết bị kiểu LUKS đúng.\n"
+
+#: lib/setup.c:610
+#, fuzzy, c-format
+msgid "Header detected but device %s is too small."
+msgstr "Phát hiện được phần đầu nhưng mà thiết bị %s quá nhỏ.\n"
+
+#: lib/setup.c:647
+#, fuzzy
+msgid "This operation is not supported for this device type."
+msgstr "Thao tác này không được hỗ trợ cho kiểu thiết bị này.\n"
+
+#: lib/setup.c:652
+msgid "Illegal operation with reencryption in-progress."
+msgstr ""
+
+#: lib/setup.c:821 lib/luks1/keymanage.c:476
+#, fuzzy, c-format
+msgid "Unsupported LUKS version %d."
+msgstr "Phiên bản LUKS không được hỗ trợ %d.\n"
+
+#: lib/setup.c:838 lib/setup.c:1483 lib/setup.c:1903
+#, fuzzy
+msgid "Detached metadata device is not supported for this crypt type."
+msgstr "UUID không hỗ trợ kiểu mã hóa này.\n"
+
+#: lib/setup.c:1373 lib/setup.c:2479 lib/setup.c:2551 lib/setup.c:2563
+#: lib/setup.c:2712 lib/setup.c:4310
+#, fuzzy, c-format
+msgid "Device %s is not active."
+msgstr "Thiết bị %s không hoạt động.\n"
+
+#: lib/setup.c:1390
+#, fuzzy, c-format
+msgid "Underlying device for crypt device %s disappeared."
+msgstr "Thiết bị nằm dưới cho thiết bị crypt %s đã bị biến mất.\n"
+
+#: lib/setup.c:1468
+#, fuzzy
+msgid "Invalid plain crypt parameters."
+msgstr "Đặt sai tham số mã hóa bình thường.\n"
+
+#: lib/setup.c:1473 lib/setup.c:1893 src/integritysetup.c:73
+#, fuzzy
+msgid "Invalid key size."
+msgstr "Kích cỡ khóa không đúng.\n"
+
+#: lib/setup.c:1478 lib/setup.c:1898 lib/setup.c:2100
+#, fuzzy
+msgid "UUID is not supported for this crypt type."
+msgstr "UUID không hỗ trợ kiểu mã hóa này.\n"
+
+#: lib/setup.c:1493 lib/setup.c:1683 lib/luks2/luks2_reencrypt.c:2308
+#: src/cryptsetup.c:1169
+#, fuzzy
+msgid "Unsupported encryption sector size."
+msgstr "Không đọc được tập tin nhật ký reencryption.\n"
+
+#: lib/setup.c:1501 lib/setup.c:1808 lib/setup.c:2753
+#, fuzzy
+msgid "Device size is not aligned to requested sector size."
+msgstr "Thiết bị %s không phải là một thiết bị kiểu LUKS đúng.\n"
+
+#: lib/setup.c:1552 lib/setup.c:1671
+#, fuzzy
+msgid "Can't format LUKS without device."
+msgstr "Không thể định dạng “LUKS” mà không có thiết bị.\n"
+
+#: lib/setup.c:1558 lib/setup.c:1677
+msgid "Requested data alignment is not compatible with data offset."
+msgstr ""
+
+#: lib/setup.c:1626 lib/setup.c:1795
+msgid "WARNING: Data offset is outside of currently available data device.\n"
+msgstr ""
+
+#: lib/setup.c:1636 lib/setup.c:1823 lib/setup.c:1844 lib/setup.c:2112
+#, fuzzy, c-format
+msgid "Cannot wipe header on device %s."
+msgstr "Không thể tẩy xóa phần đầu trên thiết bị %s.\n"
+
+#: lib/setup.c:1688
+msgid "WARNING: The device activation will fail, dm-crypt is missing support for requested encryption sector size.\n"
+msgstr ""
+
+#: lib/setup.c:1710
+msgid "Volume key is too small for encryption with integrity extensions."
+msgstr ""
+
+#: lib/setup.c:1765
+#, fuzzy, c-format
+msgid "Cipher %s-%s (key size %zd bits) is not available."
+msgstr "Mã hóa kiểu %s không sẵn có.\n"
+
+#: lib/setup.c:1798
+#, c-format
+msgid "WARNING: LUKS2 metadata size changed to %<PRIu64> bytes.\n"
+msgstr ""
+
+#: lib/setup.c:1802
+#, c-format
+msgid "WARNING: LUKS2 keyslots area size changed to %<PRIu64> bytes.\n"
+msgstr ""
+
+#: lib/setup.c:1826 lib/utils_device.c:829 lib/luks1/keyencryption.c:256
+#: lib/luks2/luks2_reencrypt.c:2356 lib/luks2/luks2_reencrypt.c:3348
+#, fuzzy, c-format
+msgid "Device %s is too small."
+msgstr "Thiết bị %s có kích cỡ quá nhỏ.\n"
+
+#: lib/setup.c:1837 lib/setup.c:1863
+#, fuzzy, c-format
+msgid "Cannot format device %s in use."
+msgstr "Không thể định dạng thiết bị %s mà nó lại vẫn đang được sử dụng.\n"
+
+#: lib/setup.c:1840 lib/setup.c:1866
+#, fuzzy, c-format
+msgid "Cannot format device %s, permission denied."
+msgstr "Không thể định dạng thiết bị %s, không đủ thẩm quyền.\n"
+
+#: lib/setup.c:1852 lib/setup.c:2164
+#, fuzzy, c-format
+msgid "Cannot format integrity for device %s."
+msgstr "Không thể ghi thiết bị %s.\n"
+
+#: lib/setup.c:1870
+#, fuzzy, c-format
+msgid "Cannot format device %s."
+msgstr "Không thể đọc thiết bị %s.\n"
+
+#: lib/setup.c:1888
+#, fuzzy
+msgid "Can't format LOOPAES without device."
+msgstr "Không thể định dạng “LOOPAES” bên ngoài thiết bị.\n"
+
+#: lib/setup.c:1933
+#, fuzzy
+msgid "Can't format VERITY without device."
+msgstr "Không thể định dạng “VERITY” mà không có thiết bị.\n"
+
+#: lib/setup.c:1944 lib/verity/verity.c:103
+#, fuzzy, c-format
+msgid "Unsupported VERITY hash type %d."
+msgstr "Kiểu băm “VERITY” %d không được hỗ trợ.\n"
+
+#: lib/setup.c:1950 lib/verity/verity.c:111
+#, fuzzy
+msgid "Unsupported VERITY block size."
+msgstr "Kích thước khối “VERITY” không được hỗ trợ.\n"
+
+#: lib/setup.c:1955 lib/verity/verity.c:75
+#, fuzzy
+msgid "Unsupported VERITY hash offset."
+msgstr "Khoảng bù (offset) mã băm “VERITY” không được hỗ trợ.\n"
+
+#: lib/setup.c:1960
+#, fuzzy
+msgid "Unsupported VERITY FEC offset."
+msgstr "Khoảng bù (offset) mã băm “VERITY” không được hỗ trợ.\n"
+
+#: lib/setup.c:1984
+#, fuzzy
+msgid "Data area overlaps with hash area."
+msgstr "Vùng dữ liệu chồng lấn với vùng mã băm.\n"
+
+#: lib/setup.c:2009
+#, fuzzy
+msgid "Hash area overlaps with FEC area."
+msgstr "Vùng dữ liệu chồng lấn với vùng mã băm.\n"
+
+#: lib/setup.c:2016
+#, fuzzy
+msgid "Data area overlaps with FEC area."
+msgstr "Vùng dữ liệu chồng lấn với vùng mã băm.\n"
+
+#: lib/setup.c:2221
+#, fuzzy, c-format
+msgid "Unknown crypt device type %s requested."
+msgstr "Không rõ kiểu thiết bị mã hóa %s được yêu cầu.\n"
+
+#: lib/setup.c:2485 lib/setup.c:2557 lib/setup.c:2570
+#, fuzzy, c-format
+msgid "Unsupported parameters on device %s."
+msgstr "Không thể tẩy xóa phần đầu trên thiết bị %s.\n"
+
+#: lib/setup.c:2491 lib/setup.c:2576 lib/luks2/luks2_reencrypt.c:2408
+#: lib/luks2/luks2_reencrypt.c:2718
+#, fuzzy, c-format
+msgid "Mismatching parameters on device %s."
+msgstr "Không thể tẩy xóa phần đầu trên thiết bị %s.\n"
+
+#: lib/setup.c:2596
+msgid "Crypt devices mismatch."
+msgstr ""
+
+#: lib/setup.c:2633 lib/setup.c:2638 lib/luks2/luks2_reencrypt.c:2054
+#: lib/luks2/luks2_reencrypt.c:3126
+#, fuzzy, c-format
+msgid "Failed to reload device %s."
+msgstr "Không thể đọc thiết bị %s.\n"
+
+#: lib/setup.c:2643 lib/setup.c:2648 lib/luks2/luks2_reencrypt.c:2025
+#: lib/luks2/luks2_reencrypt.c:2032
+#, fuzzy, c-format
+msgid "Failed to suspend device %s."
+msgstr "Gặp lỗi khi mở tập tin khóa.\n"
+
+#: lib/setup.c:2653 lib/luks2/luks2_reencrypt.c:2039
+#: lib/luks2/luks2_reencrypt.c:3061 lib/luks2/luks2_reencrypt.c:3130
+#, fuzzy, c-format
+msgid "Failed to resume device %s."
+msgstr "Không thể đọc thiết bị %s.\n"
+
+#: lib/setup.c:2667
+#, c-format
+msgid "Fatal error while reloading device %s (on top of device %s)."
+msgstr ""
+
+#: lib/setup.c:2670 lib/setup.c:2672
+#, fuzzy, c-format
+msgid "Failed to switch device %s to dm-error."
+msgstr "Lỗi lấy thư mục trình ánh xạ thiết bị."
+
+#: lib/setup.c:2744
+#, fuzzy
+msgid "Cannot resize loop device."
+msgstr "Không thể đổi cỡ thiết bị vòng ngược (loopback).\n"
+
+#: lib/setup.c:2817
+msgid "Do you really want to change UUID of device?"
+msgstr "Bạn có thực sự muốn thay đổi UUID cho thiết bị?"
+
+#: lib/setup.c:2893
+#, fuzzy
+msgid "Header backup file does not contain compatible LUKS header."
+msgstr "Tập tin sao lưu không chứa phần đầu LUKS hợp lệ.\n"
+
+#: lib/setup.c:2993
+#, fuzzy, c-format
+msgid "Volume %s is not active."
+msgstr "Khối tin %s không hoạt động.\n"
+
+#: lib/setup.c:3004
+#, fuzzy, c-format
+msgid "Volume %s is already suspended."
+msgstr "Khối %s đã bị ngưng.\n"
+
+#: lib/setup.c:3017
+#, fuzzy, c-format
+msgid "Suspend is not supported for device %s."
+msgstr "Tạm dừng không được hỗ trợ cho kiểu thiết bị %s.\n"
+
+#: lib/setup.c:3019
+#, fuzzy, c-format
+msgid "Error during suspending device %s."
+msgstr "Gặp lỗi khi tạm dừng thiết bị %s.\n"
+
+#: lib/setup.c:3052 lib/setup.c:3119
+#, fuzzy, c-format
+msgid "Volume %s is not suspended."
+msgstr "Vùng %s không bị treo.\n"
+
+#: lib/setup.c:3081
+#, fuzzy, c-format
+msgid "Resume is not supported for device %s."
+msgstr "Thao tác phục hồi không được hỗ trợ cho kiểu thiết bị %s.\n"
+
+#: lib/setup.c:3083 lib/setup.c:3151
+#, fuzzy, c-format
+msgid "Error during resuming device %s."
+msgstr "Gặp lỗi khi cho hoạt động trở lại thiết bị %s.\n"
+
+#: lib/setup.c:3219 lib/setup.c:3407
+#, fuzzy
+msgid "Cannot add key slot, all slots disabled and no volume key provided."
+msgstr "Không thể thêm khe khóa vì mọi khe đều bị tắt và không cung cấp khóa khối tin.\n"
+
+#: lib/setup.c:3359
+#, fuzzy
+msgid "Failed to swap new key slot."
+msgstr "Gặp lỗi khi hoán đổi khe khóa mới.\n"
+
+#: lib/setup.c:3524 lib/setup.c:4161 lib/setup.c:4174 lib/setup.c:4182
+#: lib/setup.c:4195 lib/setup.c:4480 lib/setup.c:5593
+#, fuzzy
+msgid "Volume key does not match the volume."
+msgstr "Khóa khối tin không tương ứng với khối tin đó.\n"
+
+#: lib/setup.c:3545
+#, fuzzy, c-format
+msgid "Key slot %d is invalid."
+msgstr "Khe khóa %d không đúng.\n"
+
+#: lib/setup.c:3551 src/cryptsetup.c:1511 src/cryptsetup.c:1856
+#, fuzzy, c-format
+msgid "Keyslot %d is not active."
+msgstr "Khe khóa %d không được dùng.\n"
+
+#: lib/setup.c:3570
+#, fuzzy
+msgid "Device header overlaps with data area."
+msgstr "Vùng dữ liệu chồng lấn với vùng mã băm.\n"
+
+#: lib/setup.c:3836
+msgid "Reencryption in-progress. Cannot activate device."
+msgstr ""
+
+#: lib/setup.c:3838 lib/luks2/luks2_json_metadata.c:2244
+#: lib/luks2/luks2_reencrypt.c:2817
+#, fuzzy
+msgid "Failed to get reencryption lock."
+msgstr "Không đọc được tập tin nhật ký reencryption.\n"
+
+#: lib/setup.c:3851 lib/luks2/luks2_reencrypt.c:2836
+#, fuzzy
+msgid "LUKS2 reencryption recovery failed."
+msgstr "Không mở được tập tin nhật ký reencryption.\n"
+
+#: lib/setup.c:3978 lib/setup.c:4248
+#, fuzzy
+msgid "Device type is not properly initialised."
+msgstr "Kiểu thiết bị gần như chắc chắn là chưa được thiết lập.\n"
+
+#: lib/setup.c:4022
+#, fuzzy, c-format
+msgid "Cannot use device %s, name is invalid or still in use."
+msgstr "Không thể định dạng thiết bị %s mà nó lại vẫn đang được sử dụng.\n"
+
+#: lib/setup.c:4025
+#, fuzzy, c-format
+msgid "Device %s already exists."
+msgstr "Thiết bị %s đã sẵn có.\n"
+
+#: lib/setup.c:4148
+#, fuzzy
+msgid "Incorrect volume key specified for plain device."
+msgstr "Khóa vùng chứa đã chỉ định không đúng cho thiết bị thường.\n"
+
+#: lib/setup.c:4214
+#, fuzzy
+msgid "Incorrect root hash specified for verity device."
+msgstr "Mã băm gốc đã chỉ định không đúng cho thiết bị chứng thực (verity).\n"
+
+#: lib/setup.c:4289 lib/setup.c:4305 lib/luks2/luks2_json_metadata.c:2297
+#: src/cryptsetup.c:2527
+#, fuzzy, c-format
+msgid "Device %s is still in use."
+msgstr "Thiết bị %s vẫn đang được sử dụng.\n"
+
+#: lib/setup.c:4314
+#, fuzzy, c-format
+msgid "Invalid device %s."
+msgstr "Thiết bị không đúng %s.\n"
+
+#: lib/setup.c:4430
+#, fuzzy
+msgid "Volume key buffer too small."
+msgstr "Vùng đệm khóa khối tin quá nhỏ.\n"
+
+#: lib/setup.c:4438
+#, fuzzy
+msgid "Cannot retrieve volume key for plain device."
+msgstr "Không thể lấy khóa khối tin cho thiết bị bình thường.\n"
+
+#: lib/setup.c:4449
+#, fuzzy, c-format
+msgid "This operation is not supported for %s crypt device."
+msgstr "Thao tác này không được hỗ trợ cho thiết bị mã hóa %s.\n"
+
+#: lib/setup.c:4636
+#, fuzzy
+msgid "Dump operation is not supported for this device type."
+msgstr "Thao tác đổ đống (dump) không được hỗ trợ cho kiểu thiết bị này.\n"
+
+#: lib/setup.c:4947
+#, c-format
+msgid "Data offset is not multiple of %u bytes."
+msgstr ""
+
+#: lib/setup.c:5229
+#, fuzzy, c-format
+msgid "Cannot convert device %s which is still in use."
+msgstr "Không thể định dạng thiết bị %s mà nó lại vẫn đang được sử dụng.\n"
+
+#: lib/setup.c:5526
+#, c-format
+msgid "Failed to assign keyslot %u as the new volume key."
+msgstr ""
+
+#: lib/setup.c:5599
+msgid "Failed to initialise default LUKS2 keyslot parameters."
+msgstr ""
+
+#: lib/setup.c:5605
+#, fuzzy, c-format
+msgid "Failed to assign keyslot %d to digest."
+msgstr "Gặp lỗi khi hoán đổi khe khóa mới.\n"
+
+#: lib/setup.c:5690
+#, fuzzy
+msgid "Failed to load key in kernel keyring."
+msgstr "Gặp lỗi khi mở tập tin khóa.\n"
+
+#: lib/setup.c:5757
+#, fuzzy
+msgid "Kernel keyring is not supported by the kernel."
+msgstr "Thao tác này không được hỗ trợ cho kiểu thiết bị này.\n"
+
+#: lib/setup.c:5767 lib/luks2/luks2_reencrypt.c:2933
+#, fuzzy, c-format
+msgid "Failed to read passphrase from keyring (error %d)."
+msgstr "Lỗi đọc từ kho lưu khóa.\n"
+
+#: lib/setup.c:5791
+msgid "Failed to acquire global memory-hard access serialization lock."
+msgstr ""
+
+#: lib/utils.c:81
+#, fuzzy
+msgid "Cannot get process priority."
+msgstr "Không thể lấy mức ưu tiên của tiến trình.\n"
+
+#: lib/utils.c:95
+#, fuzzy
+msgid "Cannot unlock memory."
+msgstr "Không thể mở khóa bộ nhớ.\n"
+
+#: lib/utils.c:169 lib/tcrypt/tcrypt.c:498
+#, fuzzy
+msgid "Failed to open key file."
+msgstr "Gặp lỗi khi mở tập tin khóa.\n"
+
+#: lib/utils.c:174
+#, fuzzy
+msgid "Cannot read keyfile from a terminal."
+msgstr "Không thể đọc tập-tin khóa %s.\n"
+
+#: lib/utils.c:191
+#, fuzzy
+msgid "Failed to stat key file."
+msgstr "Gặp lỗi khi lấy thông tin tập tin khóa.\n"
+
+#: lib/utils.c:199 lib/utils.c:220
+#, fuzzy
+msgid "Cannot seek to requested keyfile offset."
+msgstr "Không thể di chuyển vị trí đầu đọc tới vị trí tương đối (offset) tập tin khóa đã yêu cầu.\n"
+
+#: lib/utils.c:214 lib/utils.c:229 src/utils_password.c:188
+#: src/utils_password.c:201
+#, fuzzy
+msgid "Out of memory while reading passphrase."
+msgstr "Tràn bộ nhớ trong khi đọc cụm từ mật khẩu.\n"
+
+#: lib/utils.c:249
+#, fuzzy
+msgid "Error reading passphrase."
+msgstr "Lỗi đọc cụm từ mật khẩu.\n"
+
+#: lib/utils.c:266
+msgid "Nothing to read on input."
+msgstr ""
+
+#: lib/utils.c:273
+#, fuzzy
+msgid "Maximum keyfile size exceeded."
+msgstr "Đã vượt quá kích thước tập tin khóa tối đa.\n"
+
+#: lib/utils.c:278
+#, fuzzy
+msgid "Cannot read requested amount of data."
+msgstr "Không thể đọc đống dữ liệu đã yêu cầu.\n"
+
+#: lib/utils_device.c:188 lib/utils_storage_wrappers.c:111
+#: lib/luks1/keyencryption.c:92
+#, fuzzy, c-format
+msgid "Device %s doesn't exist or access denied."
+msgstr "Thiết bị %s không tồn tại hoặc không đủ quyền truy cập.\n"
+
+#: lib/utils_device.c:198
+#, fuzzy, c-format
+msgid "Device %s is not compatible."
+msgstr "Thiết bị %s không hoạt động.\n"
+
+#: lib/utils_device.c:643
+#, fuzzy, c-format
+msgid "Device %s is too small. Need at least %<PRIu64> bytes."
+msgstr "Thiết bị %s quá nhỏ. (LUKS cần ít nhất %<PRIu64> byte.)\n"
+
+#: lib/utils_device.c:724
+#, fuzzy, c-format
+msgid "Cannot use device %s which is in use (already mapped or mounted)."
+msgstr "Không thể sử dụng thiết bị %s mà nó lại đang được sử dụng (đang được ánh xạ hoặc gắn).\n"
+
+#: lib/utils_device.c:728
+#, fuzzy, c-format
+msgid "Cannot use device %s, permission denied."
+msgstr "Không thể ghi thiết bị %s, không đủ thẩm quyền.\n"
+
+#: lib/utils_device.c:731
+#, fuzzy, c-format
+msgid "Cannot get info about device %s."
+msgstr "Không thể lấy thông tin về thiết bị %s.\n"
+
+#: lib/utils_device.c:754
+#, fuzzy
+msgid "Cannot use a loopback device, running as non-root user."
+msgstr "Không thể sử dụng thiết-bị vòng ngược (loopback), do không chạy dưới quyền siêu người dùng.\n"
+
+#: lib/utils_device.c:764
+#, fuzzy
+msgid "Attaching loopback device failed (loop device with autoclear flag is required)."
+msgstr "Gặp lỗi khi gắn thiết bị vòng ngược (loopback) (thiết bị lặp với cờ autoclear là bắt buộc).\n"
+
+#: lib/utils_device.c:810
+#, fuzzy, c-format
+msgid "Requested offset is beyond real size of device %s."
+msgstr "Khoảng bù (offset) đã yêu cầu nằm ngoài kích thước thật của thiết bị %s.\n"
+
+#: lib/utils_device.c:818
+#, fuzzy, c-format
+msgid "Device %s has zero size."
+msgstr "Thiết bị %s có kích cỡ là không.\n"
+
+#: lib/utils_pbkdf.c:100
+msgid "Requested PBKDF target time cannot be zero."
+msgstr ""
+
+#: lib/utils_pbkdf.c:106
+#, c-format
+msgid "Unknown PBKDF type %s."
+msgstr ""
+
+#: lib/utils_pbkdf.c:111
+#, fuzzy, c-format
+msgid "Requested hash %s is not supported."
+msgstr "Không hỗ trợ chuỗi duy nhất LUKS %s được yêu cầu.\n"
+
+#: lib/utils_pbkdf.c:122
+#, fuzzy
+msgid "Requested PBKDF type is not supported for LUKS1."
+msgstr "Không hỗ trợ chuỗi duy nhất LUKS %s được yêu cầu.\n"
+
+#: lib/utils_pbkdf.c:128
+msgid "PBKDF max memory or parallel threads must not be set with pbkdf2."
+msgstr ""
+
+#: lib/utils_pbkdf.c:133 lib/utils_pbkdf.c:143
+#, c-format
+msgid "Forced iteration count is too low for %s (minimum is %u)."
+msgstr ""
+
+#: lib/utils_pbkdf.c:148
+#, c-format
+msgid "Forced memory cost is too low for %s (minimum is %u kilobytes)."
+msgstr ""
+
+#: lib/utils_pbkdf.c:155
+#, c-format
+msgid "Requested maximum PBKDF memory cost is too high (maximum is %d kilobytes)."
+msgstr ""
+
+#: lib/utils_pbkdf.c:160
+msgid "Requested maximum PBKDF memory cannot be zero."
+msgstr ""
+
+#: lib/utils_pbkdf.c:164
+msgid "Requested PBKDF parallel threads cannot be zero."
+msgstr ""
+
+#: lib/utils_pbkdf.c:184
+msgid "Only PBKDF2 is supported in FIPS mode."
+msgstr ""
+
+#: lib/utils_benchmark.c:166
+msgid "PBKDF benchmark disabled but iterations not set."
+msgstr ""
+
+#: lib/utils_benchmark.c:185
+#, fuzzy, c-format
+msgid "Not compatible PBKDF2 options (using hash algorithm %s)."
+msgstr "Gặp các tùy chọn PBKDF2 không tương thích (dùng thuật toán chuỗi duy nhất %s).\n"
+
+#: lib/utils_benchmark.c:205
+#, fuzzy
+msgid "Not compatible PBKDF options."
+msgstr "Gặp các tùy chọn PBKDF2 không tương thích (dùng thuật toán chuỗi duy nhất %s).\n"
+
+#: lib/utils_device_locking.c:103
+#, c-format
+msgid "Locking aborted. The locking path %s/%s is unusable (not a directory or missing)."
+msgstr ""
+
+#: lib/utils_device_locking.c:110
+#, c-format
+msgid "WARNING: Locking directory %s/%s is missing!\n"
+msgstr ""
+
+#: lib/utils_device_locking.c:120
+#, c-format
+msgid "Locking aborted. The locking path %s/%s is unusable (%s is not a directory)."
+msgstr ""
+
+#: lib/utils_wipe.c:185 src/cryptsetup_reencrypt.c:933
+#: src/cryptsetup_reencrypt.c:1017
+#, fuzzy
+msgid "Cannot seek to device offset."
+msgstr "Không thể di chuyển vị trí tới vị trí tương đối thiết bị.\n"
+
+#: lib/utils_wipe.c:209
+#, c-format
+msgid "Device wipe error, offset %<PRIu64>."
+msgstr ""
+
+#: lib/luks1/keyencryption.c:40
+#, fuzzy, c-format
+msgid ""
+"Failed to setup dm-crypt key mapping for device %s.\n"
+"Check that kernel supports %s cipher (check syslog for more info)."
+msgstr ""
+"Gặp lỗi khi cài đặt ánh xạ khóa dm-crypt cho thiết bị %s.\n"
+"Kiểm tra lại hạt nhân hỗ trợ mật mã %s (kiểu tra sổ theo dõi hệ thống để tìm thêm thông tin.)\n"
+
+#: lib/luks1/keyencryption.c:45
+#, fuzzy
+msgid "Key size in XTS mode must be 256 or 512 bits."
+msgstr "Kích thước khóa trong chế độ “XTS” phải là 256 hay 512 bit.\n"
+
+#: lib/luks1/keyencryption.c:47
+msgid "Cipher specification should be in [cipher]-[mode]-[iv] format."
+msgstr ""
+
+#: lib/luks1/keyencryption.c:98 lib/luks1/keymanage.c:345
+#: lib/luks1/keymanage.c:636 lib/luks1/keymanage.c:1074
+#: lib/luks2/luks2_json_metadata.c:1253 lib/luks2/luks2_keyslot.c:739
+#, fuzzy, c-format
+msgid "Cannot write to device %s, permission denied."
+msgstr "Không thể ghi thiết bị %s, không đủ thẩm quyền.\n"
+
+#: lib/luks1/keyencryption.c:121
+#, fuzzy
+msgid "Failed to open temporary keystore device."
+msgstr "Gặp lỗi khi mở thiết bị lưu trữ khóa tạm thời.\n"
+
+#: lib/luks1/keyencryption.c:128
+#, fuzzy
+msgid "Failed to access temporary keystore device."
+msgstr "Gl khi truy cập đến thiết bị lưu trữ khóa tạm thời.\n"
+
+#: lib/luks1/keyencryption.c:201 lib/luks2/luks2_keyslot_luks2.c:60
+#: lib/luks2/luks2_keyslot_luks2.c:78 lib/luks2/luks2_keyslot_reenc.c:134
+#, fuzzy
+msgid "IO error while encrypting keyslot."
+msgstr "Lỗi IO (vào/ra) trong quá trình mã hóa khe khóa.\n"
+
+#: lib/luks1/keyencryption.c:247 lib/luks1/keymanage.c:348
+#: lib/luks1/keymanage.c:589 lib/luks1/keymanage.c:639 lib/tcrypt/tcrypt.c:661
+#: lib/verity/verity.c:81 lib/verity/verity.c:179 lib/verity/verity_hash.c:308
+#: lib/verity/verity_hash.c:319 lib/verity/verity_hash.c:339
+#: lib/verity/verity_fec.c:242 lib/verity/verity_fec.c:254
+#: lib/verity/verity_fec.c:259 lib/luks2/luks2_json_metadata.c:1256
+#: src/cryptsetup_reencrypt.c:205
+#, fuzzy, c-format
+msgid "Cannot open device %s."
+msgstr "Không thể mở thiết bị %s.\n"
+
+#: lib/luks1/keyencryption.c:258 lib/luks2/luks2_keyslot_luks2.c:137
+#, fuzzy
+msgid "IO error while decrypting keyslot."
+msgstr "Lỗi IO (vào/ra) trong quá trình giải mã khe khóa.\n"
+
+#: lib/luks1/keymanage.c:111
+#, fuzzy, c-format
+msgid "Device %s is too small. (LUKS1 requires at least %<PRIu64> bytes.)"
+msgstr "Thiết bị %s quá nhỏ. (LUKS cần ít nhất %<PRIu64> byte.)\n"
+
+#: lib/luks1/keymanage.c:132 lib/luks1/keymanage.c:140
+#: lib/luks1/keymanage.c:152 lib/luks1/keymanage.c:163
+#: lib/luks1/keymanage.c:175
+#, fuzzy, c-format
+msgid "LUKS keyslot %u is invalid."
+msgstr "khe-khóa LUKS %u là không hợp lệ.\n"
+
+#: lib/luks1/keymanage.c:229 lib/luks1/keymanage.c:473
+#: lib/luks2/luks2_json_metadata.c:1084 src/cryptsetup.c:1372
+#: src/cryptsetup.c:1498 src/cryptsetup.c:1555 src/cryptsetup.c:1611
+#: src/cryptsetup.c:1678 src/cryptsetup.c:1781 src/cryptsetup.c:1845
+#: src/cryptsetup.c:2005 src/cryptsetup.c:2194 src/cryptsetup.c:2254
+#: src/cryptsetup.c:2320 src/cryptsetup.c:2484 src/cryptsetup.c:3137
+#: src/cryptsetup.c:3146 src/cryptsetup_reencrypt.c:1372
+#, fuzzy, c-format
+msgid "Device %s is not a valid LUKS device."
+msgstr "Thiết bị %s không phải là một thiết bị kiểu LUKS đúng.\n"
+
+#: lib/luks1/keymanage.c:247 lib/luks2/luks2_json_metadata.c:1101
+#, fuzzy, c-format
+msgid "Requested header backup file %s already exists."
+msgstr "Phần đầu tập tin sao lưu dự phòng đã yêu cầu %s đã sẵn có.\n"
+
+#: lib/luks1/keymanage.c:249 lib/luks2/luks2_json_metadata.c:1103
+#, fuzzy, c-format
+msgid "Cannot create header backup file %s."
+msgstr "Không thể tạo phần đầu của tập tin sao lưu dự phòng %s.\n"
+
+#: lib/luks1/keymanage.c:256 lib/luks2/luks2_json_metadata.c:1110
+#, fuzzy, c-format
+msgid "Cannot write header backup file %s."
+msgstr "Không thể ghi tập tin sao lưu phần đầu %s.\n"
+
+#: lib/luks1/keymanage.c:287 lib/luks2/luks2_json_metadata.c:1162
+#, fuzzy
+msgid "Backup file doesn't contain valid LUKS header."
+msgstr "Tập tin sao lưu không chứa phần đầu LUKS hợp lệ.\n"
+
+#: lib/luks1/keymanage.c:300 lib/luks1/keymanage.c:550
+#: lib/luks2/luks2_json_metadata.c:1183
+#, fuzzy, c-format
+msgid "Cannot open header backup file %s."
+msgstr "Không mở được tập tin sao lưu phần đầu %s.\n"
+
+#: lib/luks1/keymanage.c:308 lib/luks2/luks2_json_metadata.c:1191
+#, fuzzy, c-format
+msgid "Cannot read header backup file %s."
+msgstr "Không đọc được tập tin sao lưu phần đầu %s.\n"
+
+#: lib/luks1/keymanage.c:318
+#, fuzzy
+msgid "Data offset or key size differs on device and backup, restore failed."
+msgstr "Khoảng bù dữ liệu hoặc kích cỡ khóa vẫn khác nhau trên thiết bị và bản sao lưu thì chức năng phục hồi bị lỗi.\n"
+
+#: lib/luks1/keymanage.c:326
+#, c-format
+msgid "Device %s %s%s"
+msgstr "Thiết bị %s %s%s"
+
+#: lib/luks1/keymanage.c:327
+msgid "does not contain LUKS header. Replacing header can destroy data on that device."
+msgstr "không chứa phần đầu LUKS. Thay thế phần đầu thì cũng có thể hủy dữ liệu trên thiết bị đó."
+
+#: lib/luks1/keymanage.c:328
+msgid "already contains LUKS header. Replacing header will destroy existing keyslots."
+msgstr "đã chứa phần đầu LUKS. Thay thế phần đầu thì cũng hủy các khe khóa đã có."
+
+#: lib/luks1/keymanage.c:329 lib/luks2/luks2_json_metadata.c:1225
+msgid ""
+"\n"
+"WARNING: real device header has different UUID than backup!"
+msgstr ""
+"\n"
+"CẢNH BÁO: phần đầu thiết bị thật có mã số “UUID” khác với bản sao lưu!"
+
+#: lib/luks1/keymanage.c:376
+#, fuzzy
+msgid "Non standard key size, manual repair required."
+msgstr "Kích thước khóa không tiêu chuẩn, yêu cầu sửa chữa bằng tay.\n"
+
+#: lib/luks1/keymanage.c:381
+#, fuzzy
+msgid "Non standard keyslots alignment, manual repair required."
+msgstr "Không thể đồng chỉnh các khe khóa (keyslot) tiêu chuẩn, yêu cầu sửa chữa bằng tay.\n"
+
+#: lib/luks1/keymanage.c:391
+#, fuzzy
+msgid "Repairing keyslots."
+msgstr "Đang chuẩn bị các khe khóa (keyslots).\n"
+
+#: lib/luks1/keymanage.c:410
+#, fuzzy, c-format
+msgid "Keyslot %i: offset repaired (%u -> %u)."
+msgstr "Khe-khóa (keyslot) %i: khoảng bù (offset) được sửa chữa (%u -> %u).\n"
+
+#: lib/luks1/keymanage.c:418
+#, fuzzy, c-format
+msgid "Keyslot %i: stripes repaired (%u -> %u)."
+msgstr "Khe-khóa (keyslot) %i: stripes được sửa chữa (%u -> %u).\n"
+
+#: lib/luks1/keymanage.c:427
+#, fuzzy, c-format
+msgid "Keyslot %i: bogus partition signature."
+msgstr "Khe-khóa (keyslot) %i: chữ ký phân vùng không có thật.\n"
+
+#: lib/luks1/keymanage.c:432
+#, fuzzy, c-format
+msgid "Keyslot %i: salt wiped."
+msgstr "Khe-khóa (keyslot) %i: muối bị tẩy xóa.\n"
+
+#: lib/luks1/keymanage.c:449
+#, fuzzy
+msgid "Writing LUKS header to disk."
+msgstr "Đang ghi phần đầu của LUKS lên đĩa.\n"
+
+#: lib/luks1/keymanage.c:454
+msgid "Repair failed."
+msgstr "Gặp lỗi khi sửa chữa."
+
+#: lib/luks1/keymanage.c:482 lib/luks1/keymanage.c:751
+#, fuzzy, c-format
+msgid "Requested LUKS hash %s is not supported."
+msgstr "Không hỗ trợ chuỗi duy nhất LUKS %s được yêu cầu.\n"
+
+#: lib/luks1/keymanage.c:510 src/cryptsetup.c:1081
+#, fuzzy
+msgid "No known problems detected for LUKS header."
+msgstr "Không phát hiện thấy vấn đề với phần đầu LUKS.\n"
+
+#: lib/luks1/keymanage.c:661
+#, fuzzy, c-format
+msgid "Error during update of LUKS header on device %s."
+msgstr "Gặp lỗi trong khi cập nhật phần đầu LUKS trên thiết bị %s.\n"
+
+#: lib/luks1/keymanage.c:669
+#, fuzzy, c-format
+msgid "Error re-reading LUKS header after update on device %s."
+msgstr "Gặp lỗi trong khi đọc lại phần đầu LUKS sau khi cập nhật trên thiết bị %s.\n"
+
+#: lib/luks1/keymanage.c:745
+#, fuzzy
+msgid "Data offset for LUKS header must be either 0 or higher than header size."
+msgstr "Khoảng bù dữ liệu cho phần đầu LUKS tách rời phải hoặc là 0 hoặc là lớn hơn kích thước phần đầu (%d cung từ).\n"
+
+#: lib/luks1/keymanage.c:756 lib/luks1/keymanage.c:821
+#: lib/luks2/luks2_json_format.c:283 lib/luks2/luks2_json_metadata.c:1002
+#: src/cryptsetup.c:2647
+#, fuzzy
+msgid "Wrong LUKS UUID format provided."
+msgstr "Đưa ra định dạng mã số UUID LUKS không đúng.\n"
+
+#: lib/luks1/keymanage.c:779
+#, fuzzy
+msgid "Cannot create LUKS header: reading random salt failed."
+msgstr "Không thể tạo phần đầu LUKS: lỗi đọc salt ngẫu nhiên.\n"
+
+#: lib/luks1/keymanage.c:800
+#, fuzzy, c-format
+msgid "Cannot create LUKS header: header digest failed (using hash %s)."
+msgstr "Không thể tạo phần đầu LUKS: lỗi tạo bản tóm tắt (dùng chuỗi duy nhất %s).\n"
+
+#: lib/luks1/keymanage.c:844
+#, fuzzy, c-format
+msgid "Key slot %d active, purge first."
+msgstr "Khe khóa %d vẫn hoạt động: cần tẩy trước.\n"
+
+#: lib/luks1/keymanage.c:850
+#, fuzzy, c-format
+msgid "Key slot %d material includes too few stripes. Header manipulation?"
+msgstr "Nguyên liệu khe khóa %d gồm có quá ít sọc. Có nên thao tác phần đầu không?\n"
+
+#: lib/luks1/keymanage.c:1060
+#, fuzzy, c-format
+msgid "Key slot %d is invalid, please select keyslot between 0 and %d."
+msgstr "Khe khóa %d không đúng: hãy chọn khe khóa trong phạm vi 0 đến %d.\n"
+
+#: lib/luks1/keymanage.c:1078 lib/luks2/luks2_keyslot.c:743
+#, fuzzy, c-format
+msgid "Cannot wipe device %s."
+msgstr "Không thể tẩy thiết bị %s.\n"
+
+#: lib/loopaes/loopaes.c:146
+#, fuzzy
+msgid "Detected not yet supported GPG encrypted keyfile."
+msgstr "Tìm thấy tập tin khóa mã hóa GPG vẫn chưa được hỗ trợ.\n"
+
+#: lib/loopaes/loopaes.c:147
+msgid "Please use gpg --decrypt <KEYFILE> | cryptsetup --keyfile=- ...\n"
+msgstr "Hãy dùng gpg --decrypt <TẬP-TIN-KHÓA> | cryptsetup --keyfile=- …\n"
+
+#: lib/loopaes/loopaes.c:168 lib/loopaes/loopaes.c:188
+#, fuzzy
+msgid "Incompatible loop-AES keyfile detected."
+msgstr "Tập tin khóa (keyfile) loop-AES không tương thích được tìm thấy.\n"
+
+#: lib/loopaes/loopaes.c:245
+#, fuzzy
+msgid "Kernel doesn't support loop-AES compatible mapping."
+msgstr "Nhân không hỗ trợ ánh xạ tương thích loop-AES.\n"
+
+#: lib/tcrypt/tcrypt.c:505
+#, fuzzy, c-format
+msgid "Error reading keyfile %s."
+msgstr "Gặp lỗi khi đọc tập-tin khóa %s.\n"
+
+#: lib/tcrypt/tcrypt.c:545
+#, fuzzy, c-format
+msgid "Maximum TCRYPT passphrase length (%d) exceeded."
+msgstr "Độ dài cụm từ mật khẩu TCRYPT tối đa (%d) đã bị vượt quá.\n"
+
+#: lib/tcrypt/tcrypt.c:586
+#, fuzzy, c-format
+msgid "PBKDF2 hash algorithm %s not available, skipping."
+msgstr "Thuật toán băm PBKDF2 không khả dụng %s, bỏ qua.\n"
+
+#: lib/tcrypt/tcrypt.c:602 src/cryptsetup.c:959
+#, fuzzy
+msgid "Required kernel crypto interface not available."
+msgstr "Giao diện mã hóa từ nhân đã yêu cầu không khả dụng.\n"
+
+#: lib/tcrypt/tcrypt.c:604 src/cryptsetup.c:961
+#, fuzzy
+msgid "Ensure you have algif_skcipher kernel module loaded."
+msgstr "Bạn cần chắc chắn là mô-đun nhân algif_skcipher đã được tải.\n"
+
+#: lib/tcrypt/tcrypt.c:744
+#, fuzzy, c-format
+msgid "Activation is not supported for %d sector size."
+msgstr "Hoạt hóa không được hỗ trợ cho kích thước cung %d.\n"
+
+#: lib/tcrypt/tcrypt.c:750
+#, fuzzy
+msgid "Kernel doesn't support activation for this TCRYPT legacy mode."
+msgstr "Nhân không hỗ trợ hoạt hóa cho chế độ cũ của TCRYPT.\n"
+
+#: lib/tcrypt/tcrypt.c:784
+#, fuzzy, c-format
+msgid "Activating TCRYPT system encryption for partition %s."
+msgstr "Đang kích hoạt mã hóa hệ thống TCRYPT cho phân vùng %s.\n"
+
+#: lib/tcrypt/tcrypt.c:862
+#, fuzzy
+msgid "Kernel doesn't support TCRYPT compatible mapping."
+msgstr "Nhân không hỗ trợ ánh xạ tương thích TCRYPT.\n"
+
+#: lib/tcrypt/tcrypt.c:1084
+msgid "This function is not supported without TCRYPT header load."
+msgstr "Chức năng này không được hỗ trợ mà không có phần tải đầu TCRYPT."
+
+#: lib/verity/verity.c:69 lib/verity/verity.c:172
+#, fuzzy, c-format
+msgid "Verity device %s doesn't use on-disk header."
+msgstr "Thiết bị xác thực %s không sử dụng phần đầu on-disk.\n"
+
+#: lib/verity/verity.c:91
+#, fuzzy, c-format
+msgid "Device %s is not a valid VERITY device."
+msgstr "Thiết bị %s không phải là thiết bị VERITY thích hợp.\n"
+
+#: lib/verity/verity.c:98
+#, fuzzy, c-format
+msgid "Unsupported VERITY version %d."
+msgstr "Không hỗ trợ phiên bản VERITY %d.\n"
+
+#: lib/verity/verity.c:129
+#, fuzzy
+msgid "VERITY header corrupted."
+msgstr "phần đầu VERITY sai hỏng.\n"
+
+#: lib/verity/verity.c:166
+#, fuzzy, c-format
+msgid "Wrong VERITY UUID format provided on device %s."
+msgstr "Đưa ra định dạng mã số VERITY không đúng trên thiết bị %s.\n"
+
+#: lib/verity/verity.c:199
+#, fuzzy, c-format
+msgid "Error during update of verity header on device %s."
+msgstr "Gặp lỗi trong khi cập nhật phần đầu xác thực trên thiết bị %s.\n"
+
+#: lib/verity/verity.c:262
+msgid "Errors cannot be repaired with FEC device."
+msgstr ""
+
+#: lib/verity/verity.c:264
+#, c-format
+msgid "Found %u repairable errors with FEC device."
+msgstr ""
+
+#: lib/verity/verity.c:302
+#, fuzzy
+msgid "Kernel doesn't support dm-verity mapping."
+msgstr "Nhân không hỗ trợ ánh xạ dm-verity.\n"
+
+#: lib/verity/verity.c:313
+#, fuzzy
+msgid "Verity device detected corruption after activation."
+msgstr "Thiết bị xác thực đã được phát hiện sai hỏng sau khi hoạt hóa.\n"
+
+#: lib/verity/verity_hash.c:59
+#, fuzzy, c-format
+msgid "Spare area is not zeroed at position %<PRIu64>."
+msgstr "Vùng để dành không được điền đầy bằng số không tại vị trí %<PRIu64>.\n"
+
+#: lib/verity/verity_hash.c:160 lib/verity/verity_hash.c:287
+#: lib/verity/verity_hash.c:300
+#, fuzzy
+msgid "Device offset overflow."
+msgstr "Khoảng bù (offset) thiết bị bị tràn.\n"
+
+#: lib/verity/verity_hash.c:200
+#, fuzzy, c-format
+msgid "Verification failed at position %<PRIu64>."
+msgstr "Thẩm tra gặp lỗi tại vị trí %<PRIu64>.\n"
+
+#: lib/verity/verity_hash.c:273
+#, fuzzy
+msgid "Invalid size parameters for verity device."
+msgstr "Các tham số kích thước cho thiết bị xác thực không hợp lệ.\n"
+
+#: lib/verity/verity_hash.c:293
+msgid "Hash area overflow."
+msgstr ""
+
+#: lib/verity/verity_hash.c:370
+#, fuzzy
+msgid "Verification of data area failed."
+msgstr "Việc thẩm tra vùng dữ liệu gặp lỗi.\n"
+
+#: lib/verity/verity_hash.c:375
+#, fuzzy
+msgid "Verification of root hash failed."
+msgstr "Việc thẩm tra mã băm gốc gặp lỗi.\n"
+
+#: lib/verity/verity_hash.c:381
+#, fuzzy
+msgid "Input/output error while creating hash area."
+msgstr "Lỗi Vào/Ra trong khi đang tạo vùng băm.\n"
+
+#: lib/verity/verity_hash.c:383
+#, fuzzy
+msgid "Creation of hash area failed."
+msgstr "Việc tạo vùng dữ liệu băm gặp lỗi.\n"
+
+#: lib/verity/verity_hash.c:430
+#, fuzzy, c-format
+msgid "WARNING: Kernel cannot activate device if data block size exceeds page size (%u)."
+msgstr "CẢNH BÁO: Nhân (kernel) không thể kích hoạt thiết bị nếu kích thước khối dữ liệu vượt quá kích cỡ trang (%u).\n"
+
+#: lib/verity/verity_fec.c:132
+msgid "Failed to allocate RS context."
+msgstr ""
+
+#: lib/verity/verity_fec.c:147
+#, fuzzy
+msgid "Failed to allocate buffer."
+msgstr "Gặp lỗi khi lấy thông tin tập tin khóa.\n"
+
+#: lib/verity/verity_fec.c:157
+#, c-format
+msgid "Failed to read RS block %<PRIu64> byte %d."
+msgstr ""
+
+#: lib/verity/verity_fec.c:170
+#, c-format
+msgid "Failed to read parity for RS block %<PRIu64>."
+msgstr ""
+
+#: lib/verity/verity_fec.c:178
+#, c-format
+msgid "Failed to repair parity for block %<PRIu64>."
+msgstr ""
+
+#: lib/verity/verity_fec.c:189
+#, c-format
+msgid "Failed to write parity for RS block %<PRIu64>."
+msgstr ""
+
+#: lib/verity/verity_fec.c:224
+msgid "Block sizes must match for FEC."
+msgstr ""
+
+#: lib/verity/verity_fec.c:230
+msgid "Invalid number of parity bytes."
+msgstr ""
+
+#: lib/verity/verity_fec.c:266
+#, fuzzy, c-format
+msgid "Failed to determine size for device %s."
+msgstr "Gặp lỗi khi mở thiết bị lưu trữ khóa tạm thời.\n"
+
+#: lib/integrity/integrity.c:241 lib/integrity/integrity.c:306
+#, fuzzy
+msgid "Kernel doesn't support dm-integrity mapping."
+msgstr "Nhân không hỗ trợ ánh xạ dm-verity.\n"
+
+#: lib/luks2/luks2_disk_metadata.c:383 lib/luks2/luks2_json_metadata.c:959
+#: lib/luks2/luks2_json_metadata.c:1245
+#, fuzzy, c-format
+msgid "Failed to acquire write lock on device %s."
+msgstr "Gl khi truy cập đến thiết bị lưu trữ khóa tạm thời.\n"
+
+#: lib/luks2/luks2_disk_metadata.c:392
+msgid "Detected attempt for concurrent LUKS2 metadata update. Aborting operation."
+msgstr ""
+
+#: lib/luks2/luks2_disk_metadata.c:691 lib/luks2/luks2_disk_metadata.c:712
+msgid ""
+"Device contains ambiguous signatures, cannot auto-recover LUKS2.\n"
+"Please run \"cryptsetup repair\" for recovery."
+msgstr ""
+
+#: lib/luks2/luks2_json_format.c:227
+#, fuzzy
+msgid "Requested data offset is too small."
+msgstr "Thiết bị %s có kích cỡ quá nhỏ.\n"
+
+#: lib/luks2/luks2_json_format.c:271
+#, c-format
+msgid "WARNING: keyslots area (%<PRIu64> bytes) is very small, available LUKS2 keyslot count is very limited.\n"
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:946 lib/luks2/luks2_json_metadata.c:1075
+#: lib/luks2/luks2_json_metadata.c:1151 lib/luks2/luks2_keyslot_luks2.c:92
+#: lib/luks2/luks2_keyslot_luks2.c:114
+#, fuzzy, c-format
+msgid "Failed to acquire read lock on device %s."
+msgstr "Gl khi truy cập đến thiết bị lưu trữ khóa tạm thời.\n"
+
+#: lib/luks2/luks2_json_metadata.c:1168
+#, c-format
+msgid "Forbidden LUKS2 requirements detected in backup %s."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:1209
+#, fuzzy
+msgid "Data offset differ on device and backup, restore failed."
+msgstr "Khoảng bù dữ liệu hoặc kích cỡ khóa vẫn khác nhau trên thiết bị và bản sao lưu thì chức năng phục hồi bị lỗi.\n"
+
+#: lib/luks2/luks2_json_metadata.c:1215
+#, fuzzy
+msgid "Binary header with keyslot areas size differ on device and backup, restore failed."
+msgstr "Khoảng bù dữ liệu hoặc kích cỡ khóa vẫn khác nhau trên thiết bị và bản sao lưu thì chức năng phục hồi bị lỗi.\n"
+
+#: lib/luks2/luks2_json_metadata.c:1222
+#, fuzzy, c-format
+msgid "Device %s %s%s%s%s"
+msgstr "Thiết bị %s %s%s"
+
+#: lib/luks2/luks2_json_metadata.c:1223
+#, fuzzy
+msgid "does not contain LUKS2 header. Replacing header can destroy data on that device."
+msgstr "không chứa phần đầu LUKS. Thay thế phần đầu thì cũng có thể hủy dữ liệu trên thiết bị đó."
+
+#: lib/luks2/luks2_json_metadata.c:1224
+#, fuzzy
+msgid "already contains LUKS2 header. Replacing header will destroy existing keyslots."
+msgstr "đã chứa phần đầu LUKS. Thay thế phần đầu thì cũng hủy các khe khóa đã có."
+
+#: lib/luks2/luks2_json_metadata.c:1226
+msgid ""
+"\n"
+"WARNING: unknown LUKS2 requirements detected in real device header!\n"
+"Replacing header with backup may corrupt the data on that device!"
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:1228
+msgid ""
+"\n"
+"WARNING: Unfinished offline reencryption detected on the device!\n"
+"Replacing header with backup may corrupt data."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:1324
+#, c-format
+msgid "Ignored unknown flag %s."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2011 lib/luks2/luks2_reencrypt.c:1746
+#, c-format
+msgid "Missing key for dm-crypt segment %u"
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2023 lib/luks2/luks2_reencrypt.c:1764
+#, fuzzy
+msgid "Failed to set dm-crypt segment."
+msgstr "Gặp lỗi khi lấy thông tin tập tin khóa.\n"
+
+#: lib/luks2/luks2_json_metadata.c:2029 lib/luks2/luks2_reencrypt.c:1770
+msgid "Failed to set dm-linear segment."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2156
+msgid "Unsupported device integrity configuration."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2242
+msgid "Reencryption in-progress. Cannot deactivate device."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2253 lib/luks2/luks2_reencrypt.c:3171
+#, c-format
+msgid "Failed to replace suspended device %s with dm-error target."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2333
+msgid "Failed to read LUKS2 requirements."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2340
+msgid "Unmet LUKS2 requirements detected."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2348
+msgid "Offline reencryption in progress. Aborting."
+msgstr ""
+
+#: lib/luks2/luks2_json_metadata.c:2350
+msgid "Online reencryption in progress. Aborting."
+msgstr ""
+
+#: lib/luks2/luks2_keyslot.c:552 lib/luks2/luks2_keyslot.c:589
+msgid "Not enough available memory to open a keyslot."
+msgstr ""
+
+#: lib/luks2/luks2_keyslot.c:554 lib/luks2/luks2_keyslot.c:591
+#, fuzzy
+msgid "Keyslot open failed."
+msgstr "Khe khóa %d được thẩm định.\n"
+
+#: lib/luks2/luks2_keyslot_luks2.c:53 lib/luks2/luks2_keyslot_luks2.c:108
+#, c-format
+msgid "Cannot use %s-%s cipher for keyslot encryption."
+msgstr ""
+
+#: lib/luks2/luks2_keyslot_luks2.c:480
+#, fuzzy
+msgid "No space for new keyslot."
+msgstr "Gặp lỗi khi hoán đổi khe khóa mới.\n"
+
+#: lib/luks2/luks2_luks1_convert.c:481
+#, fuzzy, c-format
+msgid "Cannot check status of device with uuid: %s."
+msgstr "Không thể kiểm tra chất lượng mật khẩu: %s\n"
+
+#: lib/luks2/luks2_luks1_convert.c:507
+msgid "Unable to convert header with LUKSMETA additional metadata."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:547
+msgid "Unable to move keyslot area. Not enough space."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:590 lib/luks2/luks2_luks1_convert.c:872
+#, fuzzy
+msgid "Unable to move keyslot area."
+msgstr "Gặp lỗi khi mở tập tin khóa.\n"
+
+#: lib/luks2/luks2_luks1_convert.c:682
+msgid "Cannot convert to LUKS1 format - default segment encryption sector size is not 512 bytes."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:690
+msgid "Cannot convert to LUKS1 format - key slot digests are not LUKS1 compatible."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:702
+#, c-format
+msgid "Cannot convert to LUKS1 format - device uses wrapped key cipher %s."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:710
+#, c-format
+msgid "Cannot convert to LUKS1 format - LUKS2 header contains %u token(s)."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:724
+#, c-format
+msgid "Cannot convert to LUKS1 format - keyslot %u is in invalid state."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:729
+#, c-format
+msgid "Cannot convert to LUKS1 format - slot %u (over maximum slots) is still active."
+msgstr ""
+
+#: lib/luks2/luks2_luks1_convert.c:734
+#, c-format
+msgid "Cannot convert to LUKS1 format - keyslot %u is not LUKS1 compatible."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:892
+#, c-format
+msgid "Hotzone size must be multiple of calculated zone alignment (%zu bytes)."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:897
+#, fuzzy, c-format
+msgid "Device size must be multiple of calculated zone alignment (%zu bytes)."
+msgstr "Kích cỡ giảm phải là bội số cung từ (sector) 512 byte"
+
+#: lib/luks2/luks2_reencrypt.c:941
+#, fuzzy, c-format
+msgid "Unsupported resilience mode %s"
+msgstr "Phiên bản LUKS không được hỗ trợ %d.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1158 lib/luks2/luks2_reencrypt.c:1313
+#: lib/luks2/luks2_reencrypt.c:1396 lib/luks2/luks2_reencrypt.c:1430
+#: lib/luks2/luks2_reencrypt.c:3011
+#, fuzzy
+msgid "Failed to initialize old segment storage wrapper."
+msgstr "Lỗi ghi khóa vào kho lưu khóa.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1172 lib/luks2/luks2_reencrypt.c:1291
+#, fuzzy
+msgid "Failed to initialize new segment storage wrapper."
+msgstr "Lỗi ghi khóa vào kho lưu khóa.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1340
+#, fuzzy
+msgid "Failed to read checksums for current hotzone."
+msgstr "Lỗi đọc từ kho lưu khóa.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1347 lib/luks2/luks2_reencrypt.c:3019
+#, fuzzy, c-format
+msgid "Failed to read hotzone area starting at %<PRIu64>."
+msgstr "Vùng để dành không được điền đầy bằng số không tại vị trí %<PRIu64>.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1366
+#, fuzzy, c-format
+msgid "Failed to decrypt sector %zu."
+msgstr "Lỗi đọc từ kho lưu khóa.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1372
+#, fuzzy, c-format
+msgid "Failed to recover sector %zu."
+msgstr "Lỗi ghi khóa vào kho lưu khóa.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1867
+#, c-format
+msgid "Source and target device sizes don't match. Source %<PRIu64>, target: %<PRIu64>."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:1965
+#, fuzzy, c-format
+msgid "Failed to activate hotzone device %s."
+msgstr "Gl khi truy cập đến thiết bị lưu trữ khóa tạm thời.\n"
+
+#: lib/luks2/luks2_reencrypt.c:1982
+#, c-format
+msgid "Failed to activate overlay device %s with actual origin table."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:1989
+#, fuzzy, c-format
+msgid "Failed to load new mapping for device %s."
+msgstr "Gặp lỗi khi mở thiết bị lưu trữ khóa tạm thời.\n"
+
+#: lib/luks2/luks2_reencrypt.c:2060
+msgid "Failed to refresh reencryption devices stack."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2216
+#, fuzzy
+msgid "Failed to set new keyslots area size."
+msgstr "Gặp lỗi khi hoán đổi khe khóa mới.\n"
+
+#: lib/luks2/luks2_reencrypt.c:2318
+#, c-format
+msgid "Data shift is not aligned to requested encryption sector size (%<PRIu32> bytes)."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2339
+#, c-format
+msgid "Data device is not aligned to requested encryption sector size (%<PRIu32> bytes)."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2360
+#, c-format
+msgid "Data shift (%<PRIu64> sectors) is less than future data offset (%<PRIu64> sectors)."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2366 lib/luks2/luks2_reencrypt.c:2760
+#: lib/luks2/luks2_reencrypt.c:2781
+#, fuzzy, c-format
+msgid "Failed to open %s in exclusive mode (already mapped or mounted)."
+msgstr "Không thể sử dụng thiết bị %s mà nó lại đang được sử dụng (đang được ánh xạ hoặc gắn).\n"
+
+#: lib/luks2/luks2_reencrypt.c:2534
+#, fuzzy
+msgid "No LUKS2 reencryption in progress."
+msgstr "Không thể dùng UUID chuyển qua trừ khi việc giải mã đang được thực hiện.\n"
+
+#: lib/luks2/luks2_reencrypt.c:2540 lib/luks2/luks2_reencrypt.c:3276
+msgid "Failed to load LUKS2 reencryption context."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2600
+#, fuzzy
+msgid "Failed to get reencryption state."
+msgstr "Lỗi ghi khóa vào kho lưu khóa.\n"
+
+#: lib/luks2/luks2_reencrypt.c:2604
+#, fuzzy
+msgid "Device is not in reencryption."
+msgstr "Thiết bị %s không hoạt động.\n"
+
+#: lib/luks2/luks2_reencrypt.c:2611
+msgid "Reencryption process is already running."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2613
+#, fuzzy
+msgid "Failed to acquire reencryption lock."
+msgstr "Không đọc được tập tin nhật ký reencryption.\n"
+
+#: lib/luks2/luks2_reencrypt.c:2631
+msgid "Cannot proceed with reencryption. Run reencryption recovery first."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2731
+msgid "Active device size and requested reencryption size don't match."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2745
+msgid "Illegal device size requested in reencryption parameters."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2815
+msgid "Reencryption in-progress. Cannot perform recovery."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2887
+msgid "LUKS2 reencryption already initialized in metadata."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2894
+msgid "Failed to initialize LUKS2 reencryption in metadata."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:2985
+msgid "Failed to set device segments for next reencryption hotzone."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3027
+#, fuzzy
+msgid "Failed to write reencryption resilience metadata."
+msgstr "Không thể ghi tập tin nhật ký reencryption (mã hóa lại).\n"
+
+#: lib/luks2/luks2_reencrypt.c:3034
+#, fuzzy
+msgid "Decryption failed."
+msgstr "Gặp lỗi khi sửa chữa."
+
+#: lib/luks2/luks2_reencrypt.c:3039
+#, fuzzy, c-format
+msgid "Failed to write hotzone area starting at %<PRIu64>."
+msgstr "Lỗi ghi khóa vào kho lưu khóa.\n"
+
+#: lib/luks2/luks2_reencrypt.c:3044
+#, fuzzy
+msgid "Failed to sync data."
+msgstr "Gặp lỗi khi lấy thông tin tập tin khóa.\n"
+
+#: lib/luks2/luks2_reencrypt.c:3052
+msgid "Failed to update metadata after current reencryption hotzone completed."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3119
+#, fuzzy
+msgid "Failed to write LUKS2 metadata."
+msgstr "Lỗi ghi khóa vào kho lưu khóa.\n"
+
+#: lib/luks2/luks2_reencrypt.c:3142
+msgid "Failed to wipe backup segment data."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3155
+msgid "Failed to disable reencryption requirement flag."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3163
+#, c-format
+msgid "Fatal error while reencrypting chunk starting at %<PRIu64>, %<PRIu64> sectors long."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3172
+msgid "Do not resume the device unless replaced with error target manually."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3221
+msgid "Cannot proceed with reencryption. Unexpected reencryption status."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3227
+msgid "Missing or invalid reencrypt context."
+msgstr ""
+
+#: lib/luks2/luks2_reencrypt.c:3234
+#, fuzzy
+msgid "Failed to initialize reencryption device stack."
+msgstr "Không thể khởi ứng dụng mã hóa chạy ở phía sau (backend).\n"
+
+#: lib/luks2/luks2_reencrypt.c:3253 lib/luks2/luks2_reencrypt.c:3289
+#, fuzzy
+msgid "Failed to update reencryption context."
+msgstr "Không mở được tập tin nhật ký reencryption.\n"
+
+#: lib/luks2/luks2_token.c:262
+msgid "No free token slot."
+msgstr ""
+
+#: lib/luks2/luks2_token.c:269
+#, fuzzy, c-format
+msgid "Failed to create builtin token %s."
+msgstr "Lỗi ghi khóa vào kho lưu khóa.\n"
+
+#: src/cryptsetup.c:162
+#, fuzzy
+msgid "Can't do passphrase verification on non-tty inputs."
+msgstr "Không thể thẩm tra cụm từ mật khẩu trên đầu vào khác TTY.\n"
+
+#: src/cryptsetup.c:215
+#, fuzzy
+msgid "Keyslot encryption parameters can be set only for LUKS2 device."
+msgstr "Thao tác này được hỗ trợ chỉ cho thiết bị LUKS.\n"
+
+#: src/cryptsetup.c:245 src/cryptsetup.c:893 src/cryptsetup.c:1212
+#: src/cryptsetup.c:3011 src/cryptsetup_reencrypt.c:715
+#: src/cryptsetup_reencrypt.c:785
+#, fuzzy
+msgid "No known cipher specification pattern detected."
+msgstr "Không phát hiện mẫu đặc tả mã hóa đã biết.\n"
+
+#: src/cryptsetup.c:253
+msgid "WARNING: The --hash parameter is being ignored in plain mode with keyfile specified.\n"
+msgstr "CẢNH BÁO: Tham số --hash bị bỏ qua trong chế độ thường với tập tin khóa đã cho.\n"
+
+#: src/cryptsetup.c:261
+msgid "WARNING: The --keyfile-size option is being ignored, the read size is the same as the encryption key size.\n"
+msgstr "CẢNH BÁO: Đang bỏ qua các tùy chọn kích thước tập-tin-khóa --keyfile-size --, kích thước đọc giống với kích thước khóa mã hóa.\n"
+
+#: src/cryptsetup.c:301
+#, c-format
+msgid "Detected device signature(s) on %s. Proceeding further may damage existing data."
+msgstr ""
+
+#: src/cryptsetup.c:307 src/cryptsetup.c:1038 src/cryptsetup.c:1090
+#: src/cryptsetup.c:1189 src/cryptsetup.c:1262 src/cryptsetup.c:1913
+#: src/cryptsetup.c:2545 src/cryptsetup.c:2668 src/integritysetup.c:232
+msgid "Operation aborted.\n"
+msgstr ""
+
+#: src/cryptsetup.c:375
+#, fuzzy
+msgid "Option --key-file is required."
+msgstr "Cần tùy chọn “--key-file”.\n"
+
+#: src/cryptsetup.c:428
+msgid "Enter VeraCrypt PIM: "
+msgstr ""
+
+#: src/cryptsetup.c:437
+msgid "Invalid PIM value: parse error."
+msgstr ""
+
+#: src/cryptsetup.c:440
+#, fuzzy
+msgid "Invalid PIM value: 0."
+msgstr "Thiết bị không đúng %s.\n"
+
+#: src/cryptsetup.c:443
+msgid "Invalid PIM value: outside of range."
+msgstr ""
+
+#: src/cryptsetup.c:466
+#, fuzzy
+msgid "No device header detected with this passphrase."
+msgstr "Không có phần đầu thiết bị cho cụm từ mật khẩu này.\n"
+
+#: src/cryptsetup.c:528 src/cryptsetup.c:1940
+msgid ""
+"Header dump with volume key is sensitive information\n"
+"which allows access to encrypted partition without passphrase.\n"
+"This dump should be always stored encrypted on safe place."
+msgstr ""
+"Đổ đống phần đầu với khóa vùng chứa là thông tin phân biệt hoa thường\n"
+"cái mà cho phép truy cập phân vùng được mã hóa mà không cần mật khẩu.\n"
+"Việc đổ đống này nên luôn được lưu trữ mã hóa tại một nơi an toàn."
+
+#: src/cryptsetup.c:607
+#, c-format
+msgid "Device %s is still active and scheduled for deferred removal.\n"
+msgstr ""
+
+#: src/cryptsetup.c:635
+msgid "Resize of active device requires volume key in keyring but --disable-keyring option is set."
+msgstr ""
+
+#: src/cryptsetup.c:771
+#, fuzzy
+msgid "Benchmark interrupted."
+msgstr "đo kiểm tốc độ mã hóa"
+
+#: src/cryptsetup.c:792
+#, c-format
+msgid "PBKDF2-%-9s     N/A\n"
+msgstr ""
+
+#: src/cryptsetup.c:794
+#, c-format
+msgid "PBKDF2-%-9s %7u iterations per second for %zu-bit key\n"
+msgstr ""
+
+#: src/cryptsetup.c:808
+#, c-format
+msgid "%-10s N/A\n"
+msgstr ""
+
+#: src/cryptsetup.c:810
+#, c-format
+msgid "%-10s %4u iterations, %5u memory, %1u parallel threads (CPUs) for %zu-bit key (requested %u ms time)\n"
+msgstr ""
+
+#: src/cryptsetup.c:834
+#, fuzzy
+msgid "Result of benchmark is not reliable."
+msgstr "Kết quả đo kiểm không đáng tin cậy.\n"
+
+#: src/cryptsetup.c:885
+msgid "# Tests are approximate using memory only (no storage IO).\n"
+msgstr "# Các kiểm tra là chỉ ước lượng việc sử dụng bộ nhớ (không tính IO ổ đĩa).\n"
+
+#. TRANSLATORS: The string is header of a table and must be exactly (right side) aligned.
+#: src/cryptsetup.c:919
+#, fuzzy, c-format
+msgid "#%*s Algorithm |       Key |      Encryption |      Decryption\n"
+msgstr "#  Thuật toán| Khóa|  Mã hóa     |  Giải mã\n"
+
+#: src/cryptsetup.c:923
+#, fuzzy, c-format
+msgid "Cipher %s is not available."
+msgstr "Mã hóa kiểu %s không sẵn có.\n"
+
+#. TRANSLATORS: The string is header of a table and must be exactly (right side) aligned.
+#: src/cryptsetup.c:943
+#, fuzzy
+msgid "#     Algorithm |       Key |      Encryption |      Decryption\n"
+msgstr "#  Thuật toán| Khóa|  Mã hóa     |  Giải mã\n"
+
+#: src/cryptsetup.c:952
+msgid "N/A"
+msgstr "N/A"
+
+#: src/cryptsetup.c:1031
+msgid ""
+"Seems device does not require reencryption recovery.\n"
+"Do you want to proceed anyway?"
+msgstr ""
+
+#: src/cryptsetup.c:1037
+msgid "Really proceed with LUKS2 reencryption recovery?"
+msgstr ""
+
+#: src/cryptsetup.c:1046
+#, fuzzy
+msgid "Enter passphrase for reencryption recovery: "
+msgstr "Gõ cụm từ mật khẩu cho khe khóa %u: "
+
+#: src/cryptsetup.c:1089
+msgid "Really try to repair LUKS device header?"
+msgstr "Bạn có thực sự muốn thử sửa chữa phần đầu thiết bị LUKS không?"
+
+#: src/cryptsetup.c:1108 src/integritysetup.c:145
+msgid ""
+"Wiping device to initialize integrity checksum.\n"
+"You can interrupt this by pressing CTRL+c (rest of not wiped device will contain invalid checksum).\n"
+msgstr ""
+
+#: src/cryptsetup.c:1130 src/integritysetup.c:167
+#, fuzzy, c-format
+msgid "Cannot deactivate temporary device %s."
+msgstr "Không thể r thiết bị LUKS tạm thời.\n"
+
+#: src/cryptsetup.c:1174
+msgid "Integrity option can be used only for LUKS2 format."
+msgstr ""
+
+#: src/cryptsetup.c:1179 src/cryptsetup.c:1239
+#, fuzzy
+msgid "Unsupported LUKS2 metadata size options."
+msgstr "Phiên bản LUKS không được hỗ trợ %d.\n"
+
+#: src/cryptsetup.c:1196
+#, fuzzy, c-format
+msgid "Cannot create header file %s."
+msgstr "Không thể tạo phần đầu của tập tin sao lưu dự phòng %s.\n"
+
+#: src/cryptsetup.c:1219 src/integritysetup.c:194 src/integritysetup.c:203
+#: src/integritysetup.c:212 src/integritysetup.c:279 src/integritysetup.c:288
+#: src/integritysetup.c:298
+#, fuzzy
+msgid "No known integrity specification pattern detected."
+msgstr "Không phát hiện mẫu đặc tả mã hóa đã biết.\n"
+
+#: src/cryptsetup.c:1232
+#, fuzzy, c-format
+msgid "Cannot use %s as on-disk header."
+msgstr "Không thể sử dụng %s như là phần đầu on-disk.\n"
+
+#: src/cryptsetup.c:1256 src/integritysetup.c:226
+#, c-format
+msgid "This will overwrite data on %s irrevocably."
+msgstr "Thao tác này sẽ ghi đè lên dữ liệu trên thiết bị %s một cách không phục hồi được."
+
+#: src/cryptsetup.c:1297 src/cryptsetup.c:1627 src/cryptsetup.c:1694
+#: src/cryptsetup.c:1796 src/cryptsetup.c:1862 src/cryptsetup_reencrypt.c:545
+#, fuzzy
+msgid "Failed to set pbkdf parameters."
+msgstr "Gặp lỗi khi lấy thông tin tập tin khóa.\n"
+
+#: src/cryptsetup.c:1378
+#, fuzzy
+msgid "Reduced data offset is allowed only for detached LUKS header."
+msgstr "Giảm khoảng bù (offset) dữ liệu chỉ cho phép khi phần đầu LUKS được tách rời.\n"
+
+#: src/cryptsetup.c:1389 src/cryptsetup.c:1700
+msgid "Cannot determine volume key size for LUKS without keyslots, please use --key-size option."
+msgstr ""
+
+#: src/cryptsetup.c:1427
+msgid "Device activated but cannot make flags persistent."
+msgstr ""
+
+#: src/cryptsetup.c:1508 src/cryptsetup.c:1578
+#, fuzzy, c-format
+msgid "Keyslot %d is selected for deletion."
+msgstr "Khe khóa %d đã được chọn để xóa.\n"
+
+#: src/cryptsetup.c:1520 src/cryptsetup.c:1581
+msgid "This is the last keyslot. Device will become unusable after purging this key."
+msgstr "Đây là khe khóa cuối cùng. Sau khi tẩy khóa này thì thiết bị không dùng được."
+
+#: src/cryptsetup.c:1521
+msgid "Enter any remaining passphrase: "
+msgstr "Gõ cụm từ mật khẩu bất kỳ còn lại: "
+
+#: src/cryptsetup.c:1522 src/cryptsetup.c:1583
+msgid "Operation aborted, the keyslot was NOT wiped.\n"
+msgstr ""
+
+#: src/cryptsetup.c:1560
+msgid "Enter passphrase to be deleted: "
+msgstr "Gõ cụm từ mật khẩu cần xóa: "
+
+#: src/cryptsetup.c:1641 src/cryptsetup.c:1715 src/cryptsetup.c:1749
+msgid "Enter new passphrase for key slot: "
+msgstr "Gõ cụm từ mật khẩu mới cho khe khóa: "
+
+#: src/cryptsetup.c:1732 src/cryptsetup_reencrypt.c:1327
+#, c-format
+msgid "Enter any existing passphrase: "
+msgstr "Hãy nhập mật khẩu bất kỳ sẵn có: "
+
+#: src/cryptsetup.c:1800
+msgid "Enter passphrase to be changed: "
+msgstr "Gõ cụm từ mật khẩu cần được thay đổi: "
+
+#: src/cryptsetup.c:1816 src/cryptsetup_reencrypt.c:1313
+msgid "Enter new passphrase: "
+msgstr "Gõ cụm từ mật khẩu mới: "
+
+#: src/cryptsetup.c:1866
+#, fuzzy
+msgid "Enter passphrase for keyslot to be converted: "
+msgstr "Gõ cụm từ mật khẩu cho khe khóa %u: "
+
+#: src/cryptsetup.c:1890
+#, fuzzy
+msgid "Only one device argument for isLuks operation is supported."
+msgstr "Chỉ hỗ trợ một đối số thiết-bị dành cho thao tác isLuks.\n"
+
+#: src/cryptsetup.c:2074 src/cryptsetup.c:2095
+#, fuzzy
+msgid "Option --header-backup-file is required."
+msgstr "Cần tùy chọn“--header-backup-file”.\n"
+
+#: src/cryptsetup.c:2125
+#, c-format
+msgid "%s is not cryptsetup managed device."
+msgstr ""
+
+#: src/cryptsetup.c:2136
+#, fuzzy, c-format
+msgid "Refresh is not supported for device type %s"
+msgstr "Thao tác phục hồi không được hỗ trợ cho kiểu thiết bị %s.\n"
+
+#: src/cryptsetup.c:2174
+#, fuzzy, c-format
+msgid "Unrecognized metadata device type %s."
+msgstr "Không nhận ra siêu dữ liệu của kiểu thiết bị %s.\n"
+
+#: src/cryptsetup.c:2177
+#, fuzzy
+msgid "Command requires device and mapped name as arguments."
+msgstr "Lệnh cần thiết bị và tên ánh xạ như là các tham số.\n"
+
+#: src/cryptsetup.c:2199
+#, c-format
+msgid ""
+"This operation will erase all keyslots on device %s.\n"
+"Device will become unusable after this operation."
+msgstr ""
+"Thao tác này sẽ tẩy mọi khe khóa trên thiết bị %s.\n"
+"Thiết bị sẽ không dùng được sau thao tác này."
+
+#: src/cryptsetup.c:2206
+msgid "Operation aborted, keyslots were NOT wiped.\n"
+msgstr ""
+
+#: src/cryptsetup.c:2243
+msgid "Invalid LUKS type, only luks1 and luks2 are supported."
+msgstr ""
+
+#: src/cryptsetup.c:2261
+#, fuzzy, c-format
+msgid "Device is already %s type."
+msgstr "Thiết bị %s đã sẵn có.\n"
+
+#: src/cryptsetup.c:2266
+#, fuzzy, c-format
+msgid "This operation will convert %s to %s format.\n"
+msgstr "Thao tác này không được hỗ trợ cho thiết bị mã hóa %s.\n"
+
+#: src/cryptsetup.c:2272
+msgid "Operation aborted, device was NOT converted.\n"
+msgstr ""
+
+#: src/cryptsetup.c:2312
+msgid "Option --priority, --label or --subsystem is missing."
+msgstr ""
+
+#: src/cryptsetup.c:2346 src/cryptsetup.c:2379 src/cryptsetup.c:2402
+#, fuzzy, c-format
+msgid "Token %d is invalid."
+msgstr "Khe khóa %d không đúng.\n"
+
+#: src/cryptsetup.c:2349 src/cryptsetup.c:2405
+#, c-format
+msgid "Token %d in use."
+msgstr ""
+
+#: src/cryptsetup.c:2356
+#, fuzzy, c-format
+msgid "Failed to add luks2-keyring token %d."
+msgstr "Lỗi đọc từ kho lưu khóa.\n"
+
+#: src/cryptsetup.c:2365 src/cryptsetup.c:2427
+#, fuzzy, c-format
+msgid "Failed to assign token %d to keyslot %d."
+msgstr "Lỗi ghi khóa vào kho lưu khóa.\n"
+
+#: src/cryptsetup.c:2382
+#, fuzzy, c-format
+msgid "Token %d is not in use."
+msgstr "Khe khóa %d không được dùng.\n"
+
+#: src/cryptsetup.c:2417
+#, fuzzy
+msgid "Failed to import token from file."
+msgstr "Gặp lỗi khi mở tập tin khóa.\n"
+
+#: src/cryptsetup.c:2442
+#, fuzzy, c-format
+msgid "Failed to get token %d for export."
+msgstr "Lỗi ghi khóa vào kho lưu khóa.\n"
+
+#: src/cryptsetup.c:2457
+msgid "--key-description parameter is mandatory for token add action."
+msgstr ""
+
+#: src/cryptsetup.c:2463 src/cryptsetup.c:2471
+msgid "Action requires specific token. Use --token-id parameter."
+msgstr ""
+
+#: src/cryptsetup.c:2476
+#, fuzzy, c-format
+msgid "Invalid token operation %s."
+msgstr "Kích cỡ khóa không đúng %d.\n"
+
+#: src/cryptsetup.c:2531
+#, c-format
+msgid "Auto-detected active dm device '%s' for data device %s.\n"
+msgstr ""
+
+#: src/cryptsetup.c:2535
+#, fuzzy, c-format
+msgid "Device %s is not a block device.\n"
+msgstr "Thiết bị %s không phải là một thiết bị kiểu LUKS đúng.\n"
+
+#: src/cryptsetup.c:2537
+#, fuzzy, c-format
+msgid "Failed to auto-detect device %s holders."
+msgstr "Lỗi lấy thư mục trình ánh xạ thiết bị."
+
+#: src/cryptsetup.c:2539
+#, c-format
+msgid ""
+"Unable to decide if device %s is activated or not.\n"
+"Are you sure you want to proceed with reencryption in offline mode?\n"
+"It may lead to data corruption if the device is actually activated.\n"
+"To run reencryption in online mode, use --active-name parameter instead.\n"
+msgstr ""
+
+#: src/cryptsetup.c:2619
+#, fuzzy
+msgid "Invalid LUKS device type."
+msgstr "Thiết bị không đúng %s.\n"
+
+#: src/cryptsetup.c:2624
+msgid "Encryption without detached header (--header) is not possible without data device size reduction (--reduce-device-size)."
+msgstr ""
+
+#: src/cryptsetup.c:2629
+msgid "Requested data offset must be less than or equal to half of --reduce-device-size parameter."
+msgstr ""
+
+#: src/cryptsetup.c:2638
+#, c-format
+msgid "Adjusting --reduce-device-size value to twice the --offset %<PRIu64> (sectors).\n"
+msgstr ""
+
+#: src/cryptsetup.c:2642
+#, fuzzy
+msgid "Encryption is supported only for LUKS2 format."
+msgstr "Thao tác này được hỗ trợ chỉ cho thiết bị LUKS.\n"
+
+#: src/cryptsetup.c:2664
+#, c-format
+msgid "Detected LUKS device on %s. Do you want to encrypt that LUKS device again?"
+msgstr ""
+
+#: src/cryptsetup.c:2679
+#, fuzzy, c-format
+msgid "Temporary header file %s already exists. Aborting."
+msgstr "Phần đầu tập tin sao lưu dự phòng đã yêu cầu %s đã sẵn có.\n"
+
+#: src/cryptsetup.c:2681 src/cryptsetup.c:2688
+#, fuzzy, c-format
+msgid "Cannot create temporary header file %s."
+msgstr "Không thể tạo phần đầu của tập tin sao lưu dự phòng %s.\n"
+
+#: src/cryptsetup.c:2752
+#, c-format
+msgid "%s/%s is now active and ready for online encryption."
+msgstr ""
+
+#: src/cryptsetup.c:2919 src/cryptsetup.c:2925
+#, fuzzy
+msgid "Not enough free keyslots for reencryption."
+msgstr "Khôngười thay đổi khóa, không có mã hóa lại vùng dữ liệu."
+
+#: src/cryptsetup.c:2945 src/cryptsetup_reencrypt.c:1284
+#, fuzzy
+msgid "Key file can be used only with --key-slot or with exactly one key slot active."
+msgstr "Tập tin khóa có thể sử dụng với tùy chọn --key-slot hoặc với chính xác một khe khóa hoạt động.\n"
+
+#: src/cryptsetup.c:2954 src/cryptsetup_reencrypt.c:1325
+#: src/cryptsetup_reencrypt.c:1336
+#, fuzzy, c-format
+msgid "Enter passphrase for key slot %d: "
+msgstr "Gõ cụm từ mật khẩu cho khe khóa %u: "
+
+#: src/cryptsetup.c:2962
+#, c-format
+msgid "Enter passphrase for key slot %u: "
+msgstr "Gõ cụm từ mật khẩu cho khe khóa %u: "
+
+#: src/cryptsetup.c:3129
+#, fuzzy
+msgid "Command requires device as argument."
+msgstr "Lệnh cần thiết bị và tên ánh xạ như là các tham số.\n"
+
+#: src/cryptsetup.c:3151
+msgid "Only LUKS2 format is currently supported. Please use cryptsetup-reencrypt tool for LUKS1."
+msgstr ""
+
+#: src/cryptsetup.c:3163
+msgid "Legacy offline reencryption already in-progress. Use cryptsetup-reencrypt utility."
+msgstr ""
+
+#: src/cryptsetup.c:3173 src/cryptsetup_reencrypt.c:178
+msgid "Reencryption of device with integrity profile is not supported."
+msgstr ""
+
+#: src/cryptsetup.c:3181
+msgid "LUKS2 reencryption already initialized. Aborting operation."
+msgstr ""
+
+#: src/cryptsetup.c:3185
+#, fuzzy
+msgid "LUKS2 device is not in reencryption."
+msgstr "Tập tin nhật ký %s đã có sẵn rồi, giả định là reencryption (mã hóa lại).\n"
+
+#: src/cryptsetup.c:3212
+msgid "<device> [--type <type>] [<name>]"
+msgstr "<thiết-bị> [--type <kiểu>] [<tên>]"
+
+#: src/cryptsetup.c:3212 src/veritysetup.c:358 src/integritysetup.c:470
+#, fuzzy
+msgid "open device as <name>"
+msgstr "mở thiết bị như là ánh xạ <tên>"
+
+#: src/cryptsetup.c:3213 src/cryptsetup.c:3214 src/cryptsetup.c:3215
+#: src/veritysetup.c:359 src/veritysetup.c:360 src/integritysetup.c:471
+#: src/integritysetup.c:472
+msgid "<name>"
+msgstr "<tên>"
+
+#: src/cryptsetup.c:3213 src/veritysetup.c:359 src/integritysetup.c:471
+msgid "close device (remove mapping)"
+msgstr "đóng thiết bị (gỡ bỏ ánh xạ)"
+
+#: src/cryptsetup.c:3214
+msgid "resize active device"
+msgstr "thay đổi kích cỡ của thiết bị hoạt động"
+
+#: src/cryptsetup.c:3215
+msgid "show device status"
+msgstr "hiển thị trạng thái về thiết bị"
+
+#: src/cryptsetup.c:3216
+msgid "[--cipher <cipher>]"
+msgstr "[--cipher <bộ mã hóa>]"
+
+#: src/cryptsetup.c:3216
+msgid "benchmark cipher"
+msgstr "đo kiểm tốc độ mã hóa"
+
+#: src/cryptsetup.c:3217 src/cryptsetup.c:3218 src/cryptsetup.c:3219
+#: src/cryptsetup.c:3220 src/cryptsetup.c:3221 src/cryptsetup.c:3228
+#: src/cryptsetup.c:3229 src/cryptsetup.c:3230 src/cryptsetup.c:3231
+#: src/cryptsetup.c:3232 src/cryptsetup.c:3233 src/cryptsetup.c:3234
+#: src/cryptsetup.c:3235
+msgid "<device>"
+msgstr "<thiết_bị>"
+
+#: src/cryptsetup.c:3217
+msgid "try to repair on-disk metadata"
+msgstr "thử sửa chữa siêu dữ liệu (metadata) on-disk"
+
+#: src/cryptsetup.c:3218
+#, fuzzy
+msgid "reencrypt LUKS2 device"
+msgstr "thêm khóa vào thiết bị LUKS"
+
+#: src/cryptsetup.c:3219
+msgid "erase all keyslots (remove encryption key)"
+msgstr "tẩy mọi khe khóa (gỡ bỏ khóa mã hóa)"
+
+#: src/cryptsetup.c:3220
+msgid "convert LUKS from/to LUKS2 format"
+msgstr ""
+
+#: src/cryptsetup.c:3221
+msgid "set permanent configuration options for LUKS2"
+msgstr ""
+
+#: src/cryptsetup.c:3222 src/cryptsetup.c:3223
+msgid "<device> [<new key file>]"
+msgstr "<thiết_bị> [<tập_tin_khóa_mới>]"
+
+#: src/cryptsetup.c:3222
+msgid "formats a LUKS device"
+msgstr "định dạng một thiết bị kiểu LUKS"
+
+#: src/cryptsetup.c:3223
+msgid "add key to LUKS device"
+msgstr "thêm khóa vào thiết bị LUKS"
+
+#: src/cryptsetup.c:3224 src/cryptsetup.c:3225 src/cryptsetup.c:3226
+msgid "<device> [<key file>]"
+msgstr "<thiết_bị> [<tập_tin_khóa>]"
+
+#: src/cryptsetup.c:3224
+msgid "removes supplied key or key file from LUKS device"
+msgstr "gỡ bỏ khỏi thiết bị LUKS khóa hoặc tập tin khóa đưa ra"
+
+#: src/cryptsetup.c:3225
+msgid "changes supplied key or key file of LUKS device"
+msgstr "thay đổi khóa hay tập tin khóa đã áp dụng của thiết bị LUKS"
+
+#: src/cryptsetup.c:3226
+msgid "converts a key to new pbkdf parameters"
+msgstr ""
+
+#: src/cryptsetup.c:3227
+msgid "<device> <key slot>"
+msgstr "<thiết_bị> <khe_khóa>"
+
+#: src/cryptsetup.c:3227
+msgid "wipes key with number <key slot> from LUKS device"
+msgstr "xóa khỏi thiết bị LUKS khóa có số <khe_khóa>"
+
+#: src/cryptsetup.c:3228
+msgid "print UUID of LUKS device"
+msgstr "in ra mã số UUID của thiết bị LUKS"
+
+#: src/cryptsetup.c:3229
+msgid "tests <device> for LUKS partition header"
+msgstr "thử <thiết_bị> có phần đầu phân vùng LUKS không"
+
+#: src/cryptsetup.c:3230
+msgid "dump LUKS partition information"
+msgstr "đổ thông tin về phân vùng LUKS"
+
+#: src/cryptsetup.c:3231
+msgid "dump TCRYPT device information"
+msgstr "dump thông tin thiết bị TCRYPT"
+
+#: src/cryptsetup.c:3232
+#, fuzzy
+msgid "Suspend LUKS device and wipe key (all IOs are frozen)"
+msgstr "Ngưng thiết bị LUKS và tẩy khóa (thì mọi việc V/R đều đông cứng)."
+
+#: src/cryptsetup.c:3233
+#, fuzzy
+msgid "Resume suspended LUKS device"
+msgstr "Tiếp tục lại sử dụng thiết bị LUKS bị ngưng."
+
+#: src/cryptsetup.c:3234
+msgid "Backup LUKS device header and keyslots"
+msgstr "Sao lưu phần đầu và các khe khóa của thiết bị LUKS"
+
+#: src/cryptsetup.c:3235
+msgid "Restore LUKS device header and keyslots"
+msgstr "Phục hồi phần đầu và các khe khóa của thiết bị LUKS"
+
+#: src/cryptsetup.c:3236
+msgid "<add|remove|import|export> <device>"
+msgstr ""
+
+#: src/cryptsetup.c:3236
+msgid "Manipulate LUKS2 tokens"
+msgstr ""
+
+#: src/cryptsetup.c:3254 src/veritysetup.c:376 src/integritysetup.c:488
+msgid ""
+"\n"
+"<action> is one of:\n"
+msgstr ""
+"\n"
+"<thao-tác> là một trong:\n"
+
+#: src/cryptsetup.c:3260
+msgid ""
+"\n"
+"You can also use old <action> syntax aliases:\n"
+"\topen: create (plainOpen), luksOpen, loopaesOpen, tcryptOpen\n"
+"\tclose: remove (plainClose), luksClose, loopaesClose, tcryptClose\n"
+msgstr ""
+"\n"
+"Bạn còn có thể sử dụng cú pháp bí danh <thao-tác> kiểu cũ:\n"
+"\topen: create (plainOpen), luksOpen, loopaesOpen, tcryptOpen\n"
+"\tclose: remove (plainClose), luksClose, loopaesClose, tcryptClose\n"
+
+#: src/cryptsetup.c:3264
+#, c-format
+msgid ""
+"\n"
+"<name> is the device to create under %s\n"
+"<device> is the encrypted device\n"
+"<key slot> is the LUKS key slot number to modify\n"
+"<key file> optional key file for the new key for luksAddKey action\n"
+msgstr ""
+"\n"
+"<tên> là thiết bị cần tạo dưới %s\n"
+"<thiết_bị> là thiết bị đã mã hóa\n"
+"<khe_khóa> là số thứ tự khe khóa LUKS cần sửa đổi\n"
+"<tập_tin_khóa> là tập tin khóa tùy chọn cho khóa mới trong thao tác luksAddKey\n"
+
+#: src/cryptsetup.c:3271
+#, c-format
+msgid ""
+"\n"
+"Default compiled-in metadata format is %s (for luksFormat action).\n"
+msgstr ""
+
+#: src/cryptsetup.c:3276
+#, fuzzy, c-format
+msgid ""
+"\n"
+"Default compiled-in key and passphrase parameters:\n"
+"\tMaximum keyfile size: %dkB, Maximum interactive passphrase length %d (characters)\n"
+"Default PBKDF for LUKS1: %s, iteration time: %d (ms)\n"
+"Default PBKDF for LUKS2: %s\n"
+"\tIteration time: %d, Memory required: %dkB, Parallel threads: %d\n"
+msgstr ""
+"\n"
+"Các tham số mặc định liên quan đến khóa và mật khẩu được biên dịch sẵn:\n"
+"\tĐộ dài tập tin khóa tối đa: %dkB, Độ dài mật khẩu tương tác tối đa %d (ký tự)\n"
+"Thời gian tương tác PBKDF2 mặc định cho LUKS: %d (ms)\n"
+
+#: src/cryptsetup.c:3287
+#, fuzzy, c-format
+msgid ""
+"\n"
+"Default compiled-in device cipher parameters:\n"
+"\tloop-AES: %s, Key %d bits\n"
+"\tplain: %s, Key: %d bits, Password hashing: %s\n"
+"\tLUKS: %s, Key: %d bits, LUKS header hashing: %s, RNG: %s\n"
+msgstr ""
+"\n"
+"Các tham số mặc định liên quan đến việc mã hóa được đặt sẵn:\n"
+"\tloop-AES: %s, Khóa %d bit\n"
+"\tdữ liệu thô: %s, Khóa: %d bit, Kiểu băm mật khẩu: %s\n"
+"\tLUKS1: %s, Khóa: %d bit, Kiểu băm cho phần đầu LUKS: %s, RNG: %s\n"
+
+#: src/cryptsetup.c:3296
+msgid "\tLUKS: Default keysize with XTS mode (two internal keys) will be doubled.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3312 src/veritysetup.c:532 src/integritysetup.c:630
+#, c-format
+msgid "%s: requires %s as arguments"
+msgstr "%s: cần thiết %s làm đối số"
+
+#: src/cryptsetup.c:3350 src/veritysetup.c:421 src/integritysetup.c:527
+#: src/cryptsetup_reencrypt.c:1591
+msgid "Show this help message"
+msgstr "Hiển thị trợ giúp này"
+
+#: src/cryptsetup.c:3351 src/veritysetup.c:422 src/integritysetup.c:528
+#: src/cryptsetup_reencrypt.c:1592
+msgid "Display brief usage"
+msgstr "Hiển thị thông tin ngắn về cách sử dụng"
+
+#: src/cryptsetup.c:3352 src/veritysetup.c:423 src/integritysetup.c:529
+#: src/cryptsetup_reencrypt.c:1593
+msgid "Print package version"
+msgstr "Hiển thị phiên bản của gói"
+
+#: src/cryptsetup.c:3356 src/veritysetup.c:427 src/integritysetup.c:533
+#: src/cryptsetup_reencrypt.c:1597
+msgid "Help options:"
+msgstr "Tùy chọn trợ giúp:"
+
+#: src/cryptsetup.c:3357 src/veritysetup.c:428 src/integritysetup.c:534
+#: src/cryptsetup_reencrypt.c:1598
+msgid "Shows more detailed error messages"
+msgstr "Hiển thị các thông điệp lỗi chi tiết hơn"
+
+#: src/cryptsetup.c:3358 src/veritysetup.c:429 src/integritysetup.c:535
+#: src/cryptsetup_reencrypt.c:1599
+msgid "Show debug messages"
+msgstr "Hiển thị thông điệp gỡ lỗi"
+
+#: src/cryptsetup.c:3359
+#, fuzzy
+msgid "Show debug messages including JSON metadata"
+msgstr "Hiển thị thông điệp gỡ lỗi"
+
+#: src/cryptsetup.c:3360 src/cryptsetup_reencrypt.c:1601
+msgid "The cipher used to encrypt the disk (see /proc/crypto)"
+msgstr "Mật mã dùng để bảo vệ đĩa (xem “/proc/crypto”)"
+
+#: src/cryptsetup.c:3361 src/cryptsetup_reencrypt.c:1603
+msgid "The hash used to create the encryption key from the passphrase"
+msgstr "Chuỗi duy nhất dùng để tạo khóa mã hóa từ cụm từ mật khẩu"
+
+#: src/cryptsetup.c:3362
+msgid "Verifies the passphrase by asking for it twice"
+msgstr "Thẩm tra cụm từ mật khẩu bằng cách yêu cầu nó hai lần"
+
+#: src/cryptsetup.c:3363 src/cryptsetup_reencrypt.c:1605
+#, fuzzy
+msgid "Read the key from a file"
+msgstr "Đọc khóa từ một tập tin."
+
+#: src/cryptsetup.c:3364
+msgid "Read the volume (master) key from file."
+msgstr "Đọc khóa khối tin (chủ) từ tập tin."
+
+#: src/cryptsetup.c:3365
+#, fuzzy
+msgid "Dump volume (master) key instead of keyslots info"
+msgstr "Dump (đổ thành đống) khóa vùng chứa (master) thay vì thông tin khe-khóa."
+
+#: src/cryptsetup.c:3366 src/cryptsetup_reencrypt.c:1602
+msgid "The size of the encryption key"
+msgstr "Kích cỡ của khóa mã hóa"
+
+#: src/cryptsetup.c:3366 src/cryptsetup.c:3425 src/integritysetup.c:553
+#: src/integritysetup.c:557 src/integritysetup.c:561
+#: src/cryptsetup_reencrypt.c:1602
+msgid "BITS"
+msgstr "BIT"
+
+#: src/cryptsetup.c:3367 src/cryptsetup_reencrypt.c:1618
+msgid "Limits the read from keyfile"
+msgstr "Giới hạn việc đọc từ tập-tin-khóa"
+
+#: src/cryptsetup.c:3367 src/cryptsetup.c:3368 src/cryptsetup.c:3369
+#: src/cryptsetup.c:3370 src/cryptsetup.c:3373 src/cryptsetup.c:3422
+#: src/cryptsetup.c:3423 src/cryptsetup.c:3431 src/cryptsetup.c:3432
+#: src/veritysetup.c:432 src/veritysetup.c:433 src/veritysetup.c:434
+#: src/veritysetup.c:437 src/veritysetup.c:438 src/integritysetup.c:542
+#: src/integritysetup.c:548 src/integritysetup.c:549
+#: src/cryptsetup_reencrypt.c:1617 src/cryptsetup_reencrypt.c:1618
+#: src/cryptsetup_reencrypt.c:1619 src/cryptsetup_reencrypt.c:1620
+msgid "bytes"
+msgstr "byte"
+
+#: src/cryptsetup.c:3368 src/cryptsetup_reencrypt.c:1617
+msgid "Number of bytes to skip in keyfile"
+msgstr "Số lượng byte nhảy qua trong tập tin khóa"
+
+#: src/cryptsetup.c:3369
+msgid "Limits the read from newly added keyfile"
+msgstr "Giới hạn đọc từ tập tin khóa mới thêm vào"
+
+#: src/cryptsetup.c:3370
+msgid "Number of bytes to skip in newly added keyfile"
+msgstr "Số lượng byte để nhảy qua trong tập tin khóa mới thêm"
+
+#: src/cryptsetup.c:3371
+msgid "Slot number for new key (default is first free)"
+msgstr "Số thứ tự khe cho khóa mới (mặc định là khe trống thứ nhất)"
+
+#: src/cryptsetup.c:3372
+msgid "The size of the device"
+msgstr "Kích cỡ của thiết bị"
+
+#: src/cryptsetup.c:3372 src/cryptsetup.c:3374 src/cryptsetup.c:3375
+#: src/cryptsetup.c:3381 src/integritysetup.c:543 src/integritysetup.c:550
+msgid "SECTORS"
+msgstr "CUNG-TỪ"
+
+#: src/cryptsetup.c:3373 src/cryptsetup_reencrypt.c:1620
+msgid "Use only specified device size (ignore rest of device). DANGEROUS!"
+msgstr "Chỉ sử dụng kích thước dữ liệu thiết bị (bỏ qua phần còn lại của thiết bị). NGUY HIỂM!"
+
+#: src/cryptsetup.c:3374
+msgid "The start offset in the backend device"
+msgstr "Khoảng bù đầu tiên trong thiết bị thật chạy ở phía sau"
+
+#: src/cryptsetup.c:3375
+msgid "How many sectors of the encrypted data to skip at the beginning"
+msgstr "Bao nhiêu cung từ dữ liệu mã hóa cần bỏ qua ở đầu"
+
+#: src/cryptsetup.c:3376
+msgid "Create a readonly mapping"
+msgstr "Tạo một sự ánh xạ chỉ cho đọc"
+
+#: src/cryptsetup.c:3377 src/integritysetup.c:536
+#: src/cryptsetup_reencrypt.c:1608
+msgid "Do not ask for confirmation"
+msgstr "Không cần xác nhận"
+
+#: src/cryptsetup.c:3378
+msgid "Timeout for interactive passphrase prompt (in seconds)"
+msgstr "Thời gian chờ gõ cụm từ mật khẩu tối đa (theo giây)"
+
+#: src/cryptsetup.c:3378 src/cryptsetup.c:3379 src/integritysetup.c:537
+#: src/cryptsetup_reencrypt.c:1609
+msgid "secs"
+msgstr "giây"
+
+#: src/cryptsetup.c:3379 src/integritysetup.c:537
+#: src/cryptsetup_reencrypt.c:1609
+msgid "Progress line update (in seconds)"
+msgstr ""
+
+#: src/cryptsetup.c:3380 src/cryptsetup_reencrypt.c:1610
+msgid "How often the input of the passphrase can be retried"
+msgstr "Số các lần có cho phép thử gõ lại cụm từ mật khẩu"
+
+#: src/cryptsetup.c:3381
+msgid "Align payload at <n> sector boundaries - for luksFormat"
+msgstr "Căn chỉnh trọng tải ở <n> biên giới cung từ — cho định dạng “luksFormat”"
+
+#: src/cryptsetup.c:3382
+#, fuzzy
+msgid "File with LUKS header and keyslots backup"
+msgstr "Tập tin chứa bản sao lưu phần đầu và các khe khóa của thiết bị LUKS."
+
+#: src/cryptsetup.c:3383 src/cryptsetup_reencrypt.c:1611
+#, fuzzy
+msgid "Use /dev/random for generating volume key"
+msgstr "Dùng /dev/random để tạo khóa volume."
+
+#: src/cryptsetup.c:3384 src/cryptsetup_reencrypt.c:1612
+#, fuzzy
+msgid "Use /dev/urandom for generating volume key"
+msgstr "Dùng /dev/urandom để tạo khóa vùng."
+
+#: src/cryptsetup.c:3385
+#, fuzzy
+msgid "Share device with another non-overlapping crypt segment"
+msgstr "Thiết bị chia sẻ với đoạn crypt không-chồng-lên-nhau khác."
+
+#: src/cryptsetup.c:3386 src/veritysetup.c:441
+#, fuzzy
+msgid "UUID for device to use"
+msgstr "UUID dành cho tập tin sử dụng."
+
+#: src/cryptsetup.c:3387
+#, fuzzy
+msgid "Allow discards (aka TRIM) requests for device"
+msgstr "Cho phép hủy bỏ (được biết đến như là TRIM) các yêu cầu cho thiết bị."
+
+#: src/cryptsetup.c:3388 src/cryptsetup_reencrypt.c:1629
+#, fuzzy
+msgid "Device or file with separated LUKS header"
+msgstr "Thiết bị hay tập tin với phần đầu LUKS tách nhau."
+
+#: src/cryptsetup.c:3389
+#, fuzzy
+msgid "Do not activate device, just check passphrase"
+msgstr "Không kích hoạt thiết bị, chỉ cần kiểm tra mật khẩu."
+
+#: src/cryptsetup.c:3390
+#, fuzzy
+msgid "Use hidden header (hidden TCRYPT device)"
+msgstr "Dùng phần đầu ẩn (thiết bị TCRYPT ẩn)."
+
+#: src/cryptsetup.c:3391
+#, fuzzy
+msgid "Device is system TCRYPT drive (with bootloader)"
+msgstr "Thiết bị là ổ đĩa TCRYPT hệ thống (có bootloader)."
+
+#: src/cryptsetup.c:3392
+#, fuzzy
+msgid "Use backup (secondary) TCRYPT header"
+msgstr "Dùng phần đầu (thứ cấp) TCRYPT."
+
+#: src/cryptsetup.c:3393
+#, fuzzy
+msgid "Scan also for VeraCrypt compatible device"
+msgstr "Cũng quét cho thiết bị tương thích VeraCrypt."
+
+#: src/cryptsetup.c:3394
+#, fuzzy
+msgid "Personal Iteration Multiplier for VeraCrypt compatible device"
+msgstr "Cũng quét cho thiết bị tương thích VeraCrypt."
+
+#: src/cryptsetup.c:3395
+#, fuzzy
+msgid "Query Personal Iteration Multiplier for VeraCrypt compatible device"
+msgstr "Cũng quét cho thiết bị tương thích VeraCrypt."
+
+#: src/cryptsetup.c:3396
+#, fuzzy
+msgid "Type of device metadata: luks, luks1, luks2, plain, loopaes, tcrypt"
+msgstr "Kiểu của siêu dữ liệu thiết bị: luks, plain, loopaes, tcrypt."
+
+#: src/cryptsetup.c:3397
+#, fuzzy
+msgid "Disable password quality check (if enabled)"
+msgstr "Tắt chức năng kiểm tra chất lượng mật khẩu (nếu nó đang bật)."
+
+#: src/cryptsetup.c:3398
+#, fuzzy
+msgid "Use dm-crypt same_cpu_crypt performance compatibility option"
+msgstr "Dùng tùy chọn tương thích hiệu năng same_cpu_crypt dm-crypt."
+
+#: src/cryptsetup.c:3399
+#, fuzzy
+msgid "Use dm-crypt submit_from_crypt_cpus performance compatibility option"
+msgstr "Dùng tùy chọn tương thích hiệu năng submit_from_crypt_cpus dm-crypt."
+
+#: src/cryptsetup.c:3400
+msgid "Device removal is deferred until the last user closes it"
+msgstr ""
+
+#: src/cryptsetup.c:3401
+msgid "Use global lock to serialize memory hard PBKDF (OOM workaround)"
+msgstr ""
+
+#: src/cryptsetup.c:3402
+#, fuzzy
+msgid "PBKDF iteration time for LUKS (in ms)"
+msgstr "Thời gian lặp lại PBKDF2 cho LUKS (theo mili-giây)"
+
+#: src/cryptsetup.c:3402 src/cryptsetup_reencrypt.c:1607
+msgid "msecs"
+msgstr "mili-giây"
+
+#: src/cryptsetup.c:3403 src/cryptsetup_reencrypt.c:1625
+msgid "PBKDF algorithm (for LUKS2): argon2i, argon2id, pbkdf2"
+msgstr ""
+
+#: src/cryptsetup.c:3404 src/cryptsetup_reencrypt.c:1626
+msgid "PBKDF memory cost limit"
+msgstr ""
+
+#: src/cryptsetup.c:3404 src/cryptsetup_reencrypt.c:1626
+#, fuzzy
+msgid "kilobytes"
+msgstr "byte"
+
+#: src/cryptsetup.c:3405 src/cryptsetup_reencrypt.c:1627
+msgid "PBKDF parallel cost"
+msgstr ""
+
+#: src/cryptsetup.c:3405 src/cryptsetup_reencrypt.c:1627
+msgid "threads"
+msgstr ""
+
+#: src/cryptsetup.c:3406 src/cryptsetup_reencrypt.c:1628
+msgid "PBKDF iterations cost (forced, disables benchmark)"
+msgstr ""
+
+#: src/cryptsetup.c:3407
+msgid "Keyslot priority: ignore, normal, prefer"
+msgstr ""
+
+#: src/cryptsetup.c:3408
+#, fuzzy
+msgid "Disable locking of on-disk metadata"
+msgstr "thử sửa chữa siêu dữ liệu (metadata) on-disk"
+
+#: src/cryptsetup.c:3409
+msgid "Disable loading volume keys via kernel keyring"
+msgstr ""
+
+#: src/cryptsetup.c:3410
+msgid "Data integrity algorithm (LUKS2 only)"
+msgstr ""
+
+#: src/cryptsetup.c:3411 src/integritysetup.c:564
+msgid "Disable journal for integrity device"
+msgstr ""
+
+#: src/cryptsetup.c:3412 src/integritysetup.c:538
+msgid "Do not wipe device after format"
+msgstr ""
+
+#: src/cryptsetup.c:3413
+msgid "Do not ask for passphrase if activation by token fails"
+msgstr ""
+
+#: src/cryptsetup.c:3414
+msgid "Token number (default: any)"
+msgstr ""
+
+#: src/cryptsetup.c:3415
+msgid "Key description"
+msgstr ""
+
+#: src/cryptsetup.c:3416
+msgid "Encryption sector size (default: 512 bytes)"
+msgstr ""
+
+#: src/cryptsetup.c:3417
+msgid "Set activation flags persistent for device"
+msgstr ""
+
+#: src/cryptsetup.c:3418
+#, fuzzy
+msgid "Set label for the LUKS2 device"
+msgstr "định dạng một thiết bị kiểu LUKS"
+
+#: src/cryptsetup.c:3419
+msgid "Set subsystem label for the LUKS2 device"
+msgstr ""
+
+#: src/cryptsetup.c:3420
+msgid "Create unbound (no assigned data segment) LUKS2 keyslot"
+msgstr ""
+
+#: src/cryptsetup.c:3421
+#, fuzzy
+msgid "Read or write the json from or to a file"
+msgstr "Đọc khóa từ một tập tin."
+
+#: src/cryptsetup.c:3422
+msgid "LUKS2 header metadata area size"
+msgstr ""
+
+#: src/cryptsetup.c:3423
+#, fuzzy
+msgid "LUKS2 header keyslots area size"
+msgstr "Tập tin chứa bản sao lưu phần đầu và các khe khóa của thiết bị LUKS."
+
+#: src/cryptsetup.c:3424
+msgid "Refresh (reactivate) device with new parameters"
+msgstr ""
+
+#: src/cryptsetup.c:3425
+#, fuzzy
+msgid "LUKS2 keyslot: The size of the encryption key"
+msgstr "Kích cỡ của khóa mã hóa"
+
+#: src/cryptsetup.c:3426
+msgid "LUKS2 keyslot: The cipher used for keyslot encryption"
+msgstr ""
+
+#: src/cryptsetup.c:3427
+#, fuzzy
+msgid "Encrypt LUKS2 device (in-place encryption)."
+msgstr "Thiết bị mã hóa cố định (gỡ bỏ mã hóa)."
+
+#: src/cryptsetup.c:3428
+#, fuzzy
+msgid "Decrypt LUKS2 device (remove encryption)."
+msgstr "Thiết bị mã hóa cố định (gỡ bỏ mã hóa)."
+
+#: src/cryptsetup.c:3429
+msgid "Initialize LUKS2 reencryption in metadata only."
+msgstr ""
+
+#: src/cryptsetup.c:3430
+msgid "Resume initialized LUKS2 reencryption only."
+msgstr ""
+
+#: src/cryptsetup.c:3431 src/cryptsetup_reencrypt.c:1619
+msgid "Reduce data device size (move data offset). DANGEROUS!"
+msgstr "Giảm kích thước dữ liệu thiết bị (di chuyển offset dữ liệu). NGUY HIỂM!"
+
+#: src/cryptsetup.c:3432
+#, fuzzy
+msgid "Maximal reencryption hotzone size."
+msgstr "Kích thước khối mã hóa lại"
+
+#: src/cryptsetup.c:3433
+msgid "Reencryption hotzone resilience type (checksum,journal,none)"
+msgstr ""
+
+#: src/cryptsetup.c:3434
+#, fuzzy
+msgid "Reencryption hotzone checksums hash"
+msgstr "Kích thước khối mã hóa lại"
+
+#: src/cryptsetup.c:3435
+msgid "Override device autodetection of dm device to be reencrypted"
+msgstr ""
+
+#: src/cryptsetup.c:3451 src/veritysetup.c:462 src/integritysetup.c:583
+msgid "[OPTION...] <action> <action-specific>"
+msgstr "[TÙY CHỌN…] <thao-tác> <đặc-tả-thao-tác>"
+
+#: src/cryptsetup.c:3502 src/veritysetup.c:496 src/integritysetup.c:594
+msgid "Argument <action> missing."
+msgstr "Còn thiếu đối số <thao-tác>."
+
+#: src/cryptsetup.c:3565 src/veritysetup.c:527 src/integritysetup.c:625
+msgid "Unknown action."
+msgstr "Không hiểu thao-tác."
+
+#: src/cryptsetup.c:3575
+msgid "Parameter --refresh is only allowed with open or refresh commands.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3580
+msgid "Options --refresh and --test-passphrase are mutually exclusive.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3585
+#, fuzzy
+msgid "Option --deferred is allowed only for close command.\n"
+msgstr "Tùy chọn “--shared” chỉ cho phép với thao tác tạo mở của thiết bị thường.\n"
+
+#: src/cryptsetup.c:3590
+msgid "Option --shared is allowed only for open of plain device.\n"
+msgstr "Tùy chọn “--shared” chỉ cho phép với thao tác tạo mở của thiết bị thường.\n"
+
+#: src/cryptsetup.c:3595
+msgid "Option --allow-discards is allowed only for open operation.\n"
+msgstr "Tùy chọn “--allow-discards” chỉ cho phép với thao tác mở.\n"
+
+#: src/cryptsetup.c:3600
+#, fuzzy
+msgid "Option --persistent is allowed only for open operation.\n"
+msgstr "Tùy chọn “--allow-discards” chỉ cho phép với thao tác mở.\n"
+
+#: src/cryptsetup.c:3605
+#, fuzzy
+msgid "Option --serialize-memory-hard-pbkdf is allowed only for open operation.\n"
+msgstr "Tùy chọn “--allow-discards” chỉ cho phép với thao tác mở.\n"
+
+#: src/cryptsetup.c:3610
+msgid "Option --persistent is not allowed with --test-passphrase.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3620
+#, fuzzy
+msgid ""
+"Option --key-size is allowed only for luksFormat, luksAddKey,\n"
+"open and benchmark actions. To limit read from keyfile use --keyfile-size=(bytes)."
+msgstr ""
+"Tùy chọn --key-size thì chỉ cho phép với các thao tác luksFormat, mở và đo kiểm.\n"
+"Để giới hạn đọc từ tập-tin-khóa, hãy sử dụng tùy chọn --keyfile-size=(bytes)."
+
+#: src/cryptsetup.c:3626
+#, fuzzy
+msgid "Option --integrity is allowed only for luksFormat (LUKS2).\n"
+msgstr "Tùy chọn “--align-payload” chỉ được phép cho “luksFormat”."
+
+#: src/cryptsetup.c:3631
+msgid "Option --integrity-no-wipe can be used only for format action with integrity extension.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3637
+#, fuzzy
+msgid "Options --label and --subsystem are allowed only for luksFormat and config LUKS2 operations.\n"
+msgstr "Tùy chọn “--allow-discards” thì chỉ cho phép với thao tác “luksOpen”, “loopaesOpen” và tạo (create).\n"
+
+#: src/cryptsetup.c:3643
+msgid "Option --test-passphrase is allowed only for open of LUKS and TCRYPT devices.\n"
+msgstr "Tùy chọn “--test-passphrase” chỉ được phép cho lệnh mở thiết bị LUKS và TCRYPT.\n"
+
+#: src/cryptsetup.c:3648 src/cryptsetup_reencrypt.c:1692
+msgid "Key size must be a multiple of 8 bits"
+msgstr "Kích cỡ khóa phải là bội số của 8 bít"
+
+#: src/cryptsetup.c:3654 src/cryptsetup_reencrypt.c:1378
+#: src/cryptsetup_reencrypt.c:1697
+msgid "Key slot is invalid."
+msgstr "Khe khóa không đúng."
+
+#: src/cryptsetup.c:3661
+#, fuzzy
+msgid "Option --key-file takes precedence over specified key file argument."
+msgstr "Tùy chọn --key-file giữ quyền ưu tiên cao hơn tham số tập tin khóa đã chỉ định.\n"
+
+#: src/cryptsetup.c:3668 src/veritysetup.c:539 src/integritysetup.c:649
+#: src/cryptsetup_reencrypt.c:1671
+msgid "Negative number for option not permitted."
+msgstr "Tùy chọn không chấp nhận giá trị là số âm."
+
+#: src/cryptsetup.c:3672
+msgid "Only one --key-file argument is allowed."
+msgstr "Chỉ cho phép một tùy chọn --key-file."
+
+#: src/cryptsetup.c:3676 src/cryptsetup_reencrypt.c:1663
+#: src/cryptsetup_reencrypt.c:1701
+msgid "Only one of --use-[u]random options is allowed."
+msgstr "Chỉ cho phép một tùy chọn “--use-[u]random”."
+
+#: src/cryptsetup.c:3680
+msgid "Option --use-[u]random is allowed only for luksFormat."
+msgstr "Tùy chọn “--use-[u]random” chỉ được phép cho “luksFormat”."
+
+#: src/cryptsetup.c:3684
+msgid "Option --uuid is allowed only for luksFormat and luksUUID."
+msgstr "Tùy chọn “--uuid” thì chỉ cho phép với “luksFormat” và “luksUUID”."
+
+#: src/cryptsetup.c:3688
+msgid "Option --align-payload is allowed only for luksFormat."
+msgstr "Tùy chọn “--align-payload” chỉ được phép cho “luksFormat”."
+
+#: src/cryptsetup.c:3692
+msgid "Options --luks2-metadata-size and --opt-luks2-keyslots-size are allowed only for luksFormat with LUKS2."
+msgstr ""
+
+#: src/cryptsetup.c:3697
+#, fuzzy
+msgid "Invalid LUKS2 metadata size specification."
+msgstr "Đặc tả kích thước thiết bị không đúng."
+
+#: src/cryptsetup.c:3701
+#, fuzzy
+msgid "Invalid LUKS2 keyslots size specification."
+msgstr "Đặc tả kích thước thiết bị không đúng."
+
+#: src/cryptsetup.c:3705
+#, fuzzy
+msgid "Options --align-payload and --offset cannot be combined."
+msgstr "Tùy chọn “--align-payload” chỉ được phép cho “luksFormat”."
+
+#: src/cryptsetup.c:3711
+msgid "Option --skip is supported only for open of plain and loopaes devices.\n"
+msgstr "Tùy chọn “--skip” chỉ hỗ trợ cho lệnh mở (open) của thiết bị thường và “loopaes”.\n"
+
+#: src/cryptsetup.c:3718
+#, fuzzy
+msgid "Option --offset is supported only for open of plain and loopaes devices, luksFormat and device reencryption.\n"
+msgstr "Tùy chọn “--offset” chỉ hỗ trợ cho lệnh mở (open) của thiết bị thường và “loopaes”.\n"
+
+#: src/cryptsetup.c:3724
+msgid "Option --tcrypt-hidden, --tcrypt-system or --tcrypt-backup is supported only for TCRYPT device.\n"
+msgstr "Tùy chọn --tcrypt-hidden, --tcrypt-system hay --tcrypt-backup chỉ được hỗ trợ trên thiết bị TCRYPT.\n"
+
+#: src/cryptsetup.c:3729
+msgid "Option --tcrypt-hidden cannot be combined with --allow-discards.\n"
+msgstr "Tùy chọn --tcrypt-hidden không thể được tổ hợp cùng với --allow-discards.\n"
+
+#: src/cryptsetup.c:3734
+msgid "Option --veracrypt is supported only for TCRYPT device type.\n"
+msgstr "Tùy chọn --veracrypt chỉ được hỗ trợ trên thiết bị TCRYPT.\n"
+
+#: src/cryptsetup.c:3740
+msgid "Invalid argument for parameter --veracrypt-pim supplied.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3744
+#, fuzzy
+msgid "Option --veracrypt-pim is supported only for VeraCrypt compatible devices.\n"
+msgstr "Tùy chọn --veracrypt chỉ được hỗ trợ trên thiết bị TCRYPT.\n"
+
+#: src/cryptsetup.c:3752
+#, fuzzy
+msgid "Option --veracrypt-query-pim is supported only for VeraCrypt compatible devices.\n"
+msgstr "Tùy chọn --veracrypt chỉ được hỗ trợ trên thiết bị TCRYPT.\n"
+
+#: src/cryptsetup.c:3756
+msgid "The options --veracrypt-pim and --veracrypt-query-pim are mutually exclusive.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3763
+msgid "Option --priority can be only ignore/normal/prefer.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3768
+msgid "Keyslot specification is required.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3773 src/cryptsetup_reencrypt.c:1677
+msgid "Password-based key derivation function (PBKDF) can be only pbkdf2 or argon2i/argon2id.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3778 src/cryptsetup_reencrypt.c:1682
+msgid "PBKDF forced iterations cannot be combined with iteration time option.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3784
+#, fuzzy
+msgid "Sector size option is not supported for this command.\n"
+msgstr "Thao tác này không được hỗ trợ cho kiểu thiết bị này.\n"
+
+#: src/cryptsetup.c:3790
+#, fuzzy
+msgid "Unsupported encryption sector size.\n"
+msgstr "Không đọc được tập tin nhật ký reencryption.\n"
+
+#: src/cryptsetup.c:3795
+msgid "Key size is required with --unbound option.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3800
+#, fuzzy
+msgid "Option --unbound may be used only with luksAddKey action.\n"
+msgstr "Tùy chọn “--new” không được sử dụng cùng với “ --decrypt”."
+
+#: src/cryptsetup.c:3805
+#, fuzzy
+msgid "Option --refresh may be used only with open action.\n"
+msgstr "Tùy chọn “--keep-key” có thể dùng với “--hash” hoặc “--iter-time”."
+
+#: src/cryptsetup.c:3816
+msgid "Cannot disable metadata locking.\n"
+msgstr ""
+
+#: src/cryptsetup.c:3826
+#, fuzzy
+msgid "Invalid max reencryption hotzone size specification."
+msgstr "Đặc tả kích thước thiết bị không đúng."
+
+#: src/cryptsetup.c:3834 src/cryptsetup_reencrypt.c:1706
+#: src/cryptsetup_reencrypt.c:1711
+msgid "Invalid device size specification."
+msgstr "Đặc tả kích thước thiết bị không đúng."
+
+#: src/cryptsetup.c:3837
+#, fuzzy
+msgid "Maximum device reduce size is 1 GiB."
+msgstr "Kích thước thu nhỏ thiết bị tối đa là 64 MiB."
+
+#: src/cryptsetup.c:3840 src/cryptsetup_reencrypt.c:1717
+msgid "Reduce size must be multiple of 512 bytes sector."
+msgstr "Kích cỡ giảm phải là bội số cung từ (sector) 512 byte"
+
+#: src/cryptsetup.c:3845
+#, fuzzy
+msgid "Invalid data size specification."
+msgstr "Đặc tả kích thước thiết bị không đúng."
+
+#: src/cryptsetup.c:3850
+#, fuzzy
+msgid "Reduce size overflow."
+msgstr "Khoảng bù (offset) thiết bị bị tràn.\n"
+
+#: src/cryptsetup.c:3854
+msgid "LUKS2 decryption requires option --header."
+msgstr ""
+
+#: src/cryptsetup.c:3858
+#, fuzzy
+msgid "Device size must be multiple of 512 bytes sector."
+msgstr "Kích cỡ giảm phải là bội số cung từ (sector) 512 byte"
+
+#: src/cryptsetup.c:3862
+msgid "Options --reduce-device-size and --data-size cannot be combined."
+msgstr ""
+
+#: src/cryptsetup.c:3866
+msgid "Options --device-size and --size cannot be combined."
+msgstr ""
+
+#: src/veritysetup.c:65
+#, fuzzy
+msgid "Invalid salt string specified."
+msgstr "Chuỗi salt (muối) đã cho không hợp lệ.\n"
+
+#: src/veritysetup.c:96
+#, fuzzy, c-format
+msgid "Cannot create hash image %s for writing."
+msgstr "Không thể tạo ảnh băm %s để ghi.\n"
+
+#: src/veritysetup.c:106
+#, fuzzy, c-format
+msgid "Cannot create FEC image %s for writing."
+msgstr "Không thể tạo ảnh băm %s để ghi.\n"
+
+#: src/veritysetup.c:176
+#, fuzzy
+msgid "Invalid root hash string specified."
+msgstr "Chuỗi mã băm gốc (thư mục root) đã chỉ ra không hợp lệ.\n"
+
+#: src/veritysetup.c:356
+msgid "<data_device> <hash_device>"
+msgstr "<thiết-bị-dữ-liệu> <thiết-bị-băm>"
+
+#: src/veritysetup.c:356 src/integritysetup.c:469
+msgid "format device"
+msgstr "định dạng thiết bị"
+
+#: src/veritysetup.c:357
+msgid "<data_device> <hash_device> <root_hash>"
+msgstr "<thiết-bị-dữ-liệu> <thiết-bị-băm> <mã-băm-gốc>"
+
+#: src/veritysetup.c:357
+msgid "verify device"
+msgstr "thẩm tra thiết bị"
+
+#: src/veritysetup.c:358
+#, fuzzy
+msgid "<data_device> <name> <hash_device> <root_hash>"
+msgstr "<thiết-bị-dữ-liệu> <thiết-bị-băm> <mã-băm-gốc>"
+
+#: src/veritysetup.c:360 src/integritysetup.c:472
+msgid "show active device status"
+msgstr "hiển thị trạng thái các thiết bị đang hoạt động"
+
+#: src/veritysetup.c:361
+msgid "<hash_device>"
+msgstr "<thiết_bị_băm>"
+
+#: src/veritysetup.c:361 src/integritysetup.c:473
+msgid "show on-disk information"
+msgstr "hiển thị thông tin trên-đĩa"
+
+#: src/veritysetup.c:380
+#, c-format
+msgid ""
+"\n"
+"<name> is the device to create under %s\n"
+"<data_device> is the data device\n"
+"<hash_device> is the device containing verification data\n"
+"<root_hash> hash of the root node on <hash_device>\n"
+msgstr ""
+"\n"
+"<tên> là thiết bị để tạo dưới %s\n"
+"<thiết-bị-dữ-liệu> là thiết bị dữ liệu\n"
+"<thiết-bị-băm> là thiết bị chứa dữ liệu xác thực\n"
+"<mã-băm-gốc> mã băm của nút root (gốc) trên <thiết-bị-băm>\n"
+
+#: src/veritysetup.c:387
+#, c-format
+msgid ""
+"\n"
+"Default compiled-in dm-verity parameters:\n"
+"\tHash: %s, Data block (bytes): %u, Hash block (bytes): %u, Salt size: %u, Hash format: %u\n"
+msgstr ""
+"\n"
+"Các tham số dm-verity dựng sẵn mặc định:\n"
+"\tBăm: %s, Khối dữ liệu (bytes): %u, Khối băm (bytes): %u, Kích thước muối: %u, Định dạng băm: %u\n"
+
+#: src/veritysetup.c:430
+msgid "Do not use verity superblock"
+msgstr "Không sử dụng siêu khối thẩm định"
+
+#: src/veritysetup.c:431
+msgid "Format type (1 - normal, 0 - original Chrome OS)"
+msgstr "Kiểu định dạng (1 - thông thường, 0 - Chrome OS)"
+
+#: src/veritysetup.c:431
+msgid "number"
+msgstr "số"
+
+#: src/veritysetup.c:432
+msgid "Block size on the data device"
+msgstr "Kích cỡ khối trên thiết bị dữ liệu"
+
+#: src/veritysetup.c:433
+msgid "Block size on the hash device"
+msgstr "Kích cỡ của khối trên thiết bị băm"
+
+#: src/veritysetup.c:434
+msgid "FEC parity bytes"
+msgstr ""
+
+#: src/veritysetup.c:435
+msgid "The number of blocks in the data file"
+msgstr "Số lượng khối trong tập tin dữ liệu"
+
+#: src/veritysetup.c:435
+msgid "blocks"
+msgstr "khối"
+
+#: src/veritysetup.c:436
+msgid "Path to device with error correction data"
+msgstr ""
+
+#: src/veritysetup.c:436 src/integritysetup.c:540
+msgid "path"
+msgstr ""
+
+#: src/veritysetup.c:437
+msgid "Starting offset on the hash device"
+msgstr "Khoảng bù (offset) khởi đầu của thiết bị băm"
+
+#: src/veritysetup.c:438
+#, fuzzy
+msgid "Starting offset on the FEC device"
+msgstr "Khoảng bù (offset) khởi đầu của thiết bị băm"
+
+#: src/veritysetup.c:439
+msgid "Hash algorithm"
+msgstr "Thuật toán băm"
+
+#: src/veritysetup.c:439
+msgid "string"
+msgstr "chuỗi"
+
+#: src/veritysetup.c:440
+msgid "Salt"
+msgstr "Muối"
+
+#: src/veritysetup.c:440
+msgid "hex string"
+msgstr "chuỗi hex (thập lục phân)"
+
+#: src/veritysetup.c:442
+msgid "Restart kernel if corruption is detected"
+msgstr "Khởi động lại nhân nếu thấy có sai hỏng"
+
+#: src/veritysetup.c:443
+msgid "Ignore corruption, log it only"
+msgstr "Bỏ qua sai hỏng, chỉ ghi nhật ký lại"
+
+#: src/veritysetup.c:444
+msgid "Do not verify zeroed blocks"
+msgstr "Không thẩm tra các khối không"
+
+#: src/veritysetup.c:445
+msgid "Verify data block only the first time it is read"
+msgstr ""
+
+#: src/veritysetup.c:545
+#, fuzzy
+msgid "Option --ignore-corruption, --restart-on-corruption or --ignore-zero-blocks is allowed only for open operation.\n"
+msgstr "Tùy chọn --ignore-corruption, --restart-on-corruption hay --ignore-zero-blocks chỉ được phép dùng cho thao tác tạo.\n"
+
+#: src/veritysetup.c:550
+msgid "Option --ignore-corruption and --restart-on-corruption cannot be used together.\n"
+msgstr "Không được dùng các tùy chọn --ignore-corruption và --restart-on-corruption cùng một lúc.\n"
+
+#: src/integritysetup.c:83 src/utils_password.c:305
+#, fuzzy, c-format
+msgid "Cannot read keyfile %s."
+msgstr "Không thể đọc tập-tin khóa %s.\n"
+
+#: src/integritysetup.c:87 src/utils_password.c:310
+#, fuzzy, c-format
+msgid "Cannot read %d bytes from keyfile %s."
+msgstr "Không thể đọc %d byte từ tập tin khóa %s.\n"
+
+#: src/integritysetup.c:250
+#, c-format
+msgid "Formatted with tag size %u, internal integrity %s.\n"
+msgstr ""
+
+#: src/integritysetup.c:469 src/integritysetup.c:473
+#, fuzzy
+msgid "<integrity_device>"
+msgstr "thẩm tra thiết bị"
+
+#: src/integritysetup.c:470
+msgid "<integrity_device> <name>"
+msgstr ""
+
+#: src/integritysetup.c:492
+#, fuzzy, c-format
+msgid ""
+"\n"
+"<name> is the device to create under %s\n"
+"<integrity_device> is the device containing data with integrity tags\n"
+msgstr ""
+"\n"
+"<tên> là thiết bị để tạo dưới %s\n"
+"<thiết-bị-dữ-liệu> là thiết bị dữ liệu\n"
+"<thiết-bị-băm> là thiết bị chứa dữ liệu xác thực\n"
+"<mã-băm-gốc> mã băm của nút root (gốc) trên <thiết-bị-băm>\n"
+
+#: src/integritysetup.c:497
+#, fuzzy, c-format
+msgid ""
+"\n"
+"Default compiled-in dm-integrity parameters:\n"
+"\tTag size: %u bytes, Checksum algorithm: %s\n"
+msgstr ""
+"\n"
+"Các tham số dm-verity dựng sẵn mặc định:\n"
+"\tBăm: %s, Khối dữ liệu (bytes): %u, Khối băm (bytes): %u, Kích thước muối: %u, Định dạng băm: %u\n"
+
+#: src/integritysetup.c:540
+msgid "Path to data device (if separated)"
+msgstr ""
+
+#: src/integritysetup.c:542
+msgid "Journal size"
+msgstr ""
+
+#: src/integritysetup.c:543
+msgid "Interleave sectors"
+msgstr ""
+
+#: src/integritysetup.c:544
+msgid "Journal watermark"
+msgstr ""
+
+#: src/integritysetup.c:544
+msgid "percent"
+msgstr ""
+
+#: src/integritysetup.c:545
+msgid "Journal commit time"
+msgstr ""
+
+#: src/integritysetup.c:545 src/integritysetup.c:547
+msgid "ms"
+msgstr ""
+
+#: src/integritysetup.c:546
+msgid "Number of 512-byte sectors per bit (bitmap mode)."
+msgstr ""
+
+#: src/integritysetup.c:547
+msgid "Bitmap mode flush time"
+msgstr ""
+
+#: src/integritysetup.c:548
+msgid "Tag size (per-sector)"
+msgstr ""
+
+#: src/integritysetup.c:549
+msgid "Sector size"
+msgstr ""
+
+#: src/integritysetup.c:550
+msgid "Buffers size"
+msgstr ""
+
+#: src/integritysetup.c:552
+msgid "Data integrity algorithm"
+msgstr ""
+
+#: src/integritysetup.c:553
+#, fuzzy
+msgid "The size of the data integrity key"
+msgstr "Kích cỡ của khóa mã hóa"
+
+#: src/integritysetup.c:554
+#, fuzzy
+msgid "Read the integrity key from a file"
+msgstr "Đọc khóa từ một tập tin."
+
+#: src/integritysetup.c:556
+msgid "Journal integrity algorithm"
+msgstr ""
+
+#: src/integritysetup.c:557
+#, fuzzy
+msgid "The size of the journal integrity key"
+msgstr "Kích cỡ của khóa mã hóa"
+
+#: src/integritysetup.c:558
+#, fuzzy
+msgid "Read the journal integrity key from a file"
+msgstr "Đọc khóa từ một tập tin."
+
+#: src/integritysetup.c:560
+msgid "Journal encryption algorithm"
+msgstr ""
+
+#: src/integritysetup.c:561
+#, fuzzy
+msgid "The size of the journal encryption key"
+msgstr "Kích cỡ của khóa mã hóa"
+
+#: src/integritysetup.c:562
+#, fuzzy
+msgid "Read the journal encryption key from a file"
+msgstr "Đọc khóa từ một tập tin."
+
+#: src/integritysetup.c:565
+msgid "Recovery mode (no journal, no tag checking)"
+msgstr ""
+
+#: src/integritysetup.c:566
+msgid "Use bitmap to track changes and disable journal for integrity device"
+msgstr ""
+
+#: src/integritysetup.c:567
+msgid "Recalculate initial tags automatically."
+msgstr ""
+
+#: src/integritysetup.c:640
+#, fuzzy
+msgid "Option --integrity-recalculate can be used only for open action."
+msgstr "Tùy chọn “--allow-discards” chỉ cho phép với thao tác mở.\n"
+
+#: src/integritysetup.c:655
+msgid "Options --journal-size, --interleave-sectors, --sector-size, --tag-size and --no-wipe can be used only for format action.\n"
+msgstr ""
+
+#: src/integritysetup.c:661
+#, fuzzy
+msgid "Invalid journal size specification."
+msgstr "Đặc tả kích thước thiết bị không đúng."
+
+#: src/integritysetup.c:666
+msgid "Both key file and key size options must be specified."
+msgstr ""
+
+#: src/integritysetup.c:669
+msgid "Integrity algorithm must be specified if integrity key is used."
+msgstr ""
+
+#: src/integritysetup.c:674
+msgid "Both journal integrity key file and key size options must be specified."
+msgstr ""
+
+#: src/integritysetup.c:677
+msgid "Journal integrity algorithm must be specified if journal integrity key is used."
+msgstr ""
+
+#: src/integritysetup.c:682
+msgid "Both journal encryption key file and key size options must be specified."
+msgstr ""
+
+#: src/integritysetup.c:685
+msgid "Journal encryption algorithm must be specified if journal encryption key is used."
+msgstr ""
+
+#: src/integritysetup.c:689
+msgid "Recovery and bitmap mode options are mutually exclusive."
+msgstr ""
+
+#: src/integritysetup.c:693
+msgid "Journal options cannot be used in bitmap mode."
+msgstr ""
+
+#: src/integritysetup.c:697
+msgid "Bitmap options can be used only in bitmap mode."
+msgstr ""
+
+#: src/cryptsetup_reencrypt.c:172
+#, fuzzy
+msgid "Reencryption already in-progress."
+msgstr "Kích thước khối mã hóa lại"
+
+#: src/cryptsetup_reencrypt.c:201
+#, fuzzy, c-format
+msgid "Cannot exclusively open %s, device in use."
+msgstr "Không thể mở %s một cách đệ qui, thiết bị vẫn đang được sử dụng.\n"
+
+#: src/cryptsetup_reencrypt.c:215 src/cryptsetup_reencrypt.c:1127
+#, fuzzy
+msgid "Allocation of aligned memory failed."
+msgstr "Phân bổ bộ nhớ điều chỉnh gặp lỗi.\n"
+
+#: src/cryptsetup_reencrypt.c:222
+#, fuzzy, c-format
+msgid "Cannot read device %s."
+msgstr "Không thể đọc thiết bị %s.\n"
+
+#: src/cryptsetup_reencrypt.c:233
+#, fuzzy, c-format
+msgid "Marking LUKS1 device %s unusable."
+msgstr "Đánh dấu thiết bị LUKS %s là không thể dùng.\n"
+
+#: src/cryptsetup_reencrypt.c:237
+#, c-format
+msgid "Setting LUKS2 offline reencrypt flag on device %s."
+msgstr ""
+
+#: src/cryptsetup_reencrypt.c:254
+#, fuzzy, c-format
+msgid "Cannot write device %s."
+msgstr "Không thể ghi thiết bị %s.\n"
+
+#: src/cryptsetup_reencrypt.c:302
+#, fuzzy
+msgid "Cannot write reencryption log file."
+msgstr "Không thể ghi tập tin nhật ký reencryption (mã hóa lại).\n"
+
+#: src/cryptsetup_reencrypt.c:358
+#, fuzzy
+msgid "Cannot read reencryption log file."
+msgstr "Không đọc được tập tin nhật ký reencryption.\n"
+
+#: src/cryptsetup_reencrypt.c:396
+#, c-format
+msgid "Log file %s exists, resuming reencryption.\n"
+msgstr "Tập tin nhật ký %s đã có sẵn rồi, giả định là reencryption (mã hóa lại).\n"
+
+#: src/cryptsetup_reencrypt.c:445
+#, fuzzy
+msgid "Activating temporary device using old LUKS header."
+msgstr "Hoạt hóa thiết bị tạm thời sử dụng phần đầu LUKS kiểu cũ.\n"
+
+#: src/cryptsetup_reencrypt.c:455
+#, fuzzy
+msgid "Activating temporary device using new LUKS header."
+msgstr "Hoạt hóa thiết bị tạm thời sử dụng phần đầu LUKS kiểu mới.\n"
+
+#: src/cryptsetup_reencrypt.c:465
+#, fuzzy
+msgid "Activation of temporary devices failed."
+msgstr "Việc hoạt hóa các thiết bị tạm thời gặp lỗi.\n"
+
+#: src/cryptsetup_reencrypt.c:551
+#, fuzzy
+msgid "Failed to set data offset."
+msgstr "Gặp lỗi khi lấy thông tin tập tin khóa.\n"
+
+#: src/cryptsetup_reencrypt.c:557
+#, fuzzy
+msgid "Failed to set metadata size."
+msgstr "Gặp lỗi khi lấy thông tin tập tin khóa.\n"
+
+#: src/cryptsetup_reencrypt.c:565
+#, fuzzy, c-format
+msgid "New LUKS header for device %s created."
+msgstr "Phần đầu LUKS mới cho thiết bị %s được tạo.\n"
+
+#: src/cryptsetup_reencrypt.c:625
+#, c-format
+msgid "This version of cryptsetup-reencrypt can't handle new internal token type %s."
+msgstr ""
+
+#: src/cryptsetup_reencrypt.c:647
+msgid "Failed to read activation flags from backup header."
+msgstr ""
+
+#: src/cryptsetup_reencrypt.c:651
+#, fuzzy
+msgid "Failed to write activation flags to new header."
+msgstr "Lỗi ghi khóa vào kho lưu khóa.\n"
+
+#: src/cryptsetup_reencrypt.c:655 src/cryptsetup_reencrypt.c:659
+#, fuzzy
+msgid "Failed to read requirements from backup header."
+msgstr "Lỗi đọc từ kho lưu khóa.\n"
+
+#: src/cryptsetup_reencrypt.c:697
+#, fuzzy, c-format
+msgid "%s header backup of device %s created."
+msgstr "Phần đầu sao lưu LUKS của thiết bị %s được tạo.\n"
+
+#: src/cryptsetup_reencrypt.c:760
+#, fuzzy
+msgid "Creation of LUKS backup headers failed."
+msgstr "Việc tạo phần đầu LUKS sao lưu dự phòng gặp lỗi.\n"
+
+#: src/cryptsetup_reencrypt.c:893
+#, fuzzy, c-format
+msgid "Cannot restore %s header on device %s."
+msgstr "Không thể phục hồi phần đầu LUKS trên thiết bị %s.\n"
+
+#: src/cryptsetup_reencrypt.c:895
+#, fuzzy, c-format
+msgid "%s header on device %s restored."
+msgstr "Phần đầu LUKS trên thiết bị %s đã được phục hồi.\n"
+
+#: src/cryptsetup_reencrypt.c:1099 src/cryptsetup_reencrypt.c:1105
+#, fuzzy
+msgid "Cannot open temporary LUKS device."
+msgstr "Không thể r thiết bị LUKS tạm thời.\n"
+
+#: src/cryptsetup_reencrypt.c:1110 src/cryptsetup_reencrypt.c:1115
+#, fuzzy
+msgid "Cannot get device size."
+msgstr "Không thể lấy kích cỡ thiết bị.\n"
+
+#: src/cryptsetup_reencrypt.c:1150
+#, fuzzy
+msgid "IO error during reencryption."
+msgstr "Lỗi IO (vào/ra) trong quá trình mã hóa lại.\n"
+
+#: src/cryptsetup_reencrypt.c:1181
+#, fuzzy
+msgid "Provided UUID is invalid."
+msgstr "UUID đã cung cấp không hợp lệ.\n"
+
+#: src/cryptsetup_reencrypt.c:1407
+#, fuzzy
+msgid "Cannot open reencryption log file."
+msgstr "Không mở được tập tin nhật ký reencryption.\n"
+
+#: src/cryptsetup_reencrypt.c:1413
+#, fuzzy
+msgid "No decryption in progress, provided UUID can be used only to resume suspended decryption process."
+msgstr "Không có quá trình giải mã nào đang xử lý, UUID đã cung cấp có thể chỉ được dùng để phục hồi lại tiến trình giải mã đã tạm dừng.\n"
+
+#: src/cryptsetup_reencrypt.c:1488
+#, c-format
+msgid "Changed pbkdf parameters in keyslot %i."
+msgstr ""
+
+#: src/cryptsetup_reencrypt.c:1600
+msgid "Reencryption block size"
+msgstr "Kích thước khối mã hóa lại"
+
+#: src/cryptsetup_reencrypt.c:1600
+msgid "MiB"
+msgstr "MiB"
+
+#: src/cryptsetup_reencrypt.c:1604
+#, fuzzy
+msgid "Do not change key, no data area reencryption"
+msgstr "Khôngười thay đổi khóa, không có mã hóa lại vùng dữ liệu."
+
+#: src/cryptsetup_reencrypt.c:1606
+#, fuzzy
+msgid "Read new volume (master) key from file"
+msgstr "Đọc khóa khối tin (chủ) từ tập tin."
+
+#: src/cryptsetup_reencrypt.c:1607
+msgid "PBKDF2 iteration time for LUKS (in ms)"
+msgstr "Thời gian lặp lại PBKDF2 cho LUKS (theo mili-giây)"
+
+#: src/cryptsetup_reencrypt.c:1613
+#, fuzzy
+msgid "Use direct-io when accessing devices"
+msgstr "Sử dụng vào ra trực tiếp khi truy cập các thiết bị."
+
+#: src/cryptsetup_reencrypt.c:1614
+#, fuzzy
+msgid "Use fsync after each block"
+msgstr "Sử dụng fsync sau mỗi khối."
+
+#: src/cryptsetup_reencrypt.c:1615
+#, fuzzy
+msgid "Update log file after every block"
+msgstr "Cập nhật tập tin nhật ký sau mỗi khối."
+
+#: src/cryptsetup_reencrypt.c:1616
+#, fuzzy
+msgid "Use only this slot (others will be disabled)"
+msgstr "Chỉ sử dụng khe này (những cái khác sẽ bị tắt đi)."
+
+#: src/cryptsetup_reencrypt.c:1621
+#, fuzzy
+msgid "Create new header on not encrypted device"
+msgstr "Tạo phần đầu mới không trên thiết bị được mã hóa."
+
+#: src/cryptsetup_reencrypt.c:1622
+#, fuzzy
+msgid "Permanently decrypt device (remove encryption)"
+msgstr "Thiết bị mã hóa cố định (gỡ bỏ mã hóa)."
+
+#: src/cryptsetup_reencrypt.c:1623
+#, fuzzy
+msgid "The UUID used to resume decryption"
+msgstr "uuid được dùng để khôi phục việc giải mã."
+
+#: src/cryptsetup_reencrypt.c:1624
+#, fuzzy
+msgid "Type of LUKS metadata: luks1, luks2"
+msgstr "Kiểu của siêu dữ liệu thiết bị: luks, plain, loopaes, tcrypt."
+
+#: src/cryptsetup_reencrypt.c:1643
+msgid "[OPTION...] <device>"
+msgstr "[TÙY_CHỌN…] <thiết-bị>"
+
+#: src/cryptsetup_reencrypt.c:1651
+#, fuzzy, c-format
+msgid "Reencryption will change: %s%s%s%s%s%s."
+msgstr "Reencryption sẽ thay đổi: khóa dung lượng%s%s%s%s.\n"
+
+#: src/cryptsetup_reencrypt.c:1652
+msgid "volume key"
+msgstr ""
+
+#: src/cryptsetup_reencrypt.c:1654
+#, fuzzy
+msgid "set hash to "
+msgstr ", đặt kiểu băm thành "
+
+#: src/cryptsetup_reencrypt.c:1655
+msgid ", set cipher to "
+msgstr ", đặt kiểu mã hóa thành "
+
+#: src/cryptsetup_reencrypt.c:1659
+msgid "Argument required."
+msgstr "Cần đối số."
+
+#: src/cryptsetup_reencrypt.c:1687
+msgid "Only values between 1 MiB and 64 MiB allowed for reencryption block size."
+msgstr "Chỉ những giá trị nằm giữa 1MiB và 64 MiB là cho phép đối với kích thước khối reencryption (mã hóa lại)."
+
+#: src/cryptsetup_reencrypt.c:1714
+msgid "Maximum device reduce size is 64 MiB."
+msgstr "Kích thước thu nhỏ thiết bị tối đa là 64 MiB."
+
+#: src/cryptsetup_reencrypt.c:1721
+#, fuzzy
+msgid "Option --new must be used together with --reduce-device-size or --header."
+msgstr "Tùy chọn “--new” phải được sử dụng cùng với “--reduce-device-size”."
+
+#: src/cryptsetup_reencrypt.c:1725
+#, fuzzy
+msgid "Option --keep-key can be used only with --hash, --iter-time or --pbkdf-force-iterations."
+msgstr "Tùy chọn “--keep-key” có thể dùng với “--hash” hoặc “--iter-time”."
+
+#: src/cryptsetup_reencrypt.c:1729
+msgid "Option --new cannot be used together with --decrypt."
+msgstr "Tùy chọn “--new” không được sử dụng cùng với “ --decrypt”."
+
+#: src/cryptsetup_reencrypt.c:1733
+msgid "Option --decrypt is incompatible with specified parameters."
+msgstr "Tùy chọn --decrypt không tương thích với các đối số đã cho."
+
+#: src/cryptsetup_reencrypt.c:1737
+msgid "Option --uuid is allowed only together with --decrypt."
+msgstr "Tùy chọn “--uuid” chỉ được sử dụng cùng với “ --decrypt”."
+
+#: src/cryptsetup_reencrypt.c:1741
+msgid "Invalid luks type. Use one of these: 'luks', 'luks1' or 'luks2'."
+msgstr ""
+
+#: src/utils_tools.c:151
+#, fuzzy
+msgid "Error reading response from terminal."
+msgstr "Gặp lỗi khi đọc phản hồi từ thiết bị cuối.\n"
+
+#: src/utils_tools.c:186
+msgid "Command successful.\n"
+msgstr "Câu lệnh đã chạy thành công.\n"
+
+#: src/utils_tools.c:194
+msgid "wrong or missing parameters"
+msgstr ""
+
+#: src/utils_tools.c:196
+#, fuzzy
+msgid "no permission or bad passphrase"
+msgstr "Nhập bất cứ cụm từ mật khẩu nào: "
+
+#: src/utils_tools.c:198
+#, fuzzy
+msgid "out of memory"
+msgstr "Không thể mở khóa bộ nhớ.\n"
+
+#: src/utils_tools.c:200
+msgid "wrong device or file specified"
+msgstr ""
+
+#: src/utils_tools.c:202
+#, fuzzy
+msgid "device already exists or device is busy"
+msgstr "Thiết bị %s đã sẵn có.\n"
+
+#: src/utils_tools.c:204
+msgid "unknown error"
+msgstr ""
+
+#: src/utils_tools.c:206
+#, fuzzy, c-format
+msgid "Command failed with code %i (%s).\n"
+msgstr "Câu lệnh đã thất bại với mã %i"
+
+#: src/utils_tools.c:283
+#, fuzzy, c-format
+msgid "Key slot %i created."
+msgstr "Khe khóa %d đã thay đổi.\n"
+
+#: src/utils_tools.c:285
+#, fuzzy, c-format
+msgid "Key slot %i unlocked."
+msgstr "Khe khóa %d được mở khóa.\n"
+
+#: src/utils_tools.c:287
+#, fuzzy, c-format
+msgid "Key slot %i removed."
+msgstr "Khe khóa %d được mở khóa.\n"
+
+#: src/utils_tools.c:296
+#, c-format
+msgid "Token %i created."
+msgstr ""
+
+#: src/utils_tools.c:298
+#, c-format
+msgid "Token %i removed."
+msgstr ""
+
+#: src/utils_tools.c:464
+msgid ""
+"\n"
+"Wipe interrupted."
+msgstr ""
+
+#: src/utils_tools.c:475
+#, c-format
+msgid "WARNING: Device %s already contains a '%s' partition signature.\n"
+msgstr ""
+
+#: src/utils_tools.c:483
+#, c-format
+msgid "WARNING: Device %s already contains a '%s' superblock signature.\n"
+msgstr ""
+
+#: src/utils_tools.c:504 src/utils_tools.c:568
+#, fuzzy
+msgid "Failed to initialize device signature probes."
+msgstr "Lỗi lấy thư mục trình ánh xạ thiết bị."
+
+#: src/utils_tools.c:548
+#, fuzzy, c-format
+msgid "Failed to stat device %s."
+msgstr "Gặp lỗi khi lấy thông tin tập tin khóa.\n"
+
+#: src/utils_tools.c:561
+#, c-format
+msgid "Device %s is in use. Can not proceed with format operation."
+msgstr ""
+
+#: src/utils_tools.c:563
+#, c-format
+msgid "Failed to open file %s in read/write mode."
+msgstr ""
+
+#: src/utils_tools.c:577
+#, c-format
+msgid "Existing '%s' partition signature (offset: %<PRIi64> bytes) on device %s will be wiped."
+msgstr ""
+
+#: src/utils_tools.c:580
+#, c-format
+msgid "Existing '%s' superblock signature (offset: %<PRIi64> bytes) on device %s will be wiped."
+msgstr ""
+
+#: src/utils_tools.c:583
+#, fuzzy
+msgid "Failed to wipe device signature."
+msgstr "Lỗi ghi khóa vào kho lưu khóa.\n"
+
+#: src/utils_tools.c:590
+#, fuzzy, c-format
+msgid "Failed to probe device %s for a signature."
+msgstr "Lỗi lấy thư mục trình ánh xạ thiết bị."
+
+#: src/utils_tools.c:629
+#, fuzzy
+msgid ""
+"\n"
+"Reencryption interrupted."
+msgstr "Kích thước khối mã hóa lại"
+
+#: src/utils_password.c:43 src/utils_password.c:75
+#, fuzzy, c-format
+msgid "Cannot check password quality: %s"
+msgstr "Không thể kiểm tra chất lượng mật khẩu: %s\n"
+
+#: src/utils_password.c:51
+#, fuzzy, c-format
+msgid ""
+"Password quality check failed:\n"
+" %s"
+msgstr ""
+"Chất lượng mật khẩu không đạt:\n"
+" %s\n"
+
+#: src/utils_password.c:83
+#, fuzzy, c-format
+msgid "Password quality check failed: Bad passphrase (%s)"
+msgstr "Gặp lỗi khi kiểm tra chất lượng mật khẩu: mật khẩu sai (%s)\n"
+
+#: src/utils_password.c:193 src/utils_password.c:208
+#, fuzzy
+msgid "Error reading passphrase from terminal."
+msgstr "Gặp lỗi khi đọc cụm từ mật khẩu từ thiết bị cuối.\n"
+
+#: src/utils_password.c:206
+msgid "Verify passphrase: "
+msgstr "Nhập lại mật khẩu: "
+
+#: src/utils_password.c:213
+#, fuzzy
+msgid "Passphrases do not match."
+msgstr "Hai cụm từ mật khẩu không trùng nhau.\n"
+
+#: src/utils_password.c:250
+#, fuzzy
+msgid "Cannot use offset with terminal input."
+msgstr "Không thể sử dụng khoảng bù (offset) với đầu vào là thiết bị cuối.\n"
+
+#: src/utils_password.c:253
+#, c-format
+msgid "Enter passphrase: "
+msgstr "Gõ cụm từ mật khẩu: "
+
+#: src/utils_password.c:256
+#, c-format
+msgid "Enter passphrase for %s: "
+msgstr "Nhập cụm từ mật khẩu cho %s: "
+
+#: src/utils_password.c:287
+#, fuzzy
+msgid "No key available with this passphrase."
+msgstr "Không có khóa sẵn sàng dùng với cụm từ mật khẩu này.\n"
+
+#: src/utils_password.c:289
+msgid "No usable keyslot is available."
+msgstr ""
+
+#: src/utils_password.c:328
+#, fuzzy, c-format
+msgid "Cannot open keyfile %s for write."
+msgstr "Không thể mở tập tin %s.\n"
+
+#: src/utils_password.c:335
+#, fuzzy, c-format
+msgid "Cannot write to keyfile %s."
+msgstr "Không thể đọc tập-tin khóa %s.\n"
+
+#: src/utils_luks2.c:47
+#, fuzzy, c-format
+msgid "Failed to open file %s in read-only mode."
+msgstr "Gặp lỗi khi mở tập tin khóa.\n"
+
+#: src/utils_luks2.c:60
+msgid "Provide valid LUKS2 token JSON:\n"
+msgstr ""
+
+#: src/utils_luks2.c:67
+#, fuzzy
+msgid "Failed to read JSON file."
+msgstr "Gặp lỗi khi mở tập tin khóa.\n"
+
+#: src/utils_luks2.c:72
+#, fuzzy
+msgid ""
+"\n"
+"Read interrupted."
+msgstr "phần đầu VERITY sai hỏng.\n"
+
+#: src/utils_luks2.c:113
+#, fuzzy, c-format
+msgid "Failed to open file %s in write mode."
+msgstr "Gặp lỗi khi mở tập tin khóa.\n"
+
+#: src/utils_luks2.c:122
+msgid ""
+"\n"
+"Write interrupted."
+msgstr ""
+
+#: src/utils_luks2.c:126
+#, fuzzy
+msgid "Failed to write JSON file."
+msgstr "Gặp lỗi khi mở tập tin khóa.\n"
+
+#~ msgid "Replaced with key slot %d.\n"
+#~ msgstr "Đã thay thế với khe khóa %d.\n"
+
+#~ msgid "Function not available in FIPS mode.\n"
+#~ msgstr "Chức năng không khả dụng trong chế độ “FIPS”.\n"
+
+#~ msgid "Too many tree levels for verity volume.\n"
+#~ msgstr "Có quá nhiều mức cây cho mỗi vùng xác thực.\n"
+
+#~ msgid "memory allocation error in action_luksFormat"
+#~ msgstr "gặp lỗi phân cấp vùng nhớ trong“action_luksFormat”"
+
+#~ msgid "Key %d not active. Can't wipe.\n"
+#~ msgstr "Khóa %d không hoạt động thì không xóa được.\n"
+
+#~ msgid "<name> <data_device> <hash_device> <root_hash>"
+#~ msgstr "<tên> <thiết-bị-dữ-liệu> <thiết-bị-băm> <mã-băm-gốc>"
+
+#~ msgid "create active device"
+#~ msgstr "tạo thiết bị hoạt động"
+
+#~ msgid "remove (deactivate) device"
+#~ msgstr "gỡ bỏ (dừng hoạt động) thiết bị"
+
+#~ msgid "Activated keyslot %i.\n"
+#~ msgstr "Khe-khóa (keyslot) đã được kích hoạt %i.\n"
+
+#~ msgid "Progress: %5.1f%%, ETA %02llu:%02llu, %4llu MiB written, speed %5.1f MiB/s%s"
+#~ msgstr "Diễn biến: %5.1f%%, ETA %02llu:%02llu, đã ghi %4llu MiB, tốc độ %5.1f MiB/s%s"
+
+#~ msgid "Interrupted by a signal.\n"
+#~ msgstr "Bị ngắt bởi tín hiệu signal.\n"
+
+#~ msgid "Cannot find a free loopback device.\n"
+#~ msgstr "Không tìm thấy thiết bị vòng ngược (loopback) nào còn rảnh.\n"
+
+#~ msgid "Cannot open device %s\n"
+#~ msgstr "Không thể mở thiết bị %s\n"
+
+#~ msgid "Marking LUKS device %s usable.\n"
+#~ msgstr "Đánh dấu thiết bị LUKS %s là có thể dùng.\n"
+
+#~ msgid "WARNING: this is experimental code, it can completely break your data.\n"
+#~ msgstr "CẢNH BÁO: đây chỉ là mã thử nghiệm, nó có thể phá hoại dữ liệu của bạn.\n"
+
+#~ msgid "FIPS checksum verification failed.\n"
+#~ msgstr "Thẩm tra mã băm FIPS không đạt.\n"
+
+#~ msgid "WARNING: device %s is a partition, for TCRYPT system encryption you usually need to use whole block device path.\n"
+#~ msgstr "CẢNH BÁO: thiết-bị %s là một phân vùng, với mã hóa hệ thống TCRYPT bạn thường cần phải sử dụng toàn bộ đường dẫn thiết-bị khối.\n"
+
+#~ msgid "Kernel doesn't support plain64 IV.\n"
+#~ msgstr "Nhân không hỗ trợ plain64 IV.\n"
+
+#~ msgid "Enter LUKS passphrase: "
+#~ msgstr "Gõ cụm từ mật khẩu LUKS: "
+
+#~ msgid "Enter new LUKS passphrase: "
+#~ msgstr "Gõ cụm từ mật khẩu LUKS: "
+
+#~ msgid "Enter any LUKS passphrase: "
+#~ msgstr "Nhập mật khẩu LUKS vào: "
+
+#~ msgid "Backup file %s doesn't exist.\n"
+#~ msgstr "Tập tin sao lưu %s không tồn tại.\n"
+
+#~ msgid "<name> <device>"
+#~ msgstr "<tên> <thiết_bị>"
+
+#~ msgid "create device"
+#~ msgstr "tạo thiết bị"
+
+#~ msgid "remove device"
+#~ msgstr "gỡ bỏ thiết bị"
+
+#~ msgid "remove LUKS mapping"
+#~ msgstr "gỡ bỏ sự ánh xạ LUKS"
+
+#~ msgid "open loop-AES device as mapping <name>"
+#~ msgstr "mở thiết bị loop-AES như là ánh xạ <tên>"
+
+#~ msgid "remove loop-AES mapping"
+#~ msgstr "gỡ bỏ ánh xạ loop-AES"
+
+#~ msgid "Cannot open device %s for %s%s access.\n"
+#~ msgstr "Không thể mở thiết bị %s cho truy cập %s%s.\n"
+
+#~ msgid "exclusive "
+#~ msgstr "dành riêng "
+
+#~ msgid "writable"
+#~ msgstr "ghi được"
+
+#~ msgid "read-only"
+#~ msgstr "chỉ đọc"
+
+#~ msgid "WARNING!!! Possibly insecure memory. Are you root?\n"
+#~ msgstr "CẢNH BÁO!!! Có thể là vùng nhớ không an toàn. Bạn có đang chạy dưới quyền siêu người dùng (root) không?\n"
+
+#~ msgid "Unable to obtain sector size for %s"
+#~ msgstr "Không thể lấy kích cỡ cung từ cho %s"
+
+#~ msgid "Cannot use device %s (crypt segments overlaps or in use by another device).\n"
+#~ msgstr "Không thể sử dụng thiết bị %s (các đoạn crypt chồng lên nhau hay đang sử dụng bởi thiết bị khác).\n"
+
+#~ msgid "Cannot find compatible device-mapper kernel modules.\n"
+#~ msgstr "Không tìm thấy mô-đun hạt nhân ánh xạ thiết bị tương thích.\n"
+
+#~ msgid "Warning: exhausting read requested, but key file %s is not a regular file, function might never return.\n"
+#~ msgstr "Cảnh báo: yêu cầu một hàm đọc vét kiệt mà tập tin khóa %s không phải là một tập tin thông thường thì có thể là hàm chưa bao giờ trả lại.\n"
+
+#~ msgid "Cannot open device: %s\n"
+#~ msgstr "Không thể mở thiết bị: %s\n"
+
+#~ msgid "BLKROGET failed on device %s.\n"
+#~ msgstr "BLKROGET bị lỗi trên thiết bị %s.\n"
+
+#~ msgid "BLKGETSIZE failed on device %s.\n"
+#~ msgstr "BLKGETSIZE bị lỗi trên thiết bị %s.\n"
+
+#~ msgid "identical to luksKillSlot - DEPRECATED - see man page"
+#~ msgstr "trùng với luksKillSlot - BỊ PHẢN ĐỐI - xem trang hướng dẫn"
+
+#~ msgid "modify active device - DEPRECATED - see man page"
+#~ msgstr "sửa đổi thiết bị hoạt động - BỊ PHẢN ĐỐI - xem trang hướng dẫn"
+
+#~ msgid ""
+#~ "The reload action is deprecated. Please use`dmsetup reload' in case you really need this functionality.\n"
+#~ "WARNING: do not use reload to touch LUKS devices. If that is the case, hit Ctrl-C now.\n"
+#~ msgstr ""
+#~ "Thao tác nạp lại bị phản đối. Hãy sử dụng“dmsetup reload” trong trường hợp bạn thực sự yêu cầu chức năng này.\n"
+#~ "CẢNH BÁO: đừng sử dụng chức năng nạp lại để thao tác thiết bị kiểu LUKS. Trong trường hợp đó, bấm tổ hợp phím Ctrl-C ngay bây giờ.\n"
+
+#~ msgid "Obsolete option --non-exclusive is ignored.\n"
+#~ msgstr "Tùy chọn cũ“--non-exclusive” bị bỏ qua.\n"
+
+#~ msgid "Read the key from a file (can be /dev/random)"
+#~ msgstr "Đọc khóa từ một tập tin nào đó (có thể là“/dev/random”)"
+
+#~ msgid "(Obsoleted, see man page.)"
+#~ msgstr "(Bị phản đối, xem trang hướng dẫn.)"

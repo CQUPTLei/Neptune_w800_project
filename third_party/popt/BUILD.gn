@@ -1,0 +1,37 @@
+# Copyright (c) Huawei Technologies Co., Ltd. 2020-2020. All rights reserved.
+
+import("//build/lite/config/component/lite_component.gni")
+
+config("popt_config") {
+  include_dirs = [ "//third_party/popt" ]
+}
+
+popt_sources = [
+  "popt.c",
+  "popthelp.c",
+  "poptint.c",
+  "poptparse.c",
+]
+
+static_library("popt_static") {
+  sources = popt_sources
+  output_name = "popt"
+  public_configs = [ ":popt_config" ]
+  defines = [
+    "HAVE_CONFIG_H",
+    "_GNU_SOURCE",
+    "_REENTRANT",
+  ]
+  cflags_c = [
+    "-Wall",
+    "-Os",
+    "-g",
+    "-W",
+    "-ffunction-sections",
+    "-fdata-sections",
+  ]
+  ldflags = [
+    "-Wl",
+    "--gc-sections",
+  ]
+}

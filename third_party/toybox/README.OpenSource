@@ -1,0 +1,11 @@
+[
+    {
+        "Name"                  : "toybox",
+        "License"               : "Public Domain",
+        "License File"          : "LICENSE",
+        "Version Number"        : "0.8.2",
+        "Owner"                 : "maguangyao@huawei.com",
+        "Upstream URL"          : "http://landley.net/toybox",
+        "Description"           : "Toybox combines common Linux command line utilities together into a single BSD-licensed executable that's simple, small, fast, reasonably standards-compliant, and powerful enough to turn Android into a development environment."
+    }
+]

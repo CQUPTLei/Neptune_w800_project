@@ -1,0 +1,11 @@
+[
+    {
+        "Name"                  : "cryptsetup",
+        "License"               : "GNU General Public License，Version 2",
+        "License File"          : "COPYING",
+        "Version Number"        : "2.2.2",
+        "Owner"                 : "jiangxiaofeng8@huawei.com",
+        "Upstream URL"          : "https://gitlab.com/cryptsetup/cryptsetup",
+        "Description"           : "Cryptsetup is utility used to conveniently setup disk encryption based on DMCrypt kernel module."
+    }
+]

@@ -1,0 +1,76 @@
+# Copyright (c) 2021 Huawei Device Co., Ltd.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+group("uikit_test") {
+  deps = [
+    "//test/xts/acts/graphic_lite/a:ActsUiInterfaceTest",
+    "//test/xts/acts/graphic_lite/animator_posix:ActsAnimatorTest",
+    "//test/xts/acts/graphic_lite/color_posix:ActsColorTest",
+    "//test/xts/acts/graphic_lite/easing_equation_posix:ActsEasingEquationTest",
+    "//test/xts/acts/graphic_lite/events_posix:ActsEventsTest",
+    "//test/xts/acts/graphic_lite/flexlayout_posix:ActsFlexlaoutTest",
+    "//test/xts/acts/graphic_lite/geometry2d_posix:ActsGeometyr2dTest",
+    "//test/xts/acts/graphic_lite/graphic_math_posix:ActsGraphicMathTest",
+    "//test/xts/acts/graphic_lite/gridlayout_posix:ActsGridLayoutTest",
+    "//test/xts/acts/graphic_lite/heap_base_posix:ActsHeapBaseTest",
+    "//test/xts/acts/graphic_lite/image_posix:ActsImageTest",
+    "//test/xts/acts/graphic_lite/interpolation_posix:ActsInterpoliationTest",
+    "//test/xts/acts/graphic_lite/layout_posix:ActsLayoutTest",
+    "//test/xts/acts/graphic_lite/list_posix:ActsListTest",
+    "//test/xts/acts/graphic_lite/listlayout_posix:ActsListlayoutTest",
+    "//test/xts/acts/graphic_lite/mem_api_posix:ActsGraphMemApiTest",
+    "//test/xts/acts/graphic_lite/rect_posix:ActsRectTest",
+    "//test/xts/acts/graphic_lite/screen_posix:ActsScreenTest",
+    "//test/xts/acts/graphic_lite/style_posix:ActsStyleTest",
+
+    #"//test/xts/acts/graphic_lite/sys_info_posix:ActsSysInfoTest",
+    "//test/xts/acts/graphic_lite/surface_posix:ActsSurfaceTest",
+    "//test/xts/acts/graphic_lite/theme_posix:ActsThemeTest",
+    "//test/xts/acts/graphic_lite/transform_posix:ActsTransformTest",
+    "//test/xts/acts/graphic_lite/ui_abstract_progress_posix:ActsUIAbstractProgressTest",
+    "//test/xts/acts/graphic_lite/ui_analog_clock_posix:ActsUIAnalogClockTest",
+    "//test/xts/acts/graphic_lite/ui_arc_lable_posix:ActsUIArcLabelTest",
+    "//test/xts/acts/graphic_lite/ui_axis_posix:ActsUIAxisTest",
+    "//test/xts/acts/graphic_lite/ui_box_porgress_posix:ActsUIBoxProgressTest",
+    "//test/xts/acts/graphic_lite/ui_button_posix:ActsUIButtonTest",
+    "//test/xts/acts/graphic_lite/ui_canvas_posix:ActsUICanvasTest",
+    "//test/xts/acts/graphic_lite/ui_chart_posix:ActsUIChartTest",
+    "//test/xts/acts/graphic_lite/ui_checbox_posix:ActsUICheckboxTest",
+    "//test/xts/acts/graphic_lite/ui_circle_progress_posix:ActsUICircleProgressTest",
+    "//test/xts/acts/graphic_lite/ui_digital_clock_posix:ActsUIDigitalClockTest",
+    "//test/xts/acts/graphic_lite/ui_image_animator_posix:ActsUIImageAnimatorTest",
+    "//test/xts/acts/graphic_lite/ui_image_posix:ActsUIImageTest",
+    "//test/xts/acts/graphic_lite/ui_label_button_posix:ActsUILabelButtonTest",
+    "//test/xts/acts/graphic_lite/ui_label_posix:ActsUILabelTest",
+    "//test/xts/acts/graphic_lite/ui_list_posix:ActsUIListTest",
+    "//test/xts/acts/graphic_lite/ui_picker_posix:ActsUIPickerTest",
+    "//test/xts/acts/graphic_lite/ui_radio_button_posix:ActsUIRadioButtonTest",
+    "//test/xts/acts/graphic_lite/ui_repeat_button_posix:ActsUIRepeatButtonTest",
+    "//test/xts/acts/graphic_lite/ui_screenshot_posix:ActsUIScreenshotTest",
+    "//test/xts/acts/graphic_lite/ui_scroll_view_posix:ActsUIScrollViewTest",
+    "//test/xts/acts/graphic_lite/ui_slider_posix:ActsUISliderTest",
+    "//test/xts/acts/graphic_lite/ui_surface_view_posix:ActsUISurfaceViewTest",
+    "//test/xts/acts/graphic_lite/ui_swipe_view_posix:ActsUISwipeViewTest",
+    "//test/xts/acts/graphic_lite/ui_text_posix:ActsUITextTest",
+    "//test/xts/acts/graphic_lite/ui_texture_mapper_posix:ActsUITextureMapperTest",
+    "//test/xts/acts/graphic_lite/ui_time_picker_posix:ActsUITimePickerTest",
+    "//test/xts/acts/graphic_lite/ui_toggle_button_posix:ActsUIToggleButtonTest",
+    "//test/xts/acts/graphic_lite/ui_view_group_posix:ActsUIViewGroupTest",
+    "//test/xts/acts/graphic_lite/ui_view_posix:ActsUIViewTest",
+    "//test/xts/acts/graphic_lite/uianimator_posix:ActsUIAnimatorTest",
+
+    #"//test/xts/acts/graphic_lite/uidfx_posix:ActsUIDfxTest",
+    #"//test/xts/acts/graphic_lite/uifont_posix:ActsUIFontTest",
+    "//test/xts/acts/graphic_lite/version_posix:ActsGraphVersionTest",
+  ]
+}

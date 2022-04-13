@@ -1,0 +1,162 @@
+rule cc
+  command = csky-abiv2-elf-gcc ${defines} ${include_dirs} ${cflags} ${cflags_c} -c ${in} -o ${out}
+  description = gcc cross compiler ${out}
+rule cxx
+  command = csky-abiv2-elf-g++ ${defines} ${include_dirs} ${cflags_cc} -c ${in} -o ${out}
+  description = gcc CXX ${out}
+  depfile = ${out}.d
+  deps = gcc
+rule asm
+  command = csky-abiv2-elf-gcc ${defines} ${include_dirs} ${asmflags} ${in} -c -o ${out}
+  description = gcc cross compiler ${out}
+  depfile = ${out}.d
+  deps = gcc
+rule alink
+  command = csky-abiv2-elf-ar cr ${out} @"${out}.rsp"
+  description = AR ${out}
+  rspfile = ${out}.rsp
+  rspfile_content = ${in}
+rule solink
+  command = csky-abiv2-elf-gcc -shared ${ldflags}  -Wl,--start-group ${in} ${libs} -Wl,--end-group -o ${output_dir}/${target_output_name}${output_extension}
+  description = SOLINK ${output_dir}/${target_output_name}${output_extension}
+  rspfile = ${out}.rsp
+  rspfile_content = ${in}
+rule link
+  command = csky-abiv2-elf-gcc ${ldflags}  -Wl,--start-group ${in} ${libs} -Wl,--end-group -o ${output_dir}/bin/${target_output_name}${output_extension} 
+  description = LINK ${output_dir}/bin/${target_output_name}${output_extension}
+  rspfile = ${output_dir}/bin/${target_output_name}${output_extension}.rsp
+  rspfile_content = ${in}
+rule stamp
+  command = /usr/bin/touch ${out}
+  description = STAMP ${out}
+rule copy
+  command = cp -afd ${in} ${out}
+  description = COPY ${in} ${out}
+
+build obj/applications/sample/wifi-iot/app/app.stamp: stamp ./libs/libmy_test_gn.a
+subninja obj/applications/sample/wifi-iot/app/my_test_gn/my_test_gn.ninja
+subninja obj/base/hiviewdfx/hievent_lite/hievent_lite.ninja
+subninja obj/base/hiviewdfx/hilog_lite/command/hilog_lite_command.ninja
+subninja obj/base/hiviewdfx/hilog_lite/frameworks/mini/hilog_lite.ninja
+build obj/base/hiviewdfx/hilog_lite/frameworks/mini/hilog_lite_ndk.stamp: stamp ./libs/libhilog_lite.a
+subninja obj/base/hiviewdfx/hiview_lite/hiview_lite.ninja
+build obj/base/iot_hardware/peripheral/iothardware.stamp: stamp obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/hal_iothardware.stamp
+build obj/base/iot_hardware/peripheral/iothardware_ndk.stamp: stamp obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/hal_iothardware.stamp
+build obj/base/security/deviceauth/frameworks/deviceauth_lite/hichainsdk.stamp: stamp ./libs/libhichainsdk.a
+subninja obj/base/security/deviceauth/frameworks/deviceauth_lite/source/hichainsdk.ninja
+build obj/base/security/huks/frameworks/huks_lite/huks_sdk.stamp: stamp ./libs/libhuks.a
+subninja obj/base/security/huks/frameworks/huks_lite/source/huks.ninja
+subninja obj/base/startup/bootstrap_lite/services/source/bootstrap.ninja
+build obj/base/startup/syspara_lite/frameworks/parameter/parameter.stamp: stamp ./libs/libsysparam.a
+build obj/base/startup/syspara_lite/frameworks/parameter/parameter_notes.stamp: stamp ./libs/libsysparam.a
+subninja obj/base/startup/syspara_lite/frameworks/parameter/src/sysparam.ninja
+build obj/base/startup/syspara_lite/frameworks/token/token.stamp: stamp ./libs/libtoken_static.a
+build obj/base/startup/syspara_lite/frameworks/token/token_notes.stamp: stamp
+subninja obj/base/startup/syspara_lite/frameworks/token/token_static.ninja
+build obj/base/update/ota_lite/frameworks/ota_lite.stamp: stamp ./libs/libhota.a
+build obj/base/update/ota_lite/frameworks/test.stamp: stamp
+build obj/base/update/ota_lite/frameworks/update_api.stamp: stamp
+subninja obj/base/update/ota_lite/frameworks/source/hota.ninja
+rule __build_lite_gen_rootfs___build_lite_toolchain_csky-abiv2-elf__rule
+  command = python3 ../../../build/lite/gen_rootfs.py --path=/home/jaychou/Neptune_w800_project/out/neptune/wifiiot_neptune --kernel=liteos_m --storage= --strip_command=csky-abiv2-elf-strip\$ --strip-unneeded --dmverity=false
+  description = ACTION //build/lite:gen_rootfs(//build/lite/toolchain:csky-abiv2-elf)
+  restat = 1
+
+build gen/build/lite/gen_rootfs.log: __build_lite_gen_rootfs___build_lite_toolchain_csky-abiv2-elf__rule | ../../../build/lite/gen_rootfs.py obj/build/lite/ohos.stamp
+
+build obj/build/lite/gen_rootfs.stamp: stamp gen/build/lite/gen_rootfs.log
+build obj/build/lite/ndk.stamp: stamp
+build obj/build/lite/ohos.stamp: stamp obj/applications/sample/wifi-iot/app/app.stamp ./libs/libmbedtls.a ./libs/libsec_static.a obj/base/iot_hardware/peripheral/iothardware.stamp ./libs/libhilog_lite.a ./libs/libhilog_lite_command.a ./libs/libhievent_lite.a obj/foundation/distributedschedule/samgr_lite/samgr.stamp obj/base/security/deviceauth/frameworks/deviceauth_lite/hichainsdk.stamp obj/base/security/huks/frameworks/huks_lite/huks_sdk.stamp obj/base/update/ota_lite/frameworks/ota_lite.stamp ./libs/libbootstrap.a obj/base/startup/syspara_lite/frameworks/parameter/parameter.stamp obj/base/startup/syspara_lite/frameworks/token/token.stamp obj/foundation/communication/wifi_lite/wifi.stamp obj/foundation/communication/bt_lite/ble.stamp obj/domains/iot/link/link.stamp obj/utils/native/lite/file/file.stamp obj/utils/native/lite/kv_store/kv_store.stamp obj/utils/native/lite/os_dump/utils_os_dump.stamp obj/device/winnermicro/neptune/sdk_liteos/wifiiot_sdk.stamp obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/device/winnermicro/neptune/neptune.stamp obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune/neptune.stamp
+build obj/build/lite/config/component/openssl/openssl_shared.stamp: stamp
+subninja obj/build/lite/config/component/openssl/openssl_static.ninja
+rule __device_winnermicro_neptune_sdk_liteos_build_wifiiot_sdk___build_lite_toolchain_csky-abiv2-elf__rule
+  command = python3 ../../../build/lite/build_ext_components.py --path=../../../device/winnermicro/neptune/sdk_liteos --command=bash\$ ohos_build.sh --target_dir=/home/jaychou/Neptune_w800_project/out/neptune/wifiiot_neptune/obj/device/winnermicro/neptune/sdk_liteos/build.log --out_dir=/home/jaychou/Neptune_w800_project/out/neptune/wifiiot_neptune/error.log
+  description = ACTION //device/winnermicro/neptune/sdk_liteos:build_wifiiot_sdk(//build/lite/toolchain:csky-abiv2-elf)
+  restat = 1
+
+build obj/device/winnermicro/neptune/sdk_liteos/build_wifiiot_sdk_build_ext_components.txt: __device_winnermicro_neptune_sdk_liteos_build_wifiiot_sdk___build_lite_toolchain_csky-abiv2-elf__rule | ../../../build/lite/build_ext_components.py obj/build/lite/ohos.stamp obj/device/winnermicro/neptune/sdk_liteos/sdk.stamp
+
+build obj/device/winnermicro/neptune/sdk_liteos/build_wifiiot_sdk.stamp: stamp obj/device/winnermicro/neptune/sdk_liteos/build_wifiiot_sdk_build_ext_components.txt
+build obj/device/winnermicro/neptune/sdk_liteos/sdk.stamp: stamp ./libs/libcmsis.a ./libs/libkernel.a ./libs/libutils.a ./libs/libbacktrace.a
+build obj/device/winnermicro/neptune/sdk_liteos/wifiiot_sdk.stamp: stamp obj/device/winnermicro/neptune/sdk_liteos/sdk.stamp
+build obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/ble.stamp: stamp
+rule __device_winnermicro_neptune_w800_adapter_hals_communication_bt_lite_ble_copy_blelibs___build_lite_toolchain_csky-abiv2-elf__rule
+  command = python3 ../../../device/winnermicro/neptune/w800_adapter/copy_library.py --source=../../../device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/libble.a --target=libs/libble.a
+  description = ACTION //device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble:copy_blelibs(//build/lite/toolchain:csky-abiv2-elf)
+  restat = 1
+
+build obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/copy_blelibs.log: __device_winnermicro_neptune_w800_adapter_hals_communication_bt_lite_ble_copy_blelibs___build_lite_toolchain_csky-abiv2-elf__rule | ../../../device/winnermicro/neptune/w800_adapter/copy_library.py
+
+build obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/copy_blelibs.stamp: stamp obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/copy_blelibs.log
+rule __device_winnermicro_neptune_w800_adapter_hals_communication_wifi_lite_wifiservice_copy_wifiservicelibs___build_lite_toolchain_csky-abiv2-elf__rule
+  command = python3 ../../../device/winnermicro/neptune/w800_adapter/copy_library.py --source=../../../device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/libwifiservice.a --target=libs/libwifiservice.a
+  description = ACTION //device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice:copy_wifiservicelibs(//build/lite/toolchain:csky-abiv2-elf)
+  restat = 1
+
+build obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/copy_wifiservicelibs.log: __device_winnermicro_neptune_w800_adapter_hals_communication_wifi_lite_wifiservice_copy_wifiservicelibs___build_lite_toolchain_csky-abiv2-elf__rule | ../../../device/winnermicro/neptune/w800_adapter/copy_library.py
+
+build obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/copy_wifiservicelibs.stamp: stamp obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/copy_wifiservicelibs.log
+build obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/wifiservice.stamp: stamp
+rule __device_winnermicro_neptune_w800_adapter_hals_iot_hardware_wifiiot_lite_copy_hal_iothardwarelibs___build_lite_toolchain_csky-abiv2-elf__rule
+  command = python3 ../../../device/winnermicro/neptune/w800_adapter/copy_library.py --source=../../../device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/libhal_iothardware.a --target=libs/libhal_iothardware.a
+  description = ACTION //device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite:copy_hal_iothardwarelibs(//build/lite/toolchain:csky-abiv2-elf)
+  restat = 1
+
+build obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/copy_hal_iothardwarelibs.log: __device_winnermicro_neptune_w800_adapter_hals_iot_hardware_wifiiot_lite_copy_hal_iothardwarelibs___build_lite_toolchain_csky-abiv2-elf__rule | ../../../device/winnermicro/neptune/w800_adapter/copy_library.py
+
+build obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/copy_hal_iothardwarelibs.stamp: stamp obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/copy_hal_iothardwarelibs.log
+build obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/hal_iothardware.stamp: stamp
+rule __device_winnermicro_neptune_w800_adapter_hals_update_copy_hal_update_staticlibs___build_lite_toolchain_csky-abiv2-elf__rule
+  command = python3 ../../../device/winnermicro/neptune/w800_adapter/copy_library.py --source=../../../device/winnermicro/neptune/w800_adapter/hals/update/libhal_update_static.a --target=libs/libhal_update_static.a
+  description = ACTION //device/winnermicro/neptune/w800_adapter/hals/update:copy_hal_update_staticlibs(//build/lite/toolchain:csky-abiv2-elf)
+  restat = 1
+
+build obj/device/winnermicro/neptune/w800_adapter/hals/update/copy_hal_update_staticlibs.log: __device_winnermicro_neptune_w800_adapter_hals_update_copy_hal_update_staticlibs___build_lite_toolchain_csky-abiv2-elf__rule | ../../../device/winnermicro/neptune/w800_adapter/copy_library.py
+
+build obj/device/winnermicro/neptune/w800_adapter/hals/update/copy_hal_update_staticlibs.stamp: stamp obj/device/winnermicro/neptune/w800_adapter/hals/update/copy_hal_update_staticlibs.log
+build obj/device/winnermicro/neptune/w800_adapter/hals/update/hal_update_static.stamp: stamp
+rule __device_winnermicro_neptune_w800_adapter_hals_utils_file_copy_hal_file_staticlibs___build_lite_toolchain_csky-abiv2-elf__rule
+  command = python3 ../../../device/winnermicro/neptune/w800_adapter/copy_library.py --source=../../../device/winnermicro/neptune/w800_adapter/hals/utils/file/libhal_file_static.a --target=libs/libhal_file_static.a
+  description = ACTION //device/winnermicro/neptune/w800_adapter/hals/utils/file:copy_hal_file_staticlibs(//build/lite/toolchain:csky-abiv2-elf)
+  restat = 1
+
+build obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/copy_hal_file_staticlibs.log: __device_winnermicro_neptune_w800_adapter_hals_utils_file_copy_hal_file_staticlibs___build_lite_toolchain_csky-abiv2-elf__rule | ../../../device/winnermicro/neptune/w800_adapter/copy_library.py
+
+build obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/copy_hal_file_staticlibs.stamp: stamp obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/copy_hal_file_staticlibs.log
+build obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/hal_file_static.stamp: stamp
+build obj/domains/iot/link/iot.stamp: stamp obj/domains/iot/link/link.stamp
+build obj/domains/iot/link/link.stamp: stamp
+build obj/foundation/communication/bt_lite/ble.stamp: stamp obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/ble.stamp
+build obj/foundation/communication/wifi_lite/wifi.stamp: stamp obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/wifiservice.stamp
+build obj/foundation/distributedschedule/samgr_lite/config/system_capability.json: copy ../../../foundation/distributedschedule/samgr_lite/config/system_capability.json
+
+build obj/foundation/distributedschedule/samgr_lite/ConfigFiles.stamp: stamp obj/foundation/distributedschedule/samgr_lite/config/system_capability.json
+build obj/foundation/distributedschedule/samgr_lite/samgr.stamp: stamp ./libs/libsamgr.a ./libs/libbroadcast.a
+build obj/foundation/distributedschedule/samgr_lite/samgr_lite_ndk.stamp: stamp ./libs/libbroadcast.a ./libs/libsamgr.a
+subninja obj/foundation/distributedschedule/samgr_lite/communication/broadcast/broadcast.ninja
+subninja obj/foundation/distributedschedule/samgr_lite/samgr/samgr.ninja
+subninja obj/foundation/distributedschedule/samgr_lite/samgr/adapter/samgr_adapter.ninja
+subninja obj/foundation/distributedschedule/samgr_lite/samgr/source/samgr_source.ninja
+subninja obj/kernel/liteos_m/components/backtrace/backtrace.ninja
+subninja obj/kernel/liteos_m/kal/cmsis/cmsis.ninja
+subninja obj/kernel/liteos_m/kernel/kernel.ninja
+subninja obj/kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/arch.ninja
+subninja obj/kernel/liteos_m/utils/utils.ninja
+build obj/third_party/bounds_checking_function/libsec_ndk.stamp: stamp obj/third_party/bounds_checking_function/sec_static.stamp
+subninja obj/third_party/bounds_checking_function/libsec_static.ninja
+build obj/third_party/bounds_checking_function/sec_static.stamp: stamp ./libs/libsec_static.a
+build obj/third_party/mbedtls/mbedtls.stamp: stamp ./libs/libmbedtls.a
+subninja obj/third_party/mbedtls/mbedtls_gt.ninja
+build obj/third_party/mbedtls/mbedtls_ndk.stamp: stamp obj/third_party/mbedtls/mbedtls.stamp
+subninja obj/third_party/mbedtls/mbedtls_static.ninja
+build obj/utils/native/lite/file/file.stamp: stamp ./libs/libnative_file.a
+subninja obj/utils/native/lite/file/native_file.ninja
+build obj/utils/native/lite/kv_store/kv_store.stamp: stamp ./libs/libutils_kv_store.a
+subninja obj/utils/native/lite/kv_store/src/utils_kv_store.ninja
+subninja obj/utils/native/lite/os_dump/dump_static.ninja
+build obj/utils/native/lite/os_dump/utils_os_dump.stamp: stamp ./libs/libdump_static.a
+subninja obj/vendor/winnermicro/neptune/hals/utils/sys_param/hal_sysparam.ninja
+subninja obj/vendor/winnermicro/neptune/hals/utils/token/hal_token_static.ninja
+subninja obj/vendor/winnermicro/neptune/hals/utils/token/oem_auth_static.ninja
+build obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/device/winnermicro/neptune/neptune.stamp: stamp
+build obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune/neptune.stamp: stamp

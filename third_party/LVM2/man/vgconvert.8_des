@@ -1,0 +1,3 @@
+vgconvert converts VG metadata from one format to another.  This command
+is no longer used because this version of lvm no longer supports the LVM1
+format.

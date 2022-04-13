@@ -1,0 +1,57 @@
+# Copyright (c) Huawei Technologies Co., Ltd. 2020-2020. All rights reserved.
+
+import("//build/lite/config/component/lite_component.gni")
+
+config("lvm2_config") {
+  include_dirs = [
+    "//third_party/LVM2/include",
+    "//third_party/LVM2/lib/log",
+    "//third_party/LVM2/lib/misc",
+    "//third_party/LVM2/libdm",
+    "//third_party/LVM2/libdm/ioctl",
+    "//third_party/LVM2/libdm/misc",
+  ]
+}
+
+devmapper_sources = [
+  "libdm/datastruct/bitset.c",
+  "libdm/datastruct/hash.c",
+  "libdm/datastruct/list.c",
+  "libdm/ioctl/libdm-iface.c",
+  "libdm/libdm-common.c",
+  "libdm/libdm-config.c",
+  "libdm/libdm-deptree.c",
+  "libdm/libdm-file.c",
+  "libdm/libdm-report.c",
+  "libdm/libdm-stats.c",
+  "libdm/libdm-string.c",
+  "libdm/libdm-targets.c",
+  "libdm/libdm-timestamp.c",
+  "libdm/mm/dbg_malloc.c",
+  "libdm/mm/pool.c",
+  "libdm/regex/matcher.c",
+  "libdm/regex/parse_rx.c",
+  "libdm/regex/ttree.c",
+]
+
+static_library("devmapper_static") {
+  sources = devmapper_sources
+  output_name = "devmapper"
+  public_configs = [ ":lvm2_config" ]
+  defines = [
+    "HAVE_CONFIG_H",
+    "_BUILDING_LVM",
+    "_FILE_OFFSET_BITS=64",
+  ]
+  configs -= [ "//build/lite/config:language_c" ]
+  cflags_c = [
+    "-Os",
+    "-fPIC",
+    "-ffunction-sections",
+    "-fdata-sections",
+  ]
+  ldflags = [
+    "-Wl",
+    "--gc-sections",
+  ]
+}

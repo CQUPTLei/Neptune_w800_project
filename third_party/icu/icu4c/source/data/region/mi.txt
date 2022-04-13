@@ -1,0 +1,269 @@
+﻿// © 2016 and later: Unicode, Inc. and others.
+// License & terms of use: http://www.unicode.org/copyright.html#License
+mi{
+    Countries{
+        419{"Ratina Amerika"}
+        AC{"Te Motu Aupikinga"}
+        AD{"Anatōra"}
+        AE{"Te Kotahitanga o Ngā Ariki Arāpia"}
+        AF{"Awhekenetāna"}
+        AG{"Nehe me Papura"}
+        AI{"Ānakuira"}
+        AL{"Arapaina"}
+        AM{"Amēnia"}
+        AO{"Anakora"}
+        AQ{"Te Tiri o Te Moana"}
+        AR{"Āketina"}
+        AS{"Amerika Hāmoa"}
+        AT{"Atiria"}
+        AU{"Ahitereiria"}
+        AW{"Arupa"}
+        AX{"Ngā Motu Arana"}
+        AZ{"Ahapaiāna"}
+        BA{"Pōngia me Herekowina"}
+        BB{"Pāpatohe"}
+        BD{"Pākaratēhi"}
+        BE{"Pehiamu"}
+        BF{"Pūkino Whaho"}
+        BG{"Purukāria"}
+        BH{"Pāreina"}
+        BI{"Puruniti"}
+        BJ{"Pēnina"}
+        BL{"Hato Pāteremi"}
+        BM{"Pāmura"}
+        BN{"Purunei"}
+        BO{"Poriwia"}
+        BQ{"Karapiana Hōrana"}
+        BR{"Parahi"}
+        BS{"Pāhama"}
+        BT{"Putāna"}
+        BV{"Te Motu Pauhei"}
+        BW{"Potiwana"}
+        BY{"Peraruha"}
+        BZ{"Pērihi"}
+        CA{"Kānata"}
+        CC{"Ngā Motu o Koko (Kīrini)"}
+        CD{"Te Whenua Manapori o Kongo"}
+        CF{"Te Whenua o Awherika Pū"}
+        CG{"Te Whenua o Kongo"}
+        CH{"Huiterangi"}
+        CI{"Tai Rei"}
+        CK{"Kuki Airani"}
+        CL{"Hire"}
+        CM{"Kamerūna"}
+        CN{"Haina"}
+        CO{"Korōmopia"}
+        CP{"Te Motu Kipatana"}
+        CR{"Koto Rika"}
+        CU{"Kupa"}
+        CV{"Kāpo Hēro"}
+        CW{"Kurahao"}
+        CX{"Motu Kirhimete"}
+        CY{"Haipara"}
+        CZ{"Tekia"}
+        DE{"Tiamana"}
+        DG{"Tiēko Karahia"}
+        DJ{"Tīpūti"}
+        DK{"Tenemaka"}
+        DM{"Tominika"}
+        DO{"Te Whenua o Tominika"}
+        DZ{"Aratiria"}
+        EA{"Heuta me Merira"}
+        EC{"Ekuatoa"}
+        EE{"Etōnia"}
+        EG{"Ihipa"}
+        EH{"Tahara ki te Uru"}
+        ER{"Eritereia"}
+        ES{"Pāniora"}
+        ET{"Etiopia"}
+        EU{"Uniana o Ūropi"}
+        EZ{"Rohe Uro"}
+        FI{"Hinerangi"}
+        FJ{"Whītī"}
+        FK{"Ngā Motu o Whokarangi (Islas Malvinas)"}
+        FM{"Ngā Whenua Tōpū o Maikoronihia"}
+        FO{"Ngā Motu o Wharo"}
+        FR{"Wīwī"}
+        GA{"Kaponi"}
+        GB{"Te Hononga o Ingarangi"}
+        GD{"Kerenāra"}
+        GE{"Hōria"}
+        GF{"Kiana o Wiwi"}
+        GG{"Kōnihi"}
+        GH{"Kāna"}
+        GI{"Kāmaka"}
+        GL{"Kirīnirangi"}
+        GM{"Kamipia"}
+        GN{"Kini"}
+        GP{"Kuarerupe"}
+        GQ{"Kini ki te Pae o te Ao"}
+        GR{"Karihi"}
+        GS{"Ngā Motu o Hōria me Hanawiti ki te Tonga"}
+        GT{"Kuatemāra"}
+        GU{"Kuamu"}
+        GW{"Kini-Pihau"}
+        GY{"Kaiana"}
+        HK{"Hongipua, Haina"}
+        HM{"Ngā Motu o Hāra me Makitanara"}
+        HN{"Honotura"}
+        HR{"Koroātia"}
+        HT{"Haiti"}
+        HU{"Hanekari"}
+        IC{"Ngā Motu Pōpokotea"}
+        ID{"Initonīhia"}
+        IE{"Airana"}
+        IL{"Iharaira"}
+        IM{"Motu o Tāne"}
+        IN{"Inia"}
+        IO{"Rohe Peretania o te Moana Iniana"}
+        IQ{"Iraka"}
+        IR{"Irāna"}
+        IS{"Tiorangi"}
+        IT{"Itari"}
+        JE{"Hēhi"}
+        JM{"Hamaika"}
+        JO{"Horano"}
+        JP{"Hapāna"}
+        KE{"Kenia"}
+        KG{"Kehitāna"}
+        KH{"Kamopōtia"}
+        KI{"Kiripati"}
+        KM{"Komorohi"}
+        KN{"Hato Kiti me Newihi"}
+        KP{"Kōrea ki te Raki"}
+        KR{"Kōria ki te Tonga"}
+        KW{"Kuweiti"}
+        KY{"Ngā Moutere Keimana"}
+        KZ{"Katatāna"}
+        LA{"Rāoho"}
+        LB{"Repanona"}
+        LC{"Hato Ruha"}
+        LI{"Rikitaina"}
+        LK{"Hiri Rānaka"}
+        LR{"Raipiria"}
+        LS{"Teroto"}
+        LT{"Rehuānia"}
+        LU{"Rakapuō"}
+        LV{"Rāwhia"}
+        LY{"Rīpia"}
+        MA{"Marako"}
+        MC{"Monako"}
+        MD{"Morotouwa"}
+        ME{"Monotenēro"}
+        MF{"Hato Mātene"}
+        MG{"Marakāhaka"}
+        MH{"Ngā Moutere Māhara"}
+        MK{"Mahetōnia ki te Raki"}
+        ML{"Māri"}
+        MM{"Maiāma (Pēma)"}
+        MN{"Monokōria"}
+        MO{"Makau, Haina"}
+        MP{"Ngā Motu Mariana"}
+        MQ{"Mātiniki"}
+        MR{"Mauritānia"}
+        MS{"Manetera"}
+        MT{"Mārata"}
+        MV{"Maratīwi"}
+        MU{"Marihi"}
+        MW{"Marāwi"}
+        MX{"Mehiko"}
+        MY{"Mareia"}
+        MZ{"Mohapiki"}
+        NA{"Namipia"}
+        NC{"Kanaki"}
+        NE{"Ngāika"}
+        NF{"Te Moutere Nōpoke"}
+        NG{"Naitīria"}
+        NI{"Nikarakua"}
+        NL{"Hōrana"}
+        NO{"Nōwei"}
+        NP{"Neporo"}
+        NR{"Nauru"}
+        NU{"Niue"}
+        NZ{"Aotearoa"}
+        OM{"Omana"}
+        PA{"Panama"}
+        PE{"Perū"}
+        PF{"Porinihia Wiwi"}
+        PG{"Papua Niu Kini"}
+        PH{"Piripīni"}
+        PK{"Pakitāne"}
+        PL{"Pōrana"}
+        PM{"Hato Piere me Mikirone"}
+        PN{"Ngā Motu Pitikēne"}
+        PR{"Peta Riko"}
+        PS{"Parehaina"}
+        PT{"Potukara"}
+        PW{"Pārao"}
+        PY{"Parakai"}
+        QA{"Katā"}
+        QO{"Poronihia tawhiti"}
+        RE{"Reuniona"}
+        RO{"Romānia"}
+        RS{"Hēpia"}
+        RU{"Rūhia"}
+        RW{"Rawāna"}
+        SA{"Arapia"}
+        SB{"Ngā Motu Horomona"}
+        SC{"Heikere"}
+        SD{"Hutāne"}
+        SE{"Huitene"}
+        SG{"Hingapoa"}
+        SH{"Hato Herena"}
+        SI{"Horowinia"}
+        SJ{"Hapapana me Hano Maheni"}
+        SK{"Horowākia"}
+        SL{"Te Araone"}
+        SM{"Hana Marino"}
+        SN{"Henekara"}
+        SO{"Homāria"}
+        SR{"Hurinamo"}
+        SS{"Hutāne ki te Tonga"}
+        ST{"Hao Tome me Pirihipe"}
+        SV{"Etāwatoa"}
+        SX{"Hato Mātene"}
+        SY{"Hiria"}
+        SZ{"Warirangi"}
+        TA{"Tiritana ta Kuna"}
+        TC{"Ngā Motu Koru-Kākoa"}
+        TD{"Kāta"}
+        TF{"Ngā Rohe Wīwī ki te Tonga"}
+        TG{"Toko"}
+        TH{"Tairana"}
+        TJ{"Tahikitāna"}
+        TK{"Tokerau"}
+        TL{"Timorete"}
+        TM{"Tukumanatānga"}
+        TN{"Tunuhia"}
+        TO{"Tonga"}
+        TR{"Korukoru"}
+        TT{"Tirinaki-Tōpako"}
+        TV{"Tūwaru"}
+        TW{"Taiwana, Haina"}
+        TZ{"Tanahia"}
+        UA{"Ukareina"}
+        UG{"Ukānga"}
+        UM{"Ngā Moutere Iti Raungaiti o Te Hononga o Amerika"}
+        UN{"Rūnanga Whakakotahi i ngā Iwi o te Ao"}
+        US{"Amerika"}
+        UY{"Urukoi"}
+        UZ{"Uhipeketane"}
+        VA{"Tāone nō te Pōpa"}
+        VC{"Hato Wēneti me Ngā Kerenarīna"}
+        VE{"Penehūera"}
+        VG{"Ngā Moutere Puhi o Piritene"}
+        VI{"Ngā Moutere Puhi o Amerika"}
+        VN{"Whitināmu"}
+        VU{"Whenuātū"}
+        WF{"Wārihi me Whutuna"}
+        WS{"Hāmoa"}
+        XK{"Kōkoho"}
+        YE{"Ēmene"}
+        YT{"Maiote"}
+        ZA{"Awherika ki te Tonga"}
+        ZM{"Tāmipia"}
+        ZW{"Timuwawe"}
+        ZZ{"Rohe Tē Mōhiotia"}
+    }
+    Version{"37"}
+}
