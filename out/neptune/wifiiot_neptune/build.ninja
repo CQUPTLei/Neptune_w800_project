@@ -51,7 +51,6 @@ build mbedtls: phony obj/third_party/mbedtls/mbedtls.stamp
 build mbedtls_gt: phony ./libs/libmbedtls_gt.a
 build mbedtls_ndk: phony obj/third_party/mbedtls/mbedtls_ndk.stamp
 build mbedtls_static: phony ./libs/libmbedtls.a
-build my_test_gn: phony ./libs/libmy_test_gn.a
 build native_file: phony ./libs/libnative_file.a
 build ndk: phony obj/build/lite/ndk.stamp
 build oem_auth_static: phony ./libs/liboem_auth_static.a
@@ -76,12 +75,13 @@ build utils: phony ./libs/libutils.a
 build utils_kv_store: phony ./libs/libutils_kv_store.a
 build utils_os_dump: phony obj/utils/native/lite/os_dump/utils_os_dump.stamp
 build wifi: phony obj/foundation/communication/wifi_lite/wifi.stamp
+build wifi_bt: phony ./libs/libwifi_bt.a
 build wifiiot_sdk: phony obj/device/winnermicro/neptune/sdk_liteos/wifiiot_sdk.stamp
 build wifiservice: phony obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/wifiservice.stamp
 build applications/sample/wifi-iot/app$:app: phony obj/applications/sample/wifi-iot/app/app.stamp
 build applications/sample/wifi-iot/app: phony obj/applications/sample/wifi-iot/app/app.stamp
-build applications/sample/wifi-iot/app/my_test_gn$:my_test_gn: phony ./libs/libmy_test_gn.a
-build applications/sample/wifi-iot/app/my_test_gn: phony ./libs/libmy_test_gn.a
+build applications/sample/wifi-iot/app/wifi_bt$:wifi_bt: phony ./libs/libwifi_bt.a
+build applications/sample/wifi-iot/app/wifi_bt: phony ./libs/libwifi_bt.a
 build base/hiviewdfx/hievent_lite$:hievent_lite: phony ./libs/libhievent_lite.a
 build base/hiviewdfx/hievent_lite: phony ./libs/libhievent_lite.a
 build base/hiviewdfx/hilog_lite/command$:hilog_lite_command: phony ./libs/libhilog_lite_command.a
@@ -177,7 +177,7 @@ build home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune: 
 
 build all: phony $
     obj/applications/sample/wifi-iot/app/app.stamp $
-    ./libs/libmy_test_gn.a $
+    ./libs/libwifi_bt.a $
     ./libs/libhievent_lite.a $
     ./libs/libhilog_lite_command.a $
     ./libs/libhilog_lite.a $

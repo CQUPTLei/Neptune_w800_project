@@ -18,9 +18,8 @@ import("//build/lite/config/component/lite_component.gni")
 lite_component("app") {
     features = [
         #格式：文件夹名称：文件夹下面BUILD文件中静态库的名称
-        "my_test_gn:my_test_gn",
+        # "my_test_gn:my_test_gn",
         # "demolink:example_demolink",
-        # "iothardware:gpio_example",
-        # "samgr:example_samgr",
+        "wifi_bt:wifi_bt"
     ]
 }

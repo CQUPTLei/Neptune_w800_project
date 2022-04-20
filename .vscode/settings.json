@@ -5,5 +5,17 @@
     "C_Cpp.default.browse.path": [
         "${workspaceFolder}/**"
     ],
-    "debug.onTaskErrors": "debugAnyway"
+    "debug.onTaskErrors": "debugAnyway",
+    "files.associations": {
+        "iot_gpio_neptune.h": "c",
+        "ohos_init.h": "c",
+        "gpio_if.h": "c",
+        "iot_gpio_w800.h": "c",
+        "unistd.h": "c",
+        "stdio.h": "c",
+        "wm_config.h": "c",
+        "wm_bt.h": "c",
+        "wm_bt_util.h": "c",
+        "wm_pmu.h": "c"
+    }
 }

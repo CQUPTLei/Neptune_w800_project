@@ -1,15 +1,12 @@
-#include<stdio.h>
+// #include<stdio.h>
 #include "ohos_init.h"
 
-void my_test_gn(void)
+void test(void)
 {
-    int i=5;
-    while(i>0)
-    {
-        printf("Hello,my_test\n");
-        i-=1;
-    }
-    
+    printf("测试aaa\n");
+    printf("草泥马aaa\n");
+    printf("草泥马aaa\n");
+    printf("............................测试开始 ...................\n");
 }
 
-SYS_RUN(my_test_gn);
+SYS_RUN(test);
