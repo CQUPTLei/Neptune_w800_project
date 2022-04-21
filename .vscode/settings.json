@@ -16,6 +16,8 @@
         "wm_config.h": "c",
         "wm_bt.h": "c",
         "wm_bt_util.h": "c",
-        "wm_pmu.h": "c"
+        "wm_pmu.h": "c",
+        "wifi_device.h": "c",
+        "netifapi.h": "c"
     }
 }
