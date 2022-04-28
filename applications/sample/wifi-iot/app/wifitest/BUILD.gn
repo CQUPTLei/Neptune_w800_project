@@ -28,9 +28,9 @@
 static_library("wifi_test") {
     sources = [
         # "wifi_scan_demo.c",
-        "wifi_connect_demo.c",
+        # "wifi_connect_demo.c",
         # "wifi_hotspot_demo.c",
-        # "wifi_control.c",
+        "wifi_control.c",
     ]
 
     include_dirs = [
@@ -38,6 +38,9 @@ static_library("wifi_test") {
         "//kernel/liteos_m/components/cmsis/2.0",
         "//base/iot_hardware/interfaces/kits/wifiiot_lite",
         "//foundation/communication/interfaces/kits/wifi_lite/wifiservice",
+        #按键控制
+        "//domains/iot/link/libbuild",
+        "//base/iot_hardware/peripheral/interfaces/kits"
     ]
 
     if (board_name == "w800") {

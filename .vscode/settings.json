@@ -18,6 +18,8 @@
         "wm_bt_util.h": "c",
         "wm_pmu.h": "c",
         "wifi_device.h": "c",
-        "netifapi.h": "c"
-    }
+        "netifapi.h": "c",
+        "ethernet.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
