@@ -69,8 +69,6 @@ unsigned int IoTI2cDeinit(unsigned int id);
 /**
  * @brief Writes data to an I2C device.
  *
- *
- *
  * @param id Indicates the I2C device ID.
  * @param deviceAddr Indicates the I2C device address.
  * @param data Indicates the pointer to the data to write.

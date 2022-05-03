@@ -12,7 +12,7 @@
 
 #include "ohos_init.h"
 #include "cmsis_os2.h"
-#include "wifi_device.h"    //Provides functions for the Wi-Fi station and hotspot modes.即wif连接、断开、参数配置等功能
+#include "wifi_device.h"            //Provides functions for the Wi-Fi station and hotspot modes.即wif连接、断开、参数配置等功能
 
 #include "lwip/netifapi.h"
 // #include "lwip/api_shell.h"
@@ -22,12 +22,12 @@
 
 #define LOG_TAG "Wifista: "    //日志标签
 #define LOGI(fmt, ...) printf("[%d] INFO %s " fmt "\r\n", osKernelGetTickCount(), LOG_TAG, ##__VA_ARGS__)  //变参log打印
+
 static bool control_flag = 0;    //按键控制标志
 
 static void PrintLinkedInfo(WifiLinkedInfo* info)   //打印连接信息，在bssid上右键即可打开对应的头文件，查看具体的参数含义
 {
     if (!info) return;
-
     static char macAddress[32] = {0};    //暂时存疑，mac地址是6个字节，即6个char，此处为什么用32个char呢？
     unsigned char* mac = info->bssid;    //在基础设施BSS中,BSSID是无线接入点(WAP)的MAC地址.
     snprintf(macAddress, sizeof(macAddress), "%02X:%02X:%02X:%02X:%02X:%02X",  //格式化mac地址赋值给macAddress
@@ -36,7 +36,7 @@ static void PrintLinkedInfo(WifiLinkedInfo* info)   //打印连接信息，在bs
         macAddress, info->rssi, info->connState, info->disconnectedReason, info->ssid);     //log打印连接信息
 }
 
-static char* SecurityTypeName(WifiSecurityType type)     //返回扫描到的wifi热点的类型，同样在对应的头文件中有定义
+static char* SecurityTypeName(WifiSecurityType type)     //返回扫描到的wifi热点的加密方式，同样在对应的头文件中有定义
 {
     switch (type)
     {
@@ -80,7 +80,7 @@ static void PrintScanResult(void)                              //打印热点扫
     }
 }
 
-static int g_connected = 0;                                             //连接状态，1表示可以连接(Available state )
+static int g_connected = 0;                                             //连接状态，1表示连接成功
 static void OnWifiConnectionChanged(int state, WifiLinkedInfo* info)
 {
     if (!info) return;
@@ -105,7 +105,7 @@ static void OnWifiScanStateChanged(int state, int size)
     }
 }
 
-static void hexdump(void* data, int size)           //exdump一般用来查看"二进制"文件的十六进制编码
+static void hexdump(void* data, int size)           //hexdump一般用来查看"二进制"文件的十六进制编码
 {
     unsigned char* ptr = data;
     printf("hexdump: %p %d: ", data, size);

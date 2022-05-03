@@ -19,7 +19,9 @@
         "wm_pmu.h": "c",
         "wifi_device.h": "c",
         "netifapi.h": "c",
-        "ethernet.h": "c"
+        "ethernet.h": "c",
+        "wifi_scan_info.h": "c",
+        "iot_i2c.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

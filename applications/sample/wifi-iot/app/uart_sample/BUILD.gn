@@ -28,9 +28,9 @@
 static_library("uart_demo") {
     sources = [
         "uart1_example.c",
-        "uart2_example.c",
-        "uart3_example.c",
-        "uart4_example.c",
+        # "uart2_example.c",
+        # "uart3_example.c",
+        # "uart4_example.c",
     ]
 
     include_dirs = [

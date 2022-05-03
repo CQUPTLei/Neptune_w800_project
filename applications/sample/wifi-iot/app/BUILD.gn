@@ -21,6 +21,8 @@ lite_component("app") {
         # "my_test_gn:my_test_gn",
         # "demolink:example_demolink",
         # "wifi_bt:wifi_bt_test",
-        "wifitest:wifi_test"
+        # "wifitest:wifi_test",
+        # "uart_sample:uart_demo",
+        "IIC:iic_demo",
     ]
 }

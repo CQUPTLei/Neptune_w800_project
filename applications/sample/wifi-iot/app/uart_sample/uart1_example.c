@@ -43,7 +43,7 @@
 #define TEST_UART_SIZE 8
 #define INIT_BAUD_RATE 115200
 #define TEST_BUF_SIZE 2048
-#define UART_PORT WIFI_IOT_UART_IDX_1
+#define UART_PORT WIFI_IOT_UART_IDX_0
 unsigned char uart1ReadBuff[2048] = {0};
 
 static void *UartTask(const char *arg)

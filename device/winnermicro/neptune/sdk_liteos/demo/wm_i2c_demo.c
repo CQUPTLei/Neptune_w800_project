@@ -26,7 +26,7 @@ u8 AT24CXX_ReadOneByte(u16 addr)
 	//printf("\nread addr=%x\n",ReadAddr);
 	tls_i2c_write_byte(0xA0,1);   
 	tls_i2c_wait_ack(); 
-    	tls_i2c_write_byte(addr,0);   
+    tls_i2c_write_byte(addr,0);   
 	tls_i2c_wait_ack();	    
 
 	tls_i2c_write_byte(0xA1,1);
@@ -48,7 +48,7 @@ void AT24CXX_ReadLenByte(u16 addr,u8 *buf,u16 len)
 	//printf("\nread len addr=%x\n",ReadAddr);
 	tls_i2c_write_byte(0xA0,1);   
 	tls_i2c_wait_ack(); 
-    	tls_i2c_write_byte(addr,0);   
+    tls_i2c_write_byte(addr,0);   
 	tls_i2c_wait_ack();	    
 	tls_i2c_write_byte(0xA1,1);
 	tls_i2c_wait_ack();	
@@ -101,7 +101,8 @@ u8 AT24CXX_Check(void)
 
 	return 1;											  
 }
-
+
+
 /**
  * @brief	read multibytes from the specified address of the eeprom
  * @param[in] addr the eeprom address will be read from

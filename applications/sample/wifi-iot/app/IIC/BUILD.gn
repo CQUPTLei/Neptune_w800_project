@@ -1,0 +1,29 @@
+static_library("iic_demo") {
+    sources = [
+        "iic_test.c"
+    ]
+
+    include_dirs = [
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/components/cmsis/2.0",
+        "//base/iot_hardware/interfaces/kits/wifiiot_lite",
+        "//foundation/communication/interfaces/kits/wifi_lite/wifiservice",
+        #按键控制
+        "//domains/iot/link/libbuild",
+        "//base/iot_hardware/peripheral/interfaces/kits"
+    ]
+
+    if (board_name == "w800") {
+        include_dirs += [
+            "//vendor/winnermicro/w800/src/network/lwip2.0.3/include",
+            "//vendor/winnermicro/w800/include/arch/xt804/csi_core",
+            "//vendor/winnermicro/w800/include/arch/xt804",
+            "//vendor/winnermicro/w800/include/platform",
+            "//vendor/winnermicro/w800/include/os",
+            "//vendor/winnermicro/w800/include/net",
+            "//vendor/winnermicro/w800/include/app",
+            "//vendor/winnermicro/w800/include/wifi",
+            "//vendor/winnermicro/w800/include",
+        ]
+    }
+}
