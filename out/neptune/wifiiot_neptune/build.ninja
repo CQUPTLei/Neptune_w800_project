@@ -39,7 +39,6 @@ build hiview_lite: phony ./libs/libhiview_lite.a
 build hota: phony ./libs/libhota.a
 build huks: phony ./libs/libhuks.a
 build huks_sdk: phony obj/base/security/huks/frameworks/huks_lite/huks_sdk.stamp
-build iic_demo: phony ./libs/libiic_demo.a
 build iot: phony obj/domains/iot/link/iot.stamp
 build iothardware: phony obj/base/iot_hardware/peripheral/iothardware.stamp
 build iothardware_ndk: phony obj/base/iot_hardware/peripheral/iothardware_ndk.stamp
@@ -52,6 +51,7 @@ build mbedtls: phony obj/third_party/mbedtls/mbedtls.stamp
 build mbedtls_gt: phony ./libs/libmbedtls_gt.a
 build mbedtls_ndk: phony obj/third_party/mbedtls/mbedtls_ndk.stamp
 build mbedtls_static: phony ./libs/libmbedtls.a
+build mpu6050_example: phony ./libs/libmpu6050_example.a
 build native_file: phony ./libs/libnative_file.a
 build ndk: phony obj/build/lite/ndk.stamp
 build oem_auth_static: phony ./libs/liboem_auth_static.a
@@ -80,7 +80,8 @@ build wifiiot_sdk: phony obj/device/winnermicro/neptune/sdk_liteos/wifiiot_sdk.s
 build wifiservice: phony obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/wifiservice.stamp
 build applications/sample/wifi-iot/app$:app: phony obj/applications/sample/wifi-iot/app/app.stamp
 build applications/sample/wifi-iot/app: phony obj/applications/sample/wifi-iot/app/app.stamp
-build applications/sample/wifi-iot/app/IIC$:iic_demo: phony ./libs/libiic_demo.a
+build applications/sample/wifi-iot/app/mpu6050_example$:mpu6050_example: phony ./libs/libmpu6050_example.a
+build applications/sample/wifi-iot/app/mpu6050_example: phony ./libs/libmpu6050_example.a
 build base/hiviewdfx/hievent_lite$:hievent_lite: phony ./libs/libhievent_lite.a
 build base/hiviewdfx/hievent_lite: phony ./libs/libhievent_lite.a
 build base/hiviewdfx/hilog_lite/command$:hilog_lite_command: phony ./libs/libhilog_lite_command.a
@@ -176,7 +177,7 @@ build home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune: 
 
 build all: phony $
     obj/applications/sample/wifi-iot/app/app.stamp $
-    ./libs/libiic_demo.a $
+    ./libs/libmpu6050_example.a $
     ./libs/libhievent_lite.a $
     ./libs/libhilog_lite_command.a $
     ./libs/libhilog_lite.a $

@@ -1,94 +1,130 @@
 ninja: Entering directory `/home/jaychou/Neptune_w800_project/out/neptune/wifiiot_neptune'
 [1/1] Regenerating ninja files
-[1/390] gcc cross compiler obj/base/hiviewdfx/hilog_lite/frameworks/mini/libhilog_lite.hiview_log.o
-[2/390] gcc cross compiler obj/base/hiviewdfx/hievent_lite/frameworks/libhievent_lite.hiview_output_event.o
-[3/390] gcc cross compiler obj/base/hiviewdfx/hiview_lite/libhiview_lite.hiview_cache.o
-[4/390] gcc cross compiler obj/base/hiviewdfx/hilog_lite/command/libhilog_lite_command.hilog_lite_command.o
-[5/390] gcc cross compiler obj/base/hiviewdfx/hilog_lite/frameworks/mini/libhilog_lite.hiview_output_log.o
-[6/390] gcc cross compiler obj/base/hiviewdfx/hiview_lite/libhiview_lite.hiview_service.o
-[7/390] gcc cross compiler obj/base/hiviewdfx/hievent_lite/frameworks/libhievent_lite.hiview_event.o
-[8/390] gcc cross compiler obj/applications/sample/wifi-iot/app/IIC/libiic_demo.iic_test.o
-../../../applications/sample/wifi-iot/app/IIC/iic_test.c: 在函数‘I2C_SDA_READ’中:
-../../../applications/sample/wifi-iot/app/IIC/iic_test.c:26:5: 警告： 此函数中的‘data’在使用前未初始化 [-Wuninitialized]
-     IoTGpioGetInputVal(I2C_SDA_PIN,data);
-     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[9/390] gcc cross compiler obj/base/hiviewdfx/hilog_lite/frameworks/mini/libhilog_lite.hiview_log_limit.o
-[10/390] gcc cross compiler obj/base/hiviewdfx/hiview_lite/libhiview_lite.hiview_config.o
-[11/390] STAMP obj/base/update/ota_lite/frameworks/test.stamp
-[12/390] gcc cross compiler obj/base/startup/bootstrap_lite/services/source/libbootstrap.bootstrap_service.o
-[13/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/auth_info/libhichainsdk.add_auth_info.o
-[14/390] gcc cross compiler obj/base/startup/bootstrap_lite/services/source/libbootstrap.system_init.o
-[15/390] gcc cross compiler obj/base/hiviewdfx/hiview_lite/libhiview_lite.hiview_util.o
-[16/390] gcc cross compiler obj/base/startup/syspara_lite/frameworks/parameter/src/param_impl_hal/libsysparam.param_impl_hal.o
-[17/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/auth_info/libhichainsdk.add_auth_info_client.o
-[18/390] gcc cross compiler obj/base/hiviewdfx/hiview_lite/libhiview_lite.hiview_file.o
-[19/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/auth_info/libhichainsdk.auth_info.o
-[20/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/auth_info/libhichainsdk.remove_auth_info_client.o
-[21/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/auth_info/libhichainsdk.exchange_auth_info.o
-[22/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/auth_info/libhichainsdk.exchange_auth_info_client.o
-[23/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/json/libhichainsdk.commonutil.o
-[24/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/json/libhichainsdk.jsonutil.o
-[25/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.key_agreement.o
-[26/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.key_agreement_client.o
-[27/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.key_agreement_server.o
-[28/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/libhichainsdk.hichain.o
-[29/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.sec_clone_server.o
-[30/390] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/common/libhuks.hks_bn.o
-[31/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.pake_client.o
-[32/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.sts_client.o
-[33/390] AR libs/libhilog_lite_command.a
-[34/390] AR libs/libbootstrap.a
-[35/390] AR libs/libiic_demo.a
-[36/390] AR libs/libhiview_lite.a
-[37/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.pake_server.o
-[38/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/huks_adapter/libhichainsdk.huks_adapter.o
-[39/390] STAMP obj/applications/sample/wifi-iot/app/app.stamp
-[40/390] AR libs/libhievent_lite.a
-[41/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/log/libhichainsdk.log.o
-[42/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.add_auth_info_data.o
-[43/390] AR libs/libhilog_lite.a
-[44/390] STAMP obj/base/hiviewdfx/hilog_lite/frameworks/mini/hilog_lite_ndk.stamp
-[45/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/schedule/libhichainsdk.build_object.o
-[46/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.add_auth_info_response.o
-[47/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.add_auth_info_request.o
-[48/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/schedule/libhichainsdk.distribution.o
-[49/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.auth_ack_response.o
-[50/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.auth_start_request.o
-[51/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.auth_start_response.o
-[52/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.auth_ack_request.o
-[53/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.exchange_request.o
-[54/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.sts_server.o
-[55/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.exchange_auth_data.o
-[56/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.inform_message.o
-[57/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.pake_client_confirm.o
-[58/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.import_add_auth_data.o
-[59/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.pake_request.o
-[60/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.exchange_response.o
-[61/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.rmv_auth_info_data.o
-[62/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.key_agreement_version.o
-[63/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.rmv_auth_info_request.o
-[64/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.pake_response.o
-[65/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.pake_server_confirm.o
-[66/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.rmv_auth_info_response.o
-[67/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.parsedata.o
-[68/390] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.sec_clone_data.o
-[69/390] AR libs/libhichainsdk.a
-[70/390] STAMP obj/base/security/deviceauth/frameworks/deviceauth_lite/hichainsdk.stamp
-[71/390] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/common/libhuks.hks_log_utils.o
-[72/390] STAMP obj/base/startup/syspara_lite/frameworks/token/token_notes.stamp
-[73/390] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/common/libhuks.hks_utility.o
-[74/390] gcc cross compiler obj/third_party/openssl/crypto/libopenssl_static.mem_clr.o
-[75/390] gcc cross compiler obj/base/startup/syspara_lite/frameworks/parameter/src/libsysparam.parameter_common.o
-[76/390] STAMP obj/base/update/ota_lite/frameworks/update_api.stamp
-[77/390] STAMP obj/build/lite/config/component/openssl/openssl_shared.stamp
-[78/390] STAMP obj/build/lite/ndk.stamp
-[79/390] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/libhuks.hks_file.o
-[80/390] gcc cross compiler obj/base/startup/syspara_lite/frameworks/token/src/token_impl_hal/libtoken_static.token.o
-[81/390] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/common/libhuks.hks_common.o
-[82/390] gcc cross compiler obj/base/update/ota_lite/frameworks/source/verify/libhota.app_rsa.o
-[83/390] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/libhuks.hks_access.o
-[84/390] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/libhuks.hks_client.o
-[85/390] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/libhuks.hks_storage.o
+[1/394] gcc cross compiler obj/applications/sample/wifi-iot/app/mpu6050_example/IMU/libmpu6050_example.imu.o
+[2/394] gcc cross compiler obj/applications/sample/wifi-iot/app/mpu6050_example/OLED/libmpu6050_example.ssd1306_fonts.o
+[3/394] gcc cross compiler obj/third_party/openssl/crypto/libopenssl_static.mem_clr.o
+[4/394] gcc cross compiler obj/base/hiviewdfx/hilog_lite/frameworks/mini/libhilog_lite.hiview_log.o
+[5/394] gcc cross compiler obj/base/hiviewdfx/hievent_lite/frameworks/libhievent_lite.hiview_event.o
+[6/394] gcc cross compiler obj/base/hiviewdfx/hilog_lite/command/libhilog_lite_command.hilog_lite_command.o
+[7/394] AR libs/libhilog_lite_command.a
+[8/394] gcc cross compiler obj/applications/sample/wifi-iot/app/mpu6050_example/libmpu6050_example.mpu6050_example.o
+[9/394] gcc cross compiler obj/base/hiviewdfx/hilog_lite/frameworks/mini/libhilog_lite.hiview_log_limit.o
+[10/394] gcc cross compiler obj/base/hiviewdfx/hiview_lite/libhiview_lite.hiview_service.o
+[11/394] gcc cross compiler obj/applications/sample/wifi-iot/app/mpu6050_example/MPU6050/libmpu6050_example.mpu6050.o
+../../../applications/sample/wifi-iot/app/mpu6050_example/MPU6050/mpu6050.c: 在函数‘I2C_MPU6050_WriteBuffer’中:
+../../../applications/sample/wifi-iot/app/mpu6050_example/MPU6050/mpu6050.c:76:14: 警告： 未使用的变量‘status’ [-Wunused-variable]
+     uint32_t status = 0;
+              ^~~~~~
+../../../applications/sample/wifi-iot/app/mpu6050_example/MPU6050/mpu6050.c: 在函数‘I2C_MPU6050_ReadData’中:
+../../../applications/sample/wifi-iot/app/mpu6050_example/MPU6050/mpu6050.c:110:14: 警告： 未使用的变量‘status’ [-Wunused-variable]
+     uint32_t status = 0;
+              ^~~~~~
+../../../applications/sample/wifi-iot/app/mpu6050_example/MPU6050/mpu6050.c: 在函数‘I2C_MPU6050_ReadBuffer’中:
+../../../applications/sample/wifi-iot/app/mpu6050_example/MPU6050/mpu6050.c:153:14: 警告： 未使用的变量‘status’ [-Wunused-variable]
+     uint32_t status = 0;
+              ^~~~~~
+[12/394] gcc cross compiler obj/base/hiviewdfx/hievent_lite/frameworks/libhievent_lite.hiview_output_event.o
+[13/394] gcc cross compiler obj/base/hiviewdfx/hiview_lite/libhiview_lite.hiview_config.o
+[14/394] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/common/libhuks.hks_bn.o
+[15/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/auth_info/libhichainsdk.add_auth_info.o
+[16/394] gcc cross compiler obj/base/hiviewdfx/hiview_lite/libhiview_lite.hiview_cache.o
+[17/394] gcc cross compiler obj/base/hiviewdfx/hiview_lite/libhiview_lite.hiview_util.o
+[18/394] STAMP obj/base/update/ota_lite/frameworks/test.stamp
+[19/394] gcc cross compiler obj/base/startup/bootstrap_lite/services/source/libbootstrap.bootstrap_service.o
+[20/394] STAMP obj/base/startup/syspara_lite/frameworks/token/token_notes.stamp
+[21/394] gcc cross compiler obj/base/hiviewdfx/hilog_lite/frameworks/mini/libhilog_lite.hiview_output_log.o
+[22/394] gcc cross compiler obj/base/startup/bootstrap_lite/services/source/libbootstrap.system_init.o
+[23/394] AR libs/libbootstrap.a
+[24/394] gcc cross compiler obj/base/startup/syspara_lite/frameworks/parameter/src/param_impl_hal/libsysparam.param_impl_hal.o
+[25/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/auth_info/libhichainsdk.remove_auth_info_client.o
+[26/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/auth_info/libhichainsdk.add_auth_info_client.o
+[27/394] gcc cross compiler obj/applications/sample/wifi-iot/app/mpu6050_example/OLED/libmpu6050_example.ssd1306.o
+../../../applications/sample/wifi-iot/app/mpu6050_example/OLED/ssd1306.c: 在函数‘HAL_Delay’中:
+../../../applications/sample/wifi-iot/app/mpu6050_example/OLED/ssd1306.c:35:9: 警告： 隐式声明函数‘tls_os_time_delay’ [-Wimplicit-function-declaration]
+         tls_os_time_delay(restMs/2);
+         ^~~~~~~~~~~~~~~~~
+../../../applications/sample/wifi-iot/app/mpu6050_example/OLED/ssd1306.c: 在函数‘ssd1306_SendData’中:
+../../../applications/sample/wifi-iot/app/mpu6050_example/OLED/ssd1306.c:67:1: 警告： 在有返回值的函数中未发现 return 语句 [-Wreturn-type]
+ }
+ ^
+../../../applications/sample/wifi-iot/app/mpu6050_example/OLED/ssd1306.c: 在函数‘ssd1306_WiteByte’中:
+../../../applications/sample/wifi-iot/app/mpu6050_example/OLED/ssd1306.c:73:1: 警告： 在有返回值的函数中未发现 return 语句 [-Wreturn-type]
+ }
+ ^
+[28/394] AR libs/libmpu6050_example.a
+[29/394] STAMP obj/applications/sample/wifi-iot/app/app.stamp
+[30/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/auth_info/libhichainsdk.auth_info.o
+[31/394] gcc cross compiler obj/base/hiviewdfx/hiview_lite/libhiview_lite.hiview_file.o
+[32/394] AR libs/libhiview_lite.a
+[33/394] AR libs/libhievent_lite.a
+[34/394] AR libs/libhilog_lite.a
+[35/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.key_agreement.o
+[36/394] STAMP obj/base/hiviewdfx/hilog_lite/frameworks/mini/hilog_lite_ndk.stamp
+[37/394] gcc cross compiler obj/base/startup/syspara_lite/frameworks/parameter/src/libsysparam.parameter_common.o
+[38/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.key_agreement_client.o
+[39/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/auth_info/libhichainsdk.exchange_auth_info.o
+[40/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/json/libhichainsdk.jsonutil.o
+[41/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/auth_info/libhichainsdk.exchange_auth_info_client.o
+[42/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/json/libhichainsdk.commonutil.o
+[43/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.sts_client.o
+[44/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.sec_clone_server.o
+[45/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.key_agreement_server.o
+[46/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.add_auth_info_data.o
+[47/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/log/libhichainsdk.log.o
+[48/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.add_auth_info_response.o
+[49/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.add_auth_info_request.o
+[50/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.pake_server.o
+[51/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.pake_client.o
+[52/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/schedule/libhichainsdk.build_object.o
+[53/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.auth_ack_request.o
+[54/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/schedule/libhichainsdk.distribution.o
+[55/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.auth_ack_response.o
+[56/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/key_agreement/libhichainsdk.sts_server.o
+[57/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.auth_start_response.o
+[58/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.auth_start_request.o
+[59/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.exchange_auth_data.o
+[60/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.exchange_request.o
+[61/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/libhichainsdk.hichain.o
+[62/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.inform_message.o
+[63/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.exchange_response.o
+[64/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.import_add_auth_data.o
+[65/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.key_agreement_version.o
+[66/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/huks_adapter/libhichainsdk.huks_adapter.o
+[67/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.pake_request.o
+[68/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.pake_server_confirm.o
+[69/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.rmv_auth_info_response.o
+[70/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.pake_client_confirm.o
+[71/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.pake_response.o
+[72/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.rmv_auth_info_request.o
+[73/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.rmv_auth_info_data.o
+[74/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.parsedata.o
+[75/394] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/common/libhuks.hks_log_utils.o
+[76/394] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/libhuks.hks_file.o
+[77/394] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/common/libhuks.hks_utility.o
+[78/394] gcc cross compiler obj/base/security/deviceauth/frameworks/deviceauth_lite/source/struct/libhichainsdk.sec_clone_data.o
+[79/394] STAMP obj/base/update/ota_lite/frameworks/update_api.stamp
+[80/394] AR libs/libhichainsdk.a
+[81/394] STAMP obj/build/lite/ndk.stamp
+[82/394] STAMP obj/base/security/deviceauth/frameworks/deviceauth_lite/hichainsdk.stamp
+[83/394] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/libhuks.hks_client.o
+[84/394] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/libhuks.hks_access.o
+[85/394] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/libhuks.hks_rkc.o
+../../../base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_rkc.c: 在函数‘hks_rkc_calc_material’中:
+../../../base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_rkc.c:881:49: 警告： assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     hash_src[HKS_RKC_MATERIAL_HASH_SRC_R1].data = random1;
+                                                 ^
+../../../base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_rkc.c:883:49: 警告： assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     hash_src[HKS_RKC_MATERIAL_HASH_SRC_R2].data = random2;
+                                                 ^
+[86/394] gcc cross compiler obj/base/startup/syspara_lite/frameworks/token/src/token_impl_hal/libtoken_static.token.o
+[87/394] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/common/libhuks.hks_common.o
+[88/394] STAMP obj/build/lite/config/component/openssl/openssl_shared.stamp
+[89/394] gcc cross compiler obj/base/update/ota_lite/frameworks/source/verify/libhota.app_sha256.o
+[90/394] gcc cross compiler obj/base/update/ota_lite/frameworks/source/verify/libhota.app_rsa.o
+[91/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.arc4.o
+[92/394] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/ble.stamp
+[93/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.aesni.o
+[94/394] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/libhuks.hks_storage.o
 ../../../base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_storage.c: 在函数‘hks_get_plain_text’中:
 ../../../base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_storage.c:1143:47: 警告： passing argument 1 of ‘hks_unserialize_key_info’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
      int32_t status = hks_unserialize_key_info(key_pos, param, &key_size, nonce, &shift);
@@ -99,28 +135,18 @@ ninja: Entering directory `/home/jaychou/Neptune_w800_project/out/neptune/wifiio
 ../../../base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_storage.c:1154:53: 警告： initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
      struct hks_blob buf_blob = { HKS_BLOB_TYPE_RAW, key_pos, shift };
                                                      ^~~~~~~
-[86/390] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/libhuks.hks_rkc.o
-../../../base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_rkc.c: 在函数‘hks_rkc_calc_material’中:
-../../../base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_rkc.c:881:49: 警告： assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-     hash_src[HKS_RKC_MATERIAL_HASH_SRC_R1].data = random1;
-                                                 ^
-../../../base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_rkc.c:883:49: 警告： assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
-     hash_src[HKS_RKC_MATERIAL_HASH_SRC_R2].data = random2;
-                                                 ^
-[87/390] gcc cross compiler obj/third_party/openssl/crypto/sha/libopenssl_static.sha512.o
-[88/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.camellia.o
-[89/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.blowfish.o
-[90/390] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/ble.stamp
-[91/390] gcc cross compiler obj/base/update/ota_lite/frameworks/source/verify/libhota.app_sha256.o
-[92/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ccm.o
-[93/390] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/wifiservice.stamp
-[94/390] gcc cross compiler obj/base/update/ota_lite/frameworks/source/verify/libhota.hota_verify.o
-[95/390] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/hal_iothardware.stamp
-[96/390] STAMP obj/base/iot_hardware/peripheral/iothardware.stamp
-[97/390] STAMP obj/base/iot_hardware/peripheral/iothardware_ndk.stamp
-[98/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.base64.o
-[99/390] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/update/hal_update_static.stamp
-[100/390] gcc cross compiler obj/third_party/openssl/crypto/libopenssl_static.cryptlib.o
+[95/394] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/libhuks.hks_service.o
+In file included from ../../../third_party/openssl/crypto/ec/ec_local.h:16:0,
+                 from ../../../base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_service.c:18:
+../../../third_party/openssl/include/internal/refcount.h: 在函数‘CRYPTO_UP_REF’中:
+../../../third_party/openssl/include/internal/refcount.h:62:63: 警告： unused parameter ‘lock’ [-Wunused-parameter]
+ static __inline__ int CRYPTO_UP_REF(int *val, int *ret, void *lock)
+                                                               ^~~~
+../../../third_party/openssl/include/internal/refcount.h: 在函数‘CRYPTO_DOWN_REF’中:
+../../../third_party/openssl/include/internal/refcount.h:68:65: 警告： unused parameter ‘lock’ [-Wunused-parameter]
+ static __inline__ int CRYPTO_DOWN_REF(int *val, int *ret, void *lock)
+                                                                 ^~~~
+[96/394] gcc cross compiler obj/third_party/openssl/crypto/libopenssl_static.cryptlib.o
 ../../../third_party/openssl/crypto/cryptlib.c: 在函数‘OPENSSL_instrument_bus’中:
 ../../../third_party/openssl/crypto/cryptlib.c:464:45: 警告： unused parameter ‘out’ [-Wunused-parameter]
  size_t OPENSSL_instrument_bus(unsigned int *out, size_t cnt)
@@ -138,85 +164,101 @@ ninja: Entering directory `/home/jaychou/Neptune_w800_project/out/neptune/wifiio
 ../../../third_party/openssl/crypto/cryptlib.c:469:70: 警告： unused parameter ‘max’ [-Wunused-parameter]
  size_t OPENSSL_instrument_bus2(unsigned int *out, size_t cnt, size_t max)
                                                                       ^~~
-[101/390] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/hal_file_static.stamp
-[102/390] gcc cross compiler obj/base/update/ota_lite/frameworks/source/updater/libhota.hota_updater.o
-[103/390] ACTION //device/winnermicro/neptune/w800_adapter/hals/utils/file:copy_hal_file_staticlibs(//build/lite/toolchain:csky-abiv2-elf)
-source is ../../../device/winnermicro/neptune/w800_adapter/hals/utils/file/libhal_file_static.a
-target is libs/libhal_file_static.a
-[104/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.md_wrap.o
-[105/390] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/copy_hal_file_staticlibs.stamp
-[106/390] ACTION //device/winnermicro/neptune/w800_adapter/hals/update:copy_hal_update_staticlibs(//build/lite/toolchain:csky-abiv2-elf)
-source is ../../../device/winnermicro/neptune/w800_adapter/hals/update/libhal_update_static.a
-target is libs/libhal_update_static.a
-[107/390] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/update/copy_hal_update_staticlibs.stamp
-[108/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.nist_kw.o
-[109/390] STAMP obj/domains/iot/link/link.stamp
-[110/390] STAMP obj/foundation/communication/bt_lite/ble.stamp
-[111/390] ACTION //device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble:copy_blelibs(//build/lite/toolchain:csky-abiv2-elf)
+[97/394] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/wifiservice.stamp
+[98/394] gcc cross compiler obj/base/update/ota_lite/frameworks/source/verify/libhota.hota_verify.o
+[99/394] ACTION //device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble:copy_blelibs(//build/lite/toolchain:csky-abiv2-elf)
 source is ../../../device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/libble.a
 target is libs/libble.a
-[112/390] STAMP obj/domains/iot/link/iot.stamp
-[113/390] ACTION //device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice:copy_wifiservicelibs(//build/lite/toolchain:csky-abiv2-elf)
+[100/394] ACTION //device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice:copy_wifiservicelibs(//build/lite/toolchain:csky-abiv2-elf)
 source is ../../../device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/libwifiservice.a
 target is libs/libwifiservice.a
-[114/390] STAMP obj/foundation/communication/wifi_lite/wifi.stamp
-[115/390] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/copy_blelibs.stamp
-[116/390] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/copy_wifiservicelibs.stamp
-[117/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.memory_buffer_alloc.o
-[118/390] COPY ../../../foundation/distributedschedule/samgr_lite/config/system_capability.json obj/foundation/distributedschedule/samgr_lite/config/system_capability.json
-[119/390] STAMP obj/foundation/distributedschedule/samgr_lite/ConfigFiles.stamp
-[120/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/registry/libsamgr.service_registry.o
-[121/390] ACTION //device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite:copy_hal_iothardwarelibs(//build/lite/toolchain:csky-abiv2-elf)
+[101/394] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/hal_iothardware.stamp
+[102/394] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/update/hal_update_static.stamp
+[103/394] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/copy_blelibs.stamp
+[104/394] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/copy_wifiservicelibs.stamp
+[105/394] STAMP obj/base/iot_hardware/peripheral/iothardware.stamp
+[106/394] gcc cross compiler obj/base/update/ota_lite/frameworks/source/updater/libhota.hota_updater.o
+[107/394] ACTION //device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite:copy_hal_iothardwarelibs(//build/lite/toolchain:csky-abiv2-elf)
 source is ../../../device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/libhal_iothardware.a
 target is libs/libhal_iothardware.a
-[122/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/communication/broadcast/source/libbroadcast.broadcast_service.o
-[123/390] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/copy_hal_iothardwarelibs.stamp
-[124/390] gcc cross compiler obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/libhuks.hks_service.o
-In file included from ../../../third_party/openssl/crypto/ec/ec_local.h:16:0,
-                 from ../../../base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/hks_service.c:18:
-../../../third_party/openssl/include/internal/refcount.h: 在函数‘CRYPTO_UP_REF’中:
-../../../third_party/openssl/include/internal/refcount.h:62:63: 警告： unused parameter ‘lock’ [-Wunused-parameter]
- static __inline__ int CRYPTO_UP_REF(int *val, int *ret, void *lock)
-                                                               ^~~~
-../../../third_party/openssl/include/internal/refcount.h: 在函数‘CRYPTO_DOWN_REF’中:
-../../../third_party/openssl/include/internal/refcount.h:68:65: 警告： unused parameter ‘lock’ [-Wunused-parameter]
- static __inline__ int CRYPTO_DOWN_REF(int *val, int *ret, void *lock)
-                                                                 ^~~~
-[125/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/communication/broadcast/source/libbroadcast.pub_sub_feature.o
-[126/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/communication/broadcast/source/libbroadcast.pub_sub_implement.o
-[127/390] AR libs/libbroadcast.a
-[128/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr_source.common.o
-[129/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.net_sockets.o
-[130/390] gcc cross compiler obj/kernel/liteos_m/components/backtrace/libbacktrace.los_backtrace.o
-[131/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/adapter/cmsis/libsamgr_adapter.memory_adapter.o
+[108/394] ACTION //device/winnermicro/neptune/w800_adapter/hals/update:copy_hal_update_staticlibs(//build/lite/toolchain:csky-abiv2-elf)
+source is ../../../device/winnermicro/neptune/w800_adapter/hals/update/libhal_update_static.a
+target is libs/libhal_update_static.a
+[109/394] STAMP obj/base/iot_hardware/peripheral/iothardware_ndk.stamp
+[110/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.md2.o
+[111/394] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/copy_hal_iothardwarelibs.stamp
+[112/394] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/update/copy_hal_update_staticlibs.stamp
+[113/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.md4.o
+[114/394] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/hal_file_static.stamp
+[115/394] STAMP obj/domains/iot/link/link.stamp
+[116/394] STAMP obj/foundation/communication/bt_lite/ble.stamp
+[117/394] STAMP obj/foundation/communication/wifi_lite/wifi.stamp
+[118/394] COPY ../../../foundation/distributedschedule/samgr_lite/config/system_capability.json obj/foundation/distributedschedule/samgr_lite/config/system_capability.json
+[119/394] STAMP obj/domains/iot/link/iot.stamp
+[120/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.aes.o
+[121/394] ACTION //device/winnermicro/neptune/w800_adapter/hals/utils/file:copy_hal_file_staticlibs(//build/lite/toolchain:csky-abiv2-elf)
+source is ../../../device/winnermicro/neptune/w800_adapter/hals/utils/file/libhal_file_static.a
+target is libs/libhal_file_static.a
+[122/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/communication/broadcast/source/libbroadcast.broadcast_service.o
+[123/394] STAMP obj/foundation/distributedschedule/samgr_lite/ConfigFiles.stamp
+[124/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.md.o
+[125/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/communication/broadcast/source/libbroadcast.pub_sub_feature.o
+[126/394] STAMP obj/device/winnermicro/neptune/w800_adapter/hals/utils/file/copy_hal_file_staticlibs.stamp
+[127/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/adapter/cmsis/libsamgr_adapter.memory_adapter.o
 cc1: 警告： ../../../kernel/liteos_m/kal/posix/include/malloc.h: not a directory
-[132/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr_source.feature.o
-[133/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/adapter/cmsis/libsamgr_adapter.time_adapter.o
+[128/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/registry/libsamgr.service_registry.o
+[129/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/communication/broadcast/source/libbroadcast.pub_sub_implement.o
+[130/394] AR libs/libbroadcast.a
+[131/394] gcc cross compiler obj/kernel/liteos_m/components/backtrace/libbacktrace.los_backtrace.o
+[132/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr_source.common.o
+[133/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/adapter/cmsis/libsamgr_adapter.thread_adapter.o
 cc1: 警告： ../../../kernel/liteos_m/kal/posix/include/malloc.h: not a directory
-[134/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/adapter/cmsis/libsamgr_adapter.queue_adapter.o
+[134/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/adapter/cmsis/libsamgr_adapter.queue_adapter.o
 cc1: 警告： ../../../kernel/liteos_m/kal/posix/include/malloc.h: not a directory
-[135/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr_source.iunknown.o
-[136/390] AR libs/libbacktrace.a
-[137/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/adapter/cmsis/libsamgr_adapter.thread_adapter.o
+[135/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/adapter/cmsis/libsamgr_adapter.time_adapter.o
 cc1: 警告： ../../../kernel/liteos_m/kal/posix/include/malloc.h: not a directory
-[138/390] AR libs/libsamgr_adapter.a
-[139/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr.samgr_lite.o
-[140/390] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_event.o
-[141/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr_source.service.o
-[142/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.bignum.o
-[143/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr_source.task_manager.o
-[144/390] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr_source.message.o
-[145/390] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_init.o
-In file included from ../../../kernel/liteos_m/kernel/src/los_init.c:35:0:
-../../../kernel/liteos_m/kernel/include/los_memory.h:58:0: 警告： “OS_SYS_MEM_ADDR”重定义
- #define OS_SYS_MEM_ADDR     LOSCFG_SYS_HEAP_ADDR
+[136/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr_source.iunknown.o
+[137/394] AR libs/libsamgr_adapter.a
+[138/394] AR libs/libbacktrace.a
+[139/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr_source.feature.o
+[140/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.gets_s.o
+[141/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr_source.task_manager.o
+[142/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr_source.message.o
+[143/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr_source.service.o
+[144/394] AR libs/libsamgr_source.a
+[145/394] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_event.o
+[146/394] gcc cross compiler obj/kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/libarch.los_hw_tick.o
+In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/csi_gcc.h:27:0,
+                 from ../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/core_804.h:105,
+                 from ../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/csi_core.h:36,
+                 from ../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c:39:
+../../../kernel/liteos_m/kal/posix/include/stdlib.h:17:0: 警告： “NULL”重定义
+ #define NULL ((void*)0)
  
-In file included from ../../../kernel/liteos_m/kernel/include/los_config.h:40:0,
-                 from ../../../kernel/liteos_m/kernel/src/los_init.c:32:
-../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:258:0: 附注： 这是先前定义的位置
- #define OS_SYS_MEM_ADDR                                     (g_sysMemAddrStart)
+In file included from ../../../kernel/liteos_m/utils/los_error.h:39:0,
+                 from ../../../kernel/liteos_m/kernel/include/los_tick.h:40,
+                 from ../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c:35:
+../../../kernel/liteos_m/utils/los_compiler.h:314:0: 附注： 这是先前定义的位置
+ #define NULL          ((VOID *)0)
  
-[146/390] gcc cross compiler obj/kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/libarch.xport.o
+In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/csi_core.h:36:0,
+                 from ../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c:39:
+../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/core_804.h: 在函数‘csi_coret_config’中:
+../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/core_804.h:961:67: 警告： unused parameter ‘IRQn’ [-Wunused-parameter]
+ __STATIC_INLINE uint32_t csi_coret_config(uint32_t ticks, int32_t IRQn)
+                                                                   ^~~~
+../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c: 在函数‘OsTickStart’中:
+../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c:69:12: 警告： 未使用的变量‘ret’ [-Wunused-variable]
+     UINT32 ret;
+            ^~~
+../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c: 在函数‘LOS_SysTickCurrCycleGet’中:
+../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c:98:15: 警告： 隐式声明函数‘XPORT_LOS_IntLock’ [-Wimplicit-function-declaration]
+     intSave = XPORT_LOS_IntLock();
+               ^~~~~~~~~~~~~~~~~
+../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c:107:5: 警告： 隐式声明函数‘XPORT_LOS_IntRestore’ [-Wimplicit-function-declaration]
+     XPORT_LOS_IntRestore(intSave);
+     ^~~~~~~~~~~~~~~~~~~~
+[147/394] gcc cross compiler obj/kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/libarch.xport.o
 In file included from ../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/xport.c:72:0:
 ../../../device/winnermicro/neptune/sdk_liteos/include/los/los_task_pri.h:215:0: 警告： “OS_TSK_SORTLINK_MASK”重定义
  #define OS_TSK_SORTLINK_MASK                        (OS_TSK_SORTLINK_LEN - 1)
@@ -257,79 +299,18 @@ In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/los
 ../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/xport.c:256:57: 警告： unused parameter ‘st’ [-Wunused-parameter]
  size_t wcrtomb(char *restrict s, int wc, void *restrict st)
                                                          ^~
-[147/390] AR libs/libsamgr_source.a
-[148/390] AR libs/libsamgr.a
-[149/390] STAMP obj/foundation/distributedschedule/samgr_lite/samgr.stamp
-[150/390] gcc cross compiler obj/kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/libarch.los_hw_tick.o
-In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/csi_gcc.h:27:0,
-                 from ../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/core_804.h:105,
-                 from ../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/csi_core.h:36,
-                 from ../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c:39:
-../../../kernel/liteos_m/kal/posix/include/stdlib.h:17:0: 警告： “NULL”重定义
- #define NULL ((void*)0)
- 
-In file included from ../../../kernel/liteos_m/utils/los_error.h:39:0,
-                 from ../../../kernel/liteos_m/kernel/include/los_tick.h:40,
-                 from ../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c:35:
-../../../kernel/liteos_m/utils/los_compiler.h:314:0: 附注： 这是先前定义的位置
- #define NULL          ((VOID *)0)
- 
-In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/csi_core.h:36:0,
-                 from ../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c:39:
-../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/core_804.h: 在函数‘csi_coret_config’中:
-../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/core_804.h:961:67: 警告： unused parameter ‘IRQn’ [-Wunused-parameter]
- __STATIC_INLINE uint32_t csi_coret_config(uint32_t ticks, int32_t IRQn)
-                                                                   ^~~~
-../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c: 在函数‘OsTickStart’中:
-../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c:69:12: 警告： 未使用的变量‘ret’ [-Wunused-variable]
-     UINT32 ret;
-            ^~~
-../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c: 在函数‘LOS_SysTickCurrCycleGet’中:
-../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c:98:15: 警告： 隐式声明函数‘XPORT_LOS_IntLock’ [-Wimplicit-function-declaration]
-     intSave = XPORT_LOS_IntLock();
-               ^~~~~~~~~~~~~~~~~
-../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hw_tick.c:107:5: 警告： 隐式声明函数‘XPORT_LOS_IntRestore’ [-Wimplicit-function-declaration]
-     XPORT_LOS_IntRestore(intSave);
-     ^~~~~~~~~~~~~~~~~~~~
-[151/390] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_mux.o
-In file included from ../../../kernel/liteos_m/kernel/src/los_mux.c:34:0:
+[148/394] gcc cross compiler obj/foundation/distributedschedule/samgr_lite/samgr/source/libsamgr.samgr_lite.o
+[149/394] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_init.o
+In file included from ../../../kernel/liteos_m/kernel/src/los_init.c:35:0:
 ../../../kernel/liteos_m/kernel/include/los_memory.h:58:0: 警告： “OS_SYS_MEM_ADDR”重定义
  #define OS_SYS_MEM_ADDR     LOSCFG_SYS_HEAP_ADDR
  
 In file included from ../../../kernel/liteos_m/kernel/include/los_config.h:40:0,
-                 from ../../../kernel/liteos_m/kernel/src/los_mux.c:31:
+                 from ../../../kernel/liteos_m/kernel/src/los_init.c:32:
 ../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:258:0: 附注： 这是先前定义的位置
  #define OS_SYS_MEM_ADDR                                     (g_sysMemAddrStart)
  
-[152/390] STAMP obj/foundation/distributedschedule/samgr_lite/samgr_lite_ndk.stamp
-[153/390] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_sem.o
-In file included from ../../../kernel/liteos_m/kernel/src/los_sem.c:33:0:
-../../../kernel/liteos_m/kernel/include/los_memory.h:58:0: 警告： “OS_SYS_MEM_ADDR”重定义
- #define OS_SYS_MEM_ADDR     LOSCFG_SYS_HEAP_ADDR
- 
-In file included from ../../../kernel/liteos_m/kernel/include/los_config.h:40:0,
-                 from ../../../kernel/liteos_m/kernel/src/los_sem.c:31:
-../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:258:0: 附注： 这是先前定义的位置
- #define OS_SYS_MEM_ADDR                                     (g_sysMemAddrStart)
- 
-[154/390] gcc cross compiler obj/kernel/liteos_m/kernel/src/mm/libkernel.los_membox.o
-In file included from ../../../third_party/bounds_checking_function/include/securectype.h:298:0,
-                 from ../../../third_party/bounds_checking_function/include/securec.h:21,
-                 from ../../../kernel/liteos_m/kernel/src/mm/los_membox.c:33:
-../../../kernel/liteos_m/kal/posix/include/stdio.h:36:0: 警告： “NULL”重定义
- #define NULL ((void*)0)
- 
-In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/los/los_builddef.h:34:0,
-                 from ../../../device/winnermicro/neptune/sdk_liteos/include/los/los_typedef.h:40,
-                 from ../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:35,
-                 from ../../../kernel/liteos_m/kernel/include/los_config.h:40,
-                 from ../../../kernel/liteos_m/kernel/include/los_membox.h:40,
-                 from ../../../kernel/liteos_m/kernel/src/mm/los_membox.c:32:
-../../../kernel/liteos_m/utils/los_compiler.h:314:0: 附注： 这是先前定义的位置
- #define NULL          ((VOID *)0)
- 
-[155/390] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_tick.o
-[156/390] gcc cross compiler obj/kernel/liteos_m/kal/cmsis/libcmsis.cmsis_liteos.o
+[150/394] gcc cross compiler obj/kernel/liteos_m/kal/cmsis/libcmsis.cmsis_liteos.o
 In file included from ../../../kernel/liteos_m/kal/cmsis/cmsis_os2.h:77:0,
                  from ../../../kernel/liteos_m/kal/cmsis/cmsis_os.h:40,
                  from ../../../kernel/liteos_m/kal/cmsis/cmsis_liteos2.c:32,
@@ -355,10 +336,36 @@ In file included from ../../../kernel/liteos_m/kernel/include/los_config.h:40:0,
 ../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:258:0: 附注： 这是先前定义的位置
  #define OS_SYS_MEM_ADDR                                     (g_sysMemAddrStart)
  
-[157/390] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_swtmr.o
+[151/394] AR libs/libsamgr.a
+[152/394] AR libs/libcmsis.a
+[153/394] STAMP obj/foundation/distributedschedule/samgr_lite/samgr.stamp
+[154/394] STAMP obj/foundation/distributedschedule/samgr_lite/samgr_lite_ndk.stamp
+[155/394] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_sem.o
+In file included from ../../../kernel/liteos_m/kernel/src/los_sem.c:33:0:
+../../../kernel/liteos_m/kernel/include/los_memory.h:58:0: 警告： “OS_SYS_MEM_ADDR”重定义
+ #define OS_SYS_MEM_ADDR     LOSCFG_SYS_HEAP_ADDR
+ 
+In file included from ../../../kernel/liteos_m/kernel/include/los_config.h:40:0,
+                 from ../../../kernel/liteos_m/kernel/src/los_sem.c:31:
+../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:258:0: 附注： 这是先前定义的位置
+ #define OS_SYS_MEM_ADDR                                     (g_sysMemAddrStart)
+ 
+[156/394] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_mux.o
+In file included from ../../../kernel/liteos_m/kernel/src/los_mux.c:34:0:
+../../../kernel/liteos_m/kernel/include/los_memory.h:58:0: 警告： “OS_SYS_MEM_ADDR”重定义
+ #define OS_SYS_MEM_ADDR     LOSCFG_SYS_HEAP_ADDR
+ 
+In file included from ../../../kernel/liteos_m/kernel/include/los_config.h:40:0,
+                 from ../../../kernel/liteos_m/kernel/src/los_mux.c:31:
+../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:258:0: 附注： 这是先前定义的位置
+ #define OS_SYS_MEM_ADDR                                     (g_sysMemAddrStart)
+ 
+[157/394] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_tick.o
+[158/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.fscanf_s.o
+[159/394] gcc cross compiler obj/kernel/liteos_m/kernel/src/mm/libkernel.los_membox.o
 In file included from ../../../third_party/bounds_checking_function/include/securectype.h:298:0,
                  from ../../../third_party/bounds_checking_function/include/securec.h:21,
-                 from ../../../kernel/liteos_m/kernel/src/los_swtmr.c:32:
+                 from ../../../kernel/liteos_m/kernel/src/mm/los_membox.c:33:
 ../../../kernel/liteos_m/kal/posix/include/stdio.h:36:0: 警告： “NULL”重定义
  #define NULL ((void*)0)
  
@@ -366,21 +373,12 @@ In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/los
                  from ../../../device/winnermicro/neptune/sdk_liteos/include/los/los_typedef.h:40,
                  from ../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:35,
                  from ../../../kernel/liteos_m/kernel/include/los_config.h:40,
-                 from ../../../kernel/liteos_m/kernel/src/los_swtmr.c:31:
+                 from ../../../kernel/liteos_m/kernel/include/los_membox.h:40,
+                 from ../../../kernel/liteos_m/kernel/src/mm/los_membox.c:32:
 ../../../kernel/liteos_m/utils/los_compiler.h:314:0: 附注： 这是先前定义的位置
  #define NULL          ((VOID *)0)
  
-In file included from ../../../kernel/liteos_m/kernel/src/los_swtmr.c:36:0:
-../../../kernel/liteos_m/kernel/include/los_memory.h:58:0: 警告： “OS_SYS_MEM_ADDR”重定义
- #define OS_SYS_MEM_ADDR     LOSCFG_SYS_HEAP_ADDR
- 
-In file included from ../../../kernel/liteos_m/kernel/include/los_config.h:40:0,
-                 from ../../../kernel/liteos_m/kernel/src/los_swtmr.c:31:
-../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:258:0: 附注： 这是先前定义的位置
- #define OS_SYS_MEM_ADDR                                     (g_sysMemAddrStart)
- 
-[158/390] AR libs/libcmsis.a
-[159/390] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_queue.o
+[160/394] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_queue.o
 In file included from ../../../third_party/bounds_checking_function/include/securectype.h:298:0,
                  from ../../../third_party/bounds_checking_function/include/securec.h:21,
                  from ../../../kernel/liteos_m/kernel/src/los_queue.c:33:
@@ -404,8 +402,32 @@ In file included from ../../../kernel/liteos_m/kernel/include/los_config.h:40:0,
 ../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:258:0: 附注： 这是先前定义的位置
  #define OS_SYS_MEM_ADDR                                     (g_sysMemAddrStart)
  
-[160/390] gcc cross compiler obj/kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/libarch.xcpu_task_sw.o
-[161/390] gcc cross compiler obj/kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/libarch.los_hwi.o
+[161/394] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_swtmr.o
+In file included from ../../../third_party/bounds_checking_function/include/securectype.h:298:0,
+                 from ../../../third_party/bounds_checking_function/include/securec.h:21,
+                 from ../../../kernel/liteos_m/kernel/src/los_swtmr.c:32:
+../../../kernel/liteos_m/kal/posix/include/stdio.h:36:0: 警告： “NULL”重定义
+ #define NULL ((void*)0)
+ 
+In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/los/los_builddef.h:34:0,
+                 from ../../../device/winnermicro/neptune/sdk_liteos/include/los/los_typedef.h:40,
+                 from ../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:35,
+                 from ../../../kernel/liteos_m/kernel/include/los_config.h:40,
+                 from ../../../kernel/liteos_m/kernel/src/los_swtmr.c:31:
+../../../kernel/liteos_m/utils/los_compiler.h:314:0: 附注： 这是先前定义的位置
+ #define NULL          ((VOID *)0)
+ 
+In file included from ../../../kernel/liteos_m/kernel/src/los_swtmr.c:36:0:
+../../../kernel/liteos_m/kernel/include/los_memory.h:58:0: 警告： “OS_SYS_MEM_ADDR”重定义
+ #define OS_SYS_MEM_ADDR     LOSCFG_SYS_HEAP_ADDR
+ 
+In file included from ../../../kernel/liteos_m/kernel/include/los_config.h:40:0,
+                 from ../../../kernel/liteos_m/kernel/src/los_swtmr.c:31:
+../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:258:0: 附注： 这是先前定义的位置
+ #define OS_SYS_MEM_ADDR                                     (g_sysMemAddrStart)
+ 
+[162/394] gcc cross compiler obj/kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/libarch.xcpu_task_sw.o
+[163/394] gcc cross compiler obj/kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/libarch.los_hwi.o
 ../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hwi.c: 在函数‘LOS_HwiCreate’中:
 ../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hwi.c:68:35: 警告： unused parameter ‘hwiNum’ [-Wunused-parameter]
  UINT32 LOS_HwiCreate(HWI_HANDLE_T hwiNum,
@@ -426,8 +448,10 @@ In file included from ../../../kernel/liteos_m/kernel/include/los_config.h:40:0,
 ../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_hwi.c:85:35: 警告： unused parameter ‘hwiNum’ [-Wunused-parameter]
  UINT32 LOS_HwiDelete(HWI_HANDLE_T hwiNum)
                                    ^~~~~~
-[162/390] gcc cross compiler obj/kernel/liteos_m/utils/libutils.los_error.o
-[163/390] gcc cross compiler obj/kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/libarch.los_context.o
+[164/394] gcc cross compiler obj/kernel/liteos_m/utils/libutils.los_error.o
+[165/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.fwscanf_s.o
+[166/394] gcc cross compiler obj/kernel/liteos_m/utils/libutils.los_debug.o
+[167/394] gcc cross compiler obj/kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/libarch.los_context.o
 In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/csi_gcc.h:27:0,
                  from ../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/core_804.h:105,
                  from ../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/csi_core.h:36,
@@ -473,18 +497,21 @@ In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/arc
 ../../../kernel/liteos_m/kernel/arch/csky/ck804ef/gcc/los_context.c:137:1: 警告： 在有返回值的函数中，控制流程到达函数尾 [-Wreturn-type]
  }
  ^
-[164/390] AR libs/libarch.a
-[165/390] gcc cross compiler obj/kernel/liteos_m/utils/libutils.los_debug.o
-[166/390] AR libs/libutils.a
-[167/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.aria.o
-[168/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.memcpy_s.o
-[169/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.chacha20.o
-[170/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.cipher_wrap.o
-[171/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.chachapoly.o
-[172/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.fwscanf_s.o
-[173/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.cmac.o
-[174/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.fscanf_s.o
-[175/390] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_task.o
+[168/394] AR libs/libutils.a
+[169/394] AR libs/libarch.a
+[170/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.aria.o
+[171/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.memcpy_s.o
+[172/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.base64.o
+[173/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.chacha20.o
+[174/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.blowfish.o
+[175/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.camellia.o
+[176/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ccm.o
+[177/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.chachapoly.o
+[178/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.cmac.o
+[179/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.cipher_wrap.o
+[180/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.des.o
+[181/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.dhm.o
+[182/394] gcc cross compiler obj/kernel/liteos_m/kernel/src/libkernel.los_task.o
 In file included from ../../../third_party/bounds_checking_function/include/securectype.h:298:0,
                  from ../../../third_party/bounds_checking_function/include/securec.h:21,
                  from ../../../kernel/liteos_m/kernel/src/los_task.c:32:
@@ -508,7 +535,7 @@ In file included from ../../../kernel/liteos_m/kernel/include/los_config.h:40:0,
 ../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc/target_config.h:258:0: 附注： 这是先前定义的位置
  #define OS_SYS_MEM_ADDR                                     (g_sysMemAddrStart)
  
-[176/390] gcc cross compiler obj/kernel/liteos_m/kernel/src/mm/libkernel.los_memory.o
+[183/394] gcc cross compiler obj/kernel/liteos_m/kernel/src/mm/libkernel.los_memory.o
 In file included from ../../../kernel/liteos_m/kernel/src/mm/los_memory.c:36:0:
 ../../../kernel/liteos_m/kernel/include/los_memory.h:58:0: 警告： “OS_SYS_MEM_ADDR”重定义
  #define OS_SYS_MEM_ADDR     LOSCFG_SYS_HEAP_ADDR
@@ -581,16 +608,19 @@ In file included from ../../../kernel/liteos_m/kernel/include/los_task.h:41:0,
 ../../../kernel/liteos_m/kernel/src/mm/los_memory.c:1965:12: 附注： ‘intSave’在此声明
      UINT32 intSave;
             ^~~~~~~
-[177/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.gets_s.o
-[178/390] AR libs/libkernel.a
-[179/390] STAMP obj/device/winnermicro/neptune/sdk_liteos/sdk.stamp
-[180/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.des.o
-[181/390] STAMP obj/device/winnermicro/neptune/sdk_liteos/wifiiot_sdk.stamp
-[182/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.cipher.o
-[183/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.securecutil.o
-[184/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ctr_drbg.o
-[185/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.scanf_s.o
-[186/390] gcc cross compiler obj/third_party/openssl/crypto/ec/libopenssl_static.curve25519.o
+[184/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.cipher.o
+[185/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ecdh.o
+[186/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ctr_drbg.o
+[187/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ecdsa.o
+[188/394] AR libs/libkernel.a
+[189/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ecp.o
+[190/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ecp_curves.o
+[191/394] STAMP obj/device/winnermicro/neptune/sdk_liteos/sdk.stamp
+[192/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ecjpake.o
+[193/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.memmove_s.o
+[194/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.entropy.o
+[195/394] STAMP obj/device/winnermicro/neptune/sdk_liteos/wifiiot_sdk.stamp
+[196/394] gcc cross compiler obj/third_party/openssl/crypto/ec/libopenssl_static.curve25519.o
 In file included from ../../../third_party/openssl/crypto/ec/ec_local.h:16:0,
                  from ../../../third_party/openssl/crypto/ec/curve25519.c:11:
 ../../../third_party/openssl/include/internal/refcount.h: 在函数‘CRYPTO_UP_REF’中:
@@ -601,54 +631,50 @@ In file included from ../../../third_party/openssl/crypto/ec/ec_local.h:16:0,
 ../../../third_party/openssl/include/internal/refcount.h:68:65: 警告： unused parameter ‘lock’ [-Wunused-parameter]
  static __inline__ int CRYPTO_DOWN_REF(int *val, int *ret, void *lock)
                                                                  ^~~~
-[187/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.memset_s.o
-[188/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.dhm.o
-[189/390] AR libs/libopenssl_static.a
-[190/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ecdh.o
-[191/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ecdsa.o
-[192/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.snprintf_s.o
-[193/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.sscanf_s.o
-[194/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.memmove_s.o
-[195/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.secureprintoutput_a.o
-[196/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.secureinput_a.o
-[197/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.sprintf_s.o
-[198/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.secureinput_w.o
-[199/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.strcat_s.o
-[200/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.strtok_s.o
-[201/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.swscanf_s.o
-[202/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.swprintf_s.o
-[203/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.strncat_s.o
-[204/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.strncpy_s.o
-[205/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vfscanf_s.o
-[206/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.strcpy_s.o
-[207/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vscanf_s.o
-[208/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vfwscanf_s.o
-[209/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vsprintf_s.o
-[210/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vsscanf_s.o
-[211/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vsnprintf_s.o
-[212/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vswprintf_s.o
-[213/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vswscanf_s.o
-[214/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vwscanf_s.o
-[215/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wcscpy_s.o
-[216/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wcsncat_s.o
-[217/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wcscat_s.o
-[218/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wcsncpy_s.o
-[219/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wcstok_s.o
-[220/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wscanf_s.o
-[221/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wmemcpy_s.o
-[222/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wmemmove_s.o
-[223/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.arc4.o
-[224/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.aesni.o
-[225/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ecjpake.o
-[226/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ecp.o
-[227/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ecp_curves.o
-[228/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.entropy_poll.o
-[229/390] gcc cross compiler obj/vendor/winnermicro/neptune/hals/utils/token/liboem_auth_static.oem_auth_config.o
-[230/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.asn1write.o
-[231/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.asn1parse.o
-[232/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.entropy.o
-[233/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.error.o
-[234/390] gcc cross compiler obj/vendor/winnermicro/neptune/hals/utils/token/liboem_auth_static.oem_auth_result_storage.o
+[197/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.scanf_s.o
+[198/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.securecutil.o
+[199/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.snprintf_s.o
+[200/394] gcc cross compiler obj/third_party/openssl/crypto/sha/libopenssl_static.sha512.o
+[201/394] AR libs/libopenssl_static.a
+[202/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.sprintf_s.o
+[203/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.sscanf_s.o
+[204/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.strcat_s.o
+[205/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.bignum.o
+[206/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.memset_s.o
+[207/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.strtok_s.o
+[208/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.swprintf_s.o
+[209/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.strncat_s.o
+[210/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.swscanf_s.o
+[211/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.strncpy_s.o
+[212/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.strcpy_s.o
+[213/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vfwscanf_s.o
+[214/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vfscanf_s.o
+[215/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vscanf_s.o
+[216/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vsnprintf_s.o
+[217/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vsscanf_s.o
+[218/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vsprintf_s.o
+[219/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.secureprintoutput_a.o
+[220/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vswprintf_s.o
+[221/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vswscanf_s.o
+[222/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.vwscanf_s.o
+[223/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wcscpy_s.o
+[224/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wcsncat_s.o
+[225/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wcsncpy_s.o
+[226/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wcscat_s.o
+[227/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wcstok_s.o
+[228/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wmemcpy_s.o
+[229/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wmemmove_s.o
+[230/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.secureprintoutput_w.o
+[231/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.secureinput_w.o
+[232/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.wscanf_s.o
+[233/394] gcc cross compiler obj/vendor/winnermicro/neptune/hals/utils/token/liboem_auth_static.oem_auth_config.o
+[234/394] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.secureinput_a.o
+[235/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.error.o
+[236/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.gcm.o
+[237/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.havege.o
+[238/394] AR libs/libsec_static.a
+[239/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.entropy_poll.o
+[240/394] gcc cross compiler obj/vendor/winnermicro/neptune/hals/utils/token/liboem_auth_static.oem_auth_result_storage.o
 In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/os/wm_osal.h:17:0,
                  from ../../../device/winnermicro/neptune/sdk_liteos/include/driver/wm_internal_flash.h:15,
                  from ../../../vendor/winnermicro/neptune/hals/utils/token/oem_auth_result_storage.c:10:
@@ -694,12 +720,13 @@ In file included from ../../../vendor/winnermicro/neptune/hals/utils/token/oem_a
 ../../../vendor/winnermicro/neptune/hals/utils/token/oem_auth_result_storage.c:175:15: 警告： 未使用的变量‘flag’ [-Wunused-variable]
   unsigned int flag;
                ^~~~
-[235/390] AR libs/liboem_auth_static.a
-[236/390] gcc cross compiler obj/third_party/bounds_checking_function/src/libsec_static.secureprintoutput_w.o
-[237/390] AR libs/libsec_static.a
-[238/390] STAMP obj/third_party/bounds_checking_function/sec_static.stamp
-[239/390] STAMP obj/third_party/bounds_checking_function/libsec_ndk.stamp
-[240/390] gcc cross compiler obj/vendor/winnermicro/neptune/hals/utils/token/libhal_token_static.hal_token.o
+[241/394] STAMP obj/third_party/bounds_checking_function/sec_static.stamp
+[242/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.hkdf.o
+[243/394] AR libs/liboem_auth_static.a
+[244/394] STAMP obj/third_party/bounds_checking_function/libsec_ndk.stamp
+[245/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.hmac_drbg.o
+[246/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.md5.o
+[247/394] gcc cross compiler obj/vendor/winnermicro/neptune/hals/utils/token/libhal_token_static.hal_token.o
 In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/os/wm_osal.h:17:0,
                  from ../../../device/winnermicro/neptune/sdk_liteos/include/driver/wm_internal_flash.h:15,
                  from ../../../vendor/winnermicro/neptune/hals/utils/token/hal_token.c:6:
@@ -747,150 +774,147 @@ In file included from ../../../vendor/winnermicro/neptune/hals/utils/token/hal_t
 ../../../vendor/winnermicro/neptune/hals/utils/token/hal_token.c:155:11: 警告： 隐式声明函数‘memset_s’ [-Wimplicit-function-declaration]
      (void)memset_s(productId, len, 0, len);
            ^~~~~~~~
-[241/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.aes.o
-[242/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.padlock.o
-[243/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.oid.o
-[244/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pem.o
-[245/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pk_wrap.o
-[246/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pk.o
-[247/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pkcs12.o
-[248/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pkcs5.o
-[249/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pkwrite.o
-[250/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.platform.o
-[251/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.platform_util.o
-[252/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.poly1305.o
-[253/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ripemd160.o
-[254/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pkparse.o
-[255/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.hmac_drbg.o
-[256/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.gcm.o
-[257/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.havege.o
-[258/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.hkdf.o
-[259/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.md4.o
-[260/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.md5.o
-[261/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.md2.o
-[262/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.sha512.o
-[263/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.rsa_internal.o
-[264/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.version.o
-[265/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.md.o
-[266/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.sha256.o
-[267/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.sha1.o
-[268/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.rsa.o
-[269/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.version_features.o
-[270/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.threading.o
-[271/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.timing.o
-[272/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509_crl.o
-[273/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.xtea.o
-[274/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_cache.o
-[275/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_cookie.o
-[276/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pkcs11.o
-[277/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.debug.o
-[278/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_ciphersuites.o
-[279/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_srv.o
-[280/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_ticket.o
-[281/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509_create.o
-[282/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509_csr.o
-[283/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509write_crt.o
-[284/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509write_csr.o
-[285/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.blowfish.o
-[286/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.aesni.o
-[287/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509.o
-[288/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.chacha20.o
-[289/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ecdh.o
-[290/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ecjpake.o
-[291/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_cli.o
-[292/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.entropy_poll.o
-[293/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.chachapoly.o
-[294/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ecdsa.o
-[295/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.entropy.o
-[296/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.cmac.o
-[297/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.cipher_wrap.o
-[298/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.certs.o
-[299/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.des.o
-[300/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.dhm.o
-[301/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509_crt.o
-[302/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ctr_drbg.o
-[303/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.aria.o
-[304/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.camellia.o
-[305/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ccm.o
-[306/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ecp_curves.o
-[307/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.cipher.o
-[308/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.base64.o
-[309/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.arc4.o
-[310/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.error.o
-[311/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.asn1parse.o
-[312/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.asn1write.o
-[313/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.havege.o
-[314/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.hmac_drbg.o
-[315/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_tls.o
-[316/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.md4.o
-[317/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.md2.o
-[318/390] AR libs/libmbedtls_gt.a
-[319/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.hkdf.o
-[320/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.memory_buffer_alloc.o
-[321/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.md.o
-[322/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.nist_kw.o
-[323/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.gcm.o
-[324/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.padlock.o
-[325/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.net_sockets.o
-[326/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.md_wrap.o
-[327/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ecp.o
-[328/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.md5.o
-[329/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pkcs12.o
-[330/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.aes.o
-[331/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.platform.o
-[332/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.oid.o
-[333/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pem.o
-[334/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.platform_util.o
-[335/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pk_wrap.o
-[336/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ripemd160.o
-[337/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pk.o
-[338/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pkcs5.o
-[339/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pkwrite.o
-[340/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.rsa_internal.o
-[341/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ssl_ciphersuites.o
-[342/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.bignum.o
-[343/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.poly1305.o
-[344/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.threading.o
-[345/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.timing.o
-[346/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pkparse.o
-[347/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.version.o
-[348/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.version_features.o
-[349/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.sha256.o
-[350/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.sha512.o
-[351/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.sha1.o
-[352/390] STAMP obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/device/winnermicro/neptune/neptune.stamp
-[353/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.xtea.o
-[354/390] gcc cross compiler obj/utils/native/lite/file/src/file_impl_hal/libnative_file.file.o
-[355/390] STAMP obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune/neptune.stamp
-[356/390] AR libs/libhal_token_static.a
-[357/390] AR libs/libnative_file.a
-[358/390] AR libs/libtoken_static.a
-[359/390] STAMP obj/base/startup/syspara_lite/frameworks/token/token.stamp
-[360/390] STAMP obj/utils/native/lite/file/file.stamp
-[361/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.x509_crl.o
-[362/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.x509.o
-[363/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.rsa.o
-[364/390] gcc cross compiler obj/utils/native/lite/os_dump/libdump_static.dump_syspara.o
-[365/390] gcc cross compiler obj/utils/native/lite/kv_store/src/kvstore_common/libutils_kv_store.kvstore_common.o
-[366/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ssl_cli.o
-[367/390] gcc cross compiler obj/utils/native/lite/kv_store/src/kvstore_impl_hal/libutils_kv_store.kv_store.o
-[368/390] AR libs/libutils_kv_store.a
-[369/390] STAMP obj/utils/native/lite/kv_store/kv_store.stamp
-[370/390] gcc cross compiler obj/vendor/winnermicro/neptune/hals/utils/sys_param/libhal_sysparam.hal_sys_param.o
-[371/390] AR libs/libhal_sysparam.a
-[372/390] AR libs/libsysparam.a
-[373/390] STAMP obj/base/startup/syspara_lite/frameworks/parameter/parameter.stamp
-[374/390] STAMP obj/base/startup/syspara_lite/frameworks/parameter/parameter_notes.stamp
-[375/390] AR libs/libhota.a
-[376/390] AR libs/libdump_static.a
-[377/390] STAMP obj/base/update/ota_lite/frameworks/ota_lite.stamp
-[378/390] STAMP obj/utils/native/lite/os_dump/utils_os_dump.stamp
-[379/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.x509_crt.o
-[380/390] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ssl_tls.o
-[381/390] AR libs/libmbedtls.a
-[382/390] STAMP obj/third_party/mbedtls/mbedtls.stamp
-[383/390] STAMP obj/third_party/mbedtls/mbedtls_ndk.stamp
-[384/390] AR libs/libhuks.a
+[248/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.asn1parse.o
+[249/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.asn1write.o
+[250/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.memory_buffer_alloc.o
+[251/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.nist_kw.o
+[252/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.padlock.o
+[253/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.md_wrap.o
+[254/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pem.o
+[255/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pkwrite.o
+[256/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pk_wrap.o
+[257/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pkcs5.o
+[258/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.platform.o
+[259/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pkcs12.o
+[260/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ripemd160.o
+[261/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pk.o
+[262/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.platform_util.o
+[263/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.poly1305.o
+[264/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.oid.o
+[265/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.sha512.o
+[266/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.net_sockets.o
+[267/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.threading.o
+[268/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pkparse.o
+[269/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_ciphersuites.o
+[270/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.timing.o
+[271/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.version.o
+[272/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.rsa_internal.o
+[273/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.version_features.o
+[274/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509_crl.o
+[275/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.xtea.o
+[276/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.certs.o
+[277/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.sha256.o
+[278/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.debug.o
+[279/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.sha1.o
+[280/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_cookie.o
+[281/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_cache.o
+[282/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.pkcs11.o
+[283/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_srv.o
+[284/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_ticket.o
+[285/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509_create.o
+[286/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509_csr.o
+[287/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509write_crt.o
+[288/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_cli.o
+[289/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509write_csr.o
+[290/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.aesni.o
+[291/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509.o
+[292/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.blowfish.o
+[293/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ecjpake.o
+[294/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.rsa.o
+[295/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.chacha20.o
+[296/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ecdh.o
+[297/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.chachapoly.o
+[298/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.entropy_poll.o
+[299/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ecdsa.o
+[300/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.cmac.o
+[301/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.entropy.o
+[302/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.dhm.o
+[303/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.des.o
+[304/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.camellia.o
+[305/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.cipher_wrap.o
+[306/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.x509_crt.o
+[307/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.aria.o
+[308/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ctr_drbg.o
+[309/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.cipher.o
+[310/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ccm.o
+[311/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls_gt.ssl_tls.o
+[312/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.base64.o
+[313/394] AR libs/libmbedtls_gt.a
+[314/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.arc4.o
+[315/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.error.o
+[316/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.asn1parse.o
+[317/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.asn1write.o
+[318/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.havege.o
+[319/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.hmac_drbg.o
+[320/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ecp_curves.o
+[321/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.md2.o
+[322/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.aes.o
+[323/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.md4.o
+[324/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.hkdf.o
+[325/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.nist_kw.o
+[326/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.memory_buffer_alloc.o
+[327/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.padlock.o
+[328/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.md.o
+[329/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.gcm.o
+[330/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.md5.o
+[331/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.net_sockets.o
+[332/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.md_wrap.o
+[333/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pkcs12.o
+[334/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pem.o
+[335/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.oid.o
+[336/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pk.o
+[337/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pkcs5.o
+[338/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.platform.o
+[339/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.platform_util.o
+[340/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.bignum.o
+[341/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ripemd160.o
+[342/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pk_wrap.o
+[343/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ecp.o
+[344/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pkwrite.o
+[345/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.poly1305.o
+[346/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.rsa_internal.o
+[347/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.pkparse.o
+[348/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ssl_ciphersuites.o
+[349/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.threading.o
+[350/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.version_features.o
+[351/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.sha256.o
+[352/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.version.o
+[353/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.timing.o
+[354/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.sha512.o
+[355/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.xtea.o
+[356/394] STAMP obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune/neptune.stamp
+[357/394] STAMP obj/ABS_PATH/home/jaychou/neptune-harmony-os1.1-iot-master/device/winnermicro/neptune/neptune.stamp
+[358/394] AR libs/libhal_token_static.a
+[359/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.sha1.o
+[360/394] AR libs/libtoken_static.a
+[361/394] STAMP obj/base/startup/syspara_lite/frameworks/token/token.stamp
+[362/394] gcc cross compiler obj/utils/native/lite/file/src/file_impl_hal/libnative_file.file.o
+[363/394] AR libs/libnative_file.a
+[364/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.x509.o
+[365/394] STAMP obj/utils/native/lite/file/file.stamp
+[366/394] gcc cross compiler obj/vendor/winnermicro/neptune/hals/utils/sys_param/libhal_sysparam.hal_sys_param.o
+[367/394] gcc cross compiler obj/utils/native/lite/kv_store/src/kvstore_common/libutils_kv_store.kvstore_common.o
+[368/394] gcc cross compiler obj/utils/native/lite/kv_store/src/kvstore_impl_hal/libutils_kv_store.kv_store.o
+[369/394] gcc cross compiler obj/utils/native/lite/os_dump/libdump_static.dump_syspara.o
+[370/394] AR libs/libhal_sysparam.a
+[371/394] AR libs/libutils_kv_store.a
+[372/394] AR libs/libsysparam.a
+[373/394] STAMP obj/utils/native/lite/kv_store/kv_store.stamp
+[374/394] STAMP obj/base/startup/syspara_lite/frameworks/parameter/parameter.stamp
+[375/394] STAMP obj/base/startup/syspara_lite/frameworks/parameter/parameter_notes.stamp
+[376/394] AR libs/libhota.a
+[377/394] AR libs/libdump_static.a
+[378/394] STAMP obj/base/update/ota_lite/frameworks/ota_lite.stamp
+[379/394] STAMP obj/utils/native/lite/os_dump/utils_os_dump.stamp
+[380/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.x509_crl.o
+[381/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.rsa.o
+[382/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ssl_cli.o
+[383/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.x509_crt.o
+[384/394] gcc cross compiler obj/third_party/mbedtls/library/libmbedtls.ssl_tls.o
+[385/394] AR libs/libmbedtls.a
+[386/394] STAMP obj/third_party/mbedtls/mbedtls.stamp
+[387/394] STAMP obj/third_party/mbedtls/mbedtls_ndk.stamp
+[388/394] AR libs/libhuks.a
 csky-abiv2-elf-ar: obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/common/libhuks.hks_bn.o: plugin needed to handle lto object
 csky-abiv2-elf-ar: obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/common/libhuks.hks_common.o: plugin needed to handle lto object
 csky-abiv2-elf-ar: obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/common/libhuks.hks_log_utils.o: plugin needed to handle lto object
@@ -901,37 +925,10 @@ csky-abiv2-elf-ar: obj/base/security/huks/frameworks/huks_lite/source/hw_keystor
 csky-abiv2-elf-ar: obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/libhuks.hks_rkc.o: plugin needed to handle lto object
 csky-abiv2-elf-ar: obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/libhuks.hks_service.o: plugin needed to handle lto object
 csky-abiv2-elf-ar: obj/base/security/huks/frameworks/huks_lite/source/hw_keystore_sdk/soft_service/libhuks.hks_storage.o: plugin needed to handle lto object
-[385/390] STAMP obj/base/security/huks/frameworks/huks_lite/huks_sdk.stamp
-[386/390] STAMP obj/build/lite/ohos.stamp
-[387/390] ACTION //build/lite:gen_rootfs(//build/lite/toolchain:csky-abiv2-elf)
+[389/394] STAMP obj/base/security/huks/frameworks/huks_lite/huks_sdk.stamp
+[390/394] STAMP obj/build/lite/ohos.stamp
+[391/394] ACTION //build/lite:gen_rootfs(//build/lite/toolchain:csky-abiv2-elf)
 no need to make rootfs
-[388/390] STAMP obj/build/lite/gen_rootfs.stamp
-[389/390] ACTION //device/winnermicro/neptune/sdk_liteos:build_wifiiot_sdk(//build/lite/toolchain:csky-abiv2-elf)
-[390/390] STAMP obj/device/winnermicro/neptune/sdk_liteos/build_wifiiot_sdk.stamp
-ninja: Entering directory `/home/jaychou/Neptune_w800_project/out/neptune/wifiiot_neptune'
-[1/18] ACTION //device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble:copy_blelibs(//build/lite/toolchain:csky-abiv2-elf)
-source is ../../../device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/libble.a
-target is libs/libble.a
-[2/17] ACTION //device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice:copy_wifiservicelibs(//build/lite/toolchain:csky-abiv2-elf)
-source is ../../../device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/libwifiservice.a
-target is libs/libwifiservice.a
-[3/16] ACTION //device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite:copy_hal_iothardwarelibs(//build/lite/toolchain:csky-abiv2-elf)
-source is ../../../device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/libhal_iothardware.a
-target is libs/libhal_iothardware.a
-[4/15] ACTION //device/winnermicro/neptune/w800_adapter/hals/update:copy_hal_update_staticlibs(//build/lite/toolchain:csky-abiv2-elf)
-source is ../../../device/winnermicro/neptune/w800_adapter/hals/update/libhal_update_static.a
-target is libs/libhal_update_static.a
-[5/14] ACTION //device/winnermicro/neptune/w800_adapter/hals/utils/file:copy_hal_file_staticlibs(//build/lite/toolchain:csky-abiv2-elf)
-source is ../../../device/winnermicro/neptune/w800_adapter/hals/utils/file/libhal_file_static.a
-target is libs/libhal_file_static.a
-[6/13] gcc cross compiler obj/applications/sample/wifi-iot/app/IIC/libiic_demo.iic_test.o
-../../../applications/sample/wifi-iot/app/IIC/iic_test.c: 在函数‘I2C_SDA_READ’中:
-../../../applications/sample/wifi-iot/app/IIC/iic_test.c:26:5: 警告： 此函数中的‘data’在使用前未初始化 [-Wuninitialized]
-     IoTGpioGetInputVal(I2C_SDA_PIN,data);
-     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[7/13] AR libs/libiic_demo.a
-[8/13] STAMP obj/applications/sample/wifi-iot/app/app.stamp
-[9/13] STAMP obj/build/lite/ohos.stamp
-[10/13] ACTION //build/lite:gen_rootfs(//build/lite/toolchain:csky-abiv2-elf)
-no need to make rootfs
-[11/12] ACTION //device/winnermicro/neptune/sdk_liteos:build_wifiiot_sdk(//build/lite/toolchain:csky-abiv2-elf)
+[392/394] STAMP obj/build/lite/gen_rootfs.stamp
+[393/394] ACTION //device/winnermicro/neptune/sdk_liteos:build_wifiiot_sdk(//build/lite/toolchain:csky-abiv2-elf)
+[394/394] STAMP obj/device/winnermicro/neptune/sdk_liteos/build_wifiiot_sdk.stamp

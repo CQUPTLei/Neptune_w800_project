@@ -9,6 +9,8 @@
 #include "iot_gpio_w800.h"        //定义了w800引脚，例：IOT_GPIO_PA_00 为PA0
 #include "iot_gpio_neptune.h"     //提供了操作设备的API：flash, GPIO, I2C, PWM, UART, and watchdog APIs.可进入查看函数简介、参数、返回等信息
 
+#include "wm_gpio.h"
+#include "wm_i2c.h"
 typedef uint8_t u8;
 
 #define I2C_SCL_PIN		IOT_GPIO_PA_01			/* 连接SCL的GPIO PA1*/
@@ -19,13 +21,13 @@ typedef uint8_t u8;
 
 #define I2C_SDA_1()  IoTGpioSetOutputVal(I2C_SDA_PIN,1)		/* SDA = 1 */
 #define I2C_SDA_0()  IoTGpioSetOutputVal(I2C_SDA_PIN,0)		/* SDA = 0 */
-
-static int I2C_SDA_READ(void)
-{
-    IotGpioValue *data;   
-    IoTGpioGetInputVal(I2C_SDA_PIN,data);
-    return *data;
-}
+#define I2C_SDA_READ() tls_gpio_read(I2C_SDA_PIN)
+// static int I2C_SDA_READ(void)
+// {
+//     IotGpioValue *data;   
+//     IoTGpioGetInputVal(I2C_SDA_PIN,data);
+//     return *data;
+// }
 
 
 //=================MPU6050地址====================
@@ -262,7 +264,64 @@ void MPU6050_Init(void)
 	MPU6050_WriteReg(MPU6050_RA_CONFIG , 0x03);//值得设置
 	MPU6050_WriteReg(MPU6050_RA_ACCEL_CONFIG , 0x00);
 	MPU6050_WriteReg(MPU6050_RA_GYRO_CONFIG, 0x18);
+// 	MPU6050_WriteReg(MPU6050_RA_PWR_MGMT_1,0x80);
+// 	osDelay(100);
+// 	MPU6050_WriteReg(MPU6050_RA_PWR_MGMT_1,0x00);
+// 	MPU6050_WriteReg(MPU6050_RA_PWR_MGMT_1,0x00);
+// 	MPU6050_WriteReg(MPU6050_RA_PWR_MGMT_1,0x01);
+// 	MPU6050_WriteReg(MPU6050_RA_PWR_MGMT_2,0x00);
 }
+
+
+
+// u8 MPU_Init(void)
+// {
+//     u8 res;
+//     IIC_Init();//初始化IIC总线
+//     IIC_Write_Byte(MPU_PWR_MGMT1_REG,0X80);//复位MPU6050
+//     delay_ms(100);
+//     IIC_Write_Byte(MPU_PWR_MGMT1_REG,0X00);//唤醒MPU6050
+//     MPU_Set_Gyro_Fsr(3); //陀螺仪传感器,±2000dps
+//     MPU_Set_Accel_Fsr(0); //加速度传感器 ±2g
+//     MPU_Set_Rate(50); //设置采样率50HZ
+//     IIC_Write_Byte(MPU_INT_EN_REG,0X00); //关闭所有中断
+//     IIC_Write_Byte(MPU_USER_CTRL_REG,0X00);//I2C主模式关闭
+//     IIC_Write_Byte(MPU_FIFO_EN_REG,0X00);//关闭FIFO
+//     IIC_Write_Byte(MPU_INTBP_CFG_REG,0X80);//INT引脚低电平有效
+//     res=IIC_Read_Byte(MPU_DEVICE_ID_REG);
+//     if(res==MPU_ADDR)//器件ID正确
+//     {
+//         IIC_Write_Byte(MPU_PWR_MGMT1_REG,0X01);//设置CLKSEL,PLL X 轴为参考
+//         IIC_Write_Byte(MPU_PWR_MGMT2_REG,0X00);//加速度陀螺仪都工作
+//         MPU_Set_Rate(50); //设置采样率为50HZ
+//     }else return 1;
+//     return 0;
+
+// }
+
+
+
+/*
+CPU发送设备地址，然后读取设备应答是否有设备
+*/
+uint8_t i2c_CheckDevice(uint8_t _Address)
+{
+	uint8_t ucAck;
+
+	i2c_GPIO_Config();		/* 配置GPIO */
+	
+	i2c_Start();		/*I2C开始信号*/
+
+	/* 发送设备地址和读写控制bit（0=写，1=读）bit7位先传 */
+	i2c_SendByte(_Address|I2C_WR);
+	ucAck = i2c_WaitAck();	/*检测设备应答 */
+
+	i2c_Stop();			/* I2C结束信号 */
+
+	return ucAck;
+}
+
+
 
 
 //=====================传感器数据读取======================
@@ -303,6 +362,7 @@ static void iic_main(void)
 	short Gyro[3];
 	float Temp;
 	i2c_GPIO_Config();
+	tls_i2c_init(400000);
     i2c_Stop();
 	MPU6050_Init();
 	while(1)

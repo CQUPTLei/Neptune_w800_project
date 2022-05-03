@@ -21,7 +21,8 @@
         "netifapi.h": "c",
         "ethernet.h": "c",
         "wifi_scan_info.h": "c",
-        "iot_i2c.h": "c"
+        "iot_i2c.h": "c",
+        "wm_gpio.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

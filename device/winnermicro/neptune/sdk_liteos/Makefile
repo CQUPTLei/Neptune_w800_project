@@ -86,7 +86,7 @@ LINKLIB += 	\
 	$(OHOS_LIBS_DIR)/libsec_static.a               \
 	$(OHOS_LIBS_DIR)/libbacktrace.a                \
 	$(OHOS_LIBS_DIR)/libhuks.a                     \
-	$(OHOS_LIBS_DIR)/libiic_demo.a                \
+	$(OHOS_LIBS_DIR)/libmpu6050_example.a                \
 
 # append harmony os libraries
 LINKLIB += $(sort $(wildcard $(OHOS_LIB)/*.a))
