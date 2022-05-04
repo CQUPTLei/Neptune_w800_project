@@ -1,18 +1,3 @@
-/*
- * Copyright (c) 2020 Nanjing Xiaoxiongpai Intelligent Technology Co., Ltd.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
@@ -21,8 +6,8 @@
 #include "cmsis_os2.h"
 #include "iot_pwm.h"
 #include "mpu6050.h"
-#include "ssd1306.h"
 #include "imu.h"
+#include "fall_detect.h"
 
 MPU6050_Data_TypeDef MPU6050_Data;
 
@@ -33,32 +18,17 @@ int Accel_x=0,Accel_y=0,Accel_z=0;	      //X轴加速度值暂存
 float  Angle_ax=0.0,Angle_ay=0.0,Angle_az=0.0;  //由加速度计算的加速度(弧度制)
 float  Angle_gy=0.0,Angle_gx=0.0,Angle_gz=0.0;  //由角速度计算的角速率(角度制)
 
-//陀螺仪 加计修正参数——————————————————————————————————————
-int   g_x=0,g_y=0,g_z=0;            							 //陀螺仪矫正参数
+int   g_x=0,g_y=0,g_z=0;            					//陀螺仪矫正参数
 float a_x=0.0,a_y=0.0;  
 
-//四元数解算出的欧拉角 —————————————————————————————————————
 float Pitch=0.0,Roll=0.0,Yaw=0.0;                     	//四元数解算出的欧拉角 
 
-void Servo_Angle_Control(uint32_t angle)
-{
-  float time=0;
-  float dutytime=0;
-  uint16_t duty=0;
-  time=angle/9;
-  dutytime=(time+5)/200;
-  duty=256*dutytime;
-  IoTPwmStart(0,duty,50);
-}
+
 
 static void Example_Task(void)
 {
     char buff[20];
-    IoTPwmInit(0);           //PWM初始化
-    MPU6050_GPIO_Init();     //MPU6050初始化
-    ssd1306_Init();
-    Servo_Angle_Control(90); //把舵机的初始角度定为90度
-    ssd1306_Fill(Black);
+    MPU6050_GPIO_Init();                 //MPU6050初始化
     while (1)
     {
         osDelay(5);                     //延时10ms
@@ -81,17 +51,18 @@ static void Example_Task(void)
 	    Angle_gz = Gyro_z/65.5*0.0174533;
 
         IMUupdate(Angle_gx,Angle_gy,Angle_gz,Angle_ax,Angle_ay,Angle_az);	
-        Servo_Angle_Control(Roll+90); //不断的把传感器得到的角度值传入此函数来控制舵机的角度
-        ssd1306_SetCursor(2,12);
-        sprintf(buff,"横滚角:%0.2f",Roll);
-        ssd1306_DrawChinese(2,12,buff, White);
-        ssd1306_SetCursor(2,30);
-        sprintf(buff,"角度:%0.2f",Roll+90);
-        ssd1306_DrawChinese(2,30,buff, White);
-        ssd1306_UpdateScreen();
-	    printf("Roll:");			  //输出横滚角
-	    printf("%f",Roll);
-	    printf("\r\n");
+
+	    // printf("Roll:%.2f",Roll);			  //输出横滚角,绕z轴 
+        // printf("    Yaw:%.2f",Yaw);			  //y
+        // printf("    Pitch:%.2f",Pitch);	  //x
+        // printf("    Accel_x:%.2f",Angle_ax);
+        // printf("    Accel_y:%.2f",Angle_ay);
+        // printf("    Accel_z:%.2f",Angle_az);
+        // printf("    Angle_x:%.2f",Angle_gx);
+        // printf("    Angle_y:%.2f",Angle_gy);
+        // printf("    Angle_z:%.2f\n",Angle_gz);
+        suspect_fall_detect(Angle_gx,Angle_gy,Angle_gz,Angle_ax,Angle_ay,Angle_az,Roll,Yaw);
+        
     }
 }
 

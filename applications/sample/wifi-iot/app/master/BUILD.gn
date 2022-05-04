@@ -1,0 +1,18 @@
+
+static_library("master") {
+    sources = [
+        "../master/IMU/imu.c",
+        "../master/MPU6050/mpu6050.c",
+        "../master/FALL_DOWN/fall_detect.c",
+        "master.c"
+    ]
+
+    include_dirs = [
+        "../master/IMU",
+        "../master/MPU6050",
+        "../master/FALL_DOWN",
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/kal/cmsis",
+        "//base/iot_hardware/peripheral/interfaces/kits",
+    ]
+}

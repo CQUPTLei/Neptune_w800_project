@@ -1,18 +1,3 @@
-/*
- * Copyright (c) 2020 Nanjing Xiaoxiongpai Intelligent Technology Co., Ltd.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *    http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
@@ -44,7 +29,6 @@ void HAL_Delay1(void)
 static void GPIO_MPU6050_Init(void)
 {
     IoTI2cInit(MPU6050_I2C_IDX, 400*1000); /* baudrate: 400kbps */
-    //IoTI2cSetBaudrate(MPU6050_I2C_IDX,400000);
 }
 
 /***************************************************************
@@ -60,6 +44,7 @@ void I2C_MPU6050_WriteData( uint8_t Reg, uint8_t Value)
     uint8_t send_data[2] = { Reg,Value };
     IoTI2cWrite(MPU6050_I2C_IDX,(MPU6050_SLAVE_ADDRESS<<1)|0x00, send_data,sizeof(send_data)); 
 }
+
 /***************************************************************
   * 函数功能: 通过I2C写入一段数据到指定寄存器内
   * 输入参数: Addr：I2C设备地址
@@ -74,7 +59,6 @@ uint8_t I2C_MPU6050_WriteBuffer(uint8_t Reg, uint8_t *pBuffer, uint16_t Length)
 {
  
     uint32_t status = 0;
-    //WifiIotI2cData mpu6050_i2c_data = {0};
     uint8_t send_data[256] = {0};
 
     send_data[0] = Reg;
@@ -82,21 +66,11 @@ uint8_t I2C_MPU6050_WriteBuffer(uint8_t Reg, uint8_t *pBuffer, uint16_t Length)
     {
         send_data[j+1] = pBuffer[j];
     }
-
-    //mpu6050_i2c_data.sendBuf = send_data;
-    //mpu6050_i2c_data.sendLen = Length+1;
-    /*
-    status = IoTI2cWrite(MPU6050_I2C_IDX, (MPU6050_SLAVE_ADDRESS<<1)|0x00, send_data,Length+1);
-    if (status != 0)
-    {
-        printf("===== Error: I2C write status1 = 0x%x! =====\r\n", status);
-        return status;
-    }
-    */
     IoTI2cWrite(MPU6050_I2C_IDX, (MPU6050_SLAVE_ADDRESS<<1)|0x00, send_data,Length+1);
 
     return 0;
 }
+
 /***************************************************************
   * 函数功能: 通过I2C读取一个指定寄存器内容
   * 输入参数: Addr：I2C设备地址
@@ -108,32 +82,11 @@ uint8_t I2C_MPU6050_ReadData(uint8_t Reg)
 {
     uint8_t value = 0;
     uint32_t status = 0;
-    //WifiIotI2cData mpu6050_i2c_data = {0};
     uint8_t  buffer[1] = {Reg};
-    //mpu6050_i2c_data.sendBuf = buffer;
-    //mpu6050_i2c_data.sendLen = 1;
-    //mpu6050_i2c_data.receiveBuf = &value;
-    //mpu6050_i2c_data.receiveLen = 1;
-    /*
-    status =IoTI2cWrite(MPU6050_I2C_IDX,(MPU6050_SLAVE_ADDRESS<<1)|0x00, buffer,sizeof(buffer));
-    if (status != IOT_SUCCESS)
-    {
-        printf("===== Error: I2C write status = 0x%x! =====\r\n", status);
-        return status;
-    }
-    */
     IoTI2cWrite(MPU6050_I2C_IDX,(MPU6050_SLAVE_ADDRESS<<1)|0x00, buffer,sizeof(buffer));
     HAL_Delay1();
     IoTI2cRead(MPU6050_I2C_IDX,(MPU6050_SLAVE_ADDRESS<<1)|0x01, &value,1);
     HAL_Delay1();
-    /*
-    status =IoTI2cRead(MPU6050_I2C_IDX,(MPU6050_SLAVE_ADDRESS<<1)|0x01, &value,1);
-    if (status != IOT_SUCCESS)
-    {
-        printf("===== Error: I2C write status = 0x%x! =====\r\n", status);
-        return status;
-    }
-    */
     return value;
 }
 
@@ -151,27 +104,7 @@ uint8_t I2C_MPU6050_ReadBuffer(uint8_t Reg, uint8_t *pBuffer, uint16_t Length)
 {
   
     uint32_t status = 0;
-    //WifiIotI2cData mpu6050_i2c_data = {0};
     uint8_t  buffer[1] = {Reg};
-    //mpu6050_i2c_data.sendBuf = buffer;
-    //mpu6050_i2c_data.sendLen = 1;
-    //mpu6050_i2c_data.receiveBuf = pBuffer;
-    //mpu6050_i2c_data.receiveLen = Length;
-    /*
-    status =IoTI2cWrite(MPU6050_I2C_IDX,(MPU6050_SLAVE_ADDRESS<<1)|0x00, buffer,sizeof(buffer));
-    if (status != IOT_SUCCESS)
-    {
-        printf("===== Error: I2C write status = 0x%x! =====\r\n", status);
-        return status;
-    }
-    osDelay(10);
-    status =IoTI2cRead(MPU6050_I2C_IDX,(MPU6050_SLAVE_ADDRESS<<1)|0x01, pBuffer,Length);
-    if (status != IOT_SUCCESS)
-    {
-        printf("===== Error: I2C write status = 0x%x! =====\r\n", status);
-        return status;
-    }
-    */
     IoTI2cWrite(MPU6050_I2C_IDX,(MPU6050_SLAVE_ADDRESS<<1)|0x00, buffer,sizeof(buffer));
     HAL_Delay1();
     IoTI2cRead(MPU6050_I2C_IDX,(MPU6050_SLAVE_ADDRESS<<1)|0x01, pBuffer,Length);
@@ -179,6 +112,7 @@ uint8_t I2C_MPU6050_ReadBuffer(uint8_t Reg, uint8_t *pBuffer, uint16_t Length)
     
     return 0;  
 }
+
 /***************************************************************
   * 函数功能: 写数据到MPU6050寄存器
   * 输入参数: 无
@@ -189,6 +123,7 @@ void MPU6050_WriteReg(uint8_t reg_add,uint8_t reg_dat)
 {
   I2C_MPU6050_WriteData(reg_add,reg_dat);
 }
+
 
 /***************************************************************
   * 函数功能: 从MPU6050寄存器读取数据
@@ -299,9 +234,9 @@ void MPU6050_Init(void)
       ;
     }
   }
-	MPU6050_WriteReg(MPU6050_RA_PWR_MGMT_1,0X80);       //复位MPU6050
+	  MPU6050_WriteReg(MPU6050_RA_PWR_MGMT_1,0X80);       //复位MPU6050
     osDelay(10);
-	MPU6050_WriteReg(MPU6050_RA_PWR_MGMT_1,0X00);       //唤醒MPU6050
+	  MPU6050_WriteReg(MPU6050_RA_PWR_MGMT_1,0X00);       //唤醒MPU6050
     MPU6050_WriteReg(SMPLRT_DIV,0x07);                  //125Hz
     MPU6050_WriteReg(MPU6050_RA_CONFIG,0x04);           //21Hz滤波
     MPU6050_WriteReg(MPU6050_RA_GYRO_CONFIG,0x08);      //500'/s  65.5LSB/g
@@ -339,7 +274,7 @@ uint8_t MPU6050ReadID(void)
 }
 /***************************************************************
 * 函数名称: MPU6050_GPIO_Init
-* 说    明: 初始化MPU6050_GPIO_Init
+* 说    明: 初始化MPU6050和GPIO
 * 参    数: 无
 * 返 回 值: 无
 ***************************************************************/
