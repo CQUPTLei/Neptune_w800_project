@@ -1,0 +1,27 @@
+
+static_library("mqtt_oc_sample") {
+    sources = [
+        "mqtt_oc_sample.c",
+        "wifi_connecter.c",
+        "src/aht21.c",
+    ]
+    
+    cflags = [ "-Wno-unused-variable" ]
+    cflags += [ "-Wno-unused-but-set-variable" ]
+
+    include_dirs = [
+        "src",
+        "//utils/native/lite/include",
+        "//kernel/liteos_m/kal/cmsis",
+        "//base/iot_hardware/peripheral/interfaces/kits",
+        "//foundation/communication/wifi_lite/interfaces/wifiservice",
+    ]
+
+    include_dirs += [
+       "//device/winnermicro/neptune/sdk_liteos/src/app/mqtt",
+       "//device/winnermicro/neptune/sdk_liteos/include/platform",
+       "//device/winnermicro/neptune/sdk_liteos/include/app",
+       "//device/winnermicro/neptune/sdk_liteos/src/app/cJSON",
+    ]
+    
+}

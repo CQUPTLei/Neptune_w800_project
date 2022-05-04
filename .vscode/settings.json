@@ -22,7 +22,9 @@
         "ethernet.h": "c",
         "wifi_scan_info.h": "c",
         "iot_i2c.h": "c",
-        "wm_gpio.h": "c"
+        "wm_gpio.h": "c",
+        "libemqtt.h": "c",
+        "cjson.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

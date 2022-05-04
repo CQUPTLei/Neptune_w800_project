@@ -23,6 +23,7 @@ lite_component("app") {
         # "wifi_bt:wifi_bt_test",
         # "wifitest:wifi_test",
         # "uart_sample:uart_demo",
-        "master:master",
+        # "master:master",
+        "mqtt_oc_sample:mqtt_oc_sample"
     ]
 }

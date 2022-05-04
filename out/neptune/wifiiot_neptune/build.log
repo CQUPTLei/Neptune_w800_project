@@ -926,3 +926,291 @@ no need to make rootfs
 [391/393] STAMP obj/build/lite/gen_rootfs.stamp
 [392/393] ACTION //device/winnermicro/neptune/sdk_liteos:build_wifiiot_sdk(//build/lite/toolchain:csky-abiv2-elf)
 [393/393] STAMP obj/device/winnermicro/neptune/sdk_liteos/build_wifiiot_sdk.stamp
+ninja: Entering directory `/home/jaychou/Neptune_w800_project/out/neptune/wifiiot_neptune'
+[1/1] Regenerating ninja files
+[1/25] ACTION //device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble:copy_blelibs(//build/lite/toolchain:csky-abiv2-elf)
+source is ../../../device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/libble.a
+target is libs/libble.a
+[2/24] ACTION //device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice:copy_wifiservicelibs(//build/lite/toolchain:csky-abiv2-elf)
+source is ../../../device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/libwifiservice.a
+target is libs/libwifiservice.a
+[3/23] ACTION //device/winnermicro/neptune/w800_adapter/hals/utils/file:copy_hal_file_staticlibs(//build/lite/toolchain:csky-abiv2-elf)
+source is ../../../device/winnermicro/neptune/w800_adapter/hals/utils/file/libhal_file_static.a
+target is libs/libhal_file_static.a
+[4/22] ACTION //device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite:copy_hal_iothardwarelibs(//build/lite/toolchain:csky-abiv2-elf)
+source is ../../../device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/libhal_iothardware.a
+target is libs/libhal_iothardware.a
+[5/21] gcc cross compiler obj/base/startup/syspara_lite/frameworks/parameter/src/param_impl_hal/libsysparam.param_impl_hal.o
+[6/21] gcc cross compiler obj/applications/sample/wifi-iot/app/mqtt_oc_sample/src/libmqtt_oc_sample.aht21.o
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/src/aht21.c: 在函数‘AHT21_Calibrate’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/src/aht21.c:157:9: 警告： 隐式声明函数‘osDelay’ [-Wimplicit-function-declaration]
+         osDelay(AHT21_STARTUP_TIME);
+         ^~~~~~~
+[7/21] ACTION //device/winnermicro/neptune/w800_adapter/hals/update:copy_hal_update_staticlibs(//build/lite/toolchain:csky-abiv2-elf)
+source is ../../../device/winnermicro/neptune/w800_adapter/hals/update/libhal_update_static.a
+target is libs/libhal_update_static.a
+[8/20] gcc cross compiler obj/base/startup/syspara_lite/frameworks/parameter/src/libsysparam.parameter_common.o
+[9/20] AR libs/libsysparam.a
+[10/20] STAMP obj/base/startup/syspara_lite/frameworks/parameter/parameter_notes.stamp
+[11/20] STAMP obj/base/startup/syspara_lite/frameworks/parameter/parameter.stamp
+[12/20] gcc cross compiler obj/applications/sample/wifi-iot/app/mqtt_oc_sample/libmqtt_oc_sample.wifi_connecter.o
+In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/os/wm_osal.h:17:0,
+                 from ../../../device/winnermicro/neptune/sdk_liteos/src/network/lwip2.0.3/include/arch/sys_arch.h:5,
+                 from ../../../device/winnermicro/neptune/sdk_liteos/src/network/lwip2.0.3/include/lwip/sys.h:95,
+                 from ../../../device/winnermicro/neptune/sdk_liteos/src/network/lwip2.0.3/include/lwip/netifapi.h:39,
+                 from ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/wifi_connecter.c:4:
+../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/core_804.h: 在函数‘csi_coret_config’中:
+../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core/core_804.h:961:67: 警告： unused parameter ‘IRQn’ [-Wunused-parameter]
+ __STATIC_INLINE uint32_t csi_coret_config(uint32_t ticks, int32_t IRQn)
+                                                                   ^~~~
+In file included from ../../../device/winnermicro/neptune/sdk_liteos/include/net/wm_sockets.h:13:0,
+                 from ../../../device/winnermicro/neptune/sdk_liteos/src/network/lwip2.0.3/include/lwip/ip_addr.h:45,
+                 from ../../../device/winnermicro/neptune/sdk_liteos/src/network/lwip2.0.3/include/lwip/netif.h:46,
+                 from ../../../device/winnermicro/neptune/sdk_liteos/src/network/lwip2.0.3/include/lwip/netifapi.h:40,
+                 from ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/wifi_connecter.c:4:
+../../../device/winnermicro/neptune/sdk_liteos/include/net/wm_sockets2.0.3.h: 在文件作用域：
+../../../device/winnermicro/neptune/sdk_liteos/include/net/wm_sockets2.0.3.h:471:20: 警告： ‘struct timeval’ declared inside parameter list will not be visible outside of this definition or declaration
+             struct timeval *timeout);
+                    ^~~~~~~
+[13/20] gcc cross compiler obj/applications/sample/wifi-iot/app/mqtt_oc_sample/libmqtt_oc_sample.mqtt_oc_sample.o
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘GetTimeStamp’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:65:1: 警告： 在有返回值的函数中未发现 return 语句 [-Wreturn-type]
+ }
+ ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘init_socket’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:134:92: 警告： unused parameter ‘keepalive’ [-Wunused-parameter]
+ static int init_socket(mqtt_broker_handle_t *broker, const char *hostname, short port, int keepalive)
+                                                                                            ^~~~~~~~~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘MQTT_Init’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:267:38: 警告： 建议在空的‘if’语句体周围加上花括号 [-Wempty-body]
+     if(osTimerStart(id1, timerDelay));
+                                      ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:267:5: 警告： this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(osTimerStart(id1, timerDelay));
+     ^~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:268:5: 附注： ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+     {
+     ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:273:38: 警告： 建议在空的‘if’语句体周围加上花括号 [-Wempty-body]
+     if(osTimerStart(id2, timerDelay));
+                                      ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:273:5: 警告： this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(osTimerStart(id2, timerDelay));
+     ^~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:274:5: 附注： ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+     {
+     ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘LED_OFF_ON’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:297:1: 警告： 在有返回值的函数中未发现 return 语句 [-Wreturn-type]
+ }
+ ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘parseReceivedData’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:304:21: 警告： 传递‘cJSON_Parse’的第 1 个参数给指针时，目标与指针符号不一致 [-Wpointer-sign]
+  json = cJSON_Parse(data);
+                     ^~~~
+In file included from ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:16:0:
+../../../device/winnermicro/neptune/sdk_liteos/src/app/cJSON/cJSON.h:66:15: 附注： 需要类型‘const char *’，但实参的类型为‘uint8_t * {或称 unsigned char *}’
+ extern cJSON *cJSON_Parse(const char *value);
+               ^~~~~~~~~~~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:318:1: 警告： 在有返回值的函数中未发现 return 语句 [-Wreturn-type]
+ }
+ ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘MQTT_Recv’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:419:21: 警告： 传递‘strncpy’的第 1 个参数给指针时，目标与指针符号不一致 [-Wpointer-sign]
+             strncpy(request_id,topic+63,47);
+                     ^~~~~~~~~~
+In file included from ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:2:0:
+../../../kernel/liteos_m/kal/posix/include/string.h:36:7: 附注： 需要类型‘char * restrict’，但实参的类型为‘uint8_t * {或称 unsigned char *}’
+ char *strncpy (char *__restrict, const char *__restrict, size_t);
+       ^~~~~~~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:419:32: 警告： 传递‘strncpy’的第 2 个参数给指针时，目标与指针符号不一致 [-Wpointer-sign]
+             strncpy(request_id,topic+63,47);
+                                ^~~~~
+In file included from ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:2:0:
+../../../kernel/liteos_m/kal/posix/include/string.h:36:7: 附注： 需要类型‘const char * restrict’，但实参的类型为‘uint8_t * {或称 unsigned char *}’
+ char *strncpy (char *__restrict, const char *__restrict, size_t);
+       ^~~~~~~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:420:21: 警告： 传递‘sprintf’的第 1 个参数给指针时，目标与指针符号不一致 [-Wpointer-sign]
+             sprintf(ACK_TOPIC,"%s%s",MQTT_DEMO_ACK_TOPIC,request_id);
+                     ^~~~~~~~~
+In file included from ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:1:0:
+../../../kernel/liteos_m/kal/posix/include/stdio.h:114:5: 附注： 需要类型‘char * restrict’，但实参的类型为‘uint8_t * {或称 unsigned char *}’
+ int sprintf(char *__restrict, const char *__restrict, ...);
+     ^~~~~~~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:428:32: 警告： 传递‘mqtt_publish’的第 2 个参数给指针时，目标与指针符号不一致 [-Wpointer-sign]
+     mqtt_publish(&mqtt_broker, ACK_TOPIC, ackBuffer, ackLen, 0);
+                                ^~~~~~~~~
+In file included from ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:15:0:
+../../../device/winnermicro/neptune/sdk_liteos/src/app/mqtt/libemqtt.h:232:5: 附注： 需要类型‘const char *’，但实参的类型为‘uint8_t * {或称 unsigned char *}’
+ int mqtt_publish(mqtt_broker_handle_t* broker, const char* topic, const char* msg, int msgLen, uint8_t retain);
+     ^~~~~~~~~~~~
+[14/20] AR libs/libmqtt_oc_sample.a
+[15/20] STAMP obj/applications/sample/wifi-iot/app/app.stamp
+[16/20] STAMP obj/build/lite/ohos.stamp
+[17/20] ACTION //build/lite:gen_rootfs(//build/lite/toolchain:csky-abiv2-elf)
+no need to make rootfs
+[18/19] ACTION //device/winnermicro/neptune/sdk_liteos:build_wifiiot_sdk(//build/lite/toolchain:csky-abiv2-elf)
+ninja: Entering directory `/home/jaychou/Neptune_w800_project/out/neptune/wifiiot_neptune'
+[1/18] ACTION //device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice:copy_wifiservicelibs(//build/lite/toolchain:csky-abiv2-elf)
+source is ../../../device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/libwifiservice.a
+target is libs/libwifiservice.a
+[2/17] gcc cross compiler obj/applications/sample/wifi-iot/app/mqtt_oc_sample/libmqtt_oc_sample.mqtt_oc_sample.o
+FAILED: obj/applications/sample/wifi-iot/app/mqtt_oc_sample/libmqtt_oc_sample.mqtt_oc_sample.o 
+csky-abiv2-elf-gcc -D_XOPEN_SOURCE=700 -DOHOS_DEBUG -D__LITEOS__ -D__LITEOS_M__ -I../../../applications/sample/wifi-iot/app/mqtt_oc_sample/src -I../../../utils/native/lite/include -I../../../kernel/liteos_m/kal/cmsis -I../../../base/iot_hardware/peripheral/interfaces/kits -I../../../foundation/communication/wifi_lite/interfaces/wifiservice -I../../../device/winnermicro/neptune/sdk_liteos/src/app/mqtt -I../../../device/winnermicro/neptune/sdk_liteos/include/platform -I../../../device/winnermicro/neptune/sdk_liteos/include/app -I../../../device/winnermicro/neptune/sdk_liteos/src/app/cJSON -I../../../foundation/communication/wifi_lite/interfaces/wifiservice -I../../../kernel/liteos_m/components/bounds_checking_function/include -I../../../kernel/liteos_m/kal -I../../../kernel/liteos_m/kal/cmsis -I../../../kernel/liteos_m/kernel/include -I../../../kernel/liteos_m/targets/csky_ck804ef_w800_gcc -I../../../kernel/liteos_m/utils -I../../../utils/native/lite/include -I../../../third_party/mbedtls/include -I../../../kernel/liteos_m/kal/posix/include -I../../../device/winnermicro/neptune/sdk_liteos/include -I../../../device/winnermicro/neptune/sdk_liteos/include/los -I../../../device/winnermicro/neptune/sdk_liteos/include/wifi -I../../../device/winnermicro/neptune/sdk_liteos/include/platform -I../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804 -I../../../device/winnermicro/neptune/sdk_liteos/include/arch/xt804/csi_core -I../../../device/winnermicro/neptune/sdk_liteos/include/net -I../../../device/winnermicro/neptune/sdk_liteos/include/driver -I../../../device/winnermicro/neptune/sdk_liteos/src/network/lwip2.0.3/include -I../../../device/winnermicro/neptune/sdk_liteos/include/app -I../../../device/winnermicro/neptune/sdk_liteos/include/os -Wno-unused-variable -Wno-unused-but-set-variable -Os -falign-functions=2 -std=c99 -Wextra -Wall -mhard-float -mcpu=ck804ef -Os -fno-schedule-insns -Wpointer-arith -fdata-sections -mcpu=ck804ef -nostdlib -fno-common -fno-builtin -fno-strict-aliasing -Wall -fsigned-char -std=c99 -c ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c -o obj/applications/sample/wifi-iot/app/mqtt_oc_sample/libmqtt_oc_sample.mqtt_oc_sample.o
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘GetTimeStamp’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:76:1: 警告： 在有返回值的函数中未发现 return 语句 [-Wreturn-type]
+ }
+ ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘init_socket’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:169:92: 警告： unused parameter ‘keepalive’ [-Wunused-parameter]
+ static int init_socket(mqtt_broker_handle_t *broker, const char *hostname, short port, int keepalive)
+                                                                                            ^~~~~~~~~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘MQTT_Init’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:314:38: 警告： 建议在空的‘if’语句体周围加上花括号 [-Wempty-body]
+     if(osTimerStart(id1, timerDelay));
+                                      ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:314:5: 警告： this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(osTimerStart(id1, timerDelay));
+     ^~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:315:5: 附注： ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+     {
+     ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:320:38: 警告： 建议在空的‘if’语句体周围加上花括号 [-Wempty-body]
+     if(osTimerStart(id2, timerDelay));
+                                      ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:320:5: 警告： this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(osTimerStart(id2, timerDelay));
+     ^~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:321:5: 附注： ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+     {
+     ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘LED_OFF_ON’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:350:1: 警告： 在有返回值的函数中未发现 return 语句 [-Wreturn-type]
+ }
+ ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘parseReceivedData’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:363:21: 警告： 传递‘cJSON_Parse’的第 1 个参数给指针时，目标与指针符号不一致 [-Wpointer-sign]
+  json = cJSON_Parse(data);
+                     ^~~~
+In file included from ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:16:0:
+../../../device/winnermicro/neptune/sdk_liteos/src/app/cJSON/cJSON.h:66:15: 附注： 需要类型‘const char *’，但实参的类型为‘uint8_t * {或称 unsigned char *}’
+ extern cJSON *cJSON_Parse(const char *value);
+               ^~~~~~~~~~~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:377:1: 警告： 在有返回值的函数中未发现 return 语句 [-Wreturn-type]
+ }
+ ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘packPublishAck’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:21: 错误： 程序中有游离的‘\350’
+     int ackLen = 0; 计算三轴合角速度
+                     ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:22: 错误： 程序中有游离的‘\256’
+     int ackLen = 0; 计算三轴合角速度
+                      ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:23: 错误： 程序中有游离的‘\241’
+     int ackLen = 0; 计算三轴合角速度
+                       ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:24: 错误： 程序中有游离的‘\347’
+     int ackLen = 0; 计算三轴合角速度
+                        ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:25: 错误： 程序中有游离的‘\256’
+     int ackLen = 0; 计算三轴合角速度
+                         ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:26: 错误： 程序中有游离的‘\227’
+     int ackLen = 0; 计算三轴合角速度
+                          ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:27: 错误： 程序中有游离的‘\344’
+     int ackLen = 0; 计算三轴合角速度
+                           ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:28: 错误： 程序中有游离的‘\270’
+     int ackLen = 0; 计算三轴合角速度
+                            ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:29: 错误： 程序中有游离的‘\211’
+     int ackLen = 0; 计算三轴合角速度
+                             ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:30: 错误： 程序中有游离的‘\350’
+     int ackLen = 0; 计算三轴合角速度
+                              ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:31: 错误： 程序中有游离的‘\275’
+     int ackLen = 0; 计算三轴合角速度
+                               ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:32: 错误： 程序中有游离的‘\264’
+     int ackLen = 0; 计算三轴合角速度
+                                ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:33: 错误： 程序中有游离的‘\345’
+     int ackLen = 0; 计算三轴合角速度
+                                 ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:34: 错误： 程序中有游离的‘\220’
+     int ackLen = 0; 计算三轴合角速度
+                                  ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:35: 错误： 程序中有游离的‘\210’
+     int ackLen = 0; 计算三轴合角速度
+                                   ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:36: 错误： 程序中有游离的‘\350’
+     int ackLen = 0; 计算三轴合角速度
+                                    ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:37: 错误： 程序中有游离的‘\247’
+     int ackLen = 0; 计算三轴合角速度
+                                     ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:38: 错误： 程序中有游离的‘\222’
+     int ackLen = 0; 计算三轴合角速度
+                                      ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:39: 错误： 程序中有游离的‘\351’
+     int ackLen = 0; 计算三轴合角速度
+                                       ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:40: 错误： 程序中有游离的‘\200’
+     int ackLen = 0; 计算三轴合角速度
+                                        ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:41: 错误： 程序中有游离的‘\237’
+     int ackLen = 0; 计算三轴合角速度
+                                         ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:42: 错误： 程序中有游离的‘\345’
+     int ackLen = 0; 计算三轴合角速度
+                                          ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:43: 错误： 程序中有游离的‘\272’
+     int ackLen = 0; 计算三轴合角速度
+                                           ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:388:44: 错误： 程序中有游离的‘\246’
+     int ackLen = 0; 计算三轴合角速度
+                                            ^
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c: 在函数‘MQTT_Recv’中:
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:481:21: 警告： 传递‘strncpy’的第 1 个参数给指针时，目标与指针符号不一致 [-Wpointer-sign]
+             strncpy(request_id,topic+63,47);
+                     ^~~~~~~~~~
+In file included from ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:2:0:
+../../../kernel/liteos_m/kal/posix/include/string.h:36:7: 附注： 需要类型‘char * restrict’，但实参的类型为‘uint8_t * {或称 unsigned char *}’
+ char *strncpy (char *__restrict, const char *__restrict, size_t);
+       ^~~~~~~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:481:32: 警告： 传递‘strncpy’的第 2 个参数给指针时，目标与指针符号不一致 [-Wpointer-sign]
+             strncpy(request_id,topic+63,47);
+                                ^~~~~
+In file included from ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:2:0:
+../../../kernel/liteos_m/kal/posix/include/string.h:36:7: 附注： 需要类型‘const char * restrict’，但实参的类型为‘uint8_t * {或称 unsigned char *}’
+ char *strncpy (char *__restrict, const char *__restrict, size_t);
+       ^~~~~~~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:482:21: 警告： 传递‘sprintf’的第 1 个参数给指针时，目标与指针符号不一致 [-Wpointer-sign]
+             sprintf(ACK_TOPIC,"%s%s",MQTT_DEMO_ACK_TOPIC,request_id);
+                     ^~~~~~~~~
+In file included from ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:1:0:
+../../../kernel/liteos_m/kal/posix/include/stdio.h:114:5: 附注： 需要类型‘char * restrict’，但实参的类型为‘uint8_t * {或称 unsigned char *}’
+ int sprintf(char *__restrict, const char *__restrict, ...);
+     ^~~~~~~
+../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:490:32: 警告： 传递‘mqtt_publish’的第 2 个参数给指针时，目标与指针符号不一致 [-Wpointer-sign]
+     mqtt_publish(&mqtt_broker, ACK_TOPIC, ackBuffer, ackLen, 0);
+                                ^~~~~~~~~
+In file included from ../../../applications/sample/wifi-iot/app/mqtt_oc_sample/mqtt_oc_sample.c:15:0:
+../../../device/winnermicro/neptune/sdk_liteos/src/app/mqtt/libemqtt.h:232:5: 附注： 需要类型‘const char *’，但实参的类型为‘uint8_t * {或称 unsigned char *}’
+ int mqtt_publish(mqtt_broker_handle_t* broker, const char* topic, const char* msg, int msgLen, uint8_t retain);
+     ^~~~~~~~~~~~
+[3/17] ACTION //device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite:copy_hal_iothardwarelibs(//build/lite/toolchain:csky-abiv2-elf)
+source is ../../../device/winnermicro/neptune/w800_adapter/hals/iot_hardware/wifiiot_lite/libhal_iothardware.a
+target is libs/libhal_iothardware.a
+[4/16] ACTION //device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble:copy_blelibs(//build/lite/toolchain:csky-abiv2-elf)
+source is ../../../device/winnermicro/neptune/w800_adapter/hals/communication/bt_lite/ble/libble.a
+target is libs/libble.a
+[5/15] ACTION //device/winnermicro/neptune/w800_adapter/hals/update:copy_hal_update_staticlibs(//build/lite/toolchain:csky-abiv2-elf)
+source is ../../../device/winnermicro/neptune/w800_adapter/hals/update/libhal_update_static.a
+target is libs/libhal_update_static.a
+[6/14] ACTION //device/winnermicro/neptune/w800_adapter/hals/utils/file:copy_hal_file_staticlibs(//build/lite/toolchain:csky-abiv2-elf)
+source is ../../../device/winnermicro/neptune/w800_adapter/hals/utils/file/libhal_file_static.a
+target is libs/libhal_file_static.a
+ninja: build stopped: subcommand failed.

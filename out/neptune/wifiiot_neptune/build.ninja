@@ -47,11 +47,11 @@ build kv_store: phony obj/utils/native/lite/kv_store/kv_store.stamp
 build libsec_ndk: phony obj/third_party/bounds_checking_function/libsec_ndk.stamp
 build libsec_static: phony ./libs/libsec_static.a
 build link: phony obj/domains/iot/link/link.stamp
-build master: phony ./libs/libmaster.a
 build mbedtls: phony obj/third_party/mbedtls/mbedtls.stamp
 build mbedtls_gt: phony ./libs/libmbedtls_gt.a
 build mbedtls_ndk: phony obj/third_party/mbedtls/mbedtls_ndk.stamp
 build mbedtls_static: phony ./libs/libmbedtls.a
+build mqtt_oc_sample: phony ./libs/libmqtt_oc_sample.a
 build native_file: phony ./libs/libnative_file.a
 build ndk: phony obj/build/lite/ndk.stamp
 build oem_auth_static: phony ./libs/liboem_auth_static.a
@@ -80,8 +80,8 @@ build wifiiot_sdk: phony obj/device/winnermicro/neptune/sdk_liteos/wifiiot_sdk.s
 build wifiservice: phony obj/device/winnermicro/neptune/w800_adapter/hals/communication/wifi_lite/wifiservice/wifiservice.stamp
 build applications/sample/wifi-iot/app$:app: phony obj/applications/sample/wifi-iot/app/app.stamp
 build applications/sample/wifi-iot/app: phony obj/applications/sample/wifi-iot/app/app.stamp
-build applications/sample/wifi-iot/app/master$:master: phony ./libs/libmaster.a
-build applications/sample/wifi-iot/app/master: phony ./libs/libmaster.a
+build applications/sample/wifi-iot/app/mqtt_oc_sample$:mqtt_oc_sample: phony ./libs/libmqtt_oc_sample.a
+build applications/sample/wifi-iot/app/mqtt_oc_sample: phony ./libs/libmqtt_oc_sample.a
 build base/hiviewdfx/hievent_lite$:hievent_lite: phony ./libs/libhievent_lite.a
 build base/hiviewdfx/hievent_lite: phony ./libs/libhievent_lite.a
 build base/hiviewdfx/hilog_lite/command$:hilog_lite_command: phony ./libs/libhilog_lite_command.a
@@ -177,7 +177,7 @@ build home/jaychou/neptune-harmony-os1.1-iot-master/vendor/winnermicro/neptune: 
 
 build all: phony $
     obj/applications/sample/wifi-iot/app/app.stamp $
-    ./libs/libmaster.a $
+    ./libs/libmqtt_oc_sample.a $
     ./libs/libhievent_lite.a $
     ./libs/libhilog_lite_command.a $
     ./libs/libhilog_lite.a $
