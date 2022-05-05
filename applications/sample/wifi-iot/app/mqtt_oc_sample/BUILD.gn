@@ -3,14 +3,14 @@ static_library("mqtt_oc_sample") {
     sources = [
         "mqtt_oc_sample.c",
         "wifi_connecter.c",
-        "src/aht21.c",
+        # "src/aht21.c",
     ]
     
     cflags = [ "-Wno-unused-variable" ]
     cflags += [ "-Wno-unused-but-set-variable" ]
 
     include_dirs = [
-        "src",
+        # "src",
         "//utils/native/lite/include",
         "//kernel/liteos_m/kal/cmsis",
         "//base/iot_hardware/peripheral/interfaces/kits",

@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include <sys/time.h>
 
 #include "ohos_init.h"
 #include "cmsis_os2.h"
 
-#include "wifi_connecter.h"
 #include "lwip/inet.h"
 #include "lwip/sockets.h"
 #include "wm_mem.h"
@@ -17,6 +17,11 @@
 #include "iot_gpio_neptune.h"
 #include "iot_gpio_w800.h"
 #include "iot_i2c.h"
+
+#include "wifi_connecter.h"
+#include "mpu6050.h"
+#include "imu.h"
+#include "fall_detect.h"
 
 #define MQTT_DEMO_RECV_BUF_LEN_MAX      1024
 #define MQTT_DEMO_READ_TIMEOUT        (-1000)  
@@ -41,6 +46,18 @@ static int mqtt_keepalive = 60;               //持续连接
 static mqtt_broker_handle_t mqtt_broker;      //（MQTT是一个TCP服务端,称为broker）
 static osTimerId_t id1,id2;                   //2个定时器
                                               //osTimerStart (osTimerId_t timer_id, uint32_t ticks);启动定时器，定时器id，超时时间
+
+
+MPU6050_Data_TypeDef MPU6050_Data;
+
+//MPU6050获取参数及处理参数
+int Gyro_y=0,Gyro_x=0,Gyro_z=0;           //Y轴陀螺仪数据暂存
+int Accel_x=0,Accel_y=0,Accel_z=0;	      //X轴加速度值暂存
+float  Angle_ax=0.0,Angle_ay=0.0,Angle_az=0.0;  //由加速度计算的加速度(弧度制)
+float  Angle_gy=0.0,Angle_gx=0.0,Angle_gz=0.0;  //由角速度计算的角速率(角度制)
+int   g_x=0,g_y=0,g_z=0;            			//陀螺仪矫正参数
+float a_x=0.0,a_y=0.0;  
+float Pitch=0.0,Roll=0.0,Yaw=0.0;               //四元数解算出的欧拉角 
 
 
 /***************************************************************
@@ -550,7 +567,38 @@ static int MQTT_Recv(void)
  ***************************************************************/ 
 void Get_Old_info(void)
 {
+    float acc=0.0,w=0.0,angle=40.0,blood=99.6;
+    int fall=1,heart=60;
 
+    osDelay(5);                     //延时10ms
+
+    MPU6050_Read_Data();            //获取数据
+    Accel_y= MPU6050_Data.Accel[0];	//读取6050加速度数据
+	Accel_x= MPU6050_Data.Accel[1] ;		   
+	Accel_z= MPU6050_Data.Accel[2] ;
+
+    Gyro_x = MPU6050_Data.Gyro[0]-g_x;//读取6050角速度数据
+	Gyro_y = MPU6050_Data.Gyro[0]-g_y;
+	Gyro_z = MPU6050_Data.Gyro[0]-g_z;	
+
+    Angle_ax = Accel_x/8192.0;        //根据设置换算
+	Angle_ay = Accel_y/8192.0;
+	Angle_az = Accel_z/8192.0;
+	
+	Angle_gx = Gyro_x/65.5*0.0174533;//根据设置换算
+	Angle_gy = Gyro_y/65.5*0.0174533;
+	Angle_gz = Gyro_z/65.5*0.0174533;
+
+    IMUupdate(Angle_gx,Angle_gy,Angle_gz,Angle_ax,Angle_ay,Angle_az);	
+
+    //fall=suspect_fall_detect(Angle_gx,Angle_gy,Angle_gz,Angle_ax,Angle_ay,Angle_az,Roll,Yaw);
+
+    sprintf(Old_info.acc_smv,"%.2f",acc);
+    sprintf(Old_info.w_gyr,"%.2f",w);
+    sprintf(Old_info.angle,"%.2f",angle);
+    sprintf(Old_info.fall,"%d",fall);
+    sprintf(Old_info.heart_beat,"%d",heart);
+    sprintf(Old_info.blood_density,"%.2f",blood);
 }
 
 /***************************************************************
@@ -570,8 +618,9 @@ static int isWifiNetworkOk(void)
 }
 
 //================================================================================================================================//
-static void MQTT_OC_DemoTask(void)
+static void MQTT_Task(void)
 {
+    MPU6050_GPIO_Init();                 //MPU6050初始化
     osDelay(50);
     printf("================================================================================\n");
     if (!isWifiNetworkOk())
@@ -583,7 +632,7 @@ static void MQTT_OC_DemoTask(void)
         printf("===============================WIFI OFFLine===============================\r\n");
     }
 
-    printf("  \nStart MQTT  \r\n");
+    printf("  \n Start MQTT  \r\n");
     while (1)
     {
         switch (now_state)
@@ -656,10 +705,10 @@ static void MQTT_OC_Demo(void)
     IoTGpioInit(IOT_GPIO_PB_08);
     IoTGpioSetDir(IOT_GPIO_PB_08,IOT_GPIO_DIR_OUT);
 
-    // if (IoTI2cInit(0, 200*1000)) {
-    //     printf("AHT21 Test I2C Init Failed\n");
-    // }
-    attr.name = "MQTT_OC_DemoTask";
+    if (IoTI2cInit(0, 200*1000)) {
+       printf("I2C Init Failed\n");
+    }
+    attr.name = "MQTT_Task";
     attr.attr_bits = 0U;
     attr.cb_mem = NULL;
     attr.cb_size = 0U;
@@ -667,8 +716,8 @@ static void MQTT_OC_Demo(void)
     attr.stack_size = 4096;
     attr.priority = osPriorityNormal;
 
-    if (osThreadNew((osThreadFunc_t)MQTT_OC_DemoTask, NULL, &attr) == NULL) {
-        printf("[MQTT_OC_Demo] Falied to create MQTT_OC_DemoTask!\n");
+    if (osThreadNew((osThreadFunc_t)MQTT_Task, NULL, &attr) == NULL) {
+        printf("[MQTT_OC_Demo] Falied to create MQTT_Task!\n");
     }
 
     if (osThreadNew((osThreadFunc_t)Timer_RunTask, NULL, &attr) == NULL) {

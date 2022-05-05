@@ -4,15 +4,30 @@ static_library("master") {
         "../master/IMU/imu.c",
         "../master/MPU6050/mpu6050.c",
         "../master/FALL_DOWN/fall_detect.c",
-        "master.c"
+        # "master.c",
+        "../master/WIFI/wifi_connecter.c",
+        "main_test.c"
     ]
+
+    cflags = [ "-Wno-unused-variable" ]
+    cflags += [ "-Wno-unused-but-set-variable" ]
+
 
     include_dirs = [
         "../master/IMU",
         "../master/MPU6050",
         "../master/FALL_DOWN",
+        "../master/WIFI",
         "//utils/native/lite/include",
         "//kernel/liteos_m/kal/cmsis",
         "//base/iot_hardware/peripheral/interfaces/kits",
+        "//foundation/communication/wifi_lite/interfaces/wifiservice",
+    ]
+
+    include_dirs += [
+       "//device/winnermicro/neptune/sdk_liteos/src/app/mqtt",
+       "//device/winnermicro/neptune/sdk_liteos/include/platform",
+       "//device/winnermicro/neptune/sdk_liteos/include/app",
+       "//device/winnermicro/neptune/sdk_liteos/src/app/cJSON",
     ]
 }

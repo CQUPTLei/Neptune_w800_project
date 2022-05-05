@@ -4,11 +4,11 @@
 #define w_gyr_threshold   3.4
 #define angle_threshold   50
 
-float acc_smv=0;
-double w_gyr=0;
-float  angle=0;
+float acc_smv=0.0;
+double w_gyr=0.0;
+float  angle=0.0;
 /***************************************************************
-  * 函数功能: 计算加速度幅值与accsmv
+  * 函数功能: 计算加速度幅值和accsmv
   * 输入参数: 三轴加速度
   * 返 回 值: 无
   * 说    明: 无
@@ -54,7 +54,7 @@ void pose_cul(float Roll,float Yaw)
   * 说    明: 人摔倒时，加速度变化较为剧烈，且响应速度较快，所以最先判断加速度变化。
   *          若加速度幅值和超过阈值，则判断合角速度ωgyr是否超过阈值。若合角速度超过阈值，则进行下一步判断。
  ***************************************************************/ 
-void suspect_fall_detect(float gx, float gy, float gz, float ax, float ay, float az,float Roll,float Yaw)
+int suspect_fall_detect(float gx, float gy, float gz, float ax, float ay, float az,float Roll,float Yaw)
 {
     acc_smv_cul(ax,ay,az);
     w_gyr_cul(gx,gy,gz);
@@ -67,6 +67,7 @@ void suspect_fall_detect(float gx, float gy, float gz, float ax, float ay, float
             if(angle < angle_threshold)
             {
                 printf("FALL DOWN !!!\n");
+                return 1;
             }
         }
     }

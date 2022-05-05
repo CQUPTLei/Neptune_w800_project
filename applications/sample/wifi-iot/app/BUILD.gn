@@ -20,10 +20,9 @@ lite_component("app") {
         #格式：文件夹名称：文件夹下面BUILD文件中静态库的名称
         # "my_test_gn:my_test_gn",
         # "demolink:example_demolink",
-        # "wifi_bt:wifi_bt_test",
         # "wifitest:wifi_test",
         # "uart_sample:uart_demo",
-        # "master:master",
-        "mqtt_oc_sample:mqtt_oc_sample"
+        "master:master",
+        # "mqtt_oc_sample:mqtt_oc_sample"
     ]
 }

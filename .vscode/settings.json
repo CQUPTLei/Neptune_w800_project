@@ -24,7 +24,10 @@
         "iot_i2c.h": "c",
         "wm_gpio.h": "c",
         "libemqtt.h": "c",
-        "cjson.h": "c"
+        "cjson.h": "c",
+        "sockets.h": "c",
+        "iot_pwm.h": "c",
+        "wifi_connecter.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

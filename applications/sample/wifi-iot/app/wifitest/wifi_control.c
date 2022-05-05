@@ -142,7 +142,7 @@ static void WifiConnectTask(void *arg)          //WIFI连接任务（static静�
     LOGI("RegisterWifiEvent: %d", errCode);
 
     // 设置热点参数（可以自行修改蓝牙穿参、串口传参）
-    strcpy(apConfig.ssid, "jaychou");
+    strcpy(apConfig.ssid, "jaychouios");
     strcpy(apConfig.preSharedKey, "12345679");
     apConfig.securityType = WIFI_SEC_TYPE_PSK;
 

@@ -4,6 +4,6 @@
 #include <stdio.h>
 
 
-void suspect_fall_detect(float gx, float gy, float gz, float ax, float ay, float az,float Roll,float Yaw);
+int suspect_fall_detect(float gx, float gy, float gz, float ax, float ay, float az,float Roll,float Yaw);
 
 #endif
