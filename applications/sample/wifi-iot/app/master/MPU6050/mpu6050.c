@@ -237,7 +237,7 @@ void MPU6050_Init(void)
 	  MPU6050_WriteReg(MPU6050_RA_PWR_MGMT_1,0X80);       //复位MPU6050
     osDelay(10);
 	  MPU6050_WriteReg(MPU6050_RA_PWR_MGMT_1,0X00);       //唤醒MPU6050
-    MPU6050_WriteReg(SMPLRT_DIV,0x07);                  //125Hz
+    MPU6050_WriteReg(SMPLRT_DIV,0x63);                  //125Hz，0.008s一次(10hz)
     MPU6050_WriteReg(MPU6050_RA_CONFIG,0x04);           //21Hz滤波
     MPU6050_WriteReg(MPU6050_RA_GYRO_CONFIG,0x08);      //500'/s  65.5LSB/g
     MPU6050_WriteReg(MPU6050_RA_ACCEL_CONFIG,0x08);     //+-4g    8192LSB/G 
@@ -297,7 +297,7 @@ void MPU6050_Read_Data(void)
   short  Temp;
   if (MPU6050ReadID() == 0)
   {	
-	while(1);
+    while(1);
   }
   MPU6050ReadAcc(Accel);
   MPU6050ReadGyro(Gyro);		
@@ -310,5 +310,6 @@ void MPU6050_Read_Data(void)
   MPU6050_Data.Gyro[1] = Gyro[1];
   MPU6050_Data.Gyro[2] = Gyro[2];
   //osDelay(25);
+
 }
 

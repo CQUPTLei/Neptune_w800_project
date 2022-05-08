@@ -61,6 +61,7 @@ static void Example_Task(void)
         // printf("    Angle_x:%.2f",Angle_gx);
         // printf("    Angle_y:%.2f",Angle_gy);
         // printf("    Angle_z:%.2f\n",Angle_gz);
+        
         suspect_fall_detect(Angle_gx,Angle_gy,Angle_gz,Angle_ax,Angle_ay,Angle_az,Roll,Yaw);
         
     }

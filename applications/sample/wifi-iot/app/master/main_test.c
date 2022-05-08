@@ -42,9 +42,9 @@
 
 static uint8_t pcaket_buffer[MQTT_DEMO_RECV_BUF_LEN_MAX];
 static int socket_id;                         //套接字id
-static int mqtt_keepalive = 60;               //持续连接
+static int mqtt_keepalive = 60;               //持续连接，1分钟发送一次心跳连接
 static mqtt_broker_handle_t mqtt_broker;      //（MQTT是一个TCP服务端,称为broker）
-static osTimerId_t id1,id2;                   //2个定时器
+static osTimerId_t id1,id2;                   //定义2个定时器
                                               //osTimerStart (osTimerId_t timer_id, uint32_t ticks);启动定时器，定时器id，超时时间
 
 
@@ -335,13 +335,13 @@ static int MQTT_Init(void)
     printf("  MQTT Connect & subscribe topic success\n");
 
     uint32_t timerDelay;
-    timerDelay = 60*500U;  
+    timerDelay = 60*500U;   //60s发送一次心跳消息
     if(osTimerStart(id1, timerDelay));
     {
       printf("  Timer Start\r\n");
     }
 
-    timerDelay = 10*500U;
+    timerDelay = 50U;  //0.1s上报一次，500U = 1s
     if(osTimerStart(id2, timerDelay));
     {
       printf("Publish_Topic Start\r\n");
@@ -457,12 +457,12 @@ static int packPublishReq(char *jsonBuffer)
             cJSON *arrayObj_2 = cJSON_CreateObject();
             cJSON_AddItemToObject(arrayObj_1, "properties", arrayObj_2);
             
-            cJSON_AddStringToObject(arrayObj_2, "合加速度", Old_info.acc_smv);
-            cJSON_AddStringToObject(arrayObj_2, "合角速度", Old_info.w_gyr);
-            cJSON_AddStringToObject(arrayObj_2, "姿态角", Old_info.angle);
-            cJSON_AddStringToObject(arrayObj_2, "跌倒标志", Old_info.fall);
-            cJSON_AddStringToObject(arrayObj_2, "心率", Old_info.heart_beat);
-            cJSON_AddStringToObject(arrayObj_2, "血氧浓度", Old_info.blood_density);
+            cJSON_AddStringToObject(arrayObj_2, "acc_smv", Old_info.acc_smv);
+            cJSON_AddStringToObject(arrayObj_2, "w_gyr", Old_info.w_gyr);
+            cJSON_AddStringToObject(arrayObj_2, "angle", Old_info.angle);
+            cJSON_AddStringToObject(arrayObj_2, "fall", Old_info.fall);
+            cJSON_AddStringToObject(arrayObj_2, "heart_beat", Old_info.heart_beat);
+            cJSON_AddStringToObject(arrayObj_2, "blood_density", Old_info.blood_density);
 
             cJSON_AddStringToObject(arrayObj_1,"event_time", Old_info.timestamp);
         }
@@ -567,10 +567,10 @@ static int MQTT_Recv(void)
  ***************************************************************/ 
 void Get_Old_info(void)
 {
-    float acc=0.0,w=0.0,angle=40.0,blood=99.6;
+    float acc=3.0,w=2.0,angle=40.0,blood=99.6;
     int fall=1,heart=60;
 
-    osDelay(5);                     //延时10ms
+    //osDelay(5);                     //延时10ms
 
     MPU6050_Read_Data();            //获取数据
     Accel_y= MPU6050_Data.Accel[0];	//读取6050加速度数据
@@ -578,8 +578,8 @@ void Get_Old_info(void)
 	Accel_z= MPU6050_Data.Accel[2] ;
 
     Gyro_x = MPU6050_Data.Gyro[0]-g_x;//读取6050角速度数据
-	Gyro_y = MPU6050_Data.Gyro[0]-g_y;
-	Gyro_z = MPU6050_Data.Gyro[0]-g_z;	
+	Gyro_y = MPU6050_Data.Gyro[1]-g_y;
+	Gyro_z = MPU6050_Data.Gyro[2]-g_z;	
 
     Angle_ax = Accel_x/8192.0;        //根据设置换算
 	Angle_ay = Accel_y/8192.0;
@@ -591,7 +591,25 @@ void Get_Old_info(void)
 
     IMUupdate(Angle_gx,Angle_gy,Angle_gz,Angle_ax,Angle_ay,Angle_az);	
 
-    //fall=suspect_fall_detect(Angle_gx,Angle_gy,Angle_gz,Angle_ax,Angle_ay,Angle_az,Roll,Yaw);
+    fall=suspect_fall_detect(Angle_gx,Angle_gy,Angle_gz,Angle_ax,Angle_ay,Angle_az,Roll,Yaw);
+    acc = acc_smv_cul(Angle_ax,Angle_ay, Angle_az);
+    // acc=fabs(Angle_ax)+fabs(Angle_ay)+fabs(Angle_az);
+    w = w_gyr_cul(Angle_gx,Angle_gy,Angle_gz);
+    angle = pose_cul(Roll,Pitch);
+
+	    printf("Roll:%.2f",Roll);			  //输出横滚角,绕z轴 
+        printf("    Yaw:%.2f",Yaw);			  //y
+        printf("    Pitch:%.2f",Pitch);	  //x
+        printf("    Accel_x:%.4f",Angle_ax);
+        printf("    Accel_y:%.4f",Angle_ay);
+        printf("    Accel_z:%.4f",Angle_az);
+        printf("    Angle_x:%.2f",Angle_gx);
+        printf("    Angle_y:%.2f",Angle_gy);
+        printf("    Angle_z:%.2f",Angle_gz);
+        printf("    ACC_smv:%.2f",acc);
+        printf("    w_gyr:%.2f",w);
+        printf("    Angle:%.2f",angle);
+        printf("    Fall:%d\n",fall);
 
     sprintf(Old_info.acc_smv,"%.2f",acc);
     sprintf(Old_info.w_gyr,"%.2f",w);
@@ -635,6 +653,7 @@ static void MQTT_Task(void)
     printf("  \n Start MQTT  \r\n");
     while (1)
     {
+        // Get_Old_info();
         switch (now_state)
         {
         case MQTT_START:
@@ -681,10 +700,11 @@ void Timer_Callback2(void *arg)
     Get_Old_info();
     GetTimeStamp();
     publish_topic(); 
+    //printf("Timer 2 \n\n");
 }
 
 /***************************************************************
-  * 函数功能:创建定时器
+  * 函数功能:创建定时器任务
   * 输入参数: 无
   * 返 回 值: 无
   * 说    明: osTimerNew（回调函数，连续运行，参数，属性）
@@ -700,6 +720,7 @@ static void Timer_RunTask(void)
 
 static void MQTT_OC_Demo(void)
 {
+    //osThreadAttr_t是osThreadNew的一个参数，这里创建了2个线程，参数相同
     osThreadAttr_t attr;
  
     IoTGpioInit(IOT_GPIO_PB_08);
