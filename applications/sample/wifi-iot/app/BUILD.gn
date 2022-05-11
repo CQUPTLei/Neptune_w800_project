@@ -23,6 +23,8 @@ lite_component("app") {
         # "wifitest:wifi_test",
         # "uart_sample:uart_demo",
         "master:master",
-        # "mqtt_oc_sample:mqtt_oc_sample"
+        # "mqtt_oc_sample:mqtt_oc_sample"，
+        # "max30102_test:max30102",
+        # "tmp:heartrate_demo",
     ]
 }

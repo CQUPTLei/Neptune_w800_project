@@ -4,9 +4,15 @@ static_library("master") {
         "../master/IMU/imu.c",
         "../master/MPU6050/mpu6050.c",
         "../master/FALL_DOWN/fall_detect.c",
-        # "master.c",
+        "../master/Max30102/SRC/algorithm.c",
+        "../master/Max30102/SRC/max30102.c",
+        "../master/Max30102/SRC/myiic.c",
         "../master/WIFI/wifi_connecter.c",
-        "main_test.c"
+        "main_test.c",
+
+        # "../master/Max30102/SRC/main.c",
+        # "../master/Max30102/SRC/max30102.c",
+        # "../master/Max30102/SRC/max30102_fir.c",
     ]
 
     cflags = [ "-Wno-unused-variable" ]
@@ -18,6 +24,9 @@ static_library("master") {
         "../master/MPU6050",
         "../master/FALL_DOWN",
         "../master/WIFI",
+        "../master/Max30102/SRC",
+        "../master/Max30102/INC",
+
         "//utils/native/lite/include",
         "//kernel/liteos_m/kal/cmsis",
         "//base/iot_hardware/peripheral/interfaces/kits",

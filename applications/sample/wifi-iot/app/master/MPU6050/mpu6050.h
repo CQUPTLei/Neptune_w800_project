@@ -1,3 +1,4 @@
+
 #ifndef   __MPU6050_H_
 #define   __MPU6050_H_
 
@@ -9,6 +10,7 @@ typedef struct
 } MPU6050_Data_TypeDef;
 
 extern MPU6050_Data_TypeDef MPU6050_Data;
+
 #define	SMPLRT_DIV		0x19	//陀螺仪采样率，典型值：0x07(125Hz),采样频率 = 陀螺仪输出频率 / (1+SMPLRT_DIV)
     
 #define MPU6050_GYRO_OUT            0x43  //MPU6050陀螺仪数据寄存器地址
@@ -35,4 +37,5 @@ extern MPU6050_Data_TypeDef MPU6050_Data;
 
 void MPU6050_GPIO_Init(void);
 void MPU6050_Read_Data(void);
+
 #endif 

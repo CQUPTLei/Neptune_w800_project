@@ -1,9 +1,10 @@
+#include "mpu6050.h"
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
 #include <math.h>
 #include "cmsis_os2.h"
-#include "mpu6050.h"
+
 #include "iot_i2c.h"
 #include "iot_errno.h"
 

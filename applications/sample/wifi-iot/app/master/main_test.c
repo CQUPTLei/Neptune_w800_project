@@ -23,6 +23,10 @@
 #include "imu.h"
 #include "fall_detect.h"
 
+#include "max30102.h"   
+#include "algorithm.h"
+#include "myiic.h"
+
 #define MQTT_DEMO_RECV_BUF_LEN_MAX      1024
 #define MQTT_DEMO_READ_TIMEOUT        (-1000)  
 
@@ -638,6 +642,9 @@ static int isWifiNetworkOk(void)
 //================================================================================================================================//
 static void MQTT_Task(void)
 {
+    IIC_Init();
+	max30102_init();
+    osDelay(10);
     MPU6050_GPIO_Init();                 //MPU6050初始化
     osDelay(50);
     printf("================================================================================\n");

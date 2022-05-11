@@ -47,7 +47,7 @@ int suspect_fall_detect(float gx, float gy, float gz, float ax, float ay, float 
     {
         if(w_gyr_cul(gx,gy,gz) > w_gyr_threshold)
         {
-            if(pose_cul(r,y) < angle_threshold)
+            if(pose_cul(r,y) > angle_threshold)
             {
                 printf("FALL DOWN !!!\n");
                 return 1;

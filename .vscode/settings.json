@@ -27,7 +27,11 @@
         "cjson.h": "c",
         "sockets.h": "c",
         "iot_pwm.h": "c",
-        "wifi_connecter.h": "c"
+        "wifi_connecter.h": "c",
+        "mpu6050.h": "c",
+        "max30102.h": "c",
+        "hi3861_platform_base.h": "c",
+        "hi_time.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

@@ -685,7 +685,7 @@ hi_u32 hi_i2c_writeread(hi_i2c_idx id, hi_u16 device_addr, const hi_i2c_data *i2
     hi_sem_signal(g_i2c_drv_sem[id]);
     return ret;
 }
-
+//////////////////////////
 hi_u32 hi_i2c_write(hi_i2c_idx id, hi_u16 device_addr, const hi_i2c_data *i2c_data)
 {
     hi_u32 ret;
@@ -740,7 +740,7 @@ hi_u32 hi_i2c_write(hi_i2c_idx id, hi_u16 device_addr, const hi_i2c_data *i2c_da
 
     return ret;
 }
-
+////////////////////////////////
 hi_u32 hi_i2c_read(hi_i2c_idx id, hi_u16 device_addr, const hi_i2c_data *i2c_data)
 {
     hi_u32 ret, sem_ret;
