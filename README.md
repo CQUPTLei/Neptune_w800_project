@@ -1,8 +1,7 @@
 # Neptune-HarmonyOS1.1-IOT
 
 #### 介绍
-Neptune开发板HarmonyOS V1.1源码仓
-开源版本
+我的毕业设计
 
 #### 软件架构
 本项目基于openharmony V1.1.0 LTS 版本，适配W800 WIFI/BT Combo 芯片。
